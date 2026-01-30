@@ -53,21 +53,22 @@
   --ifm-heading-color: #ffffff;
 }
 
-/* Navbar - Webex black navbar */
+/* Navbar - Webex White navbar */
 .navbar {
-  background-color: #000000 !important;
+  background-color: #ffffff !important;
   height: 64px;
   padding: 0 24px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
 }
 
 .navbar__title {
   font-weight: 700;
   font-size: 1.25rem;
-  color: #ffffff !important;
+  color: #1a1a1a !important;
 }
 
 .navbar__link {
-  color: #ffffff !important;
+  color: #1a1a1a !important;
   font-weight: 500;
   font-size: 0.9375rem;
 }
@@ -80,24 +81,18 @@
   height: 32px;
 }
 
-/* Hero Section - Webex gradient background */
+/* Hero Section - Global background is white, but card processes are handled in module */
 .hero {
-  background: linear-gradient(135deg, #000000 0%, #0e0e0e 50%, #1a1a1a 100%);
+  background: transparent;
+  /* Handled by module */
   padding: 80px 0 100px;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .hero::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: radial-gradient(ellipse at 30% 20%, rgba(161, 98, 247, 0.3) 0%, transparent 50%),
-    radial-gradient(ellipse at 70% 80%, rgba(28, 198, 255, 0.2) 0%, transparent 50%);
-  pointer-events: none;
+  display: none;
+  /* Moved to module */
 }
 
 .hero--primary {
@@ -187,7 +182,7 @@
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Footer - Webex black footer */
+/* Footer - Webex black footer (Keep dark for contrast, typical in light themes too) */
 .footer {
   background: #000000 !important;
   padding: 60px 0 40px;
