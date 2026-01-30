@@ -1,0 +1,257 @@
+/**
+ * Ciyex EHR - Open Source Electronic Health Records
+ * Webex.com exact style copy
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+/* Webex exact colors - Light Mode */
+:root {
+  --ifm-color-primary: #2E64F3;
+  /* Webex Dark Blue */
+  --ifm-color-primary-dark: #1b50d8;
+  --ifm-color-primary-darker: #1646bf;
+  --ifm-color-primary-darkest: #0e2e8a;
+  --ifm-color-primary-light: #5280f6;
+  --ifm-color-primary-lighter: #688ef7;
+  --ifm-color-primary-lightest: #9abbfa;
+  --ifm-code-font-size: 95%;
+  --ifm-font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --ifm-heading-font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --ifm-font-weight-bold: 600;
+  --ifm-font-size-base: 16px;
+  --ifm-line-height-base: 1.6;
+  --docusaurus-highlighted-code-line-bg: rgba(46, 100, 243, 0.1);
+  --ifm-navbar-background-color: #000000;
+  --ifm-navbar-link-color: #ffffff;
+  --ifm-navbar-shadow: none;
+  --ifm-footer-background-color: #000000;
+  --ifm-heading-color: #000000;
+  --ifm-background-color: #ffffff;
+  --webex-gradient-start: #A162F7;
+  /* Webex-like Purple */
+  --webex-gradient-end: #1CC6FF;
+  /* Webex Light Blue */
+  --webex-green: #51E178;
+}
+
+/* Webex exact colors - Dark Mode */
+[data-theme='dark'] {
+  --ifm-color-primary: #1CC6FF;
+  /* Webex Light Blue for dark mode */
+  --ifm-color-primary-dark: #00b3eb;
+  --ifm-color-primary-darker: #00a9de;
+  --ifm-color-primary-darkest: #008bb3;
+  --ifm-color-primary-light: #4cd4ff;
+  --ifm-color-primary-lighter: #66dbff;
+  --ifm-color-primary-lightest: #99e8ff;
+  --docusaurus-highlighted-code-line-bg: rgba(28, 198, 255, 0.15);
+  --ifm-navbar-background-color: #000000;
+  --ifm-footer-background-color: #000000;
+  --ifm-background-color: #121212;
+  --ifm-background-surface-color: #1a1a1a;
+  --ifm-heading-color: #ffffff;
+}
+
+/* Navbar - Webex black navbar */
+.navbar {
+  background-color: #000000 !important;
+  height: 64px;
+  padding: 0 24px;
+}
+
+.navbar__title {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #ffffff !important;
+}
+
+.navbar__link {
+  color: #ffffff !important;
+  font-weight: 500;
+  font-size: 0.9375rem;
+}
+
+.navbar__link:hover {
+  color: var(--ifm-color-primary) !important;
+}
+
+.navbar__logo {
+  height: 32px;
+}
+
+/* Hero Section - Webex gradient background */
+.hero {
+  background: linear-gradient(135deg, #000000 0%, #0e0e0e 50%, #1a1a1a 100%);
+  padding: 80px 0 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(ellipse at 30% 20%, rgba(161, 98, 247, 0.3) 0%, transparent 50%),
+    radial-gradient(ellipse at 70% 80%, rgba(28, 198, 255, 0.2) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.hero--primary {
+  --ifm-hero-background-color: transparent;
+  --ifm-hero-text-color: #ffffff;
+}
+
+.hero__title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(90deg, #ffffff 0%, #e0e0e0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero__subtitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+/* Buttons - Webex pill style */
+.button {
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 12px 32px;
+  transition: all 0.2s ease;
+}
+
+.button--primary,
+.button--secondary {
+  background: linear-gradient(90deg, var(--webex-gradient-start) 0%, var(--webex-gradient-end) 100%);
+  border: none;
+  color: #ffffff !important;
+}
+
+.button--primary:hover,
+.button--secondary:hover {
+  background: linear-gradient(90deg, #8a4bd6 0%, #00a9d4 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(161, 98, 247, 0.3);
+}
+
+.button--outline {
+  background: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff !important;
+}
+
+.button--outline:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #ffffff;
+}
+
+/* Features Section */
+.features {
+  background: #ffffff;
+  padding: 80px 0;
+}
+
+[data-theme='dark'] .features {
+  background: #121212;
+}
+
+/* Cards - Webex style */
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+}
+
+[data-theme='dark'] .card {
+  background: #1a1a1a;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer - Webex black footer */
+.footer {
+  background: #000000 !important;
+  padding: 60px 0 40px;
+}
+
+.footer__title {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.footer__link-item {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.875rem;
+}
+
+.footer__link-item:hover {
+  color: var(--ifm-color-primary);
+}
+
+.footer__copyright {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.8125rem;
+}
+
+/* Sidebar */
+.menu__link {
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.menu__link--active {
+  background: linear-gradient(90deg, rgba(161, 98, 247, 0.1) 0%, rgba(28, 198, 255, 0.1) 100%);
+}
+
+/* Code Blocks */
+.prism-code {
+  border-radius: 12px;
+}
+
+/* Announcement Bar - Webex gradient */
+div[class*="announcementBar"] {
+  background: linear-gradient(90deg, var(--webex-gradient-start) 0%, var(--webex-gradient-end) 100%) !important;
+  font-weight: 500;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* Responsive */
+@media (max-width: 996px) {
+  .hero__title {
+    font-size: 2.5rem;
+  }
+
+  .hero__subtitle {
+    font-size: 1.25rem;
+  }
+}

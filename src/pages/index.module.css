@@ -1,0 +1,128 @@
+/**
+ * Ciyex EHR Homepage Styles - Webex.com exact copy
+ */
+
+.heroBanner {
+  padding: 100px 0 120px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #000000 0%, #0e0e0e 50%, #1a1a1a 100%);
+}
+
+.heroBanner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(ellipse at 30% 20%, rgba(161, 98, 247, 0.4) 0%, transparent 50%),
+    radial-gradient(ellipse at 70% 80%, rgba(28, 198, 255, 0.3) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.heroContent {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.badges {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.badge {
+  background: linear-gradient(90deg, #A162F7 0%, #1CC6FF 100%);
+  color: white;
+  padding: 0.5rem 1.25rem;
+  border-radius: 100px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.badgeFhir {
+  background: linear-gradient(90deg, #ff5c5c 0%, #ff8f8f 100%);
+  color: white;
+  padding: 0.5rem 1.25rem;
+  border-radius: 100px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.badgeHl7 {
+  background: linear-gradient(90deg, #A162F7 0%, #9d8df7 100%);
+  color: white;
+  padding: 0.5rem 1.25rem;
+  border-radius: 100px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.heroDescription {
+  font-size: 1.375rem;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 1.5rem auto 2.5rem;
+  max-width: 650px;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 60px 24px 80px;
+  }
+
+  .heroDescription {
+    font-size: 1.125rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.buttons :global(.button) {
+  padding: 14px 36px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 100px;
+  transition: all 0.3s ease;
+}
+
+.buttons :global(.button--secondary) {
+  background: linear-gradient(90deg, #A162F7 0%, #1CC6FF 100%);
+  border: none;
+  color: #ffffff;
+}
+
+.buttons :global(.button--secondary:hover) {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(161, 98, 247, 0.4);
+}
+
+.buttons :global(.button--outline) {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  color: #ffffff;
+}
+
+.buttons :global(.button--outline:hover) {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #ffffff;
+}
