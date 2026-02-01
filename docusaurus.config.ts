@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Ciyex EHR',
-  tagline: 'Open Source Electronic Health Records - Modern, Secure, Interoperable',
+  tagline: 'Open Source Public Health Infrastructure - Modern, Secure, Interoperable',
   favicon: 'img/Ciyex-favicon-new.png',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -45,6 +45,16 @@ const config: Config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/ciyex-org/ciyex-org-web/tree/main/',
+          versions: {
+            current: {
+              label: 'v1.0.0 (Unreleased)',
+              banner: 'unreleased',
+            },
+            '0.1.0': {
+              label: 'v0.1.0',
+              banner: 'none',
+            },
+          },
         },
         blog: {
           showReadingTime: true,
@@ -93,7 +103,7 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Documentation',
+          label: 'Docs',
         },
         { to: '/docs/api', label: 'API', position: 'left' },
         { to: '/blog', label: 'Blog', position: 'left' },
@@ -108,9 +118,34 @@ const config: Config = {
           ],
         },
         {
+          type: 'docsVersionDropdown',
+          position: 'right',
+        },
+        {
           href: 'https://github.com/ciyex-org/ciyex',
           label: 'GitHub',
           position: 'right',
+        },
+        {
+          type: 'dropdown',
+          label: 'Sign In',
+          position: 'right',
+          items: [
+            {
+              label: 'Provider',
+              to: '/signin/provider',
+            },
+            {
+              label: 'Patient',
+              to: '/signin/patient',
+            },
+          ],
+        },
+        {
+          to: '/signup',
+          label: "Sign up, it's Free",
+          position: 'right',
+          className: 'button button--primary navbar-signup-btn',
         },
       ],
     },

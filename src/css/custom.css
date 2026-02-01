@@ -128,18 +128,55 @@
   transition: all 0.2s ease;
 }
 
-.button--primary,
+.button--primary {
+  background: var(--webex-green) !important;
+  border: none;
+  color: #000000 !important;
+  /* Green usually goes with dark text, or check contrast. Webex green often has black text or white. Let's check contrast. Webex green #51E178 is light. Black text is better. */
+}
+
 .button--secondary {
   background: linear-gradient(90deg, var(--webex-gradient-start) 0%, var(--webex-gradient-end) 100%);
   border: none;
   color: #ffffff !important;
 }
 
-.button--primary:hover,
+.button--primary:hover {
+  background: #3bc662 !important;
+  /* Slightly darker green for hover */
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(81, 225, 120, 0.4);
+}
+
 .button--secondary:hover {
   background: linear-gradient(90deg, #8a4bd6 0%, #00a9d4 100%);
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(161, 98, 247, 0.3);
+}
+
+/* Navbar Sign Up Button - Black */
+.navbar-signup-btn {
+  background: #000000 !important;
+  /* Explicit black */
+  color: #ffffff !important;
+  border-radius: 100px;
+  padding: 8px 24px !important;
+  font-size: 0.875rem !important;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  margin-left: 16px;
+  display: flex !important;
+  align-items: center;
+  height: fit-content;
+  align-self: center;
+  line-height: 1.2;
+}
+
+.navbar-signup-btn:hover {
+  background: #333333 !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-1px);
+  text-decoration: none !important;
 }
 
 .button--outline {
@@ -182,29 +219,49 @@
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Footer - Webex black footer (Keep dark for contrast, typical in light themes too) */
+/* Footer - Webex.com exact color scheme with gradient */
 .footer {
-  background: #000000 !important;
+  background: linear-gradient(180deg, #000000 0%, #1a1a1a 100%) !important;
   padding: 60px 0 40px;
+  position: relative;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .footer__title {
   color: #ffffff;
   font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem;
 }
 
 .footer__link-item {
   color: rgba(255, 255, 255, 0.7);
   font-size: 0.875rem;
+  transition: color 0.2s ease;
 }
 
 .footer__link-item:hover {
-  color: var(--ifm-color-primary);
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .footer__copyright {
   color: rgba(255, 255, 255, 0.5);
   font-size: 0.8125rem;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* Sidebar */

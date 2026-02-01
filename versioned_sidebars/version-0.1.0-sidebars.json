@@ -1,0 +1,150 @@
+{
+  "tutorialSidebar": [
+    {
+      "type": "category",
+      "label": "📖 User Guide",
+      "collapsible": false,
+      "collapsed": false,
+      "items": [
+        "intro",
+        "quick-start",
+        {
+          "type": "category",
+          "label": "Core Features",
+          "items": [
+            "features/patient-management",
+            "features/appointments",
+            "features/clinical-docs",
+            "features/telehealth",
+            "features/messaging",
+            "features/documents",
+            "features/billing"
+          ]
+        },
+        "prerequisites"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "🛠️ Admin Guide",
+      "collapsible": true,
+      "collapsed": true,
+      "items": [
+        {
+          "type": "category",
+          "label": "Installation",
+          "items": [
+            "installation/local-setup",
+            "installation/docker-setup",
+            "installation/database-setup"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Deployment",
+          "items": [
+            "deployment/kubernetes",
+            "deployment/terraform",
+            "deployment/environments",
+            "deployment/scaling",
+            "deployment/cicd"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Operations",
+          "items": [
+            "operations/monitoring",
+            "operations/logging",
+            "operations/backup",
+            "operations/troubleshooting",
+            "operations/performance",
+            "operations/migrations"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Security & Compliance",
+          "items": [
+            "security/best-practices",
+            "security/compliance",
+            "security/audit-logging",
+            "security/encryption",
+            "security/authentication-security",
+            "security/authorization"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "💻 Developer Guide",
+      "collapsible": true,
+      "collapsed": true,
+      "items": [
+        "development/getting-started",
+        {
+          "type": "category",
+          "label": "Architecture",
+          "items": [
+            "architecture",
+            "architecture/backend-architecture",
+            "architecture/frontend-architecture",
+            "architecture/fhir-integration",
+            "architecture/deployment-models"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "API Reference",
+          "items": [
+            "api/rest-api",
+            "api/fhir-api",
+            "api/authentication",
+            "api/authentication-api",
+            "api/webhooks"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Development",
+          "items": [
+            "development/workflow",
+            "development/code-structure",
+            "development/code-style",
+            "development/testing",
+            "development/debugging",
+            "development/contributing"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Integrations",
+          "items": [
+            "integrations/keycloak",
+            "integrations/stripe",
+            "integrations/s3-storage",
+            "integrations/email",
+            "integrations/sms",
+            "integrations/openai",
+            "integrations/jitsi"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "📚 Reference",
+      "collapsible": true,
+      "collapsed": true,
+      "items": [
+        "reference/configuration",
+        "reference/environment-variables",
+        "reference/database-schema",
+        "reference/error-codes",
+        "reference/glossary",
+        "reference/faq"
+      ]
+    }
+  ]
+}

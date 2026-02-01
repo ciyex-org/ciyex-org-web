@@ -1,19 +1,108 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
-
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
-
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
-
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+engineering:
+  label: Engineering
+  permalink: /blog/tags/engineering
+  description: Technical deep dives and engineering practices.
+architecture:
+  label: Architecture
+  permalink: /blog/tags/architecture
+  description: System design and architecture.
+spring-boot:
+  label: Spring Boot
+  permalink: /blog/tags/spring-boot
+  description: Spring Boot framework.
+nextjs:
+  label: Next.js
+  permalink: /blog/tags/nextjs
+  description: Next.js framework.
+fhir:
+  label: FHIR
+  permalink: /blog/tags/fhir
+  description: Fast Healthcare Interoperability Resources.
+interoperability:
+  label: Interoperability
+  permalink: /blog/tags/interoperability
+  description: Healthcare data exchange standards.
+standards:
+  label: Standards
+  permalink: /blog/tags/standards
+  description: Industry standards.
+security:
+  label: Security
+  permalink: /blog/tags/security
+  description: Security best practices and features.
+hipaa:
+  label: HIPAA
+  permalink: /blog/tags/hipaa
+  description: HIPAA compliance.
+encryption:
+  label: Encryption
+  permalink: /blog/tags/encryption
+  description: Data encryption techniques.
+open-source:
+  label: Open Source
+  permalink: /blog/tags/open-source
+  description: Open Source philosophy and community.
+global-health:
+  label: Global Health
+  permalink: /blog/tags/global-health
+  description: Public health impact globally.
+mission:
+  label: Mission
+  permalink: /blog/tags/mission
+  description: Ciyex mission and vision.
+telehealth:
+  label: Telehealth
+  permalink: /blog/tags/telehealth
+  description: Virtual care features.
+features:
+  label: Features
+  permalink: /blog/tags/features
+  description: Platform features.
+healthcare:
+  label: Healthcare
+  permalink: /blog/tags/healthcare
+  description: Healthcare industry topics.
+development:
+  label: Development
+  permalink: /blog/tags/development
+  description: Development guides and resources.
+guide:
+  label: Guide
+  permalink: /blog/tags/guide
+  description: Step-by-step guides.
+contributing:
+  label: Contributing
+  permalink: /blog/tags/contributing
+  description: Contributing to Ciyex.
+patient-experience:
+  label: Patient Experience
+  permalink: /blog/tags/patient-experience
+  description: Improving patient care and engagement.
+portal:
+  label: Portal
+  permalink: /blog/tags/portal
+  description: Patient portal features.
+roadmap:
+  label: Roadmap
+  permalink: /blog/tags/roadmap
+  description: Future plans and upcoming features.
+ai:
+  label: AI
+  permalink: /blog/tags/ai
+  description: Artificial Intelligence in healthcare.
+future:
+  label: Future
+  permalink: /blog/tags/future
+  description: Future trends in healthcare tech.
+devops:
+  label: DevOps
+  permalink: /blog/tags/devops
+  description: Deployment and operations.
+kubernetes:
+  label: Kubernetes
+  permalink: /blog/tags/kubernetes
+  description: Container orchestration.
+deployment:
+  label: Deployment
+  permalink: /blog/tags/deployment
+  description: Deployment strategies.

@@ -25,7 +25,7 @@ function HomepageHeader() {
             </Heading>
             <p className="hero__subtitle">{siteConfig.tagline}</p>
             <p className={styles.heroDescription}>
-              A complete, modern Electronic Health Records system built for clinics,
+              Empowering Public Health initiatives globally. A complete, modern Electronic Health Records system built for <strong>patients</strong>, clinics,
               hospitals, and healthcare organizations. HIPAA-compliant, interoperable,
               and designed for the future of healthcare.
             </p>
