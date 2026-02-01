@@ -506,5 +506,5 @@ keycloak:
 
 - [Authentication Security](../security/authentication-security.md)
 - [Authorization](../security/authorization.md)
-- [User Management](../operations/user-management.md)
+- user management guide.
 - [Troubleshooting](../operations/troubleshooting.md)

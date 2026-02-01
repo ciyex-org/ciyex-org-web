@@ -534,7 +534,7 @@ private boolean shouldSendReminder(Invoice invoice) {
 
 ### Reminder Email Template
 
-**Subject**: Payment Reminder - Invoice #{invoiceNumber}
+**Subject**: Payment Reminder - Invoice `#{invoiceNumber}`
 
 **Body**:
 ```html
@@ -691,4 +691,4 @@ curl -X POST http://localhost:8080/api/billing/invoices/generate \
 - [Patient Management](../features/patient-management.md) - Patient records
 - [Appointments](../features/appointments.md) - Scheduling
 - [Stripe Integration](../integrations/stripe.md) - Payment setup
-- [Financial Reports](reports.md) - Detailed reporting
+- comprehensive reports. - Detailed reporting

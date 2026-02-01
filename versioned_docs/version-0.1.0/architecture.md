@@ -432,7 +432,7 @@ graph LR
 - **RTO** (Recovery Time Objective): 4 hours
 - **RPO** (Recovery Point Objective): 1 hour
 
-See [Backup & Restore](../operations/backup.md) for detailed procedures.
+See [Backup Strategies](operations/backup.md) for detailed procedures.
 
 ## Performance Considerations
 
@@ -456,7 +456,7 @@ See [Backup & Restore](../operations/backup.md) for detailed procedures.
 
 ## Next Steps
 
-- [Backend Architecture](backend-architecture.md) - Deep dive into Spring Boot
-- [Frontend Architecture](frontend-architecture.md) - Deep dive into Next.js
-- [FHIR Integration](fhir-integration.md) - HAPI FHIR details
-- [Deployment Models](deployment-models.md) - Compare deployment options
+- [Backend Architecture](architecture/backend-architecture.md) - Deep dive into Spring Boot
+- [Frontend Architecture](architecture/frontend-architecture.md) - Deep dive into Next.js
+- [FHIR Integration](architecture/fhir-integration.md) - HAPI FHIR details
+- [Deployment Models](architecture/deployment-models.md) - Compare deployment options

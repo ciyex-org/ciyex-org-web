@@ -606,6 +606,6 @@ echo $STRIPE_WEBHOOK_SECRET
 ## Next Steps
 
 - [Billing](../features/billing.md) - Billing features
-- [Patient Portal](../features/patient-portal.md) - Patient payments
+- Patient Portal. - Patient payments
 - [Security](../security/best-practices.md) - Payment security
 - [Monitoring](../operations/monitoring.md) - Payment monitoring

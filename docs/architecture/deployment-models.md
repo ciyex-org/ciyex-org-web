@@ -453,7 +453,7 @@ The multi-tenant model is suitable for development environments or non-healthcar
 
 ## Next Steps
 
-- [Kubernetes Deployment](kubernetes.md) - Deploy single-schema instances
-- [Security Best Practices](../security/best-practices.md) - Secure your deployment
-- [Monitoring](../operations/monitoring.md) - Monitor multiple instances
-- [Scaling](scaling.md) - Scale individual practices
+- [Kubernetes Deployment](../deployment/kubernetes.md) - Detailed K8s guide
+- [Infrastructure as Code](../deployment/terraform.md) - Terraform examples
+- [Backup Strategy](../operations/backup.md) - Data protection
+- [Scaling Guide](../deployment/scaling.md) - Handling loadividual practices

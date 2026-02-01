@@ -652,4 +652,4 @@ const handleClick = useCallback(() => {
 - [Testing Guide](testing.md) - Detailed testing practices
 - [API Documentation](../api/rest-api.md) - API reference
 - [Contributing](contributing.md) - Contribution guidelines
-- [Code Review](code-review.md) - Review checklist
+- [Code Review](contributing.md) - Review checklist

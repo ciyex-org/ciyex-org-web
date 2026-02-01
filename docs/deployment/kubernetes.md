@@ -675,5 +675,5 @@ kubectl logs -n ingress-nginx deployment/ingress-nginx-controller
 
 - [Terraform Modules](terraform.md) - Detailed Terraform configuration
 - [CI/CD Pipeline](cicd.md) - Automated deployments
-- [Backup & Restore](backup-restore.md) - Disaster recovery
+- [Backup & Restore](../operations/backup.md) - Disaster recovery
 - [Monitoring](../operations/monitoring.md) - Prometheus & Grafana setup

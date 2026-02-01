@@ -488,7 +488,7 @@ pnpm run dev
 
 ## Next Steps
 
-- [Environment Configuration](environment-config.md) - Configure environment variables
+- [Environment Configuration](../reference/environment-variables.md) - Configure environment variables
 - [Database Setup](database-setup.md) - Advanced database configuration
 - [Development Workflow](../development/workflow.md) - Git workflow and best practices
 - [Testing](../development/testing.md) - Run tests

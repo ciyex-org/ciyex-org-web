@@ -725,4 +725,4 @@ spec:
 - [Troubleshooting](troubleshooting.md) - Debugging issues
 - [Backup & Restore](backup.md) - Data protection
 - [Performance Tuning](performance.md) - Optimization
-- [Security Monitoring](../security/monitoring.md) - Security events
+- Security Monitoring. - Security events

@@ -586,6 +586,6 @@ kubectl exec -i postgres-0 -n ciyex-prod -- \
 ## Next Steps
 
 - [Monitoring](monitoring.md) - Monitor backup jobs
-- [Disaster Recovery](disaster-recovery.md) - DR planning
+- disaster discovery steps. - DR planning
 - [Security](../security/best-practices.md) - Backup security
 - [Compliance](../security/compliance.md) - HIPAA compliance

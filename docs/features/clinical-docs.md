@@ -646,4 +646,4 @@ curl -H "Authorization: Bearer $TOKEN" \
 - [Patient Management](patient-management.md) - Patient records
 - [Appointments](appointments.md) - Scheduling encounters
 - [Billing](billing.md) - Billing for encounters
-- [E-Prescribing](../integrations/eprescribe.md) - Electronic prescriptions
+- e-prescribing features. - Electronic prescriptions

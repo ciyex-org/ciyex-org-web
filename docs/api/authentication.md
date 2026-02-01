@@ -564,7 +564,7 @@ jwt decode $ACCESS_TOKEN
 
 ## Next Steps
 
-- [Keycloak Integration](keycloak.md) - Keycloak setup
-- [Security Best Practices](../security/best-practices.md) - Security guidelines
-- [REST API](../api/rest-api.md) - API reference
-- [Frontend Development](../development/frontend.md) - Frontend auth
+- [Keycloak Integration](../integrations/keycloak.md) - Admin guide for Keycloak
+- [Security Best Practices](../security/best-practices.md) - Security checklist
+- [Backend Architecture](../architecture/backend-architecture.md) - Implementation details
+- [Frontend Architecture](../architecture/frontend-architecture.md) - Client detailsnd auth
