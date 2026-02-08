@@ -10,7 +10,7 @@ Running Ciyex EHR using Docker Compose.
 
 1. **Clone Repo**:
    ```bash
-   git clone https://github.com/ciyex/ciyex.git
+   git clone https://github.com/ciyex-org/ciyex.git
    cd ciyex
    ```
 
