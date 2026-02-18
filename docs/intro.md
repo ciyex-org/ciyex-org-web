@@ -1,6 +1,6 @@
 # Ciyex EHR User Guide
 
-Welcome to the **Ciyex Electronic Health Record (EHR)**. This guide is designed to help doctors, nurses, and administrative staff efficiently use Ciyex to deliver excellent patient care.
+Welcome to the **Ciyex Electronic Health Record (EHR)**, built by Ciyex Organization, a **501(c)(3) nonprofit**. This guide is designed to help doctors, nurses, and administrative staff efficiently use Ciyex to deliver excellent patient care.
 
 ## What is Ciyex EHR?
 

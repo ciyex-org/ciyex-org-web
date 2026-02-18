@@ -7,7 +7,7 @@ Healthcare software has been stuck in the past for too long. Proprietary, expens
 **Ciyex EHR** changes that.
 
 ## Our Mission
-We believe that **healthcare technology should be accessible to everyone**. Whether you are a small clinic in rural America or a large NGO operating in developing nations, you deserve world-class software to manage patient care.
+We believe that **healthcare technology should be accessible to everyone**. As a **501(c)(3) nonprofit organization**, Ciyex is committed to building open source healthcare infrastructure that serves the public good. Whether you are a small clinic in rural America or a large NGO operating in developing nations, you deserve world-class software to manage patient care.
 
 ## Why Open Source?
 1.  **Transparency**: No hidden code. No hidden data collection.

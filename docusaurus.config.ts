@@ -85,8 +85,8 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     announcementBar: {
-      id: 'oss_announcement',
-      content: '⭐️ Ciyex EHR is now open source! <a target="_blank" rel="noopener noreferrer" href="https://github.com/ciyex-org/ciyex">Star us on GitHub</a>',
+      id: 'nonprofit_announcement',
+      content: 'Ciyex is now a 501(c)(3) nonprofit organization! Open source healthcare for everyone. <a target="_blank" rel="noopener noreferrer" href="https://github.com/ciyex-org/ciyex">Star us on GitHub</a>',
       backgroundColor: '#6b5ce7',
       textColor: '#ffffff',
       isCloseable: true,
@@ -186,7 +186,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Ciyex Organization. Open Source EHR - Licensed under AGPL-3.0.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Ciyex Organization, a 501(c)(3) nonprofit. Open Source EHR - Licensed under AGPL-3.0.`,
     },
     prism: {
       theme: prismThemes.github,
