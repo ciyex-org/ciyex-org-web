@@ -25,6 +25,8 @@ const sidebars: SidebarsConfig = {
             'features/messaging',
             'features/documents',
             'features/billing',
+            'features/medical-codes',
+            'features/ciyex-hub',
           ],
         },
         'prerequisites',

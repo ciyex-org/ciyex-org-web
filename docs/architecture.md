@@ -8,455 +8,384 @@ This document provides a comprehensive overview of the Ciyex EHR system architec
 graph TB
     subgraph "Client Layer"
         WEB[Web Browser]
-        MOBILE[Mobile App<br/>Future]
+        PORTAL[Patient Portal]
     end
-    
+
     subgraph "Load Balancing & Ingress"
         LB[Load Balancer<br/>NGINX Ingress]
         SSL[SSL/TLS<br/>Cert-Manager]
     end
-    
+
     subgraph "Application Layer"
-        UI1[Next.js UI<br/>Instance 1]
-        UI2[Next.js UI<br/>Instance 2]
-        API1[Spring Boot API<br/>Instance 1]
-        API2[Spring Boot API<br/>Instance 2]
-        FHIR1[HAPI FHIR<br/>Instance 1]
-        FHIR2[HAPI FHIR<br/>Instance 2]
+        UI[Next.js EHR-UI<br/>React 19 / Next.js 16]
+        API[ciyex-api<br/>Spring Boot 4.0.1]
+        MKT[ciyex-marketplace<br/>Spring Boot 4.0.1]
+        CODES[ciyex-codes<br/>Spring Boot 4.0.1]
+        COMM[ciyex-comm<br/>Spring Boot 4.0.1]
     end
-    
-    subgraph "Authentication & Authorization"
-        KC[Keycloak<br/>Aran ID]
+
+    subgraph "FHIR Server"
+        FHIR[HAPI FHIR Server<br/>v8.2.1 R4]
     end
-    
+
+    subgraph "Authentication & Config"
+        KC[Keycloak<br/>Aran ID<br/>dev.aran.me]
+        CONFIG[Spring Cloud<br/>Config Server]
+        VAULT[HashiCorp Vault<br/>Secrets Management]
+    end
+
     subgraph "Data Layer"
-        PG[(PostgreSQL<br/>Primary)]
-        PG_REPLICA[(PostgreSQL<br/>Replica)]
+        PG[(PostgreSQL 17<br/>Primary)]
     end
-    
+
     subgraph "Storage & Cache"
         S3[AWS S3<br/>Documents]
-        CACHE[Redis<br/>Cache]
+        CAFFEINE[Caffeine<br/>In-Memory Cache]
     end
-    
+
     subgraph "External Services"
         STRIPE[Stripe<br/>Payments]
-        JITSI[Jitsi<br/>Video]
+        JITSI[Jitsi<br/>Telehealth Video]
         SMTP[SMTP<br/>Email]
         SMS[Twilio/Telnyx<br/>SMS]
         AI[Azure OpenAI<br/>AI Features]
     end
-    
-    subgraph "Monitoring & Logging"
-        PROM[Prometheus<br/>Metrics]
-        GRAF[Grafana<br/>Dashboards]
-        LOKI[Loki<br/>Logs]
+
+    subgraph "Deployment"
+        ARGOCD[ArgoCD<br/>GitOps CD]
+        GHA[GitHub Actions<br/>CI]
+        K8S[Kubernetes<br/>3-Cluster]
     end
-    
-    subgraph "Backup & DR"
-        VELERO[Velero<br/>K8s Backup]
-        LONGHORN[Longhorn<br/>Storage]
-    end
-    
+
     WEB --> LB
-    MOBILE -.-> LB
+    PORTAL --> LB
     LB --> SSL
-    SSL --> UI1
-    SSL --> UI2
-    UI1 --> API1
-    UI2 --> API2
-    UI1 --> FHIR1
-    UI2 --> FHIR2
-    API1 --> KC
-    API2 --> KC
-    FHIR1 --> KC
-    FHIR2 --> KC
-    API1 --> PG
-    API2 --> PG
-    FHIR1 --> PG
-    FHIR2 --> PG
-    PG --> PG_REPLICA
-    API1 --> S3
-    API2 --> S3
-    API1 --> CACHE
-    API2 --> CACHE
-    API1 --> STRIPE
-    API1 --> JITSI
-    API1 --> SMTP
-    API1 --> SMS
-    API1 --> AI
-    PROM --> API1
-    PROM --> API2
-    PROM --> FHIR1
-    GRAF --> PROM
-    LOKI --> UI1
-    LOKI --> API1
-    VELERO --> LONGHORN
-```
-
-## Component Overview
-
-### Frontend Layer
-
-#### Next.js UI Application
-- **Technology**: Next.js 16, React 18, Tailwind CSS 4.0
-- **Features**:
-  - Server-side rendering (SSR) for better SEO
-  - Static site generation (SSG) for performance
-  - API routes for backend proxy
-  - Responsive design for all devices
-- **Key Components**:
-  - Patient management interface
-  - Appointment scheduler
-  - Clinical documentation forms
-  - Telehealth video interface
-  - Billing and payments UI
-
-### Backend Layer
-
-#### Spring Boot API
-- **Technology**: Spring Boot 4.0, Java 21
-- **Architecture Pattern**: Layered architecture
-  - **Controllers**: REST endpoints
-  - **Services**: Business logic
-  - **Repositories**: Data access
-  - **Entities**: Domain models
-- **Key Features**:
-  - RESTful API
-  - OAuth2 resource server
-  - Multi-schema support
-  - Audit logging
-  - File upload/download
-  - Payment processing
-  - Email/SMS notifications
-
-#### HAPI FHIR Server
-- **Technology**: HAPI FHIR 8.2.1 (R4)
-- **Features**:
-  - Full FHIR R4 compliance
-  - Multi-tenant partitioning
-  - Custom interceptors
-  - SMART on FHIR support
-- **Resources Supported**:
-  - Patient, Practitioner, Organization
-  - Encounter, Observation, Condition
-  - MedicationRequest, AllergyIntolerance
-  - Appointment, Schedule
-  - And more...
-
-### Authentication & Authorization
-
-#### Keycloak (Aran ID)
-- **Features**:
-  - OAuth2/OIDC provider
-  - Single Sign-On (SSO)
-  - User federation
-  - Group-based access control
-  - Multi-factor authentication
-- **Integration**:
-  - JWT token validation
-  - Role and group mapping
-  - Custom claims support
-
-### Data Layer
-
-#### PostgreSQL Database
-- **Version**: PostgreSQL 15+
-- **Architecture**: Multi-schema
-  - `public` schema: Shared configuration
-  - `practice_1`, `practice_2`, etc.: Practice-specific data
-- **Features**:
-  - ACID compliance
-  - Row-level security
-  - Full-text search
-  - JSON/JSONB support
-- **Backup Strategy**:
-  - Continuous WAL archiving
-  - Daily full backups
-  - Point-in-time recovery
-
-#### Redis Cache
-- **Purpose**: Session management, caching
-- **Use Cases**:
-  - API response caching
-  - Rate limiting
-  - Real-time features
-
-### Storage
-
-#### AWS S3
-- **Purpose**: Document storage
-- **Stored Items**:
-  - Patient documents
-  - Medical images
-  - Lab reports
-  - Message attachments
-  - Backup archives
-
-#### Longhorn
-- **Purpose**: Persistent volumes for Kubernetes
-- **Features**:
-  - Distributed block storage
-  - Snapshot and backup
-  - Disaster recovery
-  - Volume replication
-
-## Deployment Architecture
-
-### Single-Schema Per Instance (Recommended)
-
-```mermaid
-graph TB
-    subgraph "Practice 1 Deployment"
-        UI1[Next.js UI<br/>practice1.example.com]
-        API1[Spring Boot API<br/>api-practice1.example.com]
-        FHIR1[HAPI FHIR<br/>fhir-practice1.example.com]
-    end
-    
-    subgraph "Practice 2 Deployment"
-        UI2[Next.js UI<br/>practice2.example.com]
-        API2[Spring Boot API<br/>api-practice2.example.com]
-        FHIR2[HAPI FHIR<br/>fhir-practice2.example.com]
-    end
-    
-    subgraph "Shared Services"
-        KC[Keycloak]
-        PG[(PostgreSQL)]
-        S3[AWS S3]
-    end
-    
-    UI1 --> API1
-    UI1 --> FHIR1
-    UI2 --> API2
-    UI2 --> FHIR2
-    API1 --> KC
-    API2 --> KC
-    API1 --> PG
-    API2 --> PG
-    FHIR1 --> PG
-    FHIR2 --> PG
-    API1 --> S3
-    API2 --> S3
-    
-    style UI1 fill:#e1f5ff
-    style API1 fill:#e1f5ff
-    style FHIR1 fill:#e1f5ff
-    style UI2 fill:#fff3e0
-    style API2 fill:#fff3e0
-    style FHIR2 fill:#fff3e0
-```
-
-**Benefits**:
-- Complete process isolation
-- Independent scaling per practice
-- Simpler troubleshooting
-- Better security and compliance
-- No tenant header required
-
-### Multi-Tenant (Legacy)
-
-```mermaid
-graph TB
-    subgraph "Shared Deployment"
-        UI[Next.js UI<br/>app.example.com]
-        API[Spring Boot API<br/>api.example.com]
-        FHIR[HAPI FHIR<br/>fhir.example.com]
-    end
-    
-    subgraph "Shared Services"
-        KC[Keycloak]
-        PG[(PostgreSQL)]
-    end
-    
-    UI -->|X-Tenant-Name: practice1| API
-    UI -->|X-Tenant-Name: practice2| API
+    SSL --> UI
+    UI --> API
+    UI --> MKT
+    API --> FHIR
+    API --> CODES
+    API --> COMM
     API --> KC
-    API -->|SET search_path| PG
+    MKT --> KC
+    API --> PG
+    MKT --> PG
+    CODES --> PG
     FHIR --> PG
+    API --> CONFIG
+    MKT --> CONFIG
+    CONFIG --> VAULT
+    API --> S3
+    API --> CAFFEINE
+    MKT --> STRIPE
+    API --> JITSI
+    API --> SMTP
+    API --> SMS
+    API --> AI
+    GHA --> ARGOCD
+    ARGOCD --> K8S
 ```
 
-**Drawbacks**:
-- Shared resources and memory
-- Complex tenant resolution
-- Header-based routing risk
-- Harder to troubleshoot
+## Microservice Architecture
 
-> See [Deployment Models](deployment-models.md) for detailed comparison.
+Ciyex EHR is composed of **5 backend services** that communicate via REST APIs:
 
-## Data Flow
+| Service | Port | Purpose | Database |
+|---------|------|---------|----------|
+| **ciyex-api** | 8080 | Core EHR — patients, encounters, scheduling, billing, FHIR | `ask_ciya_dev` |
+| **ciyex-marketplace** | 8081 | App marketplace — catalog, subscriptions, Stripe billing, vendor webhooks | `marketplace` |
+| **ciyex-codes** | 8084 | Medical codes — ICD-10, CPT, HCPCS, CDT, SNOMED, LOINC, NDC | `ciyex_codes` |
+| **ciyex-comm** | 8082 | Communications — email, SMS, fax, notifications | `ciyex_comm` |
+| **HAPI FHIR** | 8090 | FHIR R4 server — clinical resource storage | `hapi_fhir` |
 
-### Patient Creation Flow
+### ciyex-api (Core EHR)
 
-```mermaid
-sequenceDiagram
-    participant UI as Next.js UI
-    participant API as Spring Boot API
-    participant KC as Keycloak
-    participant DB as PostgreSQL
-    participant FHIR as HAPI FHIR
-    
-    UI->>KC: Login (username/password)
-    KC->>UI: JWT Token
-    
-    UI->>API: POST /api/patients (JWT)
-    API->>KC: Validate JWT
-    KC->>API: Token Valid + Claims
-    API->>DB: INSERT INTO practice_1.patients
-    DB->>API: Patient Created
-    API->>FHIR: POST /fhir/Patient
-    FHIR->>DB: Store FHIR Resource
-    DB->>FHIR: Success
-    FHIR->>API: FHIR Patient ID
-    API->>UI: Patient Created Response
-```
+The primary backend service with **67 REST controllers** covering:
 
-### Appointment Scheduling Flow
+- **Patient Management** — CRUD, demographics, search, medical history
+- **Encounters** — Clinical documentation, SOAP notes, coding
+- **Scheduling** — Provider availability, appointments, calendar
+- **Billing** — Invoices, claims, payments, fee schedules
+- **FHIR** — Generic FHIR resource controller (configuration-driven, no per-resource code)
+- **Marketplace Integration** — App installations, SMART on FHIR, CDS Hooks
+- **Patient Portal** — Self-registration, approvals, patient-facing APIs
+- **Settings** — Tab/field configuration, menu customization, practice types
+- **Eligibility** — Insurance eligibility verification (EDI)
 
-```mermaid
-sequenceDiagram
-    participant UI as Next.js UI
-    participant API as Spring Boot API
-    participant DB as PostgreSQL
-    participant EMAIL as SMTP Service
-    participant SMS as Twilio/Telnyx
-    
-    UI->>API: POST /api/appointments
-    API->>DB: Check provider availability
-    DB->>API: Available slots
-    API->>DB: INSERT appointment
-    DB->>API: Appointment created
-    API->>EMAIL: Send confirmation email
-    API->>SMS: Send SMS reminder
-    API->>UI: Appointment confirmed
-```
+### ciyex-marketplace (Hub)
 
-## Security Architecture
+The app marketplace service managing:
+
+- **App Catalog** — 10+ apps with categories, pricing plans, media, reviews
+- **Subscriptions** — Create, cancel, pause with Stripe billing
+- **Vendor Webhooks** — HMAC-SHA256 signed event delivery
+- **EHR Webhooks** — Subscription lifecycle sync to ciyex-api
+- **Developer Portal** — Vendor registration, app submissions, API keys
+- **Usage Metering** — Track per-org app usage for billing
+
+### ciyex-codes (Medical Codes)
+
+Reference code library:
+
+- **ICD-10** — 98,000+ diagnosis codes
+- **CPT** — AMA-licensed procedure codes (per-org toggle)
+- **HCPCS** — 8,300+ codes
+- **CDT** — 683 dental codes
+- **SNOMED CT, LOINC, NDC** — Additional code systems
+- **NCCI PTP Edits** — Claim validation rules
+- **Fee Schedules** — Per-org + payer pricing
+
+## Frontend Layer
+
+### Next.js EHR-UI
+
+- **Technology**: Next.js 16.1.6, React 19.2.4, TypeScript
+- **Styling**: Tailwind CSS 4.1.18 with custom components
+- **Icons**: Lucide React
+- **Charts**: ApexCharts
+- **Calendar**: FullCalendar 6.1.20
+- **Video**: Jitsi Meet (@jitsi/react-sdk)
+- **State**: React Context (SidebarContext, ThemeContext, MenuContext, PluginRegistryContext)
+
+**Key Pages**:
+- `/dashboard` — Consultation metrics, statistics, recent activity
+- `/patients` — Patient list with search, CRUD
+- `/patients/[id]` — Dynamic patient chart with FHIR tabs
+- `/appointments` — FlowBoard appointment management
+- `/all-encounters` — Encounter list with reports
+- `/hub` — Ciyex Hub app marketplace browser
+- `/hub/installed` — Installed apps management
+- `/developer` — Developer portal with API keys, submissions, analytics
+- `/settings` — Configuration-driven settings pages
+- `/telehealth/[appointmentId]` — Jitsi video consultations
+- `/messaging` — Secure provider-patient messaging
+- `/patients/claim-management` — Claims dashboard
+- `/patients/codes` — Medical code browser
+- `/inventory-management` — Inventory, orders, suppliers
+
+**Plugin Architecture**:
+- Named slots for app UI extensions (`patient-chart:tab`, `patient-chart:banner-alert`, `encounter:toolbar`)
+- `PluginRegistryContext` manages plugin contributions
+- `NativePluginLoader` loads bundled plugins at startup
+
+## Authentication & Authorization
+
+### Keycloak (Aran ID)
+
+- **Server**: `https://dev.aran.me` (dev), production via Vault
+- **Realm**: `ciyex`
+- **Protocol**: OAuth2 + OpenID Connect with PKCE
+- **JWT Claims**: `organization` (org alias), `realm_access.roles`, `resource_access`
+- **Roles**: `ADMIN`, `PROVIDER`, `PATIENT`
 
 ### Authentication Flow
 
 ```mermaid
 sequenceDiagram
     participant User
-    participant UI as Next.js UI
+    participant UI as EHR-UI
     participant KC as Keycloak
-    participant API as Spring Boot API
-    
-    User->>UI: Enter credentials
-    UI->>KC: POST /realms/master/protocol/openid-connect/token
-    KC->>KC: Validate credentials
-    KC->>UI: Access Token + Refresh Token
-    UI->>UI: Store tokens in localStorage
-    UI->>API: API Request (Bearer Token)
-    API->>KC: Validate token (JWK)
-    KC->>API: Token valid + user info
-    API->>API: Check permissions
-    API->>UI: Response
+    participant API as ciyex-api
+
+    User->>UI: Click Sign In
+    UI->>KC: Redirect with PKCE challenge
+    KC->>KC: Authenticate user
+    KC->>UI: Authorization code → /callback
+    UI->>API: POST /api/auth/keycloak-callback (code + verifier)
+    API->>KC: Exchange code for tokens
+    KC->>API: Access Token + Refresh Token
+    API->>UI: JWT (contains org, roles, claims)
+    UI->>UI: Store JWT in localStorage
+    UI->>UI: Navigate to /select-practice (if multi-org)
+    UI->>API: Subsequent requests with Bearer token + X-Org-Alias header
 ```
 
-### Authorization Layers
+### Authorization Rules (SecurityConfig)
 
-1. **Network Layer**: Kubernetes NetworkPolicies
-2. **Ingress Layer**: NGINX authentication
-3. **Application Layer**: Spring Security
-4. **Data Layer**: PostgreSQL row-level security
+```
+Public (permitAll):
+  /api/auth/**           Authentication endpoints
+  /api/public/**         Public resources (SMART config, etc.)
+  /api/portal/auth/**    Portal login
+  /api/portal/approvals/** Patient approvals
+  /api/internal/**       Service-to-service webhooks (HMAC verified)
+  /actuator/**           Health checks
 
-## Monitoring & Observability
+Role-Based:
+  /api/admin/**          → ADMIN only
+  /api/provider/**       → PROVIDER or ADMIN
+  /api/portal/**         → PATIENT, PROVIDER, or ADMIN
 
-### Metrics Collection
+Authenticated:
+  /api/app-installations/** → Any authenticated user
+  /api/smart-launch/**      → Any authenticated user
+  /api/cds-hooks/**         → Any authenticated user
+  Everything else           → Authenticated
+```
+
+## Multi-Tenancy
+
+Ciyex uses **org_alias-based multi-tenancy** with a single shared database:
+
+```mermaid
+sequenceDiagram
+    participant UI as EHR-UI
+    participant API as ciyex-api
+    participant RC as RequestContext
+    participant DB as PostgreSQL
+
+    UI->>API: Request + JWT + X-Org-Alias header
+    API->>API: RequestContextInterceptor extracts org from JWT
+    API->>RC: Set ThreadLocal (orgName, authToken, superAdmin)
+    API->>DB: Query with org_alias filter
+    DB->>API: Org-scoped results
+    API->>RC: Clear ThreadLocal (afterCompletion)
+```
+
+- **RequestContext**: ThreadLocal storing `orgName`, `authToken`, `superAdmin` per request
+- **RequestContextInterceptor**: Extracts org from JWT `organization` claim
+- **Super Admin**: Can override org via `X-Org-Alias` header (configured via `ciyex.super-admin.orgs`)
+- **FHIR Partitioning**: `FhirTenantInterceptor` tags FHIR resources with tenant system
+
+## Configuration Management
+
+### Spring Cloud Config Server
+
+All services fetch configuration from a centralized Config Server:
+
+```
+Config Server (https://config.apps-prod.us-east.in.hinisoft.com)
+    └── Git Backend (github.com/qiaben/app-config.git)
+        ├── ciyex/
+        │   ├── application.yml         (common config)
+        │   └── application-dev.yml     (dev overrides)
+        ├── ciyex-marketplace/
+        │   ├── application.yml
+        │   └── application-dev.yml
+        └── ciyex-codes/
+            ├── application.yml
+            └── application-dev.yml
+```
+
+### HashiCorp Vault
+
+Secrets (database credentials, API keys) are stored in Vault:
+
+- **Auth**: Kubernetes service account authentication
+- **KV Engine**: `secret/ciyex`, `secret/ciyex-marketplace`
+- **Dev Fallback**: K8s Secrets when Vault auth isn't configured
+
+## Data Layer
+
+### PostgreSQL 17
+
+- **Architecture**: Single database per service, org_alias column for tenant isolation
+- **Migrations**: Flyway versioned migrations (ciyex-api has 53 migrations)
+- **JSONB**: Extensively used for flexible schemas (config, extension_points, field_config)
+- **Caching**: Caffeine in-memory cache (not Redis) for code lookups and config
+
+### Database Schema Highlights
+
+**ciyex-api** key tables:
+- `menu`, `menu_item`, `menu_org_override` — Dynamic sidebar navigation
+- `tab_config`, `tab_field_config` — FHIR-mapped form configuration
+- `custom_tab` — Org-specific patient chart tabs
+- `practice_type`, `specialty` — Practice type definitions
+- `app_installations` — Marketplace app tracking
+- `app_usage_events`, `app_usage_daily` — App usage analytics
+- `app_launch_logs` — HIPAA audit trail for app launches
+- `eligibility_transactions` — Insurance eligibility records
+
+**ciyex-marketplace** key tables:
+- `apps`, `pricing_plans`, `app_media`, `app_certifications` — App catalog
+- `vendors`, `vendor_api_keys` — Developer management
+- `practices`, `subscriptions` — Org subscriptions
+- `reviews`, `ratings` — App reviews
+- `vendor_webhooks`, `webhook_delivery_logs` — Webhook management
+- `metering_events` — Usage-based billing
+
+## Deployment Architecture
+
+### Kubernetes (3-Cluster)
+
+| Cluster | Purpose | Services |
+|---------|---------|----------|
+| **kube-prod** | Production + ArgoCD + Vault | ArgoCD, Vault, Config Server |
+| **kube-dev** | Development workloads | ciyex-api, marketplace, EHR-UI, PostgreSQL |
+| **kube-stage** | Staging/QA | Pre-production testing |
+
+### CI/CD Pipeline
 
 ```mermaid
 graph LR
-    APP[Applications] -->|Metrics| PROM[Prometheus]
-    PROM -->|Query| GRAF[Grafana]
-    PROM -->|Alerts| AM[Alertmanager]
-    AM -->|Notifications| TEAMS[MS Teams]
-    AM -->|Notifications| EMAIL[Email]
+    DEV[Developer Push] --> GHA[GitHub Actions]
+    GHA --> BUILD[Build & Test]
+    BUILD --> DOCKER[Docker Image]
+    DOCKER --> REG[Container Registry]
+    REG --> ARGOCD[ArgoCD Sync]
+    ARGOCD --> K8S[Kubernetes Deploy]
 ```
 
-**Metrics Collected**:
-- HTTP request rates and latencies
-- Database connection pool stats
-- JVM memory and GC metrics
-- Custom business metrics
+- **CI**: GitHub Actions builds Docker images on push
+- **CD**: ArgoCD watches `qiaben-kube-deployment` repo for manifest changes
+- **GitOps**: All Kubernetes manifests stored in Git with Kustomize overlays
 
-### Logging Architecture
+### Deployment Manifests
 
-```mermaid
-graph LR
-    APP[Applications] -->|Logs| LOKI[Loki]
-    LOKI -->|Query| GRAF[Grafana]
-    APP -->|Structured Logs| JSON[JSON Format]
+```
+qiaben-kube-deployment/
+├── apps/
+│   ├── ciyex/                    # ciyex-api
+│   │   ├── base/                 # Base K8s manifests
+│   │   └── overlays/
+│   │       ├── dev/              # Dev overrides (1 replica, dev secrets)
+│   │       ├── staging/
+│   │       └── prod/
+│   ├── ciyex-marketplace/
+│   ├── ciyex-ehr-ui/
+│   ├── ciyex-codes/
+│   └── ciyex-comm/
+└── argocd/                       # ArgoCD Application manifests
 ```
 
-**Log Levels**:
-- ERROR: Application errors
-- WARN: Warning conditions
-- INFO: General information
-- DEBUG: Detailed debugging (dev only)
+## Security Architecture
 
-## Scalability
+### Defense Layers
 
-### Horizontal Scaling
+1. **Network**: Kubernetes NetworkPolicies, NGINX Ingress
+2. **TLS**: Cert-Manager auto-provisioned certificates
+3. **Authentication**: Keycloak OAuth2 + JWT with PKCE
+4. **Authorization**: Spring Security RBAC with role extraction from JWT
+5. **Multi-Tenancy**: RequestContext + org_alias isolation
+6. **FHIR**: Tenant-tagged resources with partition validation
+7. **Webhooks**: HMAC-SHA256 signature verification
+8. **Secrets**: HashiCorp Vault with Kubernetes auth
 
-- **Frontend**: Scale UI pods based on CPU/memory
-- **Backend**: Scale API pods based on request rate
-- **FHIR**: Scale FHIR pods based on FHIR API usage
-- **Database**: Read replicas for read-heavy workloads
+### HIPAA Compliance
 
-### Vertical Scaling
+- Audit logging for all data access and app launches
+- Encryption in transit (TLS 1.3) and at rest (PostgreSQL)
+- Role-based access control with principle of least privilege
+- 6-year data retention for compliance
 
-- Increase pod resource limits
-- Upgrade database instance size
-- Optimize JVM heap settings
-
-## Disaster Recovery
-
-### Backup Strategy
-
-1. **Database Backups**:
-   - Continuous WAL archiving to S3
-   - Daily full backups
-   - 30-day retention
-
-2. **Kubernetes Backups**:
-   - Velero daily backups
-   - Includes all resources and PVCs
-   - 7-day retention
-
-3. **Document Backups**:
-   - S3 versioning enabled
-   - Cross-region replication
-
-### Recovery Procedures
-
-- **RTO** (Recovery Time Objective): 4 hours
-- **RPO** (Recovery Point Objective): 1 hour
-
-See [Backup Strategies](operations/backup.md) for detailed procedures.
-
-## Performance Considerations
-
-### Database Optimization
-- Connection pooling (HikariCP)
-- Query optimization and indexing
-- Partitioning for large tables
-- Read replicas for reporting
+## Performance
 
 ### Caching Strategy
-- Redis for session data
-- Application-level caching (Caffeine)
-- HTTP caching headers
-- CDN for static assets
 
-### API Performance
-- Async processing for long operations
-- Pagination for large result sets
-- Compression (gzip)
-- Rate limiting
+- **Caffeine** (in-memory) for frequently accessed data (code lookups, tab configs, menu data)
+- **HTTP caching headers** for static assets (CDN)
+- **FHIR client caching** per partition to avoid re-creating clients
+
+### Database Optimization
+
+- **HikariCP** connection pooling
+- **Flyway** managed schema migrations
+- **JSONB indexing** for config and metadata columns
+- **Pagination** for all list endpoints
 
 ## Next Steps
 
-- [Backend Architecture](architecture/backend-architecture.md) - Deep dive into Spring Boot
-- [Frontend Architecture](architecture/frontend-architecture.md)
-- [FHIR Integration](architecture/fhir-integration.md)
-- [Deployment Models](architecture/deployment-models.md) - Compare deployment options
+- [Backend Architecture](architecture/backend-architecture.md) — Deep dive into Spring Boot patterns
+- [Frontend Architecture](architecture/frontend-architecture.md) — Next.js and plugin system
+- [FHIR Integration](architecture/fhir-integration.md) — Generic FHIR resource pattern
+- [Deployment Models](architecture/deployment-models.md) — Compare deployment options

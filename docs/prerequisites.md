@@ -9,9 +9,9 @@ Complete list of prerequisites for developing, deploying, and running Ciyex EHR.
 | Software | Minimum Version | Recommended | Purpose | Download |
 |----------|----------------|-------------|---------|----------|
 | **Java** | 21 | 21.0.1+ | Backend runtime | [Adoptium](https://adoptium.net/) |
-| **Node.js** | 20.0 | 22.0+ | Frontend runtime | [nodejs.org](https://nodejs.org/) |
-| **pnpm** | 8.0 | Latest | Package manager | `npm install -g pnpm` |
-| **PostgreSQL** | 15.0 | 16.0+ | Database | [postgresql.org](https://www.postgresql.org/) |
+| **Node.js** | 22.0 | 22.0+ | Frontend runtime | [nodejs.org](https://nodejs.org/) |
+| **pnpm** | 9.0 | Latest | Package manager | `npm install -g pnpm` |
+| **PostgreSQL** | 17.0 | 17.7+ | Database | [postgresql.org](https://www.postgresql.org/) |
 | **Git** | 2.30 | Latest | Version control | [git-scm.com](https://git-scm.com/) |
 | **Gradle** | 8.0 | 8.5+ | Build tool (included in wrapper) | [gradle.org](https://gradle.org/) |
 
@@ -21,7 +21,7 @@ Complete list of prerequisites for developing, deploying, and running Ciyex EHR.
 |----------|---------|----------|
 | **Docker** | Container runtime | [docker.com](https://www.docker.com/) |
 | **Docker Compose** | Multi-container orchestration | Included with Docker Desktop |
-| **Redis** | Caching (optional for local dev) | [redis.io](https://redis.io/) |
+| **Caffeine** | In-memory caching (included in Spring Boot) | Built-in |
 | **VS Code** | Code editor | [code.visualstudio.com](https://code.visualstudio.com/) |
 | **IntelliJ IDEA** | Java IDE | [jetbrains.com](https://www.jetbrains.com/idea/) |
 | **Postman** | API testing | [postman.com](https://www.postman.com/) |
@@ -47,7 +47,7 @@ Complete list of prerequisites for developing, deploying, and running Ciyex EHR.
 
 | Component | Minimum | Recommended | Notes |
 |-----------|---------|-------------|-------|
-| **PostgreSQL Version** | 15.0 | 16.0+ | |
+| **PostgreSQL Version** | 17.0 | 17.7+ | |
 | **CPU** | 4 cores | 8 cores | |
 | **RAM** | 8GB | 16GB+ | |
 | **Storage** | 100GB SSD | 500GB NVMe | |
@@ -66,11 +66,20 @@ Complete list of prerequisites for developing, deploying, and running Ciyex EHR.
 
 #### Authentication
 
-- **Keycloak Server**
-  - Version: 22.0+
-  - Realm configured
-  - Client created
-  - Groups configured
+- **Keycloak Server** (Aran ID)
+  - Dev instance at `https://dev.aran.me`
+  - Realm: `ciyex`
+  - OAuth2 + OpenID Connect with PKCE
+  - JWT claims: `organization`, `realm_access.roles`
+
+- **Spring Cloud Config Server**
+  - URL: `https://config.apps-prod.us-east.in.hinisoft.com`
+  - Git backend: `github.com/qiaben/app-config.git`
+  - All services fetch configuration on startup
+
+- **HashiCorp Vault** (production)
+  - Secrets management for database credentials, API keys
+  - Kubernetes service account authentication
 
 #### External Services
 
@@ -182,10 +191,13 @@ GRAFANA_ADMIN_PASSWORD=<admin-password>
 
 | Port | Service | Protocol | Access |
 |------|---------|----------|--------|
-| 3000 | Next.js UI | HTTP | localhost |
-| 8080 | Spring Boot API | HTTP | localhost |
+| 3000 | Next.js EHR-UI | HTTP | localhost |
+| 8080 | ciyex-api | HTTP | localhost |
+| 8081 | ciyex-marketplace | HTTP | localhost |
+| 8082 | ciyex-comm | HTTP | localhost |
+| 8084 | ciyex-codes | HTTP | localhost |
+| 8090 | HAPI FHIR Server | HTTP | localhost |
 | 5432 | PostgreSQL | TCP | localhost |
-| 6379 | Redis | TCP | localhost (optional) |
 
 #### Production
 
@@ -195,7 +207,6 @@ GRAFANA_ADMIN_PASSWORD=<admin-password>
 | 443 | HTTPS | HTTPS | Public |
 | 6443 | Kubernetes API | HTTPS | Private |
 | 5432 | PostgreSQL | TCP | Private |
-| 6379 | Redis | TCP | Private |
 
 ### Firewall Rules
 
@@ -284,7 +295,7 @@ api-dev.example.com      → Dev Load Balancer IP
   - FHIR knowledge (optional)
 
 - **Frontend Developer**
-  - React 18
+  - React 19
   - Next.js 16
   - TypeScript
   - Tailwind CSS
@@ -320,7 +331,7 @@ Before starting development:
 - [ ] Java 21 installed and verified (`java -version`)
 - [ ] Node.js 20+ installed (`node -v`)
 - [ ] pnpm installed (`pnpm -v`)
-- [ ] PostgreSQL 15+ installed and running
+- [ ] PostgreSQL 17+ installed and running
 - [ ] Git configured with credentials
 - [ ] GitHub access to repositories
 - [ ] IDE installed and configured
