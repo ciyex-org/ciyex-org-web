@@ -3,6 +3,7 @@ slug: beyond-the-dashboard
 title: "Beyond the Dashboard: How Ciyex EHR Turns Data Fragmentation into Seamless Care"
 authors: [ciyex_team]
 tags: [healthcare, features, patient-experience]
+image: /img/blog/beyond-dashboard-1.jpg
 ---
 
 In the modern exam room, there is an invisible wall standing between the doctor and the patient. It isn't made of glass or brick; it's made of tabs, windows, and disconnected login screens.
@@ -13,6 +14,8 @@ But what if the "Modern Practice" wasn't defined by how much data it collected, 
 
 <!-- truncate -->
 
+![Doctor using Ciyex EHR on a laptop](/img/blog/beyond-dashboard-1.jpg)
+
 ## The Problem: The "Digital Junk Drawer"
 
 For years, EHRs have acted like digital junk drawers. Everything is "in there" somewhere, but finding the specific tool you need for a 15-minute encounter feels like an archaeological dig. When patient information is fragmented, care becomes reactive. You're solving the puzzle of the software rather than the puzzle of the patient's health.
@@ -22,6 +25,8 @@ The perception of Ciyex among leading practitioners is different. It isn't viewe
 ## From Fragments to Flow: The Ciyex Advantage
 
 The core benefit of an all-in-one system is the restoration of clinical flow. When your workspace is unified, the "noise" of administration fades into the background.
+
+![Unified health management screen](/img/blog/beyond-dashboard-2.jpg)
 
 **A Single Source of Truth:** Imagine a world where you never have to ask, "Did we get those labs back?" In Ciyex, the labs, the imaging, and the consultant notes flow into a single, chronological story. You see the big picture instantly, allowing for sharper diagnostic intuition.
 
@@ -40,6 +45,8 @@ Switching to a unified command center creates a ripple effect across the entire 
 **Proactive Care:** With integrated analytics, you can see which patients are due for follow-ups or screenings at a glance, moving your practice from "treating the sick" to "managing wellness."
 
 ## Reclaiming Your Professional Life
+
+![Analytics dashboard for proactive care management](/img/blog/beyond-dashboard-3.jpg)
 
 The goal of Ciyex EHR isn't to give you more technology to manage. It's to give you a platform that manages the technology for you.
 
