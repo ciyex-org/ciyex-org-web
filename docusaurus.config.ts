@@ -128,6 +128,7 @@ const config: Config = {
         },
         blog: {
           showReadingTime: true,
+          sortPosts: 'descending',
           blogSidebarCount: 'ALL',
           feedOptions: {
             type: ['rss', 'atom'],
