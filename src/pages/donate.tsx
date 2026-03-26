@@ -70,6 +70,13 @@ export default function DonatePage() {
         </div>
       </section>
 
+      {/* ── Donation Form ── */}
+      <section className={styles.formSection}>
+        <div className={styles.formContainer}>
+          <DonateForm />
+        </div>
+      </section>
+
       {/* ── Description ── */}
       <section className={styles.descSection}>
         <div className={styles.descInner}>
@@ -119,13 +126,6 @@ export default function DonatePage() {
               informed, prepared, and in control of their health.
             </p>
           </div>
-        </div>
-      </section>
-
-      {/* ── Donation Form ── */}
-      <section className={styles.formSection}>
-        <div className={styles.formContainer}>
-          <DonateForm />
         </div>
       </section>
 
