@@ -289,6 +289,66 @@ function DonateSection() {
   );
 }
 
+/* ── Recent Blogs Section ── */
+const recentBlogs = [
+  {
+    title: 'Scaling Without Stress: Why Modern Practices Choose Ciyex for Seamless Growth',
+    excerpt: 'There is a common "growing pain" in medicine that no one warns you about in residency. For those who have moved to Ciyex EHR, the perception of growth is changing.',
+    slug: '/blog/scaling-without-stress',
+    date: 'March 30, 2026',
+    image: '/img/blog/hero-scaling-without-stress.svg',
+  },
+  {
+    title: 'Why Every Modern Healthcare Provider in 2026 Needs an Open Source EHR Strategy',
+    excerpt: 'The "software-as-a-service" tax on healthcare has reached a tipping point. A shift toward an Open Source EHR strategy is no longer optional — it\'s a competitive necessity.',
+    slug: '/blog/open-source-ehr-strategy',
+    date: 'March 29, 2026',
+    image: '/img/blog/hero-open-source-ehr-strategy.svg',
+  },
+  {
+    title: 'Ciyex EHR vs. Epic, Cerner, and Athenahealth: Why 2026 is the Year of the Open EHR',
+    excerpt: 'The "Big Three" have held a combined monopoly on clinical data. But as we move into 2026, the cracks are showing. Ciyex is the FHIR-native, open-source disruptor.',
+    slug: '/blog/ciyex-vs-competitors',
+    date: 'March 28, 2026',
+    image: '/img/blog/hero-ciyex-vs-competitors.svg',
+  },
+];
+
+function RecentBlogsSection() {
+  return (
+    <section className={styles.recentBlogs}>
+      <div className={styles.recentBlogsInner}>
+        <div className={styles.sectionLabel}>From Our Blog</div>
+        <Heading as="h2" className={styles.sectionTitle}>
+          Latest insights &amp; updates.
+        </Heading>
+        <p className={styles.sectionSubtitle}>
+          Read about open source healthcare, EHR technology, and our mission to bring health equity to every community.
+        </p>
+        <div className={styles.blogGrid}>
+          {recentBlogs.map((blog, i) => (
+            <Link key={i} to={blog.slug} className={styles.blogCard}>
+              <div className={styles.blogCardImage}>
+                <img src={blog.image} alt={blog.title} loading="lazy" />
+              </div>
+              <div className={styles.blogCardBody}>
+                <span className={styles.blogCardDate}>{blog.date}</span>
+                <h3 className={styles.blogCardTitle}>{blog.title}</h3>
+                <p className={styles.blogCardExcerpt}>{blog.excerpt}</p>
+              </div>
+            </Link>
+          ))}
+        </div>
+        <div className={styles.blogViewAll}>
+          <Link className={styles.btnSecondary} to="/blog">
+            View all posts &rarr;
+          </Link>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 /* ── CTA Section ── */
 function CtaSection() {
   return (
@@ -323,6 +383,7 @@ export default function Home(): ReactNode {
       <FeaturesSection />
       <ShowcaseSection />
       <DonateSection />
+      <RecentBlogsSection />
       <CtaSection />
     </Layout>
   );
