@@ -3,12 +3,14 @@ slug: billing-simplified
 title: "Medical Billing for Community Clinics: Simplifying the Complex"
 authors: [dr_smith]
 tags: [features, healthcare, billing]
-image: /img/blog/hero-billing-simplified.svg
+image: /img/blog/billing-simplified.jpg
 ---
 
 Medical billing is the lifeblood of every healthcare organization. Without accurate, timely billing, even the most dedicated community clinic cannot keep its doors open. Yet the billing process is staggeringly complex, involving thousands of codes, dozens of payer rules, and a regulatory environment that changes constantly. Ciyex integrates billing directly into the clinical workflow, reducing errors and accelerating revenue collection for the organizations that need it most.
 
 <!-- truncate -->
+
+![Medical Billing Simplified](/img/blog/billing-simplified.jpg)
 
 ## The Revenue Cycle: A Primer
 
