@@ -24,8 +24,6 @@ Open-source EHRs (like **Ciyex EHR**) provide the source code for free. You aren
 - **Infinite Customization:** Want a specific workflow for preventive care or a niche specialty? You can build it. You aren't locked into a vendor's "one-size-fits-all" template.
 - **Data Sovereignty:** You have total control over where your patient data lives and how it moves. In an era of increasing data privacy concerns, this independence is a major asset.
 
-![Software Comparison](/img/blog/open-source-vs-subscription-2.jpg)
-
 ## 2. The Subscription (SaaS) Route: Convenience at a Price
 
 Subscription EHRs (like eClinicalWorks or Practice Fusion) are cloud-based platforms. You pay a monthly fee — typically **$200–$700 per provider** — to "rent" the software and its infrastructure.

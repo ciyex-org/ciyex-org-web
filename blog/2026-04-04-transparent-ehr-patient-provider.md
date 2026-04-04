@@ -35,8 +35,6 @@ Medical jargon can be intimidating. Ciyex transforms complex data into easy-to-u
 - **Trend Graphs:** Showing a patient a graph of their declining A1c levels over six months is far more impactful than simply stating a number.
 - **Visual Aid:** Use the EHR to point out specific markers in their history, helping them visualize their journey toward wellness.
 
-![Doctor Reviewing Records with Patient](/img/blog/transparent-ehr-2.jpg)
-
 ## 4. Real-Time Order Transparency
 
 Trust is built when patients understand the "why" behind a treatment. Using Ciyex to enter orders while the patient is present allows for immediate clarification.

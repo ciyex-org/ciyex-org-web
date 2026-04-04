@@ -34,8 +34,6 @@ Typing requires significant cognitive focus and often forces a provider to turn 
 - **Maintain Connection:** You can explain your thoughts to the patient while simultaneously recording them into the EHR.
 - **Ambient Documentation:** Accurate voice recognition means you spend less time correcting typos and more time discussing treatment plans.
 
-![Medical Records at a Glance](/img/blog/minimize-clicks-2.jpg)
-
 ## 4. Smart Flowsheets and Data Visualization
 
 Reviewing a patient's progress shouldn't feel like reading a spreadsheet. Ciyex transforms raw data into visual flowsheets and trends.

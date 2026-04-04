@@ -3,12 +3,14 @@ slug: data-migration-guide
 title: "Migrating to Ciyex: A Step-by-Step Data Migration Guide"
 authors: [dev_lead]
 tags: [guide, fhir, interoperability, engineering]
-image: /img/blog/hero-data-migration.svg
+image: /img/blog/minimize-clicks-2.jpg
 ---
 
 Switching EHR systems is one of the most daunting tasks a healthcare organization can undertake. Patient records, clinical histories, billing data, and scheduling information must all transfer accurately and completely. This guide walks through the entire migration process, from initial data export to final validation, with real code examples and practical strategies for minimizing risk.
 
 <!-- truncate -->
+
+![Data Migration Guide](/img/blog/minimize-clicks-2.jpg)
 
 ## Understanding the Migration Landscape
 

@@ -3,12 +3,14 @@ slug: clinical-workflows
 title: "Designing Clinical Workflows That Actually Work"
 authors: [dr_smith]
 tags: [features, healthcare, patient-experience]
-image: /img/blog/hero-clinical-workflows.svg
+image: /img/blog/clinical-workflows-2.jpg
 ---
 
 Ask any physician what frustrates them most about their EHR, and the answer is nearly universal: the workflows. Systems designed by engineers who have never worked in a clinical setting force providers to navigate through endless screens, click redundant buttons, and document in ways that interrupt the natural flow of patient care. Ciyex takes a fundamentally different approach by designing workflows around the patient encounter, not around database tables.
 
 <!-- truncate -->
+
+![Clinical Workflows](/img/blog/clinical-workflows-2.jpg)
 
 ## The Click Fatigue Crisis
 
@@ -25,8 +27,6 @@ This is not just an efficiency problem. It is a patient safety problem and a bur
 ## How Ciyex Designs for Clinical Reality
 
 Ciyex workflows are built around a simple principle: the software should follow the provider, not the other way around. Every workflow is designed by studying how clinicians actually work, then building technology that supports those patterns.
-
-![Clinical Workflows](/img/blog/clinical-workflows-2.jpg)
 
 ### The Encounter-Centered Model
 

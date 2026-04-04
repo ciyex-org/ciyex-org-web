@@ -3,12 +3,14 @@ slug: hipaa-compliance-guide
 title: "HIPAA Compliance for Community Health Centers: A Complete Guide"
 authors: [ciyex_team]
 tags: [hipaa, security, healthcare, guide]
-image: /img/blog/hero-hipaa-compliance.svg
+image: /img/blog/reduce-documentation-2.jpg
 ---
 
 HIPAA compliance can feel overwhelming for small clinics and community health centers. Between the technical jargon, the legal requirements, and the ever-present threat of data breaches, many organizations struggle to know where to begin. This guide breaks down what HIPAA actually requires, how Ciyex addresses each requirement, and why open source software offers a unique advantage for compliance.
 
 <!-- truncate -->
+
+![HIPAA Compliance Guide](/img/blog/reduce-documentation-2.jpg)
 
 ## What HIPAA Means for Small Clinics
 

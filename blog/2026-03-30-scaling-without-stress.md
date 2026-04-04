@@ -3,14 +3,14 @@ slug: scaling-without-stress
 title: "Scaling Without Stress: Why Modern Practices Choose Ciyex for Seamless Growth"
 authors: [ciyex_team]
 tags: [healthcare, features, billing, patient-experience]
-image: /img/blog/scaling-without-stress.jpg
+image: /img/blog/scaling-without-stress-2.jpg
 ---
 
 There is a common "growing pain" in medicine that no one warns you about in residency. It happens when your practice finally starts to succeed. You're seeing more patients, you're hiring more staff, maybe you're even looking at a second location — but instead of feeling like success, you feel like you're drowning. For those who have moved to Ciyex EHR, the perception of growth is changing.
 
 <!-- truncate -->
 
-![Scaling Without Stress](/img/blog/scaling-without-stress.jpg)
+![Scaling Without Stress](/img/blog/scaling-without-stress-2.jpg)
 
 ## The Growth Trap: Why "More" Usually Means "Harder"
 
@@ -29,8 +29,6 @@ Whether you have one nurse or ten, Ciyex ensures everyone is operating from the 
 ### Automated Revenue Integrity
 
 As you grow, "leakage" becomes a major threat. A few forgotten codes here and there might not hurt a small practice, but in a scaling one, it's a disaster. Ciyex's integrated billing captures every encounter accurately the first time, ensuring your revenue grows at the same pace as your patient list.
-
-![Scaling Your Practice](/img/blog/scaling-without-stress-2.jpg)
 
 ### The "One-Look" Overview
 

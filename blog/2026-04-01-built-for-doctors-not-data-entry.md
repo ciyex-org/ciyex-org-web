@@ -26,8 +26,6 @@ Every specialty has a different rhythm. A pediatrician's workflow looks nothing 
 
 **The Ciyex Difference:** As an open-source platform, Ciyex EHR offers **Infinite Customization**. You can build specific workflows for your preventive care screenings or chronic disease management. You aren't locked into a vendor's "one-size-fits-all" model; the software adapts to you, not the other way around.
 
-![Doctor Using Digital Tools](/img/blog/built-for-doctors-2.jpg)
-
 ## 3. Smart Automation, Not Just Digital Paper
 
 Transitioning to a digital system shouldn't just mean "typing instead of writing." It should mean the system works *for* you.

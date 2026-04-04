@@ -32,8 +32,6 @@ Manually re-entering a patient's medical history, active medications, or chronic
 - **Interval Updates:** Instead of rewriting the entire history, providers only need to document changes since the last encounter.
 - **Real-Time Reconciliation:** Medication lists and allergies are updated globally, reflecting across the entire chart instantly.
 
-![Streamlined Documentation](/img/blog/reduce-documentation-2.jpg)
-
 ## 4. Consolidated Diagnostic Integration
 
 Toggling between third-party portals to find lab results or imaging reports is a major time-sink. Ciyex features Direct Interoperability, meaning external data is delivered straight to the patient's file.

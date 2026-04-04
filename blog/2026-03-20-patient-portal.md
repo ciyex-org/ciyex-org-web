@@ -3,12 +3,14 @@ slug: patient-portal
 title: "The Ciyex Patient Portal: Putting Patients in Control of Their Health"
 authors: [dr_smith]
 tags: [patient-experience, features, portal]
-image: /img/blog/hero-patient-portal.svg
+image: /img/blog/built-for-doctors-2.jpg
 ---
 
 For decades, the patient experience with healthcare technology has been defined by what patients cannot do. They cannot see their own lab results until the doctor calls. They cannot read the notes from their last visit. They cannot schedule an appointment without sitting on hold. They cannot send a simple question to their care team without making a phone call during business hours. The Ciyex Patient Portal changes this by giving patients direct, standards-based access to their health information and care services.
 
 <!-- truncate -->
+
+![The Ciyex Patient Portal](/img/blog/built-for-doctors-2.jpg)
 
 ## The Right to Your Own Health Data
 
