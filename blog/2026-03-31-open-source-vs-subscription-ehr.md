@@ -3,14 +3,14 @@ slug: open-source-vs-subscription-ehr
 title: "Open-Source vs. Subscription EHR: The 2026 Small Clinic Survival Guide"
 authors: [ciyex_team]
 tags: [open-source, healthcare, guide, features]
-image: /img/blog/hero-open-source-vs-subscription.svg
+image: /img/blog/open-source-vs-subscription.jpg
 ---
 
 In the modern medical landscape, the question is no longer *if* you should go digital, but **how**. For small clinics, the decision usually boils down to a high-stakes choice: the "do-it-yourself" freedom of **Open-Source systems** versus the "all-inclusive" convenience of **Subscription-based (SaaS)** models.
 
 <!-- truncate -->
 
-![Open-Source vs. Subscription EHR](/img/blog/hero-open-source-vs-subscription.svg)
+![Open-Source vs. Subscription EHR](/img/blog/open-source-vs-subscription.jpg)
 
 As we move through 2026, with rising overheads and stricter data regulations, choosing the wrong path can be a costly mistake. Let's break down the reality of both.
 
@@ -23,6 +23,8 @@ Open-source EHRs (like **Ciyex EHR**) provide the source code for free. You aren
 - **Zero Licensing Fees:** The software itself is free. For a small practice, eliminating monthly per-provider "rent" can save thousands in annual overhead.
 - **Infinite Customization:** Want a specific workflow for preventive care or a niche specialty? You can build it. You aren't locked into a vendor's "one-size-fits-all" template.
 - **Data Sovereignty:** You have total control over where your patient data lives and how it moves. In an era of increasing data privacy concerns, this independence is a major asset.
+
+![Software Comparison](/img/blog/open-source-vs-subscription-2.jpg)
 
 ## 2. The Subscription (SaaS) Route: Convenience at a Price
 

@@ -26,6 +26,8 @@ This is not just an efficiency problem. It is a patient safety problem and a bur
 
 Ciyex workflows are built around a simple principle: the software should follow the provider, not the other way around. Every workflow is designed by studying how clinicians actually work, then building technology that supports those patterns.
 
+![Clinical Workflows](/img/blog/clinical-workflows-2.jpg)
+
 ### The Encounter-Centered Model
 
 In clinical practice, everything revolves around the patient encounter. A patient arrives, is checked in, has vitals taken, sees a provider, receives assessments and plans, and departs. The EHR should mirror this flow naturally.

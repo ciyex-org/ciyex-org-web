@@ -3,14 +3,14 @@ slug: reduce-documentation-time
 title: "5 Ways Ciyex EHR Reduces Documentation Time for Clinicians"
 authors: [ciyex_team]
 tags: [healthcare, features, guide]
-image: /img/blog/hero-reduce-documentation.svg
+image: /img/blog/reduce-documentation.jpg
 ---
 
 In a high-volume clinical environment, the efficiency of an Electronic Health Record (EHR) directly impacts the quality of patient care and the operational success of a practice. Excessive administrative burden is one of the primary challenges facing healthcare providers today.
 
 <!-- truncate -->
 
-![5 Ways Ciyex EHR Reduces Documentation Time](/img/blog/hero-reduce-documentation.svg)
+![5 Ways Ciyex EHR Reduces Documentation Time](/img/blog/reduce-documentation.jpg)
 
 Ciyex EHR is engineered to eliminate clinical bottlenecks through an intuitive interface and automated data management. Here are five specific ways Ciyex streamlines the documentation process.
 
@@ -31,6 +31,8 @@ Manually re-entering a patient's medical history, active medications, or chronic
 
 - **Interval Updates:** Instead of rewriting the entire history, providers only need to document changes since the last encounter.
 - **Real-Time Reconciliation:** Medication lists and allergies are updated globally, reflecting across the entire chart instantly.
+
+![Streamlined Documentation](/img/blog/reduce-documentation-2.jpg)
 
 ## 4. Consolidated Diagnostic Integration
 

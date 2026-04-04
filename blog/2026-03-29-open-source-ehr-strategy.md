@@ -18,6 +18,8 @@ The central theme of healthcare IT in 2026 is **Digital Health Sovereignty**. Th
 
 A strategic transition to an open-source model — specifically utilizing platforms like **Ciyex EHR** — provides the blueprint for this independence.
 
+![Open Source EHR Strategy](/img/blog/open-source-ehr-strategy-2.jpg)
+
 ## Why Ciyex EHR is the Anchor of a 2026 Strategy
 
 Ciyex EHR has emerged as a leader due to its modern architecture. Unlike legacy systems, Ciyex is built for the 2026 interoperability mandates.

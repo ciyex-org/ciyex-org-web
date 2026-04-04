@@ -30,6 +30,8 @@ Whether you have one nurse or ten, Ciyex ensures everyone is operating from the 
 
 As you grow, "leakage" becomes a major threat. A few forgotten codes here and there might not hurt a small practice, but in a scaling one, it's a disaster. Ciyex's integrated billing captures every encounter accurately the first time, ensuring your revenue grows at the same pace as your patient list.
 
+![Scaling Your Practice](/img/blog/scaling-without-stress-2.jpg)
+
 ### The "One-Look" Overview
 
 For a growing practice, you need to be able to see the health of your business at a glance. Ciyex turns raw data into a narrative. You can see bottlenecks in your scheduling or delays in your claims across multiple locations — all from one dashboard.

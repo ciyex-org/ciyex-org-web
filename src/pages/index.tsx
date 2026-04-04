@@ -296,21 +296,21 @@ const recentBlogs = [
     excerpt: 'For years, the EHR has been viewed as a "third party" in the exam room. At Ciyex, we believe transparency is the key — shifting from "silent charting" to "collaborative documentation."',
     slug: '/blog/transparent-ehr-patient-provider',
     date: 'April 4, 2026',
-    image: '/img/blog/hero-transparent-ehr.svg',
+    image: '/img/blog/transparent-ehr.jpg',
   },
   {
     title: 'How Ciyex EHR Minimizes "Clicks" and Maximizes Patient Interaction',
     excerpt: 'Ciyex EHR was built to dismantle the digital barrier between doctor and patient. By prioritizing a "minimal-click" philosophy, our platform shifts focus back to the person in the exam room.',
     slug: '/blog/minimize-clicks-maximize-interaction',
     date: 'April 3, 2026',
-    image: '/img/blog/hero-minimize-clicks.svg',
+    image: '/img/blog/minimize-clicks.jpg',
   },
   {
     title: '5 Ways Ciyex EHR Reduces Documentation Time for Clinicians',
     excerpt: 'Ciyex EHR is engineered to eliminate clinical bottlenecks through an intuitive interface and automated data management. Here are five specific ways Ciyex streamlines documentation.',
     slug: '/blog/reduce-documentation-time',
     date: 'April 2, 2026',
-    image: '/img/blog/hero-reduce-documentation.svg',
+    image: '/img/blog/reduce-documentation.jpg',
   },
 ];
 
