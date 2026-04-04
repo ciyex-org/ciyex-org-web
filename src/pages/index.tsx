@@ -292,25 +292,25 @@ function DonateSection() {
 /* ── Recent Blogs Section ── */
 const recentBlogs = [
   {
-    title: 'Scaling Without Stress: Why Modern Practices Choose Ciyex for Seamless Growth',
-    excerpt: 'There is a common "growing pain" in medicine that no one warns you about in residency. For those who have moved to Ciyex EHR, the perception of growth is changing.',
-    slug: '/blog/scaling-without-stress',
-    date: 'March 30, 2026',
-    image: '/img/blog/hero-scaling-without-stress.svg',
+    title: 'Enhancing the Patient-Provider Relationship Through Transparent EHR Use',
+    excerpt: 'For years, the EHR has been viewed as a "third party" in the exam room. At Ciyex, we believe transparency is the key — shifting from "silent charting" to "collaborative documentation."',
+    slug: '/blog/transparent-ehr-patient-provider',
+    date: 'April 4, 2026',
+    image: '/img/blog/hero-transparent-ehr.svg',
   },
   {
-    title: 'Why Every Modern Healthcare Provider in 2026 Needs an Open Source EHR Strategy',
-    excerpt: 'The "software-as-a-service" tax on healthcare has reached a tipping point. A shift toward an Open Source EHR strategy is no longer optional — it\'s a competitive necessity.',
-    slug: '/blog/open-source-ehr-strategy',
-    date: 'March 29, 2026',
-    image: '/img/blog/hero-open-source-ehr-strategy.svg',
+    title: 'How Ciyex EHR Minimizes "Clicks" and Maximizes Patient Interaction',
+    excerpt: 'Ciyex EHR was built to dismantle the digital barrier between doctor and patient. By prioritizing a "minimal-click" philosophy, our platform shifts focus back to the person in the exam room.',
+    slug: '/blog/minimize-clicks-maximize-interaction',
+    date: 'April 3, 2026',
+    image: '/img/blog/hero-minimize-clicks.svg',
   },
   {
-    title: 'Ciyex EHR vs. Epic, Cerner, and Athenahealth: Why 2026 is the Year of the Open EHR',
-    excerpt: 'The "Big Three" have held a combined monopoly on clinical data. But as we move into 2026, the cracks are showing. Ciyex is the FHIR-native, open-source disruptor.',
-    slug: '/blog/ciyex-vs-competitors',
-    date: 'March 28, 2026',
-    image: '/img/blog/hero-ciyex-vs-competitors.svg',
+    title: '5 Ways Ciyex EHR Reduces Documentation Time for Clinicians',
+    excerpt: 'Ciyex EHR is engineered to eliminate clinical bottlenecks through an intuitive interface and automated data management. Here are five specific ways Ciyex streamlines documentation.',
+    slug: '/blog/reduce-documentation-time',
+    date: 'April 2, 2026',
+    image: '/img/blog/hero-reduce-documentation.svg',
   },
 ];
 

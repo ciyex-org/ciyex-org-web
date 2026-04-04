@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0f172a"/>
+  <!-- Stethoscope outline -->
+  <path d="M450 200 Q450 350 550 380 Q650 410 650 300" fill="none" stroke="url(#grad)" stroke-width="2.5" opacity="0.5" stroke-linecap="round"/>
+  <circle cx="450" cy="190" r="12" fill="none" stroke="url(#grad)" stroke-width="2" opacity="0.5"/>
+  <circle cx="650" cy="280" r="18" fill="none" stroke="url(#grad)" stroke-width="2" opacity="0.5"/>
+  <circle cx="650" cy="280" r="6" fill="url(#grad)" opacity="0.4"/>
+  <!-- Simplified screen/dashboard -->
+  <rect x="750" y="200" width="300" height="200" rx="10" fill="none" stroke="url(#grad)" stroke-width="1.5" opacity="0.4"/>
+  <line x1="750" y1="240" x2="1050" y2="240" stroke="url(#grad)" stroke-width="1" opacity="0.2"/>
+  <!-- Dashboard elements -->
+  <rect x="770" y="260" width="120" height="15" rx="3" fill="url(#grad)" opacity="0.15"/>
+  <rect x="770" y="290" width="80" height="15" rx="3" fill="url(#grad)" opacity="0.1"/>
+  <rect x="770" y="320" width="100" height="15" rx="3" fill="url(#grad)" opacity="0.12"/>
+  <!-- Mini chart in screen -->
+  <path d="M920 370 L940 340 L960 355 L980 310 L1000 320 L1020 290" fill="none" stroke="url(#grad)" stroke-width="1.5" opacity="0.4" stroke-linecap="round"/>
+  <!-- Arrow from old to new (reduction) -->
+  <line x1="350" y1="450" x2="500" y2="450" stroke="url(#grad)" stroke-width="1.5" opacity="0.3"/>
+  <polygon points="490,443 505,450 490,457" fill="url(#grad)" opacity="0.3"/>
+  <text x="420" y="480" text-anchor="middle" fill="url(#grad)" font-size="13" font-family="sans-serif" opacity="0.3">Less Clicks</text>
+  <line x1="700" y1="450" x2="850" y2="450" stroke="url(#grad)" stroke-width="1.5" opacity="0.3"/>
+  <polygon points="840,443 855,450 840,457" fill="url(#grad)" opacity="0.3"/>
+  <text x="775" y="480" text-anchor="middle" fill="url(#grad)" font-size="13" font-family="sans-serif" opacity="0.3">More Care</text>
+  <!-- Decorative dots -->
+  <circle cx="200" cy="300" r="3" fill="url(#grad)" opacity="0.1"/>
+  <circle cx="1100" cy="150" r="3" fill="url(#grad)" opacity="0.08"/>
+</svg>
