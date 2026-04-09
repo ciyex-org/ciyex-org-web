@@ -3,14 +3,15 @@ slug: self-hosting-guide
 title: "Self-Hosting Ciyex: Own Your Healthcare Infrastructure"
 authors: [dev_lead]
 tags: [deployment, guide, devops]
-image: /img/blog/self-hosting.jpg
+image: /img/blog/blog-typing-keyboard.jpg
 ---
 
 Self-hosting your EHR is not just a technical choice. It is a statement about data sovereignty, compliance control, and long-term independence. When you self-host Ciyex, you own your infrastructure, your data, and your destiny. No vendor can raise your prices, discontinue your product, or hold your patient data hostage. This guide walks you through everything you need to get Ciyex running on your own infrastructure, from a Docker Compose development setup to a production Kubernetes deployment.
 
 <!-- truncate -->
 
-![Self-Hosting Ciyex](/img/blog/self-hosting.jpg)
+
+![Self-Hosting Ciyex: Own Your Healthcare Infrastructure](/img/blog/blog-typing-keyboard.jpg)
 
 ## Why Self-Hosting Matters
 

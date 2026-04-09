@@ -3,14 +3,15 @@ slug: open-source-vs-subscription-ehr
 title: "Open-Source vs. Subscription EHR: The 2026 Small Clinic Survival Guide"
 authors: [ciyex_team]
 tags: [open-source, healthcare, guide, features]
-image: /img/blog/open-source-vs-subscription.jpg
+image: /img/blog/blog-health-monitoring.jpg
 ---
 
 In the modern medical landscape, the question is no longer *if* you should go digital, but **how**. For small clinics, the decision usually boils down to a high-stakes choice: the "do-it-yourself" freedom of **Open-Source systems** versus the "all-inclusive" convenience of **Subscription-based (SaaS)** models.
 
 <!-- truncate -->
 
-![Open-Source vs. Subscription EHR](/img/blog/open-source-vs-subscription.jpg)
+
+![Open-Source vs. Subscription EHR: The 2026 Small Clinic Survival Guide](/img/blog/blog-health-monitoring.jpg)
 
 As we move through 2026, with rising overheads and stricter data regulations, choosing the wrong path can be a costly mistake. Let's break down the reality of both.
 

@@ -3,14 +3,15 @@ slug: community-health-centers
 title: "Why Community Health Centers Need Open Source EHR"
 authors: [dr_smith]
 tags: [healthcare, mission, open-source, community-health]
-image: /img/blog/transparent-ehr-2.jpg
+image: /img/blog/blog-video-conference.jpg
 ---
 
 Federally Qualified Health Centers (FQHCs) serve over 30 million patients across the United States, providing primary care to communities that would otherwise have no access. These safety-net providers operate on razor-thin margins, yet they are expected to invest in the same electronic health record systems used by large hospital networks. The math does not work. Open source EHR changes the equation entirely.
 
 <!-- truncate -->
 
-![Community Health Centers](/img/blog/transparent-ehr-2.jpg)
+
+![Why Community Health Centers Need Open Source EHR](/img/blog/blog-video-conference.jpg)
 
 ## The Scale of the Problem
 

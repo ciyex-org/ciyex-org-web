@@ -3,7 +3,7 @@ slug: beyond-the-dashboard
 title: "Beyond the Dashboard: How Ciyex EHR Turns Data Fragmentation into Seamless Care"
 authors: [ciyex_team]
 tags: [healthcare, features, patient-experience]
-image: /img/blog/beyond-dashboard-1.jpg
+image: /img/blog/blog-doctor-consultation.jpg
 ---
 
 In the modern exam room, there is an invisible wall standing between the doctor and the patient. It isn't made of glass or brick; it's made of tabs, windows, and disconnected login screens.
@@ -14,7 +14,8 @@ But what if the "Modern Practice" wasn't defined by how much data it collected, 
 
 <!-- truncate -->
 
-![Doctor using Ciyex EHR on a laptop](/img/blog/beyond-dashboard-1.jpg)
+
+![Beyond the Dashboard: How Ciyex EHR Turns Data Fragmentation into Seamless Care](/img/blog/blog-doctor-consultation.jpg)
 
 ## The Problem: The "Digital Junk Drawer"
 

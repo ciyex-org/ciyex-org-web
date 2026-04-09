@@ -3,14 +3,15 @@ slug: ciyex-vs-competitors
 title: "Ciyex EHR vs. Epic, Cerner, and Athenahealth: Why 2026 is the Year of the Open EHR"
 authors: [ciyex_team]
 tags: [open-source, healthcare, fhir, interoperability]
-image: /img/blog/ciyex-vs-competitors.jpg
+image: /img/blog/blog-ehr-mobile.jpg
 ---
 
 For decades, the "Big Three" — Epic, Oracle Health (Cerner), and Athenahealth — have held a combined monopoly on clinical data. But as we move further into 2026, the cracks are showing. High licensing fees, "walled garden" data silos, and physician burnout are at an all-time high. Ciyex EHR isn't just another digital filing cabinet. It is a FHIR-native, open-source disruptor designed to give power back to the providers.
 
 <!-- truncate -->
 
-![Ciyex vs Competitors](/img/blog/ciyex-vs-competitors.jpg)
+
+![Ciyex EHR vs. Epic, Cerner, and Athenahealth: Why 2026 is the Year of the Open EHR](/img/blog/blog-ehr-mobile.jpg)
 
 ## 2026 Head-to-Head: Ciyex vs. The Legacy Giants
 

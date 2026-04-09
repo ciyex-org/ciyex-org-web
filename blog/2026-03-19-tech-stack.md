@@ -3,14 +3,15 @@ slug: tech-stack-deep-dive
 title: "Under the Hood: The Ciyex Tech Stack"
 authors: [dev_lead]
 tags: [engineering, architecture, spring-boot]
-image: /img/blog/open-source-vs-subscription-2.jpg
+image: /img/blog/blog-typing-keyboard.jpg
 ---
 
 Building a healthcare platform that handles protected health information (PHI), scales across thousands of concurrent users, and remains maintainable by an open source community requires deliberate technology choices. Every component in the Ciyex stack was selected for stability, security, and long-term viability. Here is a detailed look at what powers the platform and why we chose each piece.
 
 <!-- truncate -->
 
-![Under the Hood: The Ciyex Tech Stack](/img/blog/open-source-vs-subscription-2.jpg)
+
+![Under the Hood: The Ciyex Tech Stack](/img/blog/blog-typing-keyboard.jpg)
 
 ## Backend: Spring Boot 4.0.1 on Java 21
 

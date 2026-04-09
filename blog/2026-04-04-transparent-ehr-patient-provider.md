@@ -3,14 +3,15 @@ slug: transparent-ehr-patient-provider
 title: "Enhancing the Patient-Provider Relationship Through Transparent EHR Use"
 authors: [ciyex_team]
 tags: [healthcare, patient-experience, features, portal]
-image: /img/blog/transparent-ehr.jpg
+image: /img/blog/blog-telehealth-call.jpg
 ---
 
 For years, the Electronic Health Record (EHR) has been viewed as a "third party" in the exam room — often acting as a digital wall between the clinician and the patient. However, when used strategically, technology doesn't have to be a distraction. In fact, it can be a bridge.
 
 <!-- truncate -->
 
-![Transparent EHR Use](/img/blog/transparent-ehr.jpg)
+
+![Enhancing the Patient-Provider Relationship Through Transparent EHR Use](/img/blog/blog-telehealth-call.jpg)
 
 At Ciyex, we believe that transparency is the key to modern healthcare. By shifting from "silent charting" to "collaborative documentation," providers can use the EHR to build deeper trust and improve patient health literacy.
 
