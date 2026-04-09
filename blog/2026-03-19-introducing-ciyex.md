@@ -3,7 +3,7 @@ slug: introducing-ciyex
 title: "Introducing Ciyex EHR: Open Source Healthcare for Everyone"
 authors: [ciyex_team]
 tags: [mission, open-source, healthcare]
-image: /img/blog/hero-introducing-ciyex.svg
+image: /img/blog/blog-ehr-mobile.jpg
 ---
 
 Healthcare software has failed the people who need it most. Not the large hospital systems with seven-figure IT budgets, but the 30 million Americans who receive care at community health centers, rural clinics, and safety-net practices that cannot afford modern electronic health records. Globally, the picture is far worse. Billions of people receive care documented on paper, in spreadsheets, or in fragmented systems that cannot share data with one another.
@@ -11,6 +11,8 @@ Healthcare software has failed the people who need it most. Not the large hospit
 Ciyex was built to change that.
 
 <!-- truncate -->
+
+![Introducing Ciyex EHR: Open Source Healthcare for Everyone](/img/blog/blog-ehr-mobile.jpg)
 
 ## The Problem We Set Out to Solve
 

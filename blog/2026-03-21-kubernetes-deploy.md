@@ -3,12 +3,14 @@ slug: deployment-on-k8s
 title: "Deploying Ciyex on Kubernetes: A Production Guide"
 authors: [dev_lead]
 tags: [devops, kubernetes, deployment]
-image: /img/blog/hero-kubernetes.svg
+image: /img/blog/blog-medical-tech.jpg
 ---
 
 Healthcare software has unique deployment requirements. It must be highly available because clinics cannot afford downtime during patient visits. It must be secure because it handles protected health information. It must be auditable because regulators need to verify what is running and when it changed. Kubernetes, combined with GitOps practices, provides the foundation for meeting all of these requirements. This guide walks through how Ciyex is deployed in production using Kubernetes, Helm, ArgoCD, and supporting infrastructure.
 
 <!-- truncate -->
+
+![Deploying Ciyex on Kubernetes: A Production Guide](/img/blog/blog-medical-tech.jpg)
 
 ## Architecture Overview
 

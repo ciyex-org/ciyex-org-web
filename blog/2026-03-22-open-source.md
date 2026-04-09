@@ -3,7 +3,7 @@ slug: open-source-healthcare
 title: "Why Open Source is Vital for Global Health"
 authors: [ciyex_team]
 tags: [open-source, global-health, mission]
-image: /img/blog/hero-open-source.svg
+image: /img/blog/blog-video-conference.jpg
 ---
 
 A mother in rural Guatemala walks two hours to a clinic where her child's vaccination records are kept in a paper ledger. A community health center in Mississippi cannot afford to upgrade from a discontinued EHR system, so staff manually re-enter data into spreadsheets. A public hospital in Kenya uses three different systems that cannot share patient information, forcing doctors to rely on patients to remember their own medication lists. These are not edge cases. They represent the reality of healthcare technology for most of the world's population.
@@ -11,6 +11,8 @@ A mother in rural Guatemala walks two hours to a clinic where her child's vaccin
 Open source software does not solve every problem in healthcare. But it removes one of the most persistent barriers: the cost and control of the technology itself.
 
 <!-- truncate -->
+
+![Why Open Source is Vital for Global Health](/img/blog/blog-video-conference.jpg)
 
 ## The True Cost of Proprietary EHR Systems
 
