@@ -12,8 +12,6 @@ In this guide, we'll walk you through the exact steps to register a new patient 
 
 <!-- truncate -->
 
-![Mastering Patient Registration in Ciyex EHR](/img/blog/blog-practitioner-clipboard.jpg)
-
 ## Why Accurate EHR Registration Matters
 
 Inaccurate data entry costs US healthcare providers billions annually. Using a structured EHR like Ciyex helps mitigate:
