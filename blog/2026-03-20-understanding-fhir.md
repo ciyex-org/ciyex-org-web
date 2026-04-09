@@ -3,14 +3,12 @@ slug: understanding-fhir
 title: "Understanding FHIR: The Language of Modern Healthcare"
 authors: [dev_lead]
 tags: [fhir, interoperability, standards]
-image: /img/blog/blog-specialist-tablet.jpg
+image: /img/blog/hero-fhir.svg
 ---
 
 Interoperability, the ability of different healthcare systems to exchange and use data, has been the central challenge of health IT for decades. HL7 v2 messages, CDA documents, and proprietary formats have created a landscape where patient data is trapped in silos. FHIR (Fast Healthcare Interoperability Resources) is the standard that finally makes seamless data exchange practical. Ciyex is built on FHIR from the ground up, not as an afterthought or an integration layer, but as the core data model.
 
 <!-- truncate -->
-
-![Understanding FHIR: The Language of Modern Healthcare](/img/blog/blog-specialist-tablet.jpg)
 
 ## What FHIR Actually Is
 

@@ -3,14 +3,12 @@ slug: multilingual-healthcare
 title: "Breaking Language Barriers in Healthcare with Technology"
 authors: [ciyex_team]
 tags: [healthcare, patient-experience, global-health]
-image: /img/blog/blog-telehealth-call.jpg
+image: /img/blog/hero-multilingual.svg
 ---
 
 In the United States, over 25 million people have limited English proficiency. Globally, healthcare providers serve patients who speak thousands of different languages. When a patient cannot communicate their symptoms, understand their diagnosis, or follow their treatment plan because of a language barrier, the consequences range from delayed care to life-threatening medical errors. Technology can and should bridge this gap.
 
 <!-- truncate -->
-
-![Breaking Language Barriers in Healthcare with Technology](/img/blog/blog-telehealth-call.jpg)
 
 ## The Scope of the Problem
 

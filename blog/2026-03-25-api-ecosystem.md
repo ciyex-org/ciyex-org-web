@@ -3,15 +3,14 @@ slug: building-on-ciyex-api
 title: "Building on the Ciyex API: Creating Health Apps That Matter"
 authors: [dev_lead]
 tags: [engineering, fhir, development, guide]
-image: /img/blog/blog-typing-keyboard.jpg
+image: /img/blog/api-ecosystem.jpg
 ---
 
 The most impactful healthcare applications are not built in isolation. They are built on platforms that provide rich clinical data, secure authentication, and standardized interfaces. Ciyex exposes a comprehensive FHIR R4 API, a SMART on FHIR app launch framework, and a marketplace ecosystem that allows developers to build health applications that integrate deeply with the clinical workflow. This guide covers everything you need to start building.
 
 <!-- truncate -->
 
-
-![Building on the Ciyex API: Creating Health Apps That Matter](/img/blog/blog-typing-keyboard.jpg)
+![Building on the Ciyex API](/img/blog/api-ecosystem.jpg)
 
 ## The Ciyex API Architecture
 

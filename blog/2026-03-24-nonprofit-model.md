@@ -3,14 +3,12 @@ slug: nonprofit-healthcare-tech
 title: "Why Healthcare Technology Should Be a Public Good"
 authors: [ciyex_team]
 tags: [mission, open-source, healthcare]
-image: /img/blog/blog-health-monitoring.jpg
+image: /img/blog/hero-nonprofit-healthcare.svg
 ---
 
 The largest electronic health record company in the United States generated over $4 billion in revenue last year. Meanwhile, community health centers that serve the nation's most vulnerable patients struggle to afford basic EHR systems. Something is fundamentally broken about this model. Ciyex exists because we believe healthcare technology should be a public good, not a profit center.
 
 <!-- truncate -->
-
-![Why Healthcare Technology Should Be a Public Good](/img/blog/blog-health-monitoring.jpg)
 
 ## The For-Profit EHR Landscape
 

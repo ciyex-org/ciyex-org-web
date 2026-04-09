@@ -3,15 +3,14 @@ slug: technology-health-equity
 title: "Technology as a Tool for Health Equity"
 authors: [ciyex_team]
 tags: [mission, healthcare, global-health]
-image: /img/blog/blog-video-conference.jpg
+image: /img/blog/health-equity.jpg
 ---
 
 Health equity means that every person has a fair opportunity to be as healthy as possible. In practice, we are far from that ideal. Where you live, what language you speak, how much money you earn, and the color of your skin still predict your health outcomes with disturbing accuracy. Technology can either widen these gaps or narrow them. The choice depends on how we build it, who we build it for, and whether we treat it as a commodity or as infrastructure.
 
 <!-- truncate -->
 
-
-![Technology as a Tool for Health Equity](/img/blog/blog-video-conference.jpg)
+![Technology as a Tool for Health Equity](/img/blog/health-equity.jpg)
 
 ## The State of Health Disparities
 

@@ -3,15 +3,14 @@ slug: minimize-clicks-maximize-interaction
 title: "How Ciyex EHR Minimizes \"Clicks\" and Maximizes Patient Interaction"
 authors: [ciyex_team]
 tags: [healthcare, features, patient-experience]
-image: /img/blog/blog-doctor-consultation.jpg
+image: /img/blog/minimize-clicks.jpg
 ---
 
 In many clinical settings, the computer screen has become a physical barrier between the doctor and the patient. Providers often find themselves tethered to a keyboard, navigating a maze of tabs and pop-up windows while the patient waits for a moment of eye contact.
 
 <!-- truncate -->
 
-
-![How Ciyex EHR Minimizes \"Clicks\" and Maximizes Patient Interaction](/img/blog/blog-doctor-consultation.jpg)
+![Minimize Clicks, Maximize Interaction](/img/blog/minimize-clicks.jpg)
 
 Ciyex EHR was built to dismantle this barrier. By prioritizing a "minimal-click" philosophy, our platform shifts the focus away from the software and back to the person in the exam room. Here is how Ciyex optimizes the digital experience to maximize human interaction.
 

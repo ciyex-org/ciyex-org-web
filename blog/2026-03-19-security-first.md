@@ -3,14 +3,12 @@ slug: security-first
 title: "Security First: How Ciyex Protects Patient Data"
 authors: [ciyex_team]
 tags: [security, hipaa, encryption]
-image: /img/blog/blog-doctor-laptop.jpg
+image: /img/blog/hero-security.svg
 ---
 
 In healthcare software, a security breach is not an inconvenience. It is a violation of patient trust, a potential HIPAA violation carrying fines up to $1.5 million per incident category, and a risk to patient safety. Ciyex treats security as the foundational layer upon which every feature is built. This post details the specific mechanisms we use to protect protected health information (PHI) at every layer of the system.
 
 <!-- truncate -->
-
-![Security First: How Ciyex Protects Patient Data](/img/blog/blog-doctor-laptop.jpg)
 
 ## Encryption: Data at Rest and in Transit
 

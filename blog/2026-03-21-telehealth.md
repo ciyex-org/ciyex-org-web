@@ -3,14 +3,12 @@ slug: telehealth-integration
 title: "Telehealth in Ciyex: Bringing Care to Every Community"
 authors: [dr_smith]
 tags: [telehealth, features, healthcare]
-image: /img/blog/blog-telehealth-call.jpg
+image: /img/blog/hero-telehealth.svg
 ---
 
 For the 60 million Americans living in rural areas, seeing a specialist can mean a four-hour drive each way. For elderly patients with mobility limitations, for parents juggling work and childcare, for immunocompromised patients who should avoid waiting rooms, the barrier to care is often not clinical but logistical. Telehealth removes that barrier. Ciyex integrates telehealth directly into the clinical workflow, powered by Jitsi, so that virtual visits are as natural and well-documented as in-person encounters.
 
 <!-- truncate -->
-
-![Telehealth in Ciyex: Bringing Care to Every Community](/img/blog/blog-telehealth-call.jpg)
 
 ## Why Telehealth Belongs Inside the EHR
 

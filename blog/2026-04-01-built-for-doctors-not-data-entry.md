@@ -3,15 +3,14 @@ slug: built-for-doctors-not-data-entry
 title: "Built for Doctors, Not Data Entry: Streamlining Workflows with Ciyex EHR"
 authors: [ciyex_team]
 tags: [healthcare, features, patient-experience]
-image: /img/blog/blog-practitioner-clipboard.jpg
+image: /img/blog/built-for-doctors.jpg
 ---
 
 In the modern medical landscape, a disturbing trend has emerged: doctors are spending more time staring at screens than looking at patients. Current statistics suggest that for every hour of patient care, physicians spend nearly two hours on administrative tasks.
 
 <!-- truncate -->
 
-
-![Built for Doctors, Not Data Entry: Streamlining Workflows with Ciyex EHR](/img/blog/blog-practitioner-clipboard.jpg)
+![Built for Doctors, Not Data Entry](/img/blog/built-for-doctors.jpg)
 
 As we move through 2026, the burnout is real. The "Data Entry" burden has turned healers into high-paid clerks. **Ciyex EHR** was built to change that narrative. Here's how we are putting the focus back on the patient by revolutionizing clinical workflows.
 

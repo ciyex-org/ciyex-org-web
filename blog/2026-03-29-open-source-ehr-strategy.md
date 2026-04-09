@@ -3,15 +3,14 @@ slug: open-source-ehr-strategy
 title: "Why Every Modern Healthcare Provider in 2026 Needs an Open Source EHR Strategy"
 authors: [ciyex_team]
 tags: [open-source, healthcare, fhir, mission]
-image: /img/blog/blog-doctor-consultation.jpg
+image: /img/blog/open-source-ehr-strategy-2.jpg
 ---
 
 In 2026, the "software-as-a-service" (SaaS) tax on healthcare has reached a tipping point. Many providers are finding that proprietary EHRs act more like data silos than clinical tools. To regain control over patient data and operational costs, a shift toward a robust Open Source EHR strategy is no longer optional — it's a competitive necessity.
 
 <!-- truncate -->
 
-
-![Why Every Modern Healthcare Provider in 2026 Needs an Open Source EHR Strategy](/img/blog/blog-doctor-consultation.jpg)
+![Open Source EHR Strategy](/img/blog/open-source-ehr-strategy-2.jpg)
 
 ## The Rise of Digital Health Sovereignty
 
