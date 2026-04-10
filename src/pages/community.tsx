@@ -247,7 +247,7 @@ export default function Community(): ReactNode {
                   <Link
                     key={i}
                     className={styles.categoryCard}
-                    href={`https://forum.ciyex.org/c/${cat.slug}`}
+                    to={`/community/category?c=${cat.slug}`}
                   >
                     <div className={styles.categoryIcon} style={{ color: cat.color }}>
                       {cat.icon}
