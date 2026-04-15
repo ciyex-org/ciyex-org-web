@@ -197,7 +197,7 @@ const config: Config = {
         { to: '/about', label: 'About', position: 'left' },
         { to: '/impact', label: 'Impact', position: 'left' },
         { to: '/professional-support', label: 'Professional Support', position: 'left' },
-        { label: 'Community', to: '/community', position: 'left' },
+        { label: 'Community', href: 'https://forum.ciyex.org/', position: 'left' },
         {
           type: 'docsVersionDropdown',
           position: 'right',
