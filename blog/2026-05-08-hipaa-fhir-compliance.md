@@ -51,4 +51,4 @@ The goal of standards like FHIR is to eliminate "data silos." When a patient mov
 
 Managing healthcare data doesn't have to be a trade-off between security and usability. By leveraging the power of FHIR and the security of HIPAA-compliant protocols, Ciyex EHR provides a future-proof platform for modern healthcare delivery.
 
-Ready to modernize your health data management? [Schedule a Ciyex Demo today](https://ciyex.org) and see how we can streamline your clinical workflows while keeping your practice globally compliant.
+Ready to modernize your health data management? [Schedule a Ciyex Demo today](https://calendly.com/qiaben/ciyex?month=2026-05) and see how we can streamline your clinical workflows while keeping your practice globally compliant.
