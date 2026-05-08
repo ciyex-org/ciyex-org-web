@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0f172a"/>
+  <!-- Checklist document -->
+  <rect x="440" y="100" width="220" height="300" rx="10" fill="none" stroke="url(#grad)" stroke-width="2" opacity="0.7"/>
+  <rect x="445" y="105" width="210" height="290" rx="8" fill="url(#grad)" opacity="0.04"/>
+  <!-- Document header line -->
+  <line x1="470" y1="140" x2="630" y2="140" stroke="url(#grad)" stroke-width="1.5" opacity="0.3"/>
+  <!-- Checklist items -->
+  <rect x="470" y="165" width="16" height="16" rx="2" fill="none" stroke="url(#grad)" stroke-width="1.5" opacity="0.6"/>
+  <path d="M473 173 L477 177 L483 169" fill="none" stroke="url(#grad)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+  <line x1="500" y1="173" x2="620" y2="173" stroke="url(#grad)" stroke-width="1.5" stroke-linecap="round" opacity="0.35"/>
+  <rect x="470" y="200" width="16" height="16" rx="2" fill="none" stroke="url(#grad)" stroke-width="1.5" opacity="0.6"/>
+  <path d="M473 208 L477 212 L483 204" fill="none" stroke="url(#grad)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+  <line x1="500" y1="208" x2="600" y2="208" stroke="url(#grad)" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
+  <rect x="470" y="235" width="16" height="16" rx="2" fill="none" stroke="url(#grad)" stroke-width="1.5" opacity="0.6"/>
+  <path d="M473 243 L477 247 L483 239" fill="none" stroke="url(#grad)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+  <line x1="500" y1="243" x2="630" y2="243" stroke="url(#grad)" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
+  <rect x="470" y="270" width="16" height="16" rx="2" fill="none" stroke="url(#grad)" stroke-width="1.5" opacity="0.6"/>
+  <path d="M473 278 L477 282 L483 274" fill="none" stroke="url(#grad)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+  <line x1="500" y1="278" x2="590" y2="278" stroke="url(#grad)" stroke-width="1.5" stroke-linecap="round" opacity="0.25"/>
+  <rect x="470" y="305" width="16" height="16" rx="2" fill="none" stroke="url(#grad)" stroke-width="1.5" opacity="0.5"/>
+  <line x1="500" y1="313" x2="615" y2="313" stroke="url(#grad)" stroke-width="1.5" stroke-linecap="round" opacity="0.2"/>
+  <rect x="470" y="340" width="16" height="16" rx="2" fill="none" stroke="url(#grad)" stroke-width="1.5" opacity="0.4"/>
+  <line x1="500" y1="348" x2="580" y2="348" stroke="url(#grad)" stroke-width="1.5" stroke-linecap="round" opacity="0.18"/>
+  <!-- Shield to the right -->
+  <path d="M750 200 L820 230 L820 320 Q820 380 750 410 Q680 380 680 320 L680 230 Z" fill="none" stroke="url(#grad)" stroke-width="2" opacity="0.7"/>
+  <path d="M750 215 L808 240 L808 320 Q808 370 750 395 Q692 370 692 320 L692 240 Z" fill="url(#grad)" opacity="0.04"/>
+  <!-- Shield checkmark -->
+  <path d="M725 310 L742 327 L775 290" fill="none" stroke="url(#grad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
+  <!-- Connection between document and shield -->
+  <line x1="660" y1="250" x2="680" y2="270" stroke="url(#grad)" stroke-width="1" opacity="0.3" stroke-dasharray="4 3"/>
+  <!-- Decorative arcs around shield -->
+  <path d="M650 190 Q750 150 850 190" fill="none" stroke="url(#grad)" stroke-width="0.8" opacity="0.15"/>
+  <path d="M650 420 Q750 460 850 420" fill="none" stroke="url(#grad)" stroke-width="0.8" opacity="0.15"/>
+  <!-- Background grid -->
+  <line x1="300" y1="500" x2="900" y2="500" stroke="url(#grad)" stroke-width="0.5" opacity="0.06"/>
+  <line x1="300" y1="530" x2="900" y2="530" stroke="url(#grad)" stroke-width="0.5" opacity="0.06"/>
+</svg>

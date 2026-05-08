@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /docs/next/
+
+Sitemap: https://ciyex.org/sitemap.xml

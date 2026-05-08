@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0f172a"/>
+  <!-- Left hand -->
+  <path d="M440 380 Q420 370 410 340 Q400 310 420 290 Q430 280 440 285 L440 320" fill="none" stroke="url(#grad)" stroke-width="2" opacity="0.6"/>
+  <path d="M440 320 Q435 280 450 270 Q460 265 465 275 L460 310" fill="none" stroke="url(#grad)" stroke-width="1.5" opacity="0.5"/>
+  <path d="M460 310 Q458 275 470 268 Q480 262 482 272 L480 305" fill="none" stroke="url(#grad)" stroke-width="1.5" opacity="0.5"/>
+  <path d="M480 305 Q480 280 490 275 Q498 272 500 280 L498 305" fill="none" stroke="url(#grad)" stroke-width="1.5" opacity="0.45"/>
+  <path d="M440 380 Q440 400 470 410 L530 410" fill="none" stroke="url(#grad)" stroke-width="2" opacity="0.6"/>
+  <!-- Right hand (mirrored) -->
+  <path d="M760 380 Q780 370 790 340 Q800 310 780 290 Q770 280 760 285 L760 320" fill="none" stroke="url(#grad)" stroke-width="2" opacity="0.6"/>
+  <path d="M760 320 Q765 280 750 270 Q740 265 735 275 L740 310" fill="none" stroke="url(#grad)" stroke-width="1.5" opacity="0.5"/>
+  <path d="M740 310 Q742 275 730 268 Q720 262 718 272 L720 305" fill="none" stroke="url(#grad)" stroke-width="1.5" opacity="0.5"/>
+  <path d="M720 305 Q720 280 710 275 Q702 272 700 280 L702 305" fill="none" stroke="url(#grad)" stroke-width="1.5" opacity="0.45"/>
+  <path d="M760 380 Q760 400 730 410 L670 410" fill="none" stroke="url(#grad)" stroke-width="2" opacity="0.6"/>
+  <!-- Cupped base -->
+  <path d="M530 410 Q600 430 670 410" fill="none" stroke="url(#grad)" stroke-width="1.5" opacity="0.4"/>
+  <!-- Heart with medical cross -->
+  <path d="M565 240 Q565 200 590 200 Q615 200 615 240 Q615 200 640 200 Q665 200 665 240 Q665 290 615 330 Q565 290 565 240 Z" fill="none" stroke="url(#grad)" stroke-width="2.5" opacity="0.8"/>
+  <path d="M570 242 Q570 205 593 205 Q616 205 616 242 Q616 205 639 205 Q662 205 662 242 Q662 288 616 325 Q570 288 570 242 Z" fill="url(#grad)" opacity="0.06"/>
+  <!-- Medical cross inside heart -->
+  <line x1="605" y1="245" x2="625" y2="245" stroke="url(#grad)" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+  <line x1="615" y1="235" x2="615" y2="255" stroke="url(#grad)" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+  <!-- Glow effect circles -->
+  <circle cx="615" cy="270" r="80" fill="none" stroke="url(#grad)" stroke-width="0.8" opacity="0.1"/>
+  <circle cx="615" cy="270" r="110" fill="none" stroke="url(#grad)" stroke-width="0.5" opacity="0.06"/>
+  <circle cx="615" cy="270" r="140" fill="none" stroke="url(#grad)" stroke-width="0.3" opacity="0.04"/>
+  <!-- Sparkle dots -->
+  <circle cx="540" cy="190" r="2" fill="url(#grad)" opacity="0.3"/>
+  <circle cx="690" cy="190" r="2" fill="url(#grad)" opacity="0.3"/>
+  <circle cx="500" cy="250" r="1.5" fill="url(#grad)" opacity="0.2"/>
+  <circle cx="730" cy="250" r="1.5" fill="url(#grad)" opacity="0.2"/>
+</svg>

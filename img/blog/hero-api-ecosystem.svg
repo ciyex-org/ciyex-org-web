@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0f172a"/>
+  <!-- Center puzzle piece -->
+  <path d="M560 260 L590 260 Q590 245 600 245 Q610 245 610 260 L640 260 L640 290 Q655 290 655 300 Q655 310 640 310 L640 340 L610 340 Q610 355 600 355 Q590 355 590 340 L560 340 L560 310 Q545 310 545 300 Q545 290 560 290 Z" fill="none" stroke="url(#grad)" stroke-width="2" opacity="0.8"/>
+  <path d="M563 263 L587 263 Q587 248 600 248 Q613 248 613 263 L637 263 L637 287 Q652 287 652 300 Q652 313 637 313 L637 337 L613 337 Q613 352 600 352 Q587 352 587 337 L563 337 L563 313 Q548 313 548 300 Q548 287 563 287 Z" fill="url(#grad)" opacity="0.05"/>
+  <!-- Top puzzle piece -->
+  <path d="M560 170 L590 170 Q590 155 600 155 Q610 155 610 170 L640 170 L640 200 Q655 200 655 210 Q655 220 640 220 L640 250 L610 250 Q610 245 600 245 Q590 245 590 250 L560 250 L560 220 Q545 220 545 210 Q545 200 560 200 Z" fill="none" stroke="url(#grad)" stroke-width="1.5" opacity="0.55"/>
+  <!-- Bottom puzzle piece -->
+  <path d="M560 350 L590 350 Q590 355 600 355 Q610 355 610 350 L640 350 L640 380 Q655 380 655 390 Q655 400 640 400 L640 430 L610 430 Q610 445 600 445 Q590 445 590 430 L560 430 L560 400 Q545 400 545 390 Q545 380 560 380 Z" fill="none" stroke="url(#grad)" stroke-width="1.5" opacity="0.55"/>
+  <!-- Left puzzle piece -->
+  <path d="M470 260 L500 260 Q500 245 510 245 Q520 245 520 260 L550 260 L550 290 Q545 290 545 300 Q545 310 550 310 L550 340 L520 340 Q520 355 510 355 Q500 355 500 340 L470 340 L470 310 Q455 310 455 300 Q455 290 470 290 Z" fill="none" stroke="url(#grad)" stroke-width="1.5" opacity="0.55"/>
+  <!-- Right puzzle piece -->
+  <path d="M650 260 L680 260 Q680 245 690 245 Q700 245 700 260 L730 260 L730 290 Q745 290 745 300 Q745 310 730 310 L730 340 L700 340 Q700 355 690 355 Q680 355 680 340 L650 340 L650 310 Q655 310 655 300 Q655 290 650 290 Z" fill="none" stroke="url(#grad)" stroke-width="1.5" opacity="0.55"/>
+  <!-- API connection lines radiating out -->
+  <line x1="470" y1="300" x2="350" y2="250" stroke="url(#grad)" stroke-width="1" opacity="0.3"/>
+  <line x1="470" y1="300" x2="350" y2="350" stroke="url(#grad)" stroke-width="1" opacity="0.3"/>
+  <line x1="730" y1="300" x2="850" y2="250" stroke="url(#grad)" stroke-width="1" opacity="0.3"/>
+  <line x1="730" y1="300" x2="850" y2="350" stroke="url(#grad)" stroke-width="1" opacity="0.3"/>
+  <line x1="600" y1="170" x2="500" y2="120" stroke="url(#grad)" stroke-width="1" opacity="0.25"/>
+  <line x1="600" y1="170" x2="700" y2="120" stroke="url(#grad)" stroke-width="1" opacity="0.25"/>
+  <line x1="600" y1="430" x2="500" y2="490" stroke="url(#grad)" stroke-width="1" opacity="0.25"/>
+  <line x1="600" y1="430" x2="700" y2="490" stroke="url(#grad)" stroke-width="1" opacity="0.25"/>
+  <!-- Endpoint dots -->
+  <circle cx="350" cy="250" r="8" fill="none" stroke="url(#grad)" stroke-width="1.2" opacity="0.35"/>
+  <circle cx="350" cy="350" r="8" fill="none" stroke="url(#grad)" stroke-width="1.2" opacity="0.35"/>
+  <circle cx="850" cy="250" r="8" fill="none" stroke="url(#grad)" stroke-width="1.2" opacity="0.35"/>
+  <circle cx="850" cy="350" r="8" fill="none" stroke="url(#grad)" stroke-width="1.2" opacity="0.35"/>
+  <circle cx="500" cy="120" r="6" fill="none" stroke="url(#grad)" stroke-width="1" opacity="0.3"/>
+  <circle cx="700" cy="120" r="6" fill="none" stroke="url(#grad)" stroke-width="1" opacity="0.3"/>
+  <circle cx="500" cy="490" r="6" fill="none" stroke="url(#grad)" stroke-width="1" opacity="0.3"/>
+  <circle cx="700" cy="490" r="6" fill="none" stroke="url(#grad)" stroke-width="1" opacity="0.3"/>
+  <!-- Center dot -->
+  <circle cx="600" cy="300" r="4" fill="url(#grad)" opacity="0.6"/>
+</svg>

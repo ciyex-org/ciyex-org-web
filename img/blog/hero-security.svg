@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0f172a"/>
+  <!-- Shield -->
+  <path d="M600 120 L720 180 L720 340 Q720 460 600 520 Q480 460 480 340 L480 180 Z" fill="none" stroke="url(#grad)" stroke-width="2.5" opacity="0.8"/>
+  <path d="M600 150 L700 200 L700 340 Q700 440 600 490 Q500 440 500 340 L500 200 Z" fill="url(#grad)" opacity="0.05"/>
+  <!-- Inner shield outline -->
+  <path d="M600 180 L680 220 L680 340 Q680 420 600 460 Q520 420 520 340 L520 220 Z" fill="none" stroke="url(#grad)" stroke-width="1" opacity="0.3"/>
+  <!-- Lock body -->
+  <rect x="570" y="310" width="60" height="50" rx="6" fill="none" stroke="url(#grad)" stroke-width="2" opacity="0.9"/>
+  <rect x="574" y="314" width="52" height="42" rx="4" fill="url(#grad)" opacity="0.08"/>
+  <!-- Lock shackle -->
+  <path d="M580 310 L580 280 Q580 260 600 260 Q620 260 620 280 L620 310" fill="none" stroke="url(#grad)" stroke-width="2" opacity="0.9"/>
+  <!-- Keyhole -->
+  <circle cx="600" cy="330" r="6" fill="none" stroke="url(#grad)" stroke-width="1.5" opacity="0.7"/>
+  <line x1="600" y1="336" x2="600" y2="348" stroke="url(#grad)" stroke-width="1.5" opacity="0.7"/>
+  <!-- Radiating security lines -->
+  <line x1="380" y1="180" x2="440" y2="210" stroke="url(#grad)" stroke-width="0.8" opacity="0.2"/>
+  <line x1="350" y1="300" x2="430" y2="300" stroke="url(#grad)" stroke-width="0.8" opacity="0.2"/>
+  <line x1="380" y1="430" x2="440" y2="400" stroke="url(#grad)" stroke-width="0.8" opacity="0.2"/>
+  <line x1="820" y1="180" x2="760" y2="210" stroke="url(#grad)" stroke-width="0.8" opacity="0.2"/>
+  <line x1="850" y1="300" x2="770" y2="300" stroke="url(#grad)" stroke-width="0.8" opacity="0.2"/>
+  <line x1="820" y1="430" x2="760" y2="400" stroke="url(#grad)" stroke-width="0.8" opacity="0.2"/>
+  <!-- Corner accents -->
+  <circle cx="350" y="300" r="4" fill="url(#grad)" opacity="0.3"/>
+  <circle cx="850" y="300" r="4" fill="url(#grad)" opacity="0.3"/>
+  <circle cx="380" y="180" r="3" fill="url(#grad)" opacity="0.2"/>
+  <circle cx="820" y="180" r="3" fill="url(#grad)" opacity="0.2"/>
+  <circle cx="380" y="430" r="3" fill="url(#grad)" opacity="0.2"/>
+  <circle cx="820" y="430" r="3" fill="url(#grad)" opacity="0.2"/>
+  <!-- Subtle grid background -->
+  <line x1="200" y1="100" x2="200" y2="530" stroke="url(#grad)" stroke-width="0.3" opacity="0.06"/>
+  <line x1="300" y1="100" x2="300" y2="530" stroke="url(#grad)" stroke-width="0.3" opacity="0.06"/>
+  <line x1="900" y1="100" x2="900" y2="530" stroke="url(#grad)" stroke-width="0.3" opacity="0.06"/>
+  <line x1="1000" y1="100" x2="1000" y2="530" stroke="url(#grad)" stroke-width="0.3" opacity="0.06"/>
+</svg>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0f172a"/>
+  <!-- Large speech bubble - center -->
+  <path d="M500 180 L780 180 Q800 180 800 200 L800 300 Q800 320 780 320 L650 320 L620 360 L610 320 L500 320 Q480 320 480 300 L480 200 Q480 180 500 180 Z" fill="none" stroke="url(#grad)" stroke-width="2" opacity="0.7"/>
+  <path d="M505 185 L775 185 Q795 185 795 205 L795 295 Q795 315 775 315 L645 315 L618 352 L608 315 L505 315 Q485 315 485 295 L485 205 Q485 185 505 185 Z" fill="url(#grad)" opacity="0.04"/>
+  <!-- Lines inside large bubble -->
+  <line x1="520" y1="220" x2="700" y2="220" stroke="url(#grad)" stroke-width="1.5" stroke-linecap="round" opacity="0.35"/>
+  <line x1="520" y1="245" x2="750" y2="245" stroke="url(#grad)" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
+  <line x1="520" y1="270" x2="680" y2="270" stroke="url(#grad)" stroke-width="1.5" stroke-linecap="round" opacity="0.25"/>
+  <line x1="520" y1="295" x2="720" y2="295" stroke="url(#grad)" stroke-width="1.2" stroke-linecap="round" opacity="0.2"/>
+  <!-- Medium speech bubble - left -->
+  <path d="M280 280 L440 280 Q455 280 455 295 L455 370 Q455 385 440 385 L350 385 L330 415 L322 385 L280 385 Q265 385 265 370 L265 295 Q265 280 280 280 Z" fill="none" stroke="url(#grad)" stroke-width="1.5" opacity="0.5"/>
+  <line x1="290" y1="310" x2="420" y2="310" stroke="url(#grad)" stroke-width="1" stroke-linecap="round" opacity="0.25"/>
+  <line x1="290" y1="332" x2="400" y2="332" stroke="url(#grad)" stroke-width="1" stroke-linecap="round" opacity="0.2"/>
+  <line x1="290" y1="354" x2="380" y2="354" stroke="url(#grad)" stroke-width="1" stroke-linecap="round" opacity="0.15"/>
+  <!-- Small speech bubble - top right -->
+  <path d="M830 130 L960 130 Q975 130 975 145 L975 200 Q975 215 960 215 L890 215 L875 240 L868 215 L830 215 Q815 215 815 200 L815 145 Q815 130 830 130 Z" fill="none" stroke="url(#grad)" stroke-width="1.5" opacity="0.45"/>
+  <line x1="840" y1="155" x2="940" y2="155" stroke="url(#grad)" stroke-width="1" stroke-linecap="round" opacity="0.2"/>
+  <line x1="840" y1="175" x2="920" y2="175" stroke="url(#grad)" stroke-width="1" stroke-linecap="round" opacity="0.15"/>
+  <line x1="840" y1="195" x2="950" y2="195" stroke="url(#grad)" stroke-width="0.8" stroke-linecap="round" opacity="0.12"/>
+  <!-- Tiny speech bubble - bottom right -->
+  <path d="M780 400 L900 400 Q912 400 912 412 L912 455 Q912 467 900 467 L840 467 L828 487 L822 467 L780 467 Q768 467 768 455 L768 412 Q768 400 780 400 Z" fill="none" stroke="url(#grad)" stroke-width="1.2" opacity="0.35"/>
+  <line x1="790" y1="422" x2="880" y2="422" stroke="url(#grad)" stroke-width="0.8" stroke-linecap="round" opacity="0.15"/>
+  <line x1="790" y1="440" x2="860" y2="440" stroke="url(#grad)" stroke-width="0.8" stroke-linecap="round" opacity="0.12"/>
+  <!-- Extra tiny bubble -->
+  <path d="M350 150 L430 150 Q440 150 440 160 L440 190 Q440 200 430 200 L390 200 L380 215 L376 200 L350 200 Q340 200 340 190 L340 160 Q340 150 350 150 Z" fill="none" stroke="url(#grad)" stroke-width="1" opacity="0.3"/>
+  <line x1="358" y1="168" x2="418" y2="168" stroke="url(#grad)" stroke-width="0.8" stroke-linecap="round" opacity="0.15"/>
+  <line x1="358" y1="183" x2="400" y2="183" stroke="url(#grad)" stroke-width="0.6" stroke-linecap="round" opacity="0.1"/>
+  <!-- Decorative dots -->
+  <circle cx="200" cy="315" r="2" fill="url(#grad)" opacity="0.15"/>
+  <circle cx="1020" cy="315" r="2" fill="url(#grad)" opacity="0.15"/>
+  <circle cx="600" cy="520" r="2" fill="url(#grad)" opacity="0.1"/>
+</svg>

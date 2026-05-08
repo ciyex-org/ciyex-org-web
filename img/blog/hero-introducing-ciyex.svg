@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+    <linearGradient id="gradFade" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0.3"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0f172a"/>
+  <!-- Network nodes -->
+  <circle cx="600" cy="315" r="60" fill="none" stroke="url(#grad)" stroke-width="2" opacity="0.9"/>
+  <circle cx="400" cy="200" r="30" fill="none" stroke="url(#grad)" stroke-width="1.5" opacity="0.6"/>
+  <circle cx="800" cy="200" r="25" fill="none" stroke="url(#grad)" stroke-width="1.5" opacity="0.6"/>
+  <circle cx="350" cy="400" r="20" fill="none" stroke="url(#grad)" stroke-width="1.5" opacity="0.5"/>
+  <circle cx="850" cy="420" r="28" fill="none" stroke="url(#grad)" stroke-width="1.5" opacity="0.5"/>
+  <circle cx="500" cy="480" r="18" fill="none" stroke="url(#grad)" stroke-width="1.5" opacity="0.4"/>
+  <circle cx="700" cy="150" r="15" fill="none" stroke="url(#grad)" stroke-width="1.5" opacity="0.4"/>
+  <circle cx="250" cy="300" r="12" fill="none" stroke="url(#grad)" stroke-width="1" opacity="0.3"/>
+  <circle cx="950" cy="300" r="14" fill="none" stroke="url(#grad)" stroke-width="1" opacity="0.3"/>
+  <!-- Connection lines -->
+  <line x1="600" y1="315" x2="400" y2="200" stroke="url(#grad)" stroke-width="1" opacity="0.3"/>
+  <line x1="600" y1="315" x2="800" y2="200" stroke="url(#grad)" stroke-width="1" opacity="0.3"/>
+  <line x1="600" y1="315" x2="350" y2="400" stroke="url(#grad)" stroke-width="1" opacity="0.25"/>
+  <line x1="600" y1="315" x2="850" y2="420" stroke="url(#grad)" stroke-width="1" opacity="0.25"/>
+  <line x1="600" y1="315" x2="500" y2="480" stroke="url(#grad)" stroke-width="1" opacity="0.2"/>
+  <line x1="600" y1="315" x2="700" y2="150" stroke="url(#grad)" stroke-width="1" opacity="0.2"/>
+  <line x1="400" y1="200" x2="700" y2="150" stroke="url(#grad)" stroke-width="0.5" opacity="0.15"/>
+  <line x1="800" y1="200" x2="850" y2="420" stroke="url(#grad)" stroke-width="0.5" opacity="0.15"/>
+  <line x1="350" y1="400" x2="500" y2="480" stroke="url(#grad)" stroke-width="0.5" opacity="0.15"/>
+  <line x1="250" y1="300" x2="400" y2="200" stroke="url(#grad)" stroke-width="0.5" opacity="0.1"/>
+  <line x1="950" y1="300" x2="800" y2="200" stroke="url(#grad)" stroke-width="0.5" opacity="0.1"/>
+  <!-- Center heart/plus -->
+  <path d="M600 295 L600 335" stroke="url(#grad)" stroke-width="3" stroke-linecap="round" opacity="0.9"/>
+  <path d="M580 315 L620 315" stroke="url(#grad)" stroke-width="3" stroke-linecap="round" opacity="0.9"/>
+  <path d="M585 290 Q585 280 595 280 Q605 280 605 290 Q605 280 615 280 Q625 280 625 290 Q625 305 605 318 Q585 305 585 290 Z" fill="none" stroke="url(#grad)" stroke-width="1.5" opacity="0.5" transform="translate(-5,-10)"/>
+  <!-- Dot accents -->
+  <circle cx="400" cy="200" r="4" fill="url(#grad)" opacity="0.7"/>
+  <circle cx="800" cy="200" r="3" fill="url(#grad)" opacity="0.6"/>
+  <circle cx="350" cy="400" r="3" fill="url(#grad)" opacity="0.5"/>
+  <circle cx="850" cy="420" r="3.5" fill="url(#grad)" opacity="0.5"/>
+  <circle cx="600" cy="315" r="5" fill="url(#grad)" opacity="0.8"/>
+</svg>

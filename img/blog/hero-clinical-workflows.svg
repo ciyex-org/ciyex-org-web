@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0f172a"/>
+  <!-- Top node -->
+  <rect x="530" y="100" width="140" height="50" rx="8" fill="none" stroke="url(#grad)" stroke-width="2" opacity="0.8"/>
+  <rect x="535" y="105" width="130" height="40" rx="5" fill="url(#grad)" opacity="0.05"/>
+  <line x1="555" y1="120" x2="640" y2="120" stroke="url(#grad)" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+  <line x1="555" y1="133" x2="620" y2="133" stroke="url(#grad)" stroke-width="1" stroke-linecap="round" opacity="0.25"/>
+  <!-- Arrow down -->
+  <line x1="600" y1="150" x2="600" y2="190" stroke="url(#grad)" stroke-width="1.5" opacity="0.5"/>
+  <polygon points="600,195 595,185 605,185" fill="url(#grad)" opacity="0.5"/>
+  <!-- Decision diamond -->
+  <polygon points="600,200 670,250 600,300 530,250" fill="none" stroke="url(#grad)" stroke-width="2" opacity="0.8"/>
+  <polygon points="600,210 660,250 600,290 540,250" fill="url(#grad)" opacity="0.04"/>
+  <!-- Left branch -->
+  <line x1="530" y1="250" x2="430" y2="250" stroke="url(#grad)" stroke-width="1.5" opacity="0.5"/>
+  <polygon points="425,250 435,245 435,255" fill="url(#grad)" opacity="0.5"/>
+  <rect x="310" y="225" width="120" height="50" rx="8" fill="none" stroke="url(#grad)" stroke-width="1.5" opacity="0.6"/>
+  <line x1="335" y1="245" x2="405" y2="245" stroke="url(#grad)" stroke-width="1" stroke-linecap="round" opacity="0.3"/>
+  <line x1="335" y1="258" x2="390" y2="258" stroke="url(#grad)" stroke-width="0.8" stroke-linecap="round" opacity="0.2"/>
+  <!-- Right branch -->
+  <line x1="670" y1="250" x2="770" y2="250" stroke="url(#grad)" stroke-width="1.5" opacity="0.5"/>
+  <polygon points="775,250 765,245 765,255" fill="url(#grad)" opacity="0.5"/>
+  <rect x="770" y="225" width="120" height="50" rx="8" fill="none" stroke="url(#grad)" stroke-width="1.5" opacity="0.6"/>
+  <line x1="795" y1="245" x2="865" y2="245" stroke="url(#grad)" stroke-width="1" stroke-linecap="round" opacity="0.3"/>
+  <line x1="795" y1="258" x2="850" y2="258" stroke="url(#grad)" stroke-width="0.8" stroke-linecap="round" opacity="0.2"/>
+  <!-- Down from diamond -->
+  <line x1="600" y1="300" x2="600" y2="340" stroke="url(#grad)" stroke-width="1.5" opacity="0.5"/>
+  <polygon points="600,345 595,335 605,335" fill="url(#grad)" opacity="0.5"/>
+  <!-- Process box below -->
+  <rect x="530" y="350" width="140" height="50" rx="8" fill="none" stroke="url(#grad)" stroke-width="1.5" opacity="0.7"/>
+  <rect x="535" y="355" width="130" height="40" rx="5" fill="url(#grad)" opacity="0.04"/>
+  <line x1="555" y1="370" x2="640" y2="370" stroke="url(#grad)" stroke-width="1" stroke-linecap="round" opacity="0.3"/>
+  <line x1="555" y1="383" x2="615" y2="383" stroke="url(#grad)" stroke-width="0.8" stroke-linecap="round" opacity="0.2"/>
+  <!-- Arrow to bottom -->
+  <line x1="600" y1="400" x2="600" y2="440" stroke="url(#grad)" stroke-width="1.5" opacity="0.4"/>
+  <polygon points="600,445 595,435 605,435" fill="url(#grad)" opacity="0.4"/>
+  <!-- Bottom node -->
+  <rect x="530" y="450" width="140" height="50" rx="8" fill="none" stroke="url(#grad)" stroke-width="1.5" opacity="0.55"/>
+  <line x1="555" y1="470" x2="640" y2="470" stroke="url(#grad)" stroke-width="1" stroke-linecap="round" opacity="0.25"/>
+  <!-- Left branch continues down -->
+  <line x1="370" y1="275" x2="370" y2="350" stroke="url(#grad)" stroke-width="1" opacity="0.3"/>
+  <rect x="310" y="350" width="120" height="45" rx="8" fill="none" stroke="url(#grad)" stroke-width="1.2" opacity="0.4"/>
+  <line x1="335" y1="370" x2="405" y2="370" stroke="url(#grad)" stroke-width="0.8" stroke-linecap="round" opacity="0.2"/>
+  <!-- Right branch continues down -->
+  <line x1="830" y1="275" x2="830" y2="350" stroke="url(#grad)" stroke-width="1" opacity="0.3"/>
+  <rect x="770" y="350" width="120" height="45" rx="8" fill="none" stroke="url(#grad)" stroke-width="1.2" opacity="0.4"/>
+  <line x1="795" y1="370" x2="865" y2="370" stroke="url(#grad)" stroke-width="0.8" stroke-linecap="round" opacity="0.2"/>
+</svg>
