@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0f172a"/>
+  <!-- Globe circle -->
+  <circle cx="600" cy="315" r="150" fill="none" stroke="url(#grad)" stroke-width="2" opacity="0.7"/>
+  <circle cx="600" cy="315" r="155" fill="none" stroke="url(#grad)" stroke-width="0.5" opacity="0.2"/>
+  <!-- Globe latitude lines -->
+  <ellipse cx="600" cy="315" rx="150" ry="50" fill="none" stroke="url(#grad)" stroke-width="0.8" opacity="0.25"/>
+  <ellipse cx="600" cy="315" rx="150" ry="100" fill="none" stroke="url(#grad)" stroke-width="0.8" opacity="0.2"/>
+  <!-- Globe longitude lines -->
+  <ellipse cx="600" cy="315" rx="50" ry="150" fill="none" stroke="url(#grad)" stroke-width="0.8" opacity="0.25"/>
+  <ellipse cx="600" cy="315" rx="100" ry="150" fill="none" stroke="url(#grad)" stroke-width="0.8" opacity="0.2"/>
+  <!-- Vertical meridian -->
+  <line x1="600" y1="165" x2="600" y2="465" stroke="url(#grad)" stroke-width="0.8" opacity="0.2"/>
+  <!-- Horizontal equator -->
+  <line x1="450" y1="315" x2="750" y2="315" stroke="url(#grad)" stroke-width="0.8" opacity="0.2"/>
+  <!-- Left code bracket < / > -->
+  <path d="M350 280 L300 315 L350 350" fill="none" stroke="url(#grad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
+  <!-- Right code bracket -->
+  <path d="M850 280 L900 315 L850 350" fill="none" stroke="url(#grad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
+  <!-- Slash in middle -->
+  <line x1="620" y1="270" x2="580" y2="360" stroke="url(#grad)" stroke-width="2.5" stroke-linecap="round" opacity="0.7"/>
+  <!-- Orbital rings -->
+  <ellipse cx="600" cy="315" rx="220" ry="60" fill="none" stroke="url(#grad)" stroke-width="0.8" opacity="0.15" transform="rotate(-20 600 315)"/>
+  <ellipse cx="600" cy="315" rx="220" ry="60" fill="none" stroke="url(#grad)" stroke-width="0.8" opacity="0.15" transform="rotate(20 600 315)"/>
+  <!-- Accent dots around globe -->
+  <circle cx="450" cy="220" r="3" fill="url(#grad)" opacity="0.4"/>
+  <circle cx="750" cy="220" r="3" fill="url(#grad)" opacity="0.4"/>
+  <circle cx="450" cy="410" r="3" fill="url(#grad)" opacity="0.4"/>
+  <circle cx="750" cy="410" r="3" fill="url(#grad)" opacity="0.4"/>
+  <circle cx="300" cy="315" r="3" fill="url(#grad)" opacity="0.5"/>
+  <circle cx="900" cy="315" r="3" fill="url(#grad)" opacity="0.5"/>
+</svg>

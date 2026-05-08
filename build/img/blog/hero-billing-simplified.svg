@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0f172a"/>
+  <!-- Main document -->
+  <rect x="430" y="100" width="240" height="340" rx="10" fill="none" stroke="url(#grad)" stroke-width="2" opacity="0.7"/>
+  <rect x="435" y="105" width="230" height="330" rx="8" fill="url(#grad)" opacity="0.04"/>
+  <!-- Document fold corner -->
+  <path d="M630 100 L670 100 L670 140 L630 140 Z" fill="#0f172a" stroke="url(#grad)" stroke-width="1" opacity="0.3"/>
+  <path d="M630 100 L670 140" fill="none" stroke="url(#grad)" stroke-width="1" opacity="0.3"/>
+  <!-- Header line -->
+  <line x1="460" y1="145" x2="630" y2="145" stroke="url(#grad)" stroke-width="1" opacity="0.2"/>
+  <!-- Line items with checkmarks -->
+  <path d="M465 175 L472 182 L483 168" fill="none" stroke="url(#grad)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+  <line x1="495" y1="175" x2="600" y2="175" stroke="url(#grad)" stroke-width="1.2" stroke-linecap="round" opacity="0.35"/>
+  <line x1="610" y1="175" x2="645" y2="175" stroke="url(#grad)" stroke-width="1.2" stroke-linecap="round" opacity="0.3"/>
+  <path d="M465 210 L472 217 L483 203" fill="none" stroke="url(#grad)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.65"/>
+  <line x1="495" y1="210" x2="580" y2="210" stroke="url(#grad)" stroke-width="1.2" stroke-linecap="round" opacity="0.3"/>
+  <line x1="610" y1="210" x2="645" y2="210" stroke="url(#grad)" stroke-width="1.2" stroke-linecap="round" opacity="0.28"/>
+  <path d="M465 245 L472 252 L483 238" fill="none" stroke="url(#grad)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+  <line x1="495" y1="245" x2="620" y2="245" stroke="url(#grad)" stroke-width="1.2" stroke-linecap="round" opacity="0.25"/>
+  <line x1="610" y1="245" x2="645" y2="245" stroke="url(#grad)" stroke-width="1.2" stroke-linecap="round" opacity="0.25"/>
+  <path d="M465 280 L472 287 L483 273" fill="none" stroke="url(#grad)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+  <line x1="495" y1="280" x2="590" y2="280" stroke="url(#grad)" stroke-width="1.2" stroke-linecap="round" opacity="0.22"/>
+  <line x1="610" y1="280" x2="645" y2="280" stroke="url(#grad)" stroke-width="1.2" stroke-linecap="round" opacity="0.22"/>
+  <!-- Separator -->
+  <line x1="460" y1="320" x2="640" y2="320" stroke="url(#grad)" stroke-width="1" opacity="0.25"/>
+  <!-- Total line -->
+  <line x1="550" y1="350" x2="645" y2="350" stroke="url(#grad)" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+  <!-- Dollar sign to the right -->
+  <circle cx="780" cy="250" r="60" fill="none" stroke="url(#grad)" stroke-width="2" opacity="0.5"/>
+  <circle cx="780" cy="250" r="65" fill="none" stroke="url(#grad)" stroke-width="0.5" opacity="0.15"/>
+  <!-- Dollar symbol -->
+  <path d="M780 215 L780 285" stroke="url(#grad)" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <path d="M760 230 Q760 220 780 220 Q800 220 800 235 Q800 250 780 250 Q760 250 760 265 Q760 280 780 280 Q800 280 800 270" fill="none" stroke="url(#grad)" stroke-width="2" opacity="0.7"/>
+  <!-- Connection from document to dollar -->
+  <line x1="670" y1="270" x2="720" y2="255" stroke="url(#grad)" stroke-width="1" opacity="0.25" stroke-dasharray="4 3"/>
+  <!-- Arrow particles -->
+  <circle cx="690" cy="263" r="2" fill="url(#grad)" opacity="0.3"/>
+  <circle cx="705" cy="259" r="2" fill="url(#grad)" opacity="0.35"/>
+  <!-- Decorative bottom -->
+  <line x1="400" y1="480" x2="800" y2="480" stroke="url(#grad)" stroke-width="0.5" opacity="0.08"/>
+  <!-- Small accent circles -->
+  <circle cx="380" cy="200" r="3" fill="url(#grad)" opacity="0.15"/>
+  <circle cx="380" cy="300" r="2" fill="url(#grad)" opacity="0.1"/>
+  <circle cx="880" cy="250" r="3" fill="url(#grad)" opacity="0.15"/>
+</svg>

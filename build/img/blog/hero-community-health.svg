@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0f172a"/>
+  <!-- Center person -->
+  <circle cx="600" cy="250" r="28" fill="none" stroke="url(#grad)" stroke-width="2" opacity="0.8"/>
+  <path d="M565 310 Q565 290 600 285 Q635 290 635 310 L635 340 L565 340 Z" fill="none" stroke="url(#grad)" stroke-width="1.5" opacity="0.7"/>
+  <!-- Left person -->
+  <circle cx="460" cy="270" r="24" fill="none" stroke="url(#grad)" stroke-width="1.5" opacity="0.6"/>
+  <path d="M430 325 Q430 310 460 305 Q490 310 490 325 L490 350 L430 350 Z" fill="none" stroke="url(#grad)" stroke-width="1.2" opacity="0.5"/>
+  <!-- Right person -->
+  <circle cx="740" cy="270" r="24" fill="none" stroke="url(#grad)" stroke-width="1.5" opacity="0.6"/>
+  <path d="M710 325 Q710 310 740 305 Q770 310 770 325 L770 350 L710 350 Z" fill="none" stroke="url(#grad)" stroke-width="1.2" opacity="0.5"/>
+  <!-- Far left person -->
+  <circle cx="350" cy="310" r="20" fill="none" stroke="url(#grad)" stroke-width="1.2" opacity="0.4"/>
+  <path d="M325 358 Q325 345 350 340 Q375 345 375 358 L375 380 L325 380 Z" fill="none" stroke="url(#grad)" stroke-width="1" opacity="0.3"/>
+  <!-- Far right person -->
+  <circle cx="850" cy="310" r="20" fill="none" stroke="url(#grad)" stroke-width="1.2" opacity="0.4"/>
+  <path d="M825 358 Q825 345 850 340 Q875 345 875 358 L875 380 L825 380 Z" fill="none" stroke="url(#grad)" stroke-width="1" opacity="0.3"/>
+  <!-- Heart above group -->
+  <path d="M575 170 Q575 145 595 145 Q615 145 615 170 Q615 145 635 145 Q655 145 655 170 Q655 200 615 225 Q575 200 575 170 Z" fill="none" stroke="url(#grad)" stroke-width="2" opacity="0.8"/>
+  <path d="M580 172 Q580 150 597 150 Q614 150 614 172 Q614 150 631 150 Q648 150 648 172 Q648 198 614 220 Q580 198 580 172 Z" fill="url(#grad)" opacity="0.06"/>
+  <!-- Connection arcs between people -->
+  <path d="M490 290 Q530 260 565 285" fill="none" stroke="url(#grad)" stroke-width="0.8" opacity="0.25"/>
+  <path d="M635 285 Q670 260 710 290" fill="none" stroke="url(#grad)" stroke-width="0.8" opacity="0.25"/>
+  <path d="M375 330 Q415 300 430 320" fill="none" stroke="url(#grad)" stroke-width="0.6" opacity="0.2"/>
+  <path d="M770 320 Q785 300 825 330" fill="none" stroke="url(#grad)" stroke-width="0.6" opacity="0.2"/>
+  <!-- Encircling arc -->
+  <path d="M300 350 Q300 180 600 160 Q900 180 900 350" fill="none" stroke="url(#grad)" stroke-width="1" opacity="0.15"/>
+  <path d="M320 400 Q320 200 600 180 Q880 200 880 400" fill="none" stroke="url(#grad)" stroke-width="0.6" opacity="0.1"/>
+  <!-- Ground line -->
+  <line x1="280" y1="420" x2="920" y2="420" stroke="url(#grad)" stroke-width="0.8" opacity="0.12"/>
+  <!-- Decorative dots -->
+  <circle cx="600" cy="420" r="3" fill="url(#grad)" opacity="0.3"/>
+  <circle cx="460" cy="420" r="2" fill="url(#grad)" opacity="0.2"/>
+  <circle cx="740" cy="420" r="2" fill="url(#grad)" opacity="0.2"/>
+</svg>

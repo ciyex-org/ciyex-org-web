@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0f172a"/>
+  <!-- Terminal window -->
+  <rect x="300" y="120" width="600" height="400" rx="12" fill="none" stroke="url(#grad)" stroke-width="2" opacity="0.8"/>
+  <rect x="305" y="125" width="590" height="390" rx="10" fill="url(#grad)" opacity="0.03"/>
+  <!-- Title bar -->
+  <line x1="300" y1="160" x2="900" y2="160" stroke="url(#grad)" stroke-width="1" opacity="0.3"/>
+  <!-- Window buttons -->
+  <circle cx="330" cy="140" r="5" fill="none" stroke="url(#grad)" stroke-width="1.2" opacity="0.5"/>
+  <circle cx="350" cy="140" r="5" fill="none" stroke="url(#grad)" stroke-width="1.2" opacity="0.4"/>
+  <circle cx="370" cy="140" r="5" fill="none" stroke="url(#grad)" stroke-width="1.2" opacity="0.3"/>
+  <!-- Code lines -->
+  <line x1="340" y1="190" x2="440" y2="190" stroke="url(#grad)" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <line x1="340" y1="220" x2="520" y2="220" stroke="url(#grad)" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+  <line x1="370" y1="250" x2="560" y2="250" stroke="url(#grad)" stroke-width="2" stroke-linecap="round" opacity="0.45"/>
+  <line x1="370" y1="280" x2="490" y2="280" stroke="url(#grad)" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+  <line x1="370" y1="310" x2="580" y2="310" stroke="url(#grad)" stroke-width="2" stroke-linecap="round" opacity="0.35"/>
+  <line x1="340" y1="340" x2="460" y2="340" stroke="url(#grad)" stroke-width="2" stroke-linecap="round" opacity="0.3"/>
+  <line x1="340" y1="370" x2="540" y2="370" stroke="url(#grad)" stroke-width="2" stroke-linecap="round" opacity="0.28"/>
+  <line x1="370" y1="400" x2="500" y2="400" stroke="url(#grad)" stroke-width="2" stroke-linecap="round" opacity="0.25"/>
+  <line x1="340" y1="430" x2="420" y2="430" stroke="url(#grad)" stroke-width="2" stroke-linecap="round" opacity="0.22"/>
+  <!-- Cursor blink -->
+  <rect x="340" y="455" width="10" height="16" rx="1" fill="url(#grad)" opacity="0.7"/>
+  <!-- Prompt symbols -->
+  <path d="M328 190 L335 195 L328 200" fill="none" stroke="url(#grad)" stroke-width="1.5" opacity="0.5"/>
+  <!-- Bracket accents -->
+  <path d="M640 250 L650 250 L650 310 L640 310" fill="none" stroke="url(#grad)" stroke-width="1" opacity="0.2"/>
+  <path d="M660 250 L670 250 L670 310 L660 310" fill="none" stroke="url(#grad)" stroke-width="1" opacity="0.15"/>
+  <!-- Side decorations -->
+  <circle cx="220" cy="250" r="2" fill="url(#grad)" opacity="0.15"/>
+  <circle cx="220" cy="350" r="2" fill="url(#grad)" opacity="0.15"/>
+  <circle cx="980" cy="250" r="2" fill="url(#grad)" opacity="0.15"/>
+  <circle cx="980" cy="350" r="2" fill="url(#grad)" opacity="0.15"/>
+</svg>
