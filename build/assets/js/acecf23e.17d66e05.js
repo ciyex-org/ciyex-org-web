@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunkhome_siva_workspace_ciyex_org_web=globalThis.webpackChunkhome_siva_workspace_ciyex_org_web||[]).push([[1903],{1912(o){o.exports=JSON.parse('{"blogBasePath":"/blog","blogTitle":"Blog","authorsListPath":"/blog/authors"}')}}]);
