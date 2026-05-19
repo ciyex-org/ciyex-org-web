@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunkhome_siva_workspace_ciyex_org_web=globalThis.webpackChunkhome_siva_workspace_ciyex_org_web||[]).push([[5742],{7093(e){e.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"default"}')}}]);
