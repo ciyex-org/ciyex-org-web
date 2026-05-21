@@ -195,11 +195,18 @@ const config: Config = {
         },
         { to: '/features', label: 'Features', position: 'left' },
         { to: '/downloads', label: 'Download', position: 'left' },
-{ to: '/blog', label: 'Blog', position: 'left' },
-        { to: '/about', label: 'About', position: 'left' },
-        { to: '/impact', label: 'Impact', position: 'left' },
-        { to: '/professional-support', label: 'Professional Support', position: 'left' },
-        { label: 'Community', href: 'https://forum.ciyex.org', position: 'left' },
+        { to: '/blog', label: 'Blog', position: 'left' },
+        {
+          type: 'dropdown',
+          label: 'Company',
+          position: 'left',
+          items: [
+            { label: 'About', to: '/about' },
+            { label: 'Impact', to: '/impact' },
+            { label: 'Professional Support', to: '/professional-support' },
+            { label: 'Community Forum', href: 'https://forum.ciyex.org' },
+          ],
+        },
         {
           type: 'docsVersionDropdown',
           position: 'right',
