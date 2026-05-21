@@ -194,6 +194,7 @@ const config: Config = {
           label: 'Docs',
         },
         { to: '/features', label: 'Features', position: 'left' },
+        { to: '/downloads', label: 'Download', position: 'left' },
 { to: '/blog', label: 'Blog', position: 'left' },
         { to: '/about', label: 'About', position: 'left' },
         { to: '/impact', label: 'Impact', position: 'left' },
@@ -245,6 +246,7 @@ const config: Config = {
           title: 'Documentation',
           items: [
             { label: 'Getting Started', to: '/docs/intro' },
+            { label: 'Download', to: '/downloads' },
             { label: 'Installation', to: '/docs/installation/local-setup' },
             { label: 'Configuration', to: '/docs/reference/configuration' },
             { label: 'API Reference', to: '/docs/api/rest-api' },
