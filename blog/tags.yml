@@ -114,3 +114,11 @@ billing:
   label: Billing
   permalink: /blog/tags/billing
   description: Medical billing and revenue cycle management.
+small-practices:
+  label: Small Practices
+  permalink: /blog/tags/small-practices
+  description: Independent clinics and small medical practices.
+physician-burnout:
+  label: Physician Burnout
+  permalink: /blog/tags/physician-burnout
+  description: Reducing administrative burden and clinician fatigue.

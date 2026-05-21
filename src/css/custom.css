@@ -149,6 +149,52 @@
   transform: scale(1.03);
 }
 
+/* ── Navbar Dropdown - caret + menu styling ── */
+.navbar__item.dropdown .navbar__link::after {
+  border-top-color: rgba(255, 255, 255, 0.75) !important;
+  border-top-width: 0.35em;
+  border-right-width: 0.35em;
+  border-left-width: 0.35em;
+}
+
+.navbar__item.dropdown:hover .navbar__link::after,
+.navbar__item.dropdown:focus-within .navbar__link::after {
+  border-top-color: #ffffff !important;
+}
+
+.dropdown__menu {
+  background: rgba(8, 12, 25, 0.97) !important;
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6), 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+  padding: 6px !important;
+  min-width: 200px;
+  margin-top: 6px !important;
+}
+
+.dropdown__link {
+  color: rgba(255, 255, 255, 0.8) !important;
+  border-radius: 8px !important;
+  font-size: 0.875rem !important;
+  font-weight: 500 !important;
+  padding: 9px 14px !important;
+  transition: background 0.15s ease, color 0.15s ease !important;
+}
+
+.dropdown__link:hover,
+.dropdown__link:focus {
+  background: rgba(255, 255, 255, 0.08) !important;
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+
+.dropdown__link--active {
+  background: rgba(13, 148, 136, 0.15) !important;
+  color: var(--ifm-color-primary-light) !important;
+}
+
 /* ── Docusaurus global button overrides (docs pages etc) ── */
 .button {
   border-radius: 980px;
