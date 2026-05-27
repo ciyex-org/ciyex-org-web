@@ -108,23 +108,12 @@
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
 }
 
-.imagePlaceholder {
+.featureScreenshot {
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 16px;
-}
-
-.placeholderLabel {
-  font-size: 0.875rem;
-  font-weight: 500;
-  color: rgba(148, 163, 184, 0.4);
-  letter-spacing: 0.04em;
-  text-align: center;
-  padding: 0 24px;
+  object-fit: cover;
+  object-position: top left;
+  display: block;
 }
 
 /* Text side */

@@ -12,7 +12,7 @@ const features = [
 Support for multiple appointment types — in-person, telehealth, follow-up, and new patient visits — with waitlist management and recurring scheduling built in.
 
 Real-time availability tracking lets front-office staff see who has arrived, who is running late, and which exam rooms are open at a glance.`,
-    image: '/img/features/appointments-placeholder.jpg',
+    image: '/img/features/appointments.png',
     imageAlt: 'Ciyex Appointments Module',
     flip: false,
   },
@@ -23,7 +23,7 @@ Real-time availability tracking lets front-office staff see who has arrived, who
 Encounter history, imaging, and specialist notes are linked directly to the patient record, so context is never more than a click away.
 
 Insurance and claim management are built into each profile, keeping billing and clinical work in sync without switching systems.`,
-    image: '/img/features/patients-placeholder.jpg',
+    image: '/img/features/patients.png',
     imageAlt: 'Ciyex Patient Management Module',
     flip: true,
   },
@@ -34,7 +34,7 @@ Insurance and claim management are built into each profile, keeping billing and 
 Voice dictation with medical-terminology-aware speech-to-chart lets you narrate findings in real-time while staying focused on the patient in front of you.
 
 ICD-10 and CPT code search is built directly into the encounter workflow. Nurses and MAs can complete intake simultaneously, so the note foundation is ready before you walk in.`,
-    image: '/img/features/documentation-placeholder.jpg',
+    image: '/img/features/prescriptions.png',
     imageAlt: 'Ciyex Clinical Documentation Module',
     flip: false,
   },
@@ -56,7 +56,7 @@ Document SOAP notes in real-time during the session, so by the time the call end
 Whether it's a provider-to-provider consultation, a care coordination note between staff, or a follow-up message to a patient, every conversation is end-to-end encrypted.
 
 Full audit logging and configurable 6-year message retention keep your practice compliant without any manual effort.`,
-    image: '/img/features/messaging-placeholder.jpg',
+    image: '/img/features/messaging.png',
     imageAlt: 'Ciyex Secure Messaging Module',
     flip: false,
   },
@@ -67,7 +67,7 @@ Full audit logging and configurable 6-year message retention keep your practice 
 Built-in reporting covers appointments, encounters, patients, and payments in one dashboard. Financial analytics show revenue collected, collection rates, outstanding balances, and aging reports at a glance.
 
 Provider-level performance metrics and care gap identification help practices stay ahead of quality measures without extra administrative work.`,
-    image: '/img/features/labs-placeholder.jpg',
+    image: '/img/features/labs.png',
     imageAlt: 'Ciyex Labs and Reports Module',
     flip: true,
   },
@@ -112,9 +112,12 @@ export default function Features(): ReactNode {
                 className={`${styles.featureRow} ${feature.flip ? styles.featureRowFlip : ''}`}
               >
                 <div className={styles.featureImage}>
-                  <div className={styles.imagePlaceholder}>
-                    <span className={styles.placeholderLabel}>{feature.title}</span>
-                  </div>
+                  <img
+                    src={feature.image}
+                    alt={feature.imageAlt}
+                    className={styles.featureScreenshot}
+                    loading="lazy"
+                  />
                 </div>
                 <div className={styles.featureText}>
                   <Heading as="h2" className={styles.featureTitle}>
