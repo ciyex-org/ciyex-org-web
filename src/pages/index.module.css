@@ -210,157 +210,15 @@
   font-weight: 500;
 }
 
-.mockupBody {
-  display: flex;
-  min-height: 420px;
+.screenshotBody {
+  overflow: hidden;
+  line-height: 0;
 }
 
-/* Sidebar */
-.mockSidebar {
-  width: 200px;
-  background: #0f172a;
-  padding: 16px 12px;
-  border-right: 1px solid rgba(255, 255, 255, 0.04);
-  flex-shrink: 0;
-}
-
-.mockLogo {
-  width: 32px;
-  height: 32px;
-  border-radius: 8px;
-  background: linear-gradient(135deg, #06b6d4, #10b981);
-  margin-bottom: 20px;
-}
-
-.mockNavItem {
-  height: 10px;
-  border-radius: 6px;
-  background: rgba(255, 255, 255, 0.04);
-  margin-bottom: 8px;
-  width: 80%;
-}
-
-.mockNavActive {
-  background: rgba(6, 182, 212, 0.15);
-  border-left: 2px solid #06b6d4;
-}
-
-/* Main content */
-.mockMain {
-  flex: 1;
-  padding: 20px;
-  min-width: 0;
-}
-
-.mockStatsRow {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 12px;
-  margin-bottom: 16px;
-}
-
-.mockStatCard {
-  background: rgba(255, 255, 255, 0.03);
-  border-radius: 10px;
-  padding: 14px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.04);
-}
-
-.mockStatIcon {
-  width: 36px;
-  height: 36px;
-  border-radius: 8px;
-  opacity: 0.8;
-  flex-shrink: 0;
-}
-
-.mockStatText {
-  flex: 1;
-  min-width: 0;
-}
-
-.mockStatValue {
-  height: 12px;
-  width: 50px;
-  border-radius: 4px;
-  background: rgba(255, 255, 255, 0.15);
-  margin-bottom: 6px;
-}
-
-.mockStatLabel {
-  height: 8px;
-  width: 70px;
-  border-radius: 3px;
-  background: rgba(255, 255, 255, 0.06);
-}
-
-.mockChartArea {
-  background: rgba(255, 255, 255, 0.02);
-  border-radius: 10px;
-  padding: 16px;
-  margin-bottom: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.04);
-}
-
-.mockChartHeader {
-  height: 10px;
-  width: 120px;
-  border-radius: 4px;
-  background: rgba(255, 255, 255, 0.1);
-  margin-bottom: 12px;
-}
-
-.mockChart {
+.screenshotImg {
   width: 100%;
-  height: 100px;
-}
-
-.mockTable {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.mockTableRow {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 10px 12px;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.02);
-}
-
-.mockAvatar {
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, rgba(6, 182, 212, 0.3), rgba(139, 92, 246, 0.3));
-  flex-shrink: 0;
-}
-
-.mockRowText {
-  height: 8px;
-  width: 100px;
-  border-radius: 3px;
-  background: rgba(255, 255, 255, 0.08);
-}
-
-.mockRowBadge {
-  height: 18px;
-  width: 60px;
-  border-radius: 100px;
-  background: rgba(16, 185, 129, 0.15);
-  margin-left: auto;
-}
-
-.mockRowText2 {
-  height: 8px;
-  width: 70px;
-  border-radius: 3px;
-  background: rgba(255, 255, 255, 0.05);
+  display: block;
+  object-fit: cover;
 }
 
 
@@ -976,18 +834,6 @@
     margin-bottom: 60px;
   }
 
-  .mockupBody {
-    min-height: 300px;
-  }
-
-  .mockSidebar {
-    width: 140px;
-  }
-
-  .mockStatsRow {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .showcaseInner {
     grid-template-columns: 1fr;
     gap: 48px;
@@ -1022,14 +868,6 @@
 @media screen and (max-width: 768px) {
   .hero {
     padding: 60px 0 0;
-  }
-
-  .mockSidebar {
-    display: none;
-  }
-
-  .mockStatsRow {
-    grid-template-columns: repeat(2, 1fr);
   }
 
   .visualVitals {

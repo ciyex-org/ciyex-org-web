@@ -51,7 +51,7 @@ const IconZap = () => (
   </svg>
 );
 
-/* ── Dashboard Mockup (CSS-only) ── */
+/* ── Dashboard Screenshot ── */
 function DashboardMockup() {
   return (
     <div className={styles.mockupWrapper}>
@@ -60,56 +60,14 @@ function DashboardMockup() {
           <span className={styles.dot} style={{ background: '#ff5f57' }} />
           <span className={styles.dot} style={{ background: '#febc2e' }} />
           <span className={styles.dot} style={{ background: '#28c840' }} />
-          <span className={styles.mockupTitle}>Ciyex EHR Dashboard</span>
+          <span className={styles.mockupTitle}>Ciyex EHR — Schedule</span>
         </div>
-        <div className={styles.mockupBody}>
-          {/* Sidebar */}
-          <div className={styles.mockSidebar}>
-            <div className={styles.mockLogo} />
-            {[...Array(6)].map((_, i) => (
-              <div key={i} className={clsx(styles.mockNavItem, i === 0 && styles.mockNavActive)} />
-            ))}
-          </div>
-          {/* Main Content */}
-          <div className={styles.mockMain}>
-            {/* Top Stats */}
-            <div className={styles.mockStatsRow}>
-              {['#06b6d4', '#10b981', '#8b5cf6', '#f59e0b'].map((color, i) => (
-                <div key={i} className={styles.mockStatCard}>
-                  <div className={styles.mockStatIcon} style={{ background: color }} />
-                  <div className={styles.mockStatText}>
-                    <div className={styles.mockStatValue} />
-                    <div className={styles.mockStatLabel} />
-                  </div>
-                </div>
-              ))}
-            </div>
-            {/* Chart area */}
-            <div className={styles.mockChartArea}>
-              <div className={styles.mockChartHeader} />
-              <svg viewBox="0 0 400 120" className={styles.mockChart}>
-                <defs>
-                  <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stopColor="#06b6d4" stopOpacity="0.3" />
-                    <stop offset="100%" stopColor="#06b6d4" stopOpacity="0" />
-                  </linearGradient>
-                </defs>
-                <path d="M0,80 Q50,60 100,65 T200,40 T300,55 T400,25 V120 H0 Z" fill="url(#chartGrad)" />
-                <path d="M0,80 Q50,60 100,65 T200,40 T300,55 T400,25" fill="none" stroke="#06b6d4" strokeWidth="2" />
-              </svg>
-            </div>
-            {/* Table rows */}
-            <div className={styles.mockTable}>
-              {[...Array(4)].map((_, i) => (
-                <div key={i} className={styles.mockTableRow}>
-                  <div className={styles.mockAvatar} />
-                  <div className={styles.mockRowText} />
-                  <div className={styles.mockRowBadge} />
-                  <div className={styles.mockRowText2} />
-                </div>
-              ))}
-            </div>
-          </div>
+        <div className={styles.screenshotBody}>
+          <img
+            src="/img/ehr-dashboard-screenshot.png"
+            alt="Ciyex EHR Schedule view showing patient appointments"
+            className={styles.screenshotImg}
+          />
         </div>
       </div>
     </div>
