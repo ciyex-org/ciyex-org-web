@@ -148,6 +148,7 @@ const config: Config = {
         blog: {
           showReadingTime: true,
           sortPosts: 'descending',
+          postsPerPage: 9,
           blogSidebarCount: 'ALL',
           feedOptions: {
             type: ['rss', 'atom'],
