@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Ciyex EHR',
-  tagline: 'Open Source Public Health Infrastructure - Modern, Secure, Interoperable',
+  title: 'Ciyex',
+  tagline: 'Ciyex Workspace, the open source EHR, and free cloud storage — for every community clinic.',
   favicon: 'img/Ciyex-favicon-new.png',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -35,7 +35,7 @@ const config: Config = {
         '@context': 'https://schema.org',
         '@type': 'NonprofitOrganization',
         name: 'Ciyex Inc.',
-        alternateName: 'Ciyex EHR',
+        alternateName: 'Ciyex',
         url: 'https://ciyex.org',
         logo: 'https://ciyex.org/img/Ciyex-logo-no-text.png',
         description: 'A 501(c)(3) nonprofit building open source Electronic Health Records. Modern, secure, FHIR-compliant, and built for healthcare interoperability.',
@@ -68,7 +68,7 @@ const config: Config = {
       innerHTML: JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'WebSite',
-        name: 'Ciyex EHR',
+        name: 'Ciyex',
         url: 'https://ciyex.org',
         potentialAction: {
           '@type': 'SearchAction',
@@ -86,6 +86,25 @@ const config: Config = {
         name: 'Ciyex EHR',
         applicationCategory: 'HealthApplication',
         operatingSystem: 'Web, Docker, Kubernetes',
+        offers: {
+          '@type': 'Offer',
+          price: '0',
+          priceCurrency: 'USD',
+        },
+        license: 'https://www.gnu.org/licenses/agpl-3.0.html',
+      }),
+    },
+    {
+      tagName: 'script',
+      attributes: { type: 'application/ld+json' },
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'SoftwareApplication',
+        name: 'Ciyex Workspace',
+        applicationCategory: 'HealthApplication',
+        operatingSystem: 'Windows, macOS, Linux',
+        description: 'Ciyex Workspace is the open source desktop client for the Ciyex EHR. Bundled with free cloud storage and built on a VS Code foundation tuned for healthcare.',
+        downloadUrl: 'https://ciyex.org/downloads',
         offers: {
           '@type': 'Offer',
           price: '0',
@@ -182,20 +201,22 @@ const config: Config = {
     navbar: {
       title: 'Ciyex EHR',
       logo: {
-        alt: 'Ciyex EHR Logo',
+        alt: 'Ciyex Logo',
         src: 'img/Ciyex-logo-no-text.png',
         srcDark: 'img/Ciyex-logo-no-text.png',
       },
       items: [
+        { to: '/workspace', label: 'Workspace', position: 'left' },
+        { to: '/downloads', label: 'Download', position: 'left' },
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
           label: 'Docs',
         },
-        { to: '/features', label: 'Features', position: 'left' },
-        { to: '/downloads', label: 'Download', position: 'left' },
+        { to: '/professional-support', label: 'Support', position: 'left' },
         { to: '/blog', label: 'Blog', position: 'left' },
+        { href: 'https://forum.ciyex.org', label: 'Forum', position: 'left' },
         {
           type: 'dropdown',
           label: 'Company',
@@ -203,8 +224,6 @@ const config: Config = {
           items: [
             { label: 'About', to: '/about' },
             { label: 'Impact', to: '/impact' },
-            { label: 'Professional Support', to: '/professional-support' },
-            { label: 'Community Forum', href: 'https://forum.ciyex.org' },
           ],
         },
         {
@@ -215,21 +234,6 @@ const config: Config = {
           href: 'https://github.com/ciyex-org/ciyex',
           label: 'GitHub',
           position: 'right',
-        },
-        {
-          type: 'dropdown',
-          label: 'Sign In',
-          position: 'right',
-          items: [
-            {
-              label: 'Provider',
-              href: 'https://app-dev.ciyex.org',
-            },
-            {
-              label: 'Patient',
-              href: 'https://portal-dev.ciyex.org',
-            },
-          ],
         },
         {
           to: '/donate',
@@ -250,21 +254,21 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Documentation',
+          title: 'Product',
           items: [
-            { label: 'Getting Started', to: '/docs/intro' },
+            { label: 'Ciyex Workspace', to: '/workspace' },
             { label: 'Download', to: '/downloads' },
-            { label: 'Installation', to: '/docs/installation/local-setup' },
-            { label: 'Configuration', to: '/docs/reference/configuration' },
+            { label: 'Getting Started', to: '/docs/intro' },
+            { label: 'Self-host (Docker)', to: '/docs/installation/docker-setup' },
             { label: 'API Reference', to: '/docs/api/rest-api' },
           ],
         },
         {
           title: 'Community',
           items: [
+            { label: 'Support', to: '/professional-support' },
             { label: 'GitHub Discussions', href: 'https://github.com/ciyex-org/ciyex/discussions' },
             { label: 'Forum', href: 'https://forum.ciyex.org' },
-            { label: 'Professional Support', to: '/professional-support' },
           ],
         },
         {

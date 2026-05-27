@@ -61,4 +61,4 @@ Legacy EHR competitors were built for an era where software was centralized, clo
 
 By prioritizing **data sovereignty, open interoperability standards, and an affordable pricing structure**, Ciyex allows healthcare organizations to break free from restrictive vendor ecosystems. It transforms the electronic health record from an administrative obstacle back into an efficient clinical asset.
 
-**[Explore the Ciyex platform features and see the difference for yourself.](/features)**
+**[Explore Ciyex Workspace and see the difference for yourself.](/workspace)**

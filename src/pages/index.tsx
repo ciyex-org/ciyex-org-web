@@ -51,8 +51,8 @@ const IconZap = () => (
   </svg>
 );
 
-/* ── Dashboard Screenshot ── */
-function DashboardMockup() {
+/* ── Workspace Screenshot ── */
+function WorkspaceMockup() {
   return (
     <div className={styles.mockupWrapper}>
       <div className={styles.mockupWindow}>
@@ -60,12 +60,12 @@ function DashboardMockup() {
           <span className={styles.dot} style={{ background: '#ff5f57' }} />
           <span className={styles.dot} style={{ background: '#febc2e' }} />
           <span className={styles.dot} style={{ background: '#28c840' }} />
-          <span className={styles.mockupTitle}>Ciyex EHR — Schedule</span>
+          <span className={styles.mockupTitle}>Ciyex Workspace — Schedule</span>
         </div>
         <div className={styles.screenshotBody}>
           <img
-            src="/img/ehr-dashboard-screenshot.png"
-            alt="Ciyex EHR Schedule view showing patient appointments"
+            src="/img/workspace-schedule.png"
+            alt="Ciyex Workspace desktop client showing the EHR schedule view"
             className={styles.screenshotImg}
           />
         </div>
@@ -84,23 +84,23 @@ function HomepageHero() {
           Open Source &middot; 501(c)(3) Nonprofit
         </div>
         <Heading as="h1" className={styles.heroTitle}>
-          Open source EHR<br />
-          <span className={styles.heroGradient}>for every community.</span>
+          Ciyex Workspace.<br />
+          <span className={styles.heroGradient}>One app for your whole clinic.</span>
         </Heading>
         <p className={styles.heroSubtitle}>
-          30 million Americans lack access to modern health records software.
-          We build the open source EHR so clinics and communities don't have to choose between paper charts and software they can't afford.
+          A modern desktop workspace, the open source Ciyex EHR, and free cloud storage —
+          all in one download. Built for community clinics who deserve the same tools as the biggest hospitals.
         </p>
         <div className={styles.heroCta}>
-          <Link className={styles.btnPrimary} to="/about">
-            Our Mission
+          <Link className={styles.btnPrimary} to="/downloads">
+            Download Workspace
           </Link>
-          <Link className={styles.btnSecondary} to="https://github.com/ciyex-org/ciyex">
-            View on GitHub &rarr;
+          <Link className={styles.btnSecondary} to="/workspace">
+            Learn more &rarr;
           </Link>
         </div>
       </div>
-      <DashboardMockup />
+      <WorkspaceMockup />
     </section>
   );
 }
@@ -313,17 +313,18 @@ function CtaSection() {
     <section className={styles.cta}>
       <div className={styles.ctaInner}>
         <Heading as="h2" className={styles.ctaTitle}>
-          Join the movement for<br />open source health records.
+          Get the whole stack.<br />Free, forever.
         </Heading>
         <p className={styles.ctaDesc}>
-          Whether you run a community health center, volunteer at a free clinic, or believe every clinic deserves modern software, there is a place for you.
+          Download Ciyex Workspace for Windows, macOS, or Linux. Sign up for a free cloud
+          account and your clinic is up and running in minutes — no servers to manage.
         </p>
         <div className={styles.ctaButtons}>
-          <Link className={styles.btnPrimary} to="/donate">
-            Support Our Mission
+          <Link className={styles.btnPrimary} to="/downloads">
+            Download Workspace
           </Link>
-          <Link className={styles.btnGhost} to="/docs/installation/docker-setup">
-            Deploy for Your Community &rarr;
+          <Link className={styles.btnGhost} to="/signup">
+            Claim free cloud account &rarr;
           </Link>
         </div>
       </div>
@@ -335,8 +336,8 @@ function CtaSection() {
 export default function Home(): ReactNode {
   return (
     <Layout
-      title="Open Source EHR for Every Community"
-      description="Ciyex is a 501(c)(3) nonprofit building free, open source EHR software so every clinic and community, no matter how underserved, has access to modern health records technology.">
+      title="Ciyex Workspace — Open Source EHR for Every Community"
+      description="Ciyex Workspace bundles a modern desktop client, the open source Ciyex EHR, and free cloud storage. A 501(c)(3) nonprofit building healthcare technology that serves every clinic.">
       <HomepageHero />
       <FeaturesSection />
       <ShowcaseSection />

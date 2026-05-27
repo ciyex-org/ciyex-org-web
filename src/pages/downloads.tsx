@@ -1,9 +1,28 @@
-import type { ReactNode } from 'react';
-import clsx from 'clsx';
+import { useEffect, useState, type ReactNode } from 'react';
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 import styles from './downloads.module.css';
+
+type OS = 'mac' | 'windows' | 'linux';
+
+const nameToOS: Record<string, OS> = {
+  Windows: 'windows',
+  macOS: 'mac',
+  Linux: 'linux',
+};
+
+function useDetectedOS(): OS | null {
+  const [os, setOs] = useState<OS | null>(null);
+  useEffect(() => {
+    if (typeof navigator === 'undefined') return;
+    const ua = navigator.userAgent;
+    if (/Mac/i.test(ua) && !/iPhone|iPad|iPod/i.test(ua)) setOs('mac');
+    else if (/Windows/i.test(ua)) setOs('windows');
+    else if (/Linux/i.test(ua) && !/Android/i.test(ua)) setOs('linux');
+  }, []);
+  return os;
+}
 
 const GITHUB_RELEASES = 'https://github.com/ciyex-org/ciyex/releases/latest';
 const DOCKER_HUB = 'https://hub.docker.com/r/ciyexorg/ciyex';
@@ -16,8 +35,27 @@ const WindowsIcon = () => (
 );
 
 const LinuxIcon = () => (
-  <svg viewBox="0 0 24 24" fill="currentColor" width="56" height="56">
-    <path d="M12 1C8.691 1 6 3.691 6 7c0 1.797.75 3.408 1.953 4.562C5.418 12.586 4 14.617 4 17v1c0 .551.449 1 1 1h.086A2.493 2.493 0 007.5 21.5c.826 0 1.55-.406 2-1.027A2.493 2.493 0 0011.914 21.5H12h.086A2.493 2.493 0 0014.5 20.473 2.493 2.493 0 0016.914 21.5c1.379 0 2.5-1.121 2.5-2.5 0-.203-.023-.402-.066-.59H19.5c.551 0 1-.449 1-1V17c0-2.383-1.418-4.414-3.953-5.438A6.954 6.954 0 0018 7c0-3.309-2.691-6-6-6zm0 2c2.207 0 4 1.793 4 4s-1.793 4-4 4-4-1.793-4-4 1.793-4 4-4zm-1.5 1.5a.5.5 0 100 1 .5.5 0 000-1zm3 0a.5.5 0 100 1 .5.5 0 000-1zM12 12c3.312 0 6 2.016 6 5v1H6v-1c0-2.984 2.688-5 6-5zm-4.5 7a.5.5 0 110 1 .5.5 0 010-1zm9 0a.5.5 0 110 1 .5.5 0 010-1z" />
+  <svg viewBox="0 0 64 64" width="56" height="56" xmlns="http://www.w3.org/2000/svg">
+    {/* Feet */}
+    <ellipse cx="22" cy="58" rx="8" ry="3" fill="#f59e0b" stroke="#b45309" strokeWidth="0.8" />
+    <ellipse cx="42" cy="58" rx="8" ry="3" fill="#f59e0b" stroke="#b45309" strokeWidth="0.8" />
+    {/* Body */}
+    <ellipse cx="32" cy="38" rx="18" ry="22" fill="#1c1c1c" stroke="#94a3b8" strokeWidth="0.6" />
+    {/* Flippers */}
+    <ellipse cx="13" cy="38" rx="4" ry="11" fill="#1c1c1c" stroke="#94a3b8" strokeWidth="0.6" transform="rotate(-15 13 38)" />
+    <ellipse cx="51" cy="38" rx="4" ry="11" fill="#1c1c1c" stroke="#94a3b8" strokeWidth="0.6" transform="rotate(15 51 38)" />
+    {/* White belly */}
+    <ellipse cx="32" cy="42" rx="11" ry="15" fill="#ffffff" />
+    {/* Head */}
+    <circle cx="32" cy="18" r="13" fill="#1c1c1c" stroke="#94a3b8" strokeWidth="0.6" />
+    {/* Eye whites */}
+    <ellipse cx="27" cy="16" rx="3.5" ry="4.5" fill="#ffffff" />
+    <ellipse cx="37" cy="16" rx="3.5" ry="4.5" fill="#ffffff" />
+    {/* Pupils */}
+    <circle cx="28" cy="17" r="1.6" fill="#000000" />
+    <circle cx="36" cy="17" r="1.6" fill="#000000" />
+    {/* Beak */}
+    <path d="M27 23 Q32 30 37 23 Q34 27 32 27 Q30 27 27 23 Z" fill="#f59e0b" stroke="#b45309" strokeWidth="0.6" />
   </svg>
 );
 
@@ -30,6 +68,12 @@ const AppleIcon = () => (
 const DockerIcon = () => (
   <svg viewBox="0 0 24 24" fill="currentColor" width="40" height="40">
     <path d="M13.983 11.078h2.119a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.119a.185.185 0 00-.185.185v1.888c0 .102.083.185.185.185m-2.954-5.43h2.118a.186.186 0 00.186-.186V3.574a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m0 2.716h2.118a.187.187 0 00.186-.186V6.29a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.887c0 .102.082.185.185.186m-2.93 0h2.12a.186.186 0 00.184-.186V6.29a.185.185 0 00-.185-.185H8.1a.185.185 0 00-.185.185v1.887c0 .102.083.185.185.186m-2.964 0h2.119a.186.186 0 00.185-.186V6.29a.185.185 0 00-.185-.185H5.136a.186.186 0 00-.186.185v1.887c0 .102.084.185.186.186m5.893 2.715h2.118a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m-2.93 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.083.185.185.185m-2.964 0h2.119a.185.185 0 00.185-.185V9.006a.185.185 0 00-.184-.186h-2.12a.186.186 0 00-.186.186v1.887c0 .102.084.185.186.185m-2.92 0h2.12a.186.186 0 00.184-.185V9.006a.185.185 0 00-.185-.185H2.1a.186.186 0 00-.186.186v1.887c0 .102.084.185.186.185M23.763 9.89c-.065-.051-.672-.51-1.954-.51-.338.001-.676.03-1.01.087-.248-1.7-1.653-2.53-1.716-2.566l-.344-.199-.226.327c-.284.438-.49.922-.612 1.43-.23.97-.09 1.882.403 2.661-.595.332-1.55.413-1.744.42H.751a.751.751 0 00-.75.748 11.376 11.376 0 00.692 4.062c.545 1.428 1.355 2.48 2.41 3.124 1.18.723 3.1 1.137 5.275 1.137.983.003 1.963-.086 2.93-.266a12.248 12.248 0 003.823-1.389c.98-.567 1.86-1.288 2.61-2.136 1.252-1.418 1.998-2.997 2.553-4.4h.221c1.372 0 2.215-.549 2.68-1.009.309-.293.55-.65.707-1.046l.098-.288Z" />
+  </svg>
+);
+
+const CloudIcon = () => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="40" height="40">
+    <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z" />
   </svg>
 );
 
@@ -55,12 +99,14 @@ interface PlatformCardProps {
   primaryHref: string;
   groups: { label: string; links: SubLink[] }[];
   accentColor: string;
+  recommended?: boolean;
 }
 
 /* ── Platform Card ── */
-function PlatformCard({ icon, name, subtitle, primaryLabel, primaryHref, groups, accentColor }: PlatformCardProps) {
+function PlatformCard({ icon, name, subtitle, primaryLabel, primaryHref, groups, accentColor, recommended }: PlatformCardProps) {
   return (
-    <div className={styles.platformCard}>
+    <div className={`${styles.platformCard} ${recommended ? styles.platformCardRecommended : ''}`}>
+      {recommended && <div className={styles.platformRecommendedBadge}>Recommended for you</div>}
       <div className={styles.platformIconWrap} style={{ color: accentColor }}>
         {icon}
       </div>
@@ -170,18 +216,29 @@ const platforms: PlatformCardProps[] = [
 
 /* ── Page ── */
 export default function Downloads(): ReactNode {
+  const detectedOS = useDetectedOS();
+  const orderedPlatforms = detectedOS
+    ? [...platforms].sort((a, b) => {
+        const aMatch = nameToOS[a.name] === detectedOS ? 0 : 1;
+        const bMatch = nameToOS[b.name] === detectedOS ? 0 : 1;
+        return aMatch - bMatch;
+      })
+    : platforms;
+
   return (
     <Layout
-      title="Download Ciyex EHR"
-      description="Download Ciyex EHR for Windows, Linux, and macOS. Free, open source electronic health records software for every community.">
+      title="Download Ciyex Workspace"
+      description="Download Ciyex Workspace for Windows, Linux, and macOS. Includes the open source Ciyex EHR and free cloud storage — everything your clinic needs in one app.">
 
       {/* Hero */}
       <section className={styles.hero}>
         <div className={styles.heroInner}>
           <div className={styles.heroBadge}>Open Source &middot; Free Forever</div>
-          <Heading as="h1" className={styles.heroTitle}>Download Ciyex EHR</Heading>
+          <Heading as="h1" className={styles.heroTitle}>Download Ciyex Workspace</Heading>
           <p className={styles.heroSubtitle}>
-            Available for Windows, Linux, and macOS. Deploy on your own infrastructure with one command.
+            Getting started takes two steps: <strong>install Workspace</strong> on your computer,
+            then <strong>connect it to a backend</strong> &mdash; use our free cloud
+            (recommended) or self-host the Ciyex EHR server.
           </p>
           <div className={styles.heroMeta}>
             <span className={styles.metaPill}>
@@ -200,46 +257,101 @@ export default function Downloads(): ReactNode {
         </div>
       </section>
 
+      {/* Step 1: Install Workspace */}
+      <section className={styles.sectionHeader}>
+        <div className={styles.sectionHeaderInner}>
+          <span className={styles.sectionEyebrow}>Step 1</span>
+          <Heading as="h2" className={styles.sectionHeaderTitle}>Install Workspace</Heading>
+          <p className={styles.sectionHeaderDesc}>
+            Pick your platform. Workspace is a free, open source desktop app for clinicians.
+          </p>
+        </div>
+      </section>
+
       {/* Platform Cards */}
       <section className={styles.platformSection}>
         <div className={styles.platformGrid}>
-          {platforms.map((p) => (
-            <PlatformCard key={p.name} {...p} />
+          {orderedPlatforms.map((p) => (
+            <PlatformCard
+              key={p.name}
+              {...p}
+              recommended={nameToOS[p.name] === detectedOS}
+            />
           ))}
         </div>
       </section>
 
-      {/* Docker Section */}
-      <section className={styles.dockerSection}>
-        <div className={styles.dockerInner}>
-          <div className={styles.dockerIcon}>
-            <DockerIcon />
-          </div>
-          <div className={styles.dockerText}>
-            <h2 className={styles.dockerTitle}>Deploy with Docker</h2>
-            <p className={styles.dockerDesc}>
-              The fastest way to run Ciyex EHR. One command gets you a fully working stack with PostgreSQL and all services.
-            </p>
-            <div className={styles.codeBlock}>
-              <code>docker pull ciyexorg/ciyex:latest</code>
-            </div>
-            <div className={styles.dockerLinks}>
-              <Link href={DOCKER_HUB} className={styles.dockerBtn}>
-                View on Docker Hub
-              </Link>
-              <Link to="/docs/installation/docker-setup" className={styles.dockerBtnGhost}>
-                Docker Setup Guide &rarr;
-              </Link>
-            </div>
-          </div>
+      {/* Step 2: Pick a backend */}
+      <section className={styles.sectionHeader}>
+        <div className={styles.sectionHeaderInner}>
+          <span className={styles.sectionEyebrow}>Step 2</span>
+          <Heading as="h2" className={styles.sectionHeaderTitle}>Connect to a backend</Heading>
+          <p className={styles.sectionHeaderDesc}>
+            Workspace needs an EHR server to store and sync your clinic's data. Use our free
+            cloud (the easy path) or self-host the open source server yourself.
+          </p>
         </div>
       </section>
 
-      {/* Requirements note */}
-      <section className={styles.noteSection}>
+      {/* Backend choice: Cloud vs Self-host */}
+      <section className={styles.backendSection}>
+        <div className={styles.backendGrid}>
+
+          {/* Option A: Free Cloud */}
+          <div className={`${styles.backendCard} ${styles.backendCardRecommended}`}>
+            <div className={styles.backendBadge}>Recommended</div>
+            <div className={styles.backendIcon} style={{ color: '#0d9488' }}>
+              <CloudIcon />
+            </div>
+            <h3 className={styles.backendTitle}>Claim a free cloud account</h3>
+            <p className={styles.backendDesc}>
+              We host the EHR server for you. Sign up, sign in from Workspace, and start charting
+              in minutes &mdash; no servers, no IT contract.
+            </p>
+            <ul className={styles.backendList}>
+              <li>HIPAA-grade hosting &middot; encrypted at rest &amp; in transit</li>
+              <li>Automatic backups &amp; cross-device sync</li>
+              <li>Free forever &mdash; funded by donations</li>
+            </ul>
+            <Link to="/signup" className={styles.cloudBtn}>
+              Claim free cloud account
+            </Link>
+          </div>
+
+          {/* Option B: Self-host */}
+          <div className={styles.backendCard}>
+            <div className={styles.backendIcon} style={{ color: '#0db7ed' }}>
+              <DockerIcon />
+            </div>
+            <h3 className={styles.backendTitle}>Self-host the EHR server</h3>
+            <p className={styles.backendDesc}>
+              Have your own IT? Run the open source Ciyex EHR server on your own infrastructure.
+              Workspace will connect to it the same way it connects to our cloud.
+            </p>
+            <ul className={styles.backendList}>
+              <li>Full data sovereignty &middot; AGPL-3.0 licensed</li>
+              <li>One command Docker stack with PostgreSQL</li>
+              <li>Kubernetes, Helm &amp; bare-metal supported</li>
+            </ul>
+            <div className={styles.codeBlock}>
+              <code>docker pull ciyexorg/ciyex:latest</code>
+            </div>
+            <div className={styles.backendLinks}>
+              <Link to="/docs/installation/docker-setup" className={styles.dockerBtn}>
+                Docker setup guide
+              </Link>
+              <Link href={DOCKER_HUB} className={styles.dockerBtnGhost}>
+                Docker Hub &rarr;
+              </Link>
+            </div>
+          </div>
+
+        </div>
+
+        {/* Requirements note */}
         <div className={styles.noteInner}>
           <p className={styles.noteText}>
-            Looking for Kubernetes, Helm charts, or bare-metal installation?{' '}
+            Need Kubernetes, Helm charts, or bare-metal install instructions?{' '}
             <Link to="/docs/installation/local-setup">See the full installation guide &rarr;</Link>
           </p>
         </div>

@@ -51,4 +51,4 @@ If a healthcare network adopts a faster EHR like Ciyex only to pack more appoint
 
 Ciyex can fix the screen, but the institution must still respect the clinician behind it.
 
-**[See how Ciyex is built differently — explore the platform features.](/features)**
+**[See how Ciyex is built differently — explore Ciyex Workspace.](/workspace)**
