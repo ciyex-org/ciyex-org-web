@@ -45,7 +45,7 @@ ICD-10 and CPT code search is built directly into the encounter workflow. Nurses
 Secure JWT-based room access gives providers full moderator controls while patients join as participants with a single click from their notification link.
 
 Document SOAP notes in real-time during the session, so by the time the call ends, the chart is already complete. WCAG 2.1 accessible across desktop, tablet, and mobile.`,
-    image: '/img/features/telehealth-placeholder.jpg',
+    image: '/img/features/telehealth.png',
     imageAlt: 'Ciyex Telehealth Module',
     flip: true,
   },
