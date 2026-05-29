@@ -228,10 +228,6 @@ const config: Config = {
           ],
         },
         {
-          type: 'docsVersionDropdown',
-          position: 'right',
-        },
-        {
           href: 'https://github.com/ciyex-org/ciyex',
           label: 'GitHub',
           position: 'right',
