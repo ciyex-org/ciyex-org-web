@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkhome_siva_workspace_ciyex_org_web=globalThis.webpackChunkhome_siva_workspace_ciyex_org_web||[]).push([[8146],{29328(e){e.exports=JSON.parse('{"metadata":{"permalink":"/blog","page":1,"postsPerPage":9,"totalPages":6,"totalCount":51,"nextPage":"/blog/page/2","blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
