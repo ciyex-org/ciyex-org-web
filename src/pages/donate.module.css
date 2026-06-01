@@ -118,8 +118,36 @@
 }
 
 @media (max-width: 768px) {
+  .hero {
+    padding: 56px 0 32px;
+  }
+
+  .formSection {
+    padding: 0 0 48px;
+  }
+
+  .impact {
+    padding: 56px 0;
+  }
+
   .impactGrid {
     grid-template-columns: 1fr;
+  }
+
+  .descSection {
+    padding: 48px 0;
+  }
+
+  .helpBlock {
+    padding: 24px 16px;
+  }
+
+  .whySection {
+    padding: 56px 0;
+  }
+
+  .aboutSection {
+    padding: 56px 0;
   }
 }
 
@@ -302,6 +330,27 @@
 @media (max-width: 768px) {
   .whyGrid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 40px 0 24px;
+  }
+
+  .heroInner {
+    padding: 0 16px;
+  }
+
+  .formContainer {
+    padding: 0 16px;
+  }
+
+  .descInner,
+  .impactInner,
+  .whyInner,
+  .aboutInner {
+    padding: 0 16px;
   }
 }
 

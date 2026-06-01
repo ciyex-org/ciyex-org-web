@@ -854,6 +854,7 @@
 
   .features,
   .showcase,
+  .donate,
   .recentBlogs,
   .cta {
     padding: 80px 0;
@@ -862,6 +863,24 @@
   .blogGrid {
     grid-template-columns: 1fr;
     gap: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .features,
+  .showcase,
+  .donate,
+  .recentBlogs,
+  .cta {
+    padding: 56px 0;
+  }
+
+  .heroSubtitle {
+    font-size: 1.1rem;
+  }
+
+  .donateDesc {
+    font-size: 1rem;
   }
 }
 
