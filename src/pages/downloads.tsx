@@ -161,6 +161,24 @@ const platforms: PlatformCardProps[] = [
     ],
   },
   {
+    icon: <AppleIcon />,
+    name: 'macOS',
+    subtitle: 'macOS 12.0+',
+    primaryLabel: 'Download for macOS',
+    primaryHref: `${GITHUB_RELEASES}`,
+    accentColor: '#555555',
+    groups: [
+      {
+        label: '.dmg',
+        links: [
+          { label: 'Intel chip', href: GITHUB_RELEASES },
+          { label: 'Apple silicon', href: GITHUB_RELEASES },
+          { label: 'Universal', href: GITHUB_RELEASES },
+        ],
+      },
+    ],
+  },
+  {
     icon: <LinuxIcon />,
     name: 'Linux',
     subtitle: 'Debian, Ubuntu, Fedora, RHEL',
@@ -190,24 +208,6 @@ const platforms: PlatformCardProps[] = [
           { label: 'x64', href: GITHUB_RELEASES },
           { label: 'Arm32', href: GITHUB_RELEASES },
           { label: 'Arm64', href: GITHUB_RELEASES },
-        ],
-      },
-    ],
-  },
-  {
-    icon: <AppleIcon />,
-    name: 'macOS',
-    subtitle: 'macOS 12.0+',
-    primaryLabel: 'Download for macOS',
-    primaryHref: `${GITHUB_RELEASES}`,
-    accentColor: '#555555',
-    groups: [
-      {
-        label: '.dmg',
-        links: [
-          { label: 'Intel chip', href: GITHUB_RELEASES },
-          { label: 'Apple silicon', href: GITHUB_RELEASES },
-          { label: 'Universal', href: GITHUB_RELEASES },
         ],
       },
     ],
