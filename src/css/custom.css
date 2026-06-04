@@ -64,12 +64,23 @@
 /* ── Navbar - Dark, floating, Apple-style ── */
 .navbar {
   background: var(--ifm-navbar-background-color) !important;
-  backdrop-filter: saturate(180%) blur(20px);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
   height: 52px;
   padding: 0 24px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: none !important;
+  position: relative;
+}
+
+/* backdrop-filter on a pseudo-element so it doesn't create a containing block
+   for the position:fixed mobile sidebar (which would clip it to 52px) */
+.navbar::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  pointer-events: none;
+  z-index: -1;
 }
 
 .navbar__title {
