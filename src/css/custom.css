@@ -415,7 +415,18 @@ h1, h2, h3, h4, h5, h6 {
 /* ── Responsive ── */
 @media (max-width: 996px) {
   .navbar {
-    height: 48px;
+    height: auto;
+    min-height: 48px;
+  }
+
+  /* thermometer is too wide for mobile — hide it */
+  .ciyex-navbar-thermo {
+    display: none !important;
+  }
+
+  /* hide signup button on mobile — accessible via hamburger menu */
+  .navbar-signup-btn {
+    display: none !important;
   }
 
   [class*="blogPostPage"] article {
