@@ -250,6 +250,13 @@ function DonateSection() {
 /* ── Recent Blogs Section ── */
 const recentBlogs = [
   {
+    title: 'How Interoperability Reduces Duplicate Tests and Improves Care',
+    excerpt: 'When healthcare systems cannot communicate, patient data becomes fragmented — driving duplicate tests, higher costs, and delays. Here is how interoperability reduces repeat testing and improves care.',
+    slug: '/blog/how-interoperability-reduces-duplicate-tests',
+    date: 'June 11, 2026',
+    image: '/img/blog/interoperability-reduces-duplicate-tests.jpg',
+  },
+  {
     title: 'Why Community Clinics Need Open-Source EHRs More Than Ever',
     excerpt: 'Community clinics are the backbone of accessible healthcare, yet many struggle with expensive, rigid EHR systems. Here is why open-source EHR solutions are becoming more important than ever.',
     slug: '/blog/why-community-clinics-need-open-source-ehrs',
@@ -262,13 +269,6 @@ const recentBlogs = [
     slug: '/blog/unified-patient-centric-digital-records',
     date: 'June 9, 2026',
     image: '/img/blog/blog-ehr-mobile.jpg',
-  },
-  {
-    title: 'OpenMRS vs OpenEMR vs CIYEX: Best EHR for Clinics Today',
-    excerpt: 'Choosing the right EHR shapes how efficiently your clinic operates. We compare OpenMRS, OpenEMR, and Ciyex to help you find the best open-source fit for your practice.',
-    slug: '/blog/openmrs-vs-openemr-vs-ciyex',
-    date: 'June 8, 2026',
-    image: '/img/blog/ciyex-vs-competitors.jpg',
   },
 ];
 
