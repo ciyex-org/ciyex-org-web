@@ -250,25 +250,25 @@ function DonateSection() {
 /* ── Recent Blogs Section ── */
 const recentBlogs = [
   {
-    title: 'Enhancing the Patient-Provider Relationship Through Transparent EHR Use',
-    excerpt: 'For years, the EHR has been viewed as a "third party" in the exam room. At Ciyex, we believe transparency is the key — shifting from "silent charting" to "collaborative documentation."',
-    slug: '/blog/transparent-ehr-patient-provider',
-    date: 'April 4, 2026',
-    image: '/img/blog/transparent-ehr.jpg',
+    title: 'Why Community Clinics Need Open-Source EHRs More Than Ever',
+    excerpt: 'Community clinics are the backbone of accessible healthcare, yet many struggle with expensive, rigid EHR systems. Here is why open-source EHR solutions are becoming more important than ever.',
+    slug: '/blog/why-community-clinics-need-open-source-ehrs',
+    date: 'June 10, 2026',
+    image: '/img/blog/why-community-clinics-open-source.jpg',
   },
   {
-    title: 'How Ciyex EHR Minimizes "Clicks" and Maximizes Patient Interaction',
-    excerpt: 'Ciyex EHR was built to dismantle the digital barrier between doctor and patient. By prioritizing a "minimal-click" philosophy, our platform shifts focus back to the person in the exam room.',
-    slug: '/blog/minimize-clicks-maximize-interaction',
-    date: 'April 3, 2026',
-    image: '/img/blog/minimize-clicks.jpg',
+    title: 'Ciyex: Revolutionizing Healthcare with Unified, Patient-Centric Digital Records',
+    excerpt: 'Health records are often scattered across hospitals, clinics, labs, and pharmacies. Ciyex offers a modern, secure, and accessible way to unify and manage health records digitally.',
+    slug: '/blog/unified-patient-centric-digital-records',
+    date: 'June 9, 2026',
+    image: '/img/blog/blog-ehr-mobile.jpg',
   },
   {
-    title: '5 Ways Ciyex EHR Reduces Documentation Time for Clinicians',
-    excerpt: 'Ciyex EHR is engineered to eliminate clinical bottlenecks through an intuitive interface and automated data management. Here are five specific ways Ciyex streamlines documentation.',
-    slug: '/blog/reduce-documentation-time',
-    date: 'April 2, 2026',
-    image: '/img/blog/reduce-documentation.jpg',
+    title: 'OpenMRS vs OpenEMR vs CIYEX: Best EHR for Clinics Today',
+    excerpt: 'Choosing the right EHR shapes how efficiently your clinic operates. We compare OpenMRS, OpenEMR, and Ciyex to help you find the best open-source fit for your practice.',
+    slug: '/blog/openmrs-vs-openemr-vs-ciyex',
+    date: 'June 8, 2026',
+    image: '/img/blog/ciyex-vs-competitors.jpg',
   },
 ];
 

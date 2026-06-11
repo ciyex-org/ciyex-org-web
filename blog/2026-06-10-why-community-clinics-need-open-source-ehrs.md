@@ -3,7 +3,7 @@ slug: why-community-clinics-need-open-source-ehrs
 title: "Why Community Clinics Need Open-Source EHRs More Than Ever"
 authors: [ciyex_team]
 tags: [open-source, healthcare, community-health, interoperability, small-practices]
-image: /img/blog/hero-community-health.svg
+image: /img/blog/why-community-clinics-open-source.jpg
 ---
 
 Community clinics are the backbone of accessible healthcare, serving millions of patients who might otherwise face barriers to quality care. Yet many clinics continue to struggle with expensive, rigid Electronic Health Record (EHR) systems that limit efficiency, interoperability, and patient engagement.
@@ -12,7 +12,7 @@ This is why open-source EHR solutions are becoming more important than ever.
 
 <!-- truncate -->
 
-![Why community clinics need open-source EHRs — better care, patient ownership, seamless interoperability, and affordable, future-ready design](/img/blog/hero-community-health.svg)
+![Why community clinics need open-source EHRs — better care, patient ownership, seamless interoperability, and affordable, future-ready design](/img/blog/why-community-clinics-open-source.jpg)
 
 ## Greater Control, Lower Costs
 
