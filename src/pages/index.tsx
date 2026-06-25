@@ -250,25 +250,25 @@ function DonateSection() {
 /* ── Recent Blogs Section ── */
 const recentBlogs = [
   {
-    title: 'How Interoperability Reduces Duplicate Tests and Improves Care',
-    excerpt: 'When healthcare systems cannot communicate, patient data becomes fragmented — driving duplicate tests, higher costs, and delays. Here is how interoperability reduces repeat testing and improves care.',
-    slug: '/blog/how-interoperability-reduces-duplicate-tests',
-    date: 'June 11, 2026',
-    image: '/img/blog/interoperability-reduces-duplicate-tests.jpg',
+    title: 'Why Vendor Lock-In Is a Growing Concern in Healthcare IT',
+    excerpt: 'Vendor lock-in ties providers to a single software vendor, making it costly to switch systems. Here is why open, interoperable EHR platforms protect your technology investments.',
+    slug: '/blog/vendor-lock-in-healthcare-it',
+    date: 'June 18, 2026',
+    image: '/img/blog/vendor-lock-in-healthcare-it.jpg',
   },
   {
-    title: 'Why Community Clinics Need Open-Source EHRs More Than Ever',
-    excerpt: 'Community clinics are the backbone of accessible healthcare, yet many struggle with expensive, rigid EHR systems. Here is why open-source EHR solutions are becoming more important than ever.',
-    slug: '/blog/why-community-clinics-need-open-source-ehrs',
-    date: 'June 10, 2026',
-    image: '/img/blog/why-community-clinics-open-source.jpg',
+    title: 'How to Evaluate an EHR Without Getting Overwhelmed',
+    excerpt: 'With countless features, vendors, and pricing models, choosing an EHR can feel overwhelming. A structured evaluation process helps you find the right fit for your practice.',
+    slug: '/blog/how-to-evaluate-an-ehr',
+    date: 'June 17, 2026',
+    image: '/img/blog/how-to-evaluate-an-ehr.jpg',
   },
   {
-    title: 'Ciyex: Revolutionizing Healthcare with Unified, Patient-Centric Digital Records',
-    excerpt: 'Health records are often scattered across hospitals, clinics, labs, and pharmacies. Ciyex offers a modern, secure, and accessible way to unify and manage health records digitally.',
-    slug: '/blog/unified-patient-centric-digital-records',
-    date: 'June 9, 2026',
-    image: '/img/blog/blog-ehr-mobile.jpg',
+    title: 'From Paper Records to Connected Care: A Modern Clinic Journey',
+    excerpt: 'Modern clinics are moving from paper charts to connected care. See how digital transformation improves coordination, patient engagement, and operational efficiency.',
+    slug: '/blog/paper-records-to-connected-care',
+    date: 'June 16, 2026',
+    image: '/img/blog/paper-records-to-connected-care.jpg',
   },
 ];
 
