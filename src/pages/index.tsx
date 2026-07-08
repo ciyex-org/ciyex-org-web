@@ -250,6 +250,13 @@ function DonateSection() {
 /* ── Recent Blogs Section ── */
 const recentBlogs = [
   {
+    title: 'Why Healthcare Teams Need Better Collaboration Tools',
+    excerpt: 'Disconnected communication creates delays, duplication, and avoidable risks. See how collaboration tools integrated with your EHR help care teams communicate securely and work from a single source of truth.',
+    slug: '/blog/healthcare-teams-collaboration-tools',
+    date: 'June 19, 2026',
+    image: '/img/blog/healthcare-teams-collaboration-tools.jpg',
+  },
+  {
     title: 'Why Vendor Lock-In Is a Growing Concern in Healthcare IT',
     excerpt: 'Vendor lock-in ties providers to a single software vendor, making it costly to switch systems. Here is why open, interoperable EHR platforms protect your technology investments.',
     slug: '/blog/vendor-lock-in-healthcare-it',
@@ -262,13 +269,6 @@ const recentBlogs = [
     slug: '/blog/how-to-evaluate-an-ehr',
     date: 'June 17, 2026',
     image: '/img/blog/how-to-evaluate-an-ehr.jpg',
-  },
-  {
-    title: 'From Paper Records to Connected Care: A Modern Clinic Journey',
-    excerpt: 'Modern clinics are moving from paper charts to connected care. See how digital transformation improves coordination, patient engagement, and operational efficiency.',
-    slug: '/blog/paper-records-to-connected-care',
-    date: 'June 16, 2026',
-    image: '/img/blog/paper-records-to-connected-care.jpg',
   },
 ];
 
