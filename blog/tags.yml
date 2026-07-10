@@ -122,3 +122,19 @@ physician-burnout:
   label: Physician Burnout
   permalink: /blog/tags/physician-burnout
   description: Reducing administrative burden and clinician fatigue.
+digital-healthcare:
+  label: Digital Healthcare
+  permalink: /blog/tags/digital-healthcare
+  description: Digital transformation of healthcare delivery.
+ehr:
+  label: EHR
+  permalink: /blog/tags/ehr
+  description: Electronic health records and clinical systems.
+patient-care:
+  label: Patient Care
+  permalink: /blog/tags/patient-care
+  description: Improving patient outcomes and experiences.
+remote-patient-monitoring:
+  label: Remote Patient Monitoring
+  permalink: /blog/tags/remote-patient-monitoring
+  description: Connected devices and monitoring outside clinical settings.
