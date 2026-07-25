@@ -250,6 +250,13 @@ function DonateSection() {
 /* ── Recent Blogs Section ── */
 const recentBlogs = [
   {
+    title: 'What Is Digital Healthcare? A Complete Guide for Patients',
+    excerpt: "Digital healthcare combines advanced technologies, data, and connected systems to improve patient care, streamline clinical workflows, and make healthcare services more accessible.",
+    slug: '/blog/what-is-digital-healthcare-complete-guide-jul-2026',
+    date: 'July 24, 2026',
+    image: '/img/blog/digital-healthcare-guide.jpg',
+  },
+  {
     title: 'Why Healthcare Teams Need Better Collaboration Tools',
     excerpt: 'Disconnected communication creates delays, duplication, and avoidable risks. See how collaboration tools integrated with your EHR help care teams communicate securely and work from a single source of truth.',
     slug: '/blog/healthcare-teams-collaboration-tools',
@@ -262,13 +269,6 @@ const recentBlogs = [
     slug: '/blog/vendor-lock-in-healthcare-it',
     date: 'June 18, 2026',
     image: '/img/blog/vendor-lock-in-healthcare-it.jpg',
-  },
-  {
-    title: 'How to Evaluate an EHR Without Getting Overwhelmed',
-    excerpt: 'With countless features, vendors, and pricing models, choosing an EHR can feel overwhelming. A structured evaluation process helps you find the right fit for your practice.',
-    slug: '/blog/how-to-evaluate-an-ehr',
-    date: 'June 17, 2026',
-    image: '/img/blog/how-to-evaluate-an-ehr.jpg',
   },
 ];
 
