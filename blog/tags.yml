@@ -18,6 +18,10 @@ fhir:
   label: FHIR
   permalink: /blog/tags/fhir
   description: Fast Healthcare Interoperability Resources.
+hl7:
+  label: HL7
+  permalink: /blog/tags/hl7
+  description: Health Level Seven messaging standards.
 interoperability:
   label: Interoperability
   permalink: /blog/tags/interoperability
