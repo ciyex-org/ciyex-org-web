@@ -142,3 +142,31 @@ remote-patient-monitoring:
   label: Remote Patient Monitoring
   permalink: /blog/tags/remote-patient-monitoring
   description: Connected devices and monitoring outside clinical settings.
+usability:
+  label: Usability
+  permalink: /blog/tags/usability
+  description: User experience and interface design in healthcare software.
+workflow:
+  label: Workflow
+  permalink: /blog/tags/workflow
+  description: Clinical and administrative workflow design.
+automation:
+  label: Automation
+  permalink: /blog/tags/automation
+  description: Automating repetitive healthcare tasks.
+compliance:
+  label: Compliance
+  permalink: /blog/tags/compliance
+  description: Regulatory and policy compliance in healthcare.
+audit-logs:
+  label: Audit Logs
+  permalink: /blog/tags/audit-logs
+  description: Activity logging, audit trails, and traceability.
+licensing:
+  label: Licensing
+  permalink: /blog/tags/licensing
+  description: Software licensing and legal considerations.
+agpl:
+  label: AGPL
+  permalink: /blog/tags/agpl
+  description: GNU Affero General Public License.
