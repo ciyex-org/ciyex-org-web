@@ -11,7 +11,7 @@ export default function Terms(): ReactNode {
         <div className="container" style={{ maxWidth: 800 }}>
           <Heading as="h1">Terms of Service</Heading>
           <p style={{ color: 'var(--cx-slate-500)', marginBottom: '2rem' }}>
-            <strong>Effective Date:</strong> March 1, 2026 &nbsp;|&nbsp; <strong>Last Updated:</strong> March 12, 2026
+            <strong>Effective Date:</strong> March 1, 2026 &nbsp;|&nbsp; <strong>Last Updated:</strong> September 29, 2026
           </p>
 
           <p>
@@ -111,7 +111,19 @@ export default function Terms(): ReactNode {
             Contact <a href="mailto:help@ciyex.org">help@ciyex.org</a> for refund requests.
           </p>
 
-          <Heading as="h2">10. Disclaimer of Warranties</Heading>
+          <Heading as="h2" id="sms">10. SMS Messaging Terms</Heading>
+          <ul>
+            <li><strong>Program name:</strong> Ciyex EHR patient notifications.</li>
+            <li><strong>Messages sent:</strong> appointment reminders, lab result notifications, prescription refill notifications and billing notifications from the clinic providing your care. We do not send marketing messages.</li>
+            <li><strong>Opting in:</strong> you opt in on our <a href="/sms-consent">SMS consent page</a>, in your clinic's patient portal, or on a paper consent form at your clinic. Consent is not a condition of receiving care.</li>
+            <li><strong>Frequency and cost:</strong> message frequency varies. Message and data rates may apply.</li>
+            <li><strong>Help:</strong> reply HELP at any time, or email <a href="mailto:help@ciyex.org">help@ciyex.org</a>.</li>
+            <li><strong>Opting out:</strong> reply STOP at any time. You will receive one confirmation message and no further messages unless you opt in again.</li>
+            <li><strong>Carrier liability:</strong> carriers are not liable for delayed or undelivered messages.</li>
+            <li><strong>Privacy:</strong> see the Text Messaging section of our <a href="/privacy#sms">Privacy Policy</a>.</li>
+          </ul>
+
+          <Heading as="h2">11. Disclaimer of Warranties</Heading>
           <p>
             THE SERVICES ARE PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER
             EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS
@@ -119,7 +131,7 @@ export default function Terms(): ReactNode {
             BE UNINTERRUPTED, ERROR-FREE, OR SECURE.
           </p>
 
-          <Heading as="h2">11. Limitation of Liability</Heading>
+          <Heading as="h2">12. Limitation of Liability</Heading>
           <p>
             TO THE MAXIMUM EXTENT PERMITTED BY LAW, CIYEX SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL,
             SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING OUT OF OR RELATING TO YOUR USE OF THE
@@ -127,35 +139,35 @@ export default function Terms(): ReactNode {
             MONTHS PRECEDING THE CLAIM.
           </p>
 
-          <Heading as="h2">12. Indemnification</Heading>
+          <Heading as="h2">13. Indemnification</Heading>
           <p>
             You agree to indemnify, defend, and hold harmless Ciyex Inc., its directors, officers, and
             contributors from any claims, damages, losses, or expenses (including reasonable attorneys' fees)
             arising from your use of the Services or violation of these Terms.
           </p>
 
-          <Heading as="h2">13. Termination</Heading>
+          <Heading as="h2">14. Termination</Heading>
           <p>
             We may suspend or terminate your access to the Services at any time for any reason, including
             violation of these Terms. Upon termination, your right to use the Services ceases immediately.
             Provisions that by their nature should survive termination shall remain in effect.
           </p>
 
-          <Heading as="h2">14. Governing Law</Heading>
+          <Heading as="h2">15. Governing Law</Heading>
           <p>
             These Terms shall be governed by and construed in accordance with the laws of the State of
             Wyoming, without regard to its conflict of law provisions. Any disputes arising under these
             Terms shall be resolved in the courts of Sheridan County, Wyoming.
           </p>
 
-          <Heading as="h2">15. Changes to Terms</Heading>
+          <Heading as="h2">16. Changes to Terms</Heading>
           <p>
             We may update these Terms from time to time. We will notify you of material changes by posting
             the updated Terms on this page with a revised date. Continued use of the Services after changes
             constitutes acceptance of the updated Terms.
           </p>
 
-          <Heading as="h2">16. Contact Us</Heading>
+          <Heading as="h2">17. Contact Us</Heading>
           <p>
             If you have questions about these Terms, please contact us:
           </p>

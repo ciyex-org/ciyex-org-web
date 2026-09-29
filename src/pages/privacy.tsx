@@ -11,7 +11,7 @@ export default function Privacy(): ReactNode {
         <div className="container" style={{ maxWidth: 800 }}>
           <Heading as="h1">Privacy Policy</Heading>
           <p style={{ color: 'var(--cx-slate-500)', marginBottom: '2rem' }}>
-            <strong>Effective Date:</strong> March 1, 2026 &nbsp;|&nbsp; <strong>Last Updated:</strong> March 12, 2026
+            <strong>Effective Date:</strong> March 1, 2026 &nbsp;|&nbsp; <strong>Last Updated:</strong> September 29, 2026
           </p>
 
           <p>
@@ -76,21 +76,41 @@ export default function Privacy(): ReactNode {
             <li><strong>Nonprofit Reporting:</strong> Aggregate, anonymized data may be used in grant applications and annual reports.</li>
           </ul>
 
-          <Heading as="h2">6. Data Security</Heading>
+          <Heading as="h2" id="sms">6. Text Messaging (SMS)</Heading>
+          <p>
+            Clinics using Ciyex EHR may send patients appointment reminders, lab result, prescription
+            refill and billing notifications by text message. Patients opt in on our{' '}
+            <a href="/sms-consent">SMS consent page</a>, in their clinic's patient portal, or on a paper
+            consent form at the clinic. We collect the mobile number and the date, time and method of
+            consent so we can send the messages you asked for and honor opt-out requests.
+          </p>
+          <p>
+            <strong>
+              Mobile information will not be shared with third parties or affiliates for marketing or
+              promotional purposes. Text messaging originator opt-in data and consent will not be shared
+              with any third parties.
+            </strong>
+          </p>
+          <p>
+            You can opt out at any time by replying STOP. Reply HELP or email{' '}
+            <a href="mailto:help@ciyex.org">help@ciyex.org</a> for help.
+          </p>
+
+          <Heading as="h2">7. Data Security</Heading>
           <p>
             We implement industry-standard security measures including encryption in transit (TLS/SSL),
             encryption at rest, role-based access controls, and audit logging. While we strive to
             protect your information, no method of electronic transmission or storage is 100% secure.
           </p>
 
-          <Heading as="h2">7. Data Retention</Heading>
+          <Heading as="h2">8. Data Retention</Heading>
           <p>
             We retain your personal information only as long as necessary to fulfill the purposes
             outlined in this policy, comply with legal obligations, resolve disputes, and enforce
             our agreements. You may request deletion of your account and associated data at any time.
           </p>
 
-          <Heading as="h2">8. Your Rights</Heading>
+          <Heading as="h2">9. Your Rights</Heading>
           <p>Depending on your jurisdiction, you may have the right to:</p>
           <ul>
             <li>Access the personal information we hold about you</li>
@@ -102,35 +122,35 @@ export default function Privacy(): ReactNode {
           </ul>
           <p>To exercise any of these rights, contact us at <a href="mailto:help@ciyex.org">help@ciyex.org</a>.</p>
 
-          <Heading as="h2">9. Open Source Transparency</Heading>
+          <Heading as="h2">10. Open Source Transparency</Heading>
           <p>
             Our source code is publicly available under the AGPL-3.0 license. This means anyone can
             inspect how we handle data, verify our security practices, and confirm that we do what we
             say. Transparency is fundamental to earning the trust of the patients and communities we serve.
           </p>
 
-          <Heading as="h2">10. Third-Party Links</Heading>
+          <Heading as="h2">11. Third-Party Links</Heading>
           <p>
             Our website may contain links to third-party websites (e.g., GitHub, Zeffy, community forum).
             We are not responsible for the privacy practices of these external sites. We encourage you
             to review their privacy policies.
           </p>
 
-          <Heading as="h2">11. Children's Privacy</Heading>
+          <Heading as="h2">12. Children's Privacy</Heading>
           <p>
             Our website and services are not directed to children under 13. We do not knowingly collect
             personal information from children under 13. If you believe we have collected such
             information, please contact us immediately.
           </p>
 
-          <Heading as="h2">12. Changes to This Policy</Heading>
+          <Heading as="h2">13. Changes to This Policy</Heading>
           <p>
             We may update this Privacy Policy from time to time. We will notify you of any material
             changes by posting the updated policy on this page with a revised "Last Updated" date.
             Your continued use of our services after changes constitutes acceptance of the updated policy.
           </p>
 
-          <Heading as="h2">13. Contact Us</Heading>
+          <Heading as="h2">14. Contact Us</Heading>
           <p>
             If you have questions or concerns about this Privacy Policy, please contact us:
           </p>

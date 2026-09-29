@@ -284,6 +284,7 @@ const config: Config = {
           items: [
             { label: 'Privacy Policy', to: '/privacy' },
             { label: 'Terms of Service', to: '/terms' },
+            { label: 'SMS Consent', to: '/sms-consent' },
             { label: 'License (AGPL-3.0)', href: 'https://github.com/ciyex-org/ciyex/blob/main/LICENSE' },
           ],
         },
