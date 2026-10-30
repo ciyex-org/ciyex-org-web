@@ -77,24 +77,24 @@ export default function Workspace(): ReactNode {
   return (
     <Layout
       title="Ciyex Workspace"
-      description="Ciyex Workspace is the open source desktop client for the Ciyex EHR. Bundled with free cloud storage and every clinical module — appointments, charts, telehealth, messaging, labs — in one download for Windows, macOS, and Linux.">
+      description="Ciyex Workspace is the open source desktop client for the Ciyex EHR. Hosted on Ciyex Cloud, with every clinical module — appointments, charts, telehealth, messaging, labs — in one download for Windows, macOS, and Linux.">
       <main className={styles.page}>
 
         {/* Hero */}
         <section className={styles.hero}>
           <div className={styles.heroInner}>
-            <span className={styles.heroBadge}>Free &middot; Open Source &middot; Cloud Included</span>
+            <span className={styles.heroBadge}>Open Source &middot; Hosted for You</span>
             <Heading as="h1" className={styles.heroTitle}>
               Ciyex Workspace.<br />
               <span className={styles.heroGradient}>Your clinic's command center.</span>
             </Heading>
             <p className={styles.heroSubtitle}>
-              A modern desktop app, the open source Ciyex EHR, and free cloud storage —
+              A modern desktop app and the open source Ciyex EHR, hosted for your clinic —
               built on the same VS Code foundation millions of developers trust, but tuned for healthcare.
             </p>
             <div className={styles.heroCta}>
               <Link className={styles.btnPrimary} to="/downloads">Download Workspace</Link>
-              <Link className={styles.btnSecondary} to="/signup">Claim free cloud account &rarr;</Link>
+              <Link className={styles.btnSecondary} to="/pricing">See Ciyex Cloud pricing &rarr;</Link>
             </div>
           </div>
 
@@ -127,24 +127,24 @@ export default function Workspace(): ReactNode {
               </Heading>
               <p className={styles.stackDesc}>
                 Most EHR vendors sell you a website. We give you a desktop app, the open source
-                server that powers it, and the cloud to host your data — all together, all free.
+                server that powers it, and the cloud that hosts your data, all working together.
               </p>
               <ul className={styles.stackList}>
                 <li>
                   <strong>Workspace (desktop)</strong> — the app clinicians use day to day.
                 </li>
                 <li>
-                  <strong>Ciyex EHR (server)</strong> — open source, AGPL-3.0, runs in the cloud
-                  we host for you or on your own infrastructure.
+                  <strong>Ciyex EHR (server)</strong> — open source, AGPL-3.0, hosted and
+                  maintained by our team.
                 </li>
                 <li>
-                  <strong>Ciyex Cloud</strong> — free encrypted storage and sync, funded by service revenue and donations.
+                  <strong>Ciyex Cloud</strong> — encrypted hosting, storage and sync on a paid plan.
                 </li>
               </ul>
               <div className={styles.stackCta}>
                 <Link className={styles.btnPrimary} to="/downloads">Get Workspace</Link>
-                <Link className={styles.btnGhost} to="/docs/installation/docker-setup">
-                  Self-host the server &rarr;
+                <Link className={styles.btnGhost} to="/contact">
+                  Talk to us &rarr;
                 </Link>
               </div>
             </div>
@@ -154,7 +154,7 @@ export default function Workspace(): ReactNode {
                 <span className={styles.layerSub}>Windows &middot; macOS &middot; Linux</span>
               </div>
               <div className={styles.stackLayer} data-layer="cloud">
-                <span className={styles.layerLabel}>Ciyex Cloud (free)</span>
+                <span className={styles.layerLabel}>Ciyex Cloud</span>
                 <span className={styles.layerSub}>Encrypted storage &middot; sync &middot; backups</span>
               </div>
               <div className={styles.stackLayer} data-layer="ehr">
@@ -209,15 +209,15 @@ export default function Workspace(): ReactNode {
         <section className={styles.cta}>
           <div className={styles.ctaInner}>
             <Heading as="h2" className={styles.ctaTitle}>
-              Free to use.<br />Because clinics deserve it.
+              Run your clinic<br />on Ciyex.
             </Heading>
             <p className={styles.ctaDesc}>
-              Ciyex is a 501(c)(3) nonprofit. Workspace, the EHR, and cloud storage are free
-              because service revenue and tax-deductible donations keep them that way.
+              Ciyex is a 501(c)(3) nonprofit. Hosting plans, service revenue and tax-deductible
+              donations fund the continued development of our open source software.
             </p>
             <div className={styles.ctaButtons}>
-              <Link className={styles.btnPrimary} to="/downloads">Download Workspace</Link>
-              <Link className={styles.btnGhost} to="/donate">Support the project &rarr;</Link>
+              <Link className={styles.btnPrimary} to="/contact">Book a consultation</Link>
+              <Link className={styles.btnGhost} to="/downloads">Download Workspace &rarr;</Link>
             </div>
           </div>
         </section>

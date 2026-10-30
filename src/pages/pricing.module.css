@@ -1,0 +1,140 @@
+.page {
+  padding: 72px 0 96px;
+  background: var(--cx-paper);
+  color: var(--cx-ink);
+}
+
+.container {
+  width: min(1160px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+.head {
+  max-width: 720px;
+  margin-bottom: 40px;
+}
+
+.eyebrow {
+  margin: 0 0 14px;
+  color: var(--cx-pine);
+  font-family: var(--cx-font-mono);
+  font-size: 0.76rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.title {
+  margin: 0 0 16px;
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+.lede {
+  margin: 0;
+  color: var(--cx-muted);
+  font-size: 1.15rem;
+  line-height: 1.65;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 22px 18px;
+  border: 1px solid var(--cx-line);
+  border-radius: 10px;
+  background: var(--cx-surface);
+}
+
+.name {
+  margin: 0 0 4px;
+  font-size: 1.2rem;
+}
+
+.providers {
+  margin: 0 0 22px;
+  color: var(--cx-muted);
+  font-size: 0.95rem;
+}
+
+.price {
+  flex: 1;
+  margin: 0 0 22px;
+  color: var(--cx-pine);
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.price small {
+  display: block;
+  color: var(--cx-muted);
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.button {
+  display: inline-flex;
+  min-height: 46px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background: var(--cx-ember);
+  color: var(--cx-on-ember);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.button:hover {
+  background: var(--cx-ember-dark);
+  color: var(--cx-on-ember);
+  text-decoration: none;
+}
+
+.included {
+  margin-top: 28px;
+  padding: 26px;
+  border-radius: 10px;
+  background: var(--cx-surface-2);
+}
+
+.includedTitle {
+  margin: 0 0 12px;
+  font-size: 1.15rem;
+}
+
+.included ul {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px 24px;
+  margin: 0;
+  padding-left: 18px;
+}
+
+@media (max-width: 1100px) {
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 960px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .included ul {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

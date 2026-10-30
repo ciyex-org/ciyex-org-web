@@ -1,22 +1,8 @@
 import type { ReactNode } from 'react';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
+import BookingCalendar from '@site/src/components/BookingCalendar';
 import styles from '@site/src/css/india/signup.module.css';
-
-function CalendlyEmbed() {
-  return (
-    <div className={styles.calendlyContainer}>
-      <iframe
-        src="https://calendly.com/qiaben/ciyex?hide_gdpr_banner=1"
-        width="100%"
-        height="100%"
-        frameBorder="0"
-        title="Schedule a meeting with Ciyex"
-        className={styles.calendlyEmbed}
-      />
-    </div>
-  );
-}
 
 export default function Signup(): ReactNode {
   return (
@@ -40,7 +26,9 @@ export default function Signup(): ReactNode {
                 you would switch on, and whatever you want to ask.
               </p>
             </div>
-            <CalendlyEmbed />
+            <div className={styles.calendlyContainer}>
+              <BookingCalendar />
+            </div>
             <div className={styles.trustSection}>
               <div className={styles.trustItem}>
                 <span className={styles.trustIcon}>&#x1f512;</span>

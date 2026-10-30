@@ -22,15 +22,15 @@ export default function Modules(): ReactNode {
 			<main className={styles.page}>
 				<section className={styles.modulesHero}>
 					<div className={styles.modulesHeroInner}>
-						<div className={styles.sectionLabel}>Module catalogue</div>
+						<div className={styles.sectionLabel}>All modules</div>
 						<Heading as="h1" className={styles.heroTitle}>
 							{HIMS_MODULES.length} modules.<br />
 							<span className={styles.heroGradient}>Switch on what you run.</span>
 						</Heading>
 						<p className={styles.heroSubtitle}>
-							Every module below ships today. A hospital enables the ones it works
-							with, and staff never see the rest — turning one on takes effect
-							immediately, without a restart and without a rebuild.
+							Every module below is available today. Your hospital uses only the ones
+							it needs, and staff never see the rest. When you need another one, it
+							can be switched on straight away.
 						</p>
 						<nav className={styles.jumpNav} aria-label="Jump to module group">
 							{HIMS_MODULE_GROUPS.map((group) => (

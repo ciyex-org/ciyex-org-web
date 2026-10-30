@@ -25,7 +25,6 @@ function useDetectedOS(): OS | null {
 }
 
 const GITHUB_RELEASES = 'https://github.com/ciyex-org/ciyex/releases/latest';
-const DOCKER_HUB = 'https://hub.docker.com/r/ciyexorg/ciyex';
 
 /* ── Platform SVG Icons ── */
 const WindowsIcon = () => (
@@ -62,12 +61,6 @@ const LinuxIcon = () => (
 const AppleIcon = () => (
   <svg viewBox="0 0 24 24" fill="currentColor" width="56" height="56">
     <path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701" />
-  </svg>
-);
-
-const DockerIcon = () => (
-  <svg viewBox="0 0 24 24" fill="currentColor" width="40" height="40">
-    <path d="M13.983 11.078h2.119a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.119a.185.185 0 00-.185.185v1.888c0 .102.083.185.185.185m-2.954-5.43h2.118a.186.186 0 00.186-.186V3.574a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m0 2.716h2.118a.187.187 0 00.186-.186V6.29a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.887c0 .102.082.185.185.186m-2.93 0h2.12a.186.186 0 00.184-.186V6.29a.185.185 0 00-.185-.185H8.1a.185.185 0 00-.185.185v1.887c0 .102.083.185.185.186m-2.964 0h2.119a.186.186 0 00.185-.186V6.29a.185.185 0 00-.185-.185H5.136a.186.186 0 00-.186.185v1.887c0 .102.084.185.186.186m5.893 2.715h2.118a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m-2.93 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.083.185.185.185m-2.964 0h2.119a.185.185 0 00.185-.185V9.006a.185.185 0 00-.184-.186h-2.12a.186.186 0 00-.186.186v1.887c0 .102.084.185.186.185m-2.92 0h2.12a.186.186 0 00.184-.185V9.006a.185.185 0 00-.185-.185H2.1a.186.186 0 00-.186.186v1.887c0 .102.084.185.186.185M23.763 9.89c-.065-.051-.672-.51-1.954-.51-.338.001-.676.03-1.01.087-.248-1.7-1.653-2.53-1.716-2.566l-.344-.199-.226.327c-.284.438-.49.922-.612 1.43-.23.97-.09 1.882.403 2.661-.595.332-1.55.413-1.744.42H.751a.751.751 0 00-.75.748 11.376 11.376 0 00.692 4.062c.545 1.428 1.355 2.48 2.41 3.124 1.18.723 3.1 1.137 5.275 1.137.983.003 1.963-.086 2.93-.266a12.248 12.248 0 003.823-1.389c.98-.567 1.86-1.288 2.61-2.136 1.252-1.418 1.998-2.997 2.553-4.4h.221c1.372 0 2.215-.549 2.68-1.009.309-.293.55-.65.707-1.046l.098-.288Z" />
   </svg>
 );
 
@@ -228,17 +221,16 @@ export default function Downloads(): ReactNode {
   return (
     <Layout
       title="Download Ciyex Workspace"
-      description="Download Ciyex Workspace for Windows, Linux, and macOS. Includes the open source Ciyex EHR and free cloud storage — everything your clinic needs in one app.">
+      description="Download Ciyex Workspace for Windows, Linux, and macOS. Connects to the Ciyex EHR, hosted for your clinic on Ciyex Cloud.">
 
       {/* Hero */}
       <section className={styles.hero}>
         <div className={styles.heroInner}>
-          <div className={styles.heroBadge}>Open Source &middot; Free to Use</div>
+          <div className={styles.heroBadge}>Ciyex Workspace</div>
           <Heading as="h1" className={styles.heroTitle}>Download Ciyex Workspace</Heading>
           <p className={styles.heroSubtitle}>
             Getting started takes two steps: <strong>install Workspace</strong> on your computer,
-            then <strong>connect it to a backend</strong> &mdash; use our free cloud
-            (recommended) or self-host the Ciyex EHR server.
+            then <strong>connect it to Ciyex Cloud</strong>, where we host the EHR for your clinic.
           </p>
           <div className={styles.heroMeta}>
             <span className={styles.metaPill}>
@@ -285,75 +277,35 @@ export default function Downloads(): ReactNode {
       <section className={styles.sectionHeader}>
         <div className={styles.sectionHeaderInner}>
           <span className={styles.sectionEyebrow}>Step 2</span>
-          <Heading as="h2" className={styles.sectionHeaderTitle}>Connect to a backend</Heading>
+          <Heading as="h2" className={styles.sectionHeaderTitle}>Connect to Ciyex Cloud</Heading>
           <p className={styles.sectionHeaderDesc}>
-            Workspace needs an EHR server to store and sync your clinic's data. Use our free
-            cloud (the easy path) or self-host the open source server yourself.
+            Workspace needs an EHR server to store and sync your clinic's data. We host and
+            maintain it for you.
           </p>
         </div>
       </section>
 
-      {/* Backend choice: Cloud vs Self-host */}
+      {/* Hosting */}
       <section className={styles.backendSection}>
-        <div className={styles.backendGrid}>
-
-          {/* Option A: Free Cloud */}
+        <div className={styles.backendGrid} style={{ gridTemplateColumns: 'minmax(0, 620px)', justifyContent: 'center' }}>
           <div className={`${styles.backendCard} ${styles.backendCardRecommended}`}>
-            <div className={styles.backendBadge}>Recommended</div>
             <div className={styles.backendIcon} style={{ color: '#0d9488' }}>
               <CloudIcon />
             </div>
-            <h3 className={styles.backendTitle}>Claim a free cloud account</h3>
+            <h3 className={styles.backendTitle}>Ciyex Cloud</h3>
             <p className={styles.backendDesc}>
-              We host the EHR server for you. Sign up, sign in from Workspace, and start charting
-              in minutes &mdash; no servers, no IT contract.
+              We host and run the EHR for your clinic, so there are no servers to manage. Tell us
+              about your practice and we'll set up your account. Pricing is a fixed monthly price for your provider range.
             </p>
             <ul className={styles.backendList}>
               <li>Managed hosting &middot; encrypted at rest &amp; in transit</li>
               <li>Automatic backups &amp; cross-device sync</li>
-              <li>Free to use &mdash; funded by services and donations</li>
+              <li>Setup, data migration and training available</li>
             </ul>
-            <Link to="/signup" className={styles.cloudBtn}>
-              Claim free cloud account
+            <Link to="/pricing" className={styles.cloudBtn}>
+              See Ciyex Cloud pricing
             </Link>
           </div>
-
-          {/* Option B: Self-host */}
-          <div className={styles.backendCard}>
-            <div className={styles.backendIcon} style={{ color: '#0db7ed' }}>
-              <DockerIcon />
-            </div>
-            <h3 className={styles.backendTitle}>Self-host the EHR server</h3>
-            <p className={styles.backendDesc}>
-              Have your own IT? Run the open source Ciyex EHR server on your own infrastructure.
-              Workspace will connect to it the same way it connects to our cloud.
-            </p>
-            <ul className={styles.backendList}>
-              <li>Full data sovereignty &middot; AGPL-3.0 licensed</li>
-              <li>One command Docker stack with PostgreSQL</li>
-              <li>Kubernetes, Helm &amp; bare-metal supported</li>
-            </ul>
-            <div className={styles.codeBlock}>
-              <code>docker pull ciyexorg/ciyex:latest</code>
-            </div>
-            <div className={styles.backendLinks}>
-              <Link to="/docs/installation/docker-setup" className={styles.dockerBtn}>
-                Docker setup guide
-              </Link>
-              <Link href={DOCKER_HUB} className={styles.dockerBtnGhost}>
-                Docker Hub &rarr;
-              </Link>
-            </div>
-          </div>
-
-        </div>
-
-        {/* Requirements note */}
-        <div className={styles.noteInner}>
-          <p className={styles.noteText}>
-            Need Kubernetes, Helm charts, or bare-metal install instructions?{' '}
-            <Link to="/docs/installation/local-setup">See the full installation guide &rarr;</Link>
-          </p>
         </div>
       </section>
     </Layout>
