@@ -55,10 +55,7 @@
 }
 
 .heroGradient {
-  background: linear-gradient(135deg, var(--cx-brand-from) 0%, var(--cx-brand-to) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--ifm-color-primary);
 }
 
 .heroSubtitle {
@@ -83,8 +80,8 @@
   color: var(--cx-on-primary) !important;
   font-weight: 600;
   font-size: 0.95rem;
-  padding: 11px 22px;
-  border-radius: 10px;
+  padding: 0.85rem 1.75rem;
+  border-radius: 999px;
   text-decoration: none !important;
   transition: background 0.15s ease, transform 0.15s ease;
 }
@@ -371,7 +368,7 @@
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--cx-brand-from), var(--cx-brand-to));
+  background: var(--ifm-color-primary);
 }
 
 .stackList li strong {
@@ -412,7 +409,7 @@
 }
 
 .stackLayer[data-layer='cloud'] {
-  border-left: 4px solid var(--cx-brand-to);
+  border-left: 4px solid var(--ifm-color-primary);
 }
 
 .stackLayer[data-layer='ehr'],

@@ -42,8 +42,7 @@ export default function About(): ReactNode {
                 </p>
                 <p className={styles.missionText}>
                   Our mission is to empower public health initiatives globally by
-                  providing a complete EHR platform that is free to use, self-hostable,
-                  built with encryption, audit logs and role-based access, and based on
+                  providing a complete EHR platform built with encryption, audit logs and role-based access, and based on
                   open standards like FHIR R4 and HL7 v2. We
                   serve patients, clinics, hospitals, and healthcare organizations of all
                   sizes, from rural community health centers to large hospital networks.

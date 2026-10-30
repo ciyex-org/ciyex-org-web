@@ -93,7 +93,7 @@ const PROOF: readonly { label: string; value: string }[] = [
 	{ label: 'License', value: 'AGPL-3.0' },
 	{ label: 'Source code', value: 'Public on GitHub' },
 	{ label: 'Data standard', value: 'FHIR R4' },
-	{ label: 'Deployment', value: 'Cloud or self-hosted' },
+	{ label: 'Hosting', value: 'Managed by Ciyex' },
 ];
 
 function ProofStrip() {
@@ -241,8 +241,8 @@ function Software() {
 						An open source EHR your clinic can actually run.
 					</Heading>
 					<p className={styles.lede}>
-						Ciyex Workspace is the desktop client for the Ciyex EHR. Download it free, host
-						it yourself, or have our team set it up. Revenue from our services helps fund its development.
+						Ciyex Workspace is the desktop client for the Ciyex EHR. We host it, set it up
+						and keep it running for your clinic. Revenue from our services helps fund its development.
 					</p>
 					<div className={styles.inlineActions}>
 						<Link className={styles.btnSecondary} to="/workspace">Explore Workspace</Link>
@@ -345,7 +345,7 @@ function OpenAndSecure() {
 					<Heading as="h2" className={styles.noteTitle}>Read the code before you trust it.</Heading>
 					<p>
 						The EHR is licensed under AGPL-3.0 and developed in public, so you can inspect
-						it, host it yourself, and keep your data if you ever leave.
+						it and keep your data if you ever leave.
 					</p>
 					<a href="https://github.com/ciyex-org/ciyex">View the source on GitHub &rarr;</a>
 				</div>

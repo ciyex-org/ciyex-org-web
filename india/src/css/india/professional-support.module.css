@@ -1,11 +1,11 @@
 /**
- * Professional Support Page - Apple-inspired Dark Theme
+ * Professional Support Page - light theme, matching the India home page
  */
 
 .supportPage {
-  background: var(--cx-band);
+  background: var(--cx-paper);
   padding: 0 0 100px;
-  color: #f1f5f9;
+  color: var(--cx-ink);
 }
 
 /* Hero Section */
@@ -24,7 +24,7 @@
   transform: translateX(-50%);
   width: 800px;
   height: 500px;
-  background: radial-gradient(ellipse, rgba(var(--cx-brand-from-rgb), 0.08) 0%, transparent 70%);
+  background: radial-gradient(ellipse, rgba(var(--cx-primary-rgb), 0.1) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -46,10 +46,10 @@
 .badge {
   font-size: 0.75rem;
   font-weight: 500;
-  color: #94a3b8;
+  color: var(--cx-muted);
   padding: 5px 14px;
   border-radius: 100px;
-  border: 1px solid rgba(148, 163, 184, 0.25);
+  border: 1px solid var(--cx-line);
   letter-spacing: 0.04em;
 }
 
@@ -58,13 +58,13 @@
   font-weight: 900;
   line-height: 1.05;
   margin-bottom: 1rem;
-  color: #f1f5f9;
+  color: var(--cx-ink);
   letter-spacing: -0.04em;
 }
 
 .heroSubtitle {
   font-size: 1.25rem;
-  color: #cbd5e1;
+  color: var(--cx-muted);
   max-width: 600px;
   margin: 0 auto;
   line-height: 1.6;
@@ -87,7 +87,7 @@
   font-weight: 900;
   text-align: center;
   margin-bottom: 2.5rem;
-  color: #f1f5f9;
+  color: var(--cx-ink);
   letter-spacing: -0.03em;
 }
 
@@ -96,29 +96,29 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1px;
-  background: rgba(255, 255, 255, 0.04);
+  background: var(--cx-line);
   border-radius: 20px;
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--cx-line);
 }
 
 .stepCard {
-  background: rgba(17, 24, 39, 0.8);
+  background: var(--cx-surface);
   padding: 2.5rem 2rem;
   text-align: center;
   transition: background 0.3s ease;
 }
 
 .stepCard:hover {
-  background: rgba(30, 41, 59, 0.8);
+  background: var(--cx-surface-2);
 }
 
 .stepNumber {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--cx-brand-from), var(--cx-brand-to));
-  color: #ffffff;
+  background: var(--ifm-color-primary);
+  color: var(--cx-on-primary);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -130,13 +130,13 @@
 .stepTitle {
   font-size: 1rem;
   font-weight: 600;
-  color: #f1f5f9;
+  color: var(--cx-ink);
   margin-bottom: 0.5rem;
 }
 
 .stepText {
   font-size: 0.875rem;
-  color: #94a3b8;
+  color: var(--cx-muted);
   line-height: 1.6;
   margin: 0;
 }
@@ -149,8 +149,8 @@
 }
 
 .vendorCard {
-  background: var(--cx-band-2);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--cx-surface);
+  border: 1px solid var(--cx-line);
   border-radius: 20px;
   padding: 48px;
 }
@@ -165,31 +165,31 @@
 .vendorName {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #f1f5f9;
+  color: var(--cx-ink);
   margin: 0 0 0.25rem;
 }
 
 .vendorCompany {
   font-size: 0.875rem;
-  color: #94a3b8;
+  color: var(--cx-muted);
   margin: 0;
 }
 
 .tierBadge {
   font-size: 0.75rem;
   font-weight: 600;
-  color: var(--cx-brand-from);
+  color: var(--cx-pine);
   padding: 4px 12px;
   border-radius: 100px;
-  border: 1px solid rgba(var(--cx-brand-from-rgb), 0.3);
-  background: rgba(var(--cx-brand-from-rgb), 0.08);
+  border: 1px solid rgba(var(--cx-primary-rgb), 0.3);
+  background: rgba(var(--cx-primary-rgb), 0.08);
   white-space: nowrap;
 }
 
 .vendorDescription {
   font-size: 1.0625rem;
   line-height: 1.8;
-  color: #cbd5e1;
+  color: var(--cx-muted);
   margin-bottom: 2rem;
 }
 
@@ -211,7 +211,7 @@
 .detailTitle {
   font-size: 0.75rem;
   font-weight: 600;
-  color: #94a3b8;
+  color: var(--cx-muted);
   text-transform: uppercase;
   letter-spacing: 0.08em;
   margin-bottom: 0.75rem;
@@ -228,7 +228,7 @@
 
 .serviceItem {
   font-size: 0.875rem;
-  color: #cbd5e1;
+  color: var(--cx-muted);
   padding-left: 1.25rem;
   position: relative;
 }
@@ -241,7 +241,7 @@
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: var(--cx-brand-to);
+  background: var(--cx-pine);
 }
 
 .coverageTags {
@@ -252,16 +252,16 @@
 
 .coverageTag {
   font-size: 0.8125rem;
-  color: #cbd5e1;
+  color: var(--cx-muted);
   padding: 4px 12px;
   border-radius: 100px;
-  border: 1px solid rgba(148, 163, 184, 0.2);
-  background: rgba(148, 163, 184, 0.08);
+  border: 1px solid var(--cx-line);
+  background: var(--cx-surface-2);
 }
 
 .contactInfo {
   font-size: 0.875rem;
-  color: #cbd5e1;
+  color: var(--cx-muted);
   line-height: 1.7;
 }
 
@@ -270,13 +270,13 @@
 }
 
 .contactLink {
-  color: var(--cx-brand-from);
+  color: var(--cx-pine);
   text-decoration: none;
   font-weight: 500;
 }
 
 .contactLink:hover {
-  color: var(--cx-brand-to);
+  color: var(--cx-pine-dark);
 }
 
 /* Vendor Actions */
@@ -284,15 +284,15 @@
   display: flex;
   gap: 1rem;
   padding-top: 1.5rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-top: 1px solid var(--cx-line);
 }
 
 .bookingBtn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, var(--cx-brand-from), var(--cx-brand-to));
-  color: #ffffff;
+  background: var(--ifm-color-primary);
+  color: var(--cx-on-primary);
   border-radius: 980px;
   padding: 12px 28px;
   font-size: 0.9375rem;
@@ -314,8 +314,8 @@
   align-items: center;
   justify-content: center;
   background: transparent;
-  color: #cbd5e1;
-  border: 1px solid rgba(148, 163, 184, 0.3);
+  color: var(--cx-muted);
+  border: 1px solid var(--cx-line);
   border-radius: 980px;
   padding: 12px 28px;
   font-size: 0.9375rem;
@@ -326,15 +326,15 @@
 }
 
 .websiteBtn:hover {
-  background: rgba(148, 163, 184, 0.08);
-  color: #f1f5f9;
+  background: var(--cx-surface-2);
+  color: var(--cx-ink);
   text-decoration: none;
 }
 
 /* CTA Card */
 .ctaCard {
-  background: var(--cx-band-2);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--cx-surface);
+  border: 1px solid var(--cx-line);
   border-radius: 20px;
   padding: 48px;
   text-align: center;
@@ -343,14 +343,14 @@
 .ctaTitle {
   font-size: 1.75rem;
   font-weight: 700;
-  color: #f1f5f9;
+  color: var(--cx-ink);
   margin-bottom: 1rem;
 }
 
 .ctaText {
   font-size: 1.0625rem;
   line-height: 1.8;
-  color: #cbd5e1;
+  color: var(--cx-muted);
   max-width: 600px;
   margin: 0 auto 2rem;
 }
@@ -360,8 +360,8 @@
   align-items: center;
   justify-content: center;
   background: transparent;
-  color: var(--cx-brand-from);
-  border: 1px solid rgba(var(--cx-brand-from-rgb), 0.3);
+  color: var(--cx-pine);
+  border: 1px solid rgba(var(--cx-primary-rgb), 0.3);
   border-radius: 980px;
   padding: 12px 28px;
   font-size: 0.9375rem;
@@ -372,8 +372,8 @@
 }
 
 .ctaBtn:hover {
-  background: rgba(var(--cx-brand-from-rgb), 0.08);
-  color: var(--cx-brand-from);
+  background: rgba(var(--cx-primary-rgb), 0.08);
+  color: var(--cx-pine);
   text-decoration: none;
 }
 

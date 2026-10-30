@@ -969,7 +969,7 @@ export const SERVICE_LANDING: Record<string, ServiceLandingData> = {
 			{
 				title: 'Set it up',
 				description: 'Fit the system to how your clinic works.',
-				items: ['Cloud or self-hosted deployment', 'Users, roles and locations', 'Schedule and visit templates', 'Clinical forms and billing settings'],
+				items: ['Ciyex Cloud account setup', 'Users, roles and locations', 'Schedule and visit templates', 'Clinical forms and billing settings'],
 			},
 			{
 				title: 'Move your data',
@@ -987,7 +987,7 @@ export const SERVICE_LANDING: Record<string, ServiceLandingData> = {
 		responsibility: 'What can be migrated depends on what your current vendor can export. Your team validates migrated data before go-live and remains responsible for clinical use of the system and its records.',
 		faqs: [
 			{ question: 'Can you move data from our current EHR?', answer: 'Usually yes for core data, depending on your vendor’s export. We review a sample first and tell you what will move and what will not.' },
-			{ question: 'Should we use the cloud or self-host?', answer: 'It depends on your IT capacity and preferences. We explain the trade-offs and deploy whichever you choose.' },
+			{ question: 'Where is Ciyex hosted?', answer: 'We host and maintain Ciyex for you on Ciyex Cloud, so your team has no servers to manage.' },
 		],
 	},
 	'ai-front-office-agent': {

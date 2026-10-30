@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react';
+import { useState, type ReactNode } from 'react';
 import Head from '@docusaurus/Head';
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
@@ -134,9 +134,9 @@ function JourneySection() {
 /* ── Product tour ── */
 
 /**
- * Real screens from the product. Every image is redacted before it is added:
- * names, mobile numbers and UHIDs are cropped or pixelated, so never replace
- * one with a raw capture from a live tenant.
+ * Real screens from the test hospital. Names, mobile numbers and UHIDs are
+ * replaced with test labels before capture, so never swap one for a raw capture
+ * from a live tenant.
  */
 const TOUR: readonly { title: string; caption: string; src: string; alt: string }[] = [
 	{
@@ -172,6 +172,8 @@ const TOUR: readonly { title: string; caption: string; src: string; alt: string 
 ];
 
 function ProductTour() {
+	const [active, setActive] = useState(0);
+
 	return (
 		<section className={styles.tour}>
 			<div className={styles.container}>
@@ -185,17 +187,36 @@ function ProductTour() {
 						patient file. Figures shown are from a test hospital.
 					</p>
 				</div>
-				<div className={styles.tourGrid}>
-					{TOUR.map((shot) => (
-						<figure key={shot.title} className={styles.tourCard} data-reveal>
-							<img className={styles.tourImage} src={shot.src} alt={shot.alt} loading="lazy" />
-							<figcaption className={styles.tourCaption}>
-								<h3 className={styles.tourTitle}>{shot.title}</h3>
-								<p>{shot.caption}</p>
-							</figcaption>
-						</figure>
+				<div className={styles.tourTabs} role="tablist" aria-label="Screens in Ciyex HIMS" data-reveal>
+					{TOUR.map((shot, index) => (
+						<button
+							key={shot.title}
+							type="button"
+							role="tab"
+							aria-selected={index === active}
+							className={`${styles.tourTab} ${index === active ? styles.tourTabActive : ''}`}
+							onClick={() => setActive(index)}>
+							{shot.title}
+						</button>
 					))}
 				</div>
+				<figure className={styles.tourStage} data-reveal>
+					<div className={styles.tourChrome} aria-hidden="true"><span /><span /><span /></div>
+					{TOUR.map((shot, index) => (
+						<img
+							key={shot.title}
+							className={styles.tourImage}
+							hidden={index !== active}
+							src={shot.src}
+							alt={shot.alt}
+							width={2000}
+							height={1234}
+						/>
+					))}
+				</figure>
+				<p className={styles.tourCaption}>
+					<strong>{TOUR[active].title}.</strong> {TOUR[active].caption}
+				</p>
 			</div>
 		</section>
 	);

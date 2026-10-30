@@ -1,9 +1,9 @@
 /**
- * Signup Page - Apple-inspired Dark Theme
+ * Signup Page - light theme, matching the India home page
  */
 
 .signupPage {
-  background: var(--cx-band);
+  background: var(--cx-paper);
   padding: 0 0 100px;
 }
 
@@ -23,7 +23,7 @@
   transform: translateX(-50%);
   width: 600px;
   height: 400px;
-  background: radial-gradient(ellipse, rgba(var(--cx-brand-from-rgb), 0.08) 0%, transparent 70%);
+  background: radial-gradient(ellipse, rgba(var(--cx-primary-rgb), 0.1) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -46,10 +46,10 @@
 .badgeOpen {
   font-size: 0.75rem;
   font-weight: 500;
-  color: #94a3b8;
+  color: var(--cx-muted);
   padding: 5px 14px;
   border-radius: 100px;
-  border: 1px solid rgba(148, 163, 184, 0.25);
+  border: 1px solid var(--cx-line);
   letter-spacing: 0.04em;
 }
 
@@ -58,13 +58,13 @@
   font-weight: 900;
   line-height: 1.05;
   margin-bottom: 1rem;
-  color: #f1f5f9;
+  color: var(--cx-ink);
   letter-spacing: -0.04em;
 }
 
 .subtitle {
   font-size: 1.125rem;
-  color: #cbd5e1;
+  color: var(--cx-muted);
   max-width: 560px;
   margin: 0 auto;
   line-height: 1.6;
@@ -79,14 +79,8 @@
   overflow: hidden;
   margin: 0 auto;
   max-width: 900px;
-  height: 1050px;
-  box-shadow: 0 0 60px rgba(var(--cx-brand-from-rgb), 0.08), 0 0 0 1px rgba(255, 255, 255, 0.05);
-}
-
-.calendlyEmbed {
-  display: block;
-  border: none;
-  height: 100%;
+  border: 1px solid var(--cx-line);
+  box-shadow: 0 28px 70px -48px rgba(18, 41, 90, 0.4);
 }
 
 .trustSection {
@@ -103,7 +97,7 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: #94a3b8;
+  color: var(--cx-muted);
   font-size: 0.8125rem;
   font-weight: 500;
 }

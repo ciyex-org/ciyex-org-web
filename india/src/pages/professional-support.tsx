@@ -26,7 +26,7 @@ const OFFICE = {
 	address: '1/39, Veerappanur, Coimbatore, Tamil Nadu 641105',
 	email: 'info@qiaben.com',
 	website: 'https://qiaben.com',
-	booking: 'https://calendly.com/qiaben/ciyex',
+	booking: '/signup',
 	// TODO: an Indian landline or mobile goes here. The +1 (844) number the page
 	// used to print is a US toll-free line an Indian hospital mostly cannot dial,
 	// so it is better absent than wrong.
@@ -232,13 +232,11 @@ export default function ProfessionalSupport(): ReactNode {
 								</div>
 
 								<div className={styles.vendorActions}>
-									<a
-										href={OFFICE.booking}
-										target="_blank"
-										rel="noopener noreferrer"
+									<Link
+										to={OFFICE.booking}
 										className={styles.bookingBtn}>
 										Book a Free Consultation
-									</a>
+									</Link>
 									<Link to="/modules" className={styles.websiteBtn}>
 										See all 23 modules
 									</Link>

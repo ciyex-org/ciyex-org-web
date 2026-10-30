@@ -8,7 +8,7 @@ import styles from './impact.module.css';
 const stats = [
   { value: `${LIVE_SERVICE_COUNT}`, label: 'Practice services that help fund the software' },
   { value: '100%', label: 'Open source EHR code, public on GitHub' },
-  { value: '0', label: 'Per-patient fees charged to community health centers' },
+  { value: 'FHIR R4', label: 'Open data standard, so records can move' },
   { value: 'AGPL-3.0', label: 'Licensed so communities own their infrastructure' },
 ];
 
@@ -21,7 +21,7 @@ const programs = [
       </svg>
     ),
     title: 'Community Health Centers',
-    description: 'Free EHR deployments for federally qualified health centers (FQHCs), free clinics, and rural health facilities that serve uninsured and underinsured populations.',
+    description: 'EHR deployments for federally qualified health centers (FQHCs), free clinics, and rural health facilities that serve uninsured and underinsured populations.',
   },
   {
     icon: (
@@ -135,15 +135,13 @@ export default function Impact(): ReactNode {
               <div className={styles.contentCard}>
                 <p className={styles.contentText}>
                   Ciyex takes a fundamentally different approach. We build healthcare technology
-                  as public infrastructure, not a product. Our EHR is free, open source, and
+                  as public infrastructure, not a product. Our EHR is open source and
                   designed from the ground up for the communities that need it most.
                 </p>
                 <p className={styles.contentText}>
                   By building on open standards like FHIR R4, we ensure patient data flows
                   seamlessly between providers, ending the cycle of lost records and repeated
-                  tests. By licensing under AGPL-3.0, we guarantee that communities can
-                  self-host and own their healthcare infrastructure with no vendor lock-in and
-                  no per-patient fees, ever.
+                  tests. By licensing under AGPL-3.0, we keep the code open, with no vendor lock-in.
                 </p>
               </div>
             </div>
@@ -157,8 +155,7 @@ export default function Impact(): ReactNode {
                 <p className={styles.contentText}>
                   Medical practices and dental offices pay for the billing, coding, credentialing
                   and virtual assistant work we do for them. That revenue helps fund the continued
-                  development of Ciyex, so the software can stay free and open source for the
-                  clinics that could never buy it.
+                  development of Ciyex, so the software can stay open source.
                 </p>
                 <p className={styles.contentText}>
                   You do not have to use Ciyex to work with us, and you do not have to work with

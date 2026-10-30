@@ -1,11 +1,11 @@
 /**
- * About Page - Apple-inspired Dark Theme
+ * About Page - light theme, matching the India home page
  */
 
 .aboutPage {
-  background: var(--cx-band);
+  background: var(--cx-paper);
   padding: 0 0 100px;
-  color: #f1f5f9;
+  color: var(--cx-ink);
 }
 
 /* Hero Section */
@@ -24,7 +24,7 @@
   transform: translateX(-50%);
   width: 800px;
   height: 500px;
-  background: radial-gradient(ellipse, rgba(var(--cx-brand-from-rgb), 0.08) 0%, transparent 70%);
+  background: radial-gradient(ellipse, rgba(var(--cx-primary-rgb), 0.1) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -46,20 +46,20 @@
 .badge {
   font-size: 0.75rem;
   font-weight: 500;
-  color: #cbd5e1;
+  color: var(--cx-muted);
   padding: 5px 14px;
   border-radius: 100px;
-  border: 1px solid rgba(148, 163, 184, 0.25);
+  border: 1px solid var(--cx-line);
   letter-spacing: 0.04em;
 }
 
 .badgeState {
   font-size: 0.75rem;
   font-weight: 500;
-  color: #cbd5e1;
+  color: var(--cx-muted);
   padding: 5px 14px;
   border-radius: 100px;
-  border: 1px solid rgba(148, 163, 184, 0.25);
+  border: 1px solid var(--cx-line);
   letter-spacing: 0.04em;
 }
 
@@ -68,13 +68,13 @@
   font-weight: 900;
   line-height: 1.05;
   margin-bottom: 1rem;
-  color: #f1f5f9;
+  color: var(--cx-ink);
   letter-spacing: -0.04em;
 }
 
 .heroSubtitle {
   font-size: 1.25rem;
-  color: #cbd5e1;
+  color: var(--cx-muted);
   max-width: 500px;
   margin: 0 auto;
   line-height: 1.6;
@@ -97,14 +97,14 @@
   font-weight: 900;
   text-align: center;
   margin-bottom: 2.5rem;
-  color: #f1f5f9;
+  color: var(--cx-ink);
   letter-spacing: -0.03em;
 }
 
 /* Mission */
 .missionCard {
-  background: var(--cx-band-2);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--cx-surface);
+  border: 1px solid var(--cx-line);
   border-radius: 20px;
   padding: 48px;
   max-width: 800px;
@@ -114,7 +114,7 @@
 .missionText {
   font-size: 1.0625rem;
   line-height: 1.8;
-  color: #cbd5e1;
+  color: var(--cx-muted);
   margin-bottom: 1.25rem;
 }
 
@@ -127,22 +127,22 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1px;
-  background: rgba(255, 255, 255, 0.04);
+  background: var(--cx-line);
   border-radius: 20px;
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--cx-line);
   max-width: 900px;
   margin: 0 auto;
 }
 
 .infoCard {
-  background: rgba(17, 24, 39, 0.8);
+  background: var(--cx-surface);
   padding: 2rem;
   transition: background 0.3s ease;
 }
 
 .infoCard:hover {
-  background: rgba(30, 41, 59, 0.8);
+  background: var(--cx-surface-2);
 }
 
 .infoIcon {
@@ -153,7 +153,7 @@
 .infoLabel {
   font-size: 0.75rem;
   font-weight: 600;
-  color: #94a3b8;
+  color: var(--cx-muted);
   margin-bottom: 0.5rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -162,24 +162,24 @@
 .infoValue {
   font-size: 0.9375rem;
   line-height: 1.7;
-  color: #cbd5e1;
+  color: var(--cx-muted);
   margin: 0;
 }
 
 .infoLink {
-  color: var(--cx-brand-from);
+  color: var(--cx-pine);
   text-decoration: none;
   font-weight: 500;
 }
 
 .infoLink:hover {
-  color: var(--cx-brand-to);
+  color: var(--cx-pine-dark);
 }
 
 /* Donate Card */
 .donateCard {
-  background: var(--cx-band-2);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--cx-surface);
+  border: 1px solid var(--cx-line);
   border-radius: 20px;
   padding: 48px;
   max-width: 800px;
@@ -195,8 +195,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, var(--cx-brand-from), var(--cx-brand-to));
-  color: #ffffff;
+  background: var(--ifm-color-primary);
+  color: var(--cx-on-primary);
   border-radius: 980px;
   padding: 14px 36px;
   font-size: 1rem;
@@ -259,10 +259,10 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1px;
-  background: rgba(255, 255, 255, 0.04);
+  background: var(--cx-line);
   border-radius: 20px;
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--cx-line);
 }
 
 @media screen and (max-width: 900px) {
@@ -304,8 +304,8 @@
 }
 
 .factPanel {
-  background: var(--cx-band-2);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--cx-surface);
+  border: 1px solid var(--cx-line);
   border-radius: 20px;
   padding: 32px;
   display: flex;
@@ -317,7 +317,7 @@
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--cx-brand-from);
+  color: var(--cx-pine);
   margin: 0 0 1.25rem;
 }
 
@@ -326,7 +326,7 @@
   align-items: flex-start;
   gap: 0.85rem;
   padding: 0.8rem 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  border-bottom: 1px solid var(--cx-line);
 }
 
 .factRow:last-child {
@@ -351,7 +351,7 @@
   display: block;
   font-size: 0.92rem;
   font-weight: 600;
-  color: #f1f5f9;
+  color: var(--cx-ink);
   line-height: 1.35;
 }
 
@@ -359,7 +359,7 @@
   display: block;
   font-size: 0.8rem;
   line-height: 1.5;
-  color: #94a3b8;
+  color: var(--cx-muted);
   margin-top: 0.15rem;
 }
 
@@ -409,8 +409,8 @@
 }
 
 .missionLinkGhost {
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  color: #e2e8f0;
+  border: 1px solid var(--cx-line);
+  color: var(--cx-ink);
 }
 
 .missionLinkGhost:hover {
