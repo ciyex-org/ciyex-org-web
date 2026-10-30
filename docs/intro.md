@@ -10,7 +10,7 @@ Ciyex is a modern, secure, and easy-to-use platform for managing your practice. 
 - **Document Care** — Write clinical notes using SOAP templates with dynamic encounter forms
 - **Track Vitals** — Log patient vitals and track trends over time via FHIR resources
 - **Prescribe** — Manage medications, allergies, and immunizations electronically
-- **Telehealth** — Conduct secure HIPAA-compliant video visits via Jitsi Meet
+- **Telehealth** — Conduct secure video visits via Jitsi Meet
 - **Billing** — Generate invoices, process payments, and submit insurance claims
 - **Ciyex Hub** — Browse and install apps from the integrated healthcare marketplace
 

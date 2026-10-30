@@ -126,4 +126,4 @@ An EHR can have hundreds of features, but if everyday tasks are unnecessarily di
 
 Click fatigue in healthcare may sound like a small usability issue, but repeated unnecessary interactions with technology can add up throughout a clinician's day. The solution isn't simply to remove as many clicks as possible. It's to design healthcare software around real workflows, make important information easier to find, simplify common tasks, and reduce repetitive work.
 
-Want to see how a minimal-click EHR experience could work for your team? **[Schedule an appointment](/professional-support)** with our team to explore how Ciyex can help simplify everyday clinical workflows.
+Want to see how a minimal-click EHR experience could work for your team? **[Schedule an appointment](/contact)** with our team to explore how Ciyex can help simplify everyday clinical workflows.

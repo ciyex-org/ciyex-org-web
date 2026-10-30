@@ -64,4 +64,4 @@ Data is only useful if it is easy to interpret. Ciyex EHR removes the clutter by
 
 By switching from reactive management to data-driven decision-making, your practice can minimize administrative friction and maximize face-to-face patient care.
 
-**[Ready to unlock the data hidden inside your practice? Explore Ciyex EHR's analytical features on GitHub or download the platform to take total control of your clinical infrastructure today.](/professional-support)**
+**[Ready to unlock the data hidden inside your practice? Explore Ciyex EHR's analytical features on GitHub or download the platform to take total control of your clinical infrastructure today.](/contact)**

@@ -102,4 +102,4 @@ Open source licenses provide freedoms, but those freedoms come with conditions. 
 
 For developers, the most important thing is to understand the license before modifying, distributing, combining, or providing access to AGPL software. AGPL can be a strong choice for projects that want to encourage openness and ensure that certain modifications remain available to users. For businesses and healthcare organizations, understanding the license can help avoid surprises later. Open source gives organizations valuable freedom, but that freedom works best when everyone understands the responsibilities that come with it.
 
-Have questions about running an AGPL-licensed EHR in your organization? **[Schedule an appointment](/professional-support)** with our team to talk through deployment, customization, and licensing considerations.
+Have questions about running an AGPL-licensed EHR in your organization? **[Schedule an appointment](/contact)** with our team to talk through deployment, customization, and licensing considerations.

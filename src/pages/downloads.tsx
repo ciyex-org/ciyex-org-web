@@ -233,7 +233,7 @@ export default function Downloads(): ReactNode {
       {/* Hero */}
       <section className={styles.hero}>
         <div className={styles.heroInner}>
-          <div className={styles.heroBadge}>Open Source &middot; Free Forever</div>
+          <div className={styles.heroBadge}>Open Source &middot; Free to Use</div>
           <Heading as="h1" className={styles.heroTitle}>Download Ciyex Workspace</Heading>
           <p className={styles.heroSubtitle}>
             Getting started takes two steps: <strong>install Workspace</strong> on your computer,
@@ -251,7 +251,7 @@ export default function Downloads(): ReactNode {
             </span>
             <span className={styles.metaPill}>
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg>
-              HIPAA Compliant
+              Encrypted in Transit
             </span>
           </div>
         </div>
@@ -309,9 +309,9 @@ export default function Downloads(): ReactNode {
               in minutes &mdash; no servers, no IT contract.
             </p>
             <ul className={styles.backendList}>
-              <li>HIPAA-grade hosting &middot; encrypted at rest &amp; in transit</li>
+              <li>Managed hosting &middot; encrypted at rest &amp; in transit</li>
               <li>Automatic backups &amp; cross-device sync</li>
-              <li>Free forever &mdash; funded by donations</li>
+              <li>Free to use &mdash; funded by services and donations</li>
             </ul>
             <Link to="/signup" className={styles.cloudBtn}>
               Claim free cloud account

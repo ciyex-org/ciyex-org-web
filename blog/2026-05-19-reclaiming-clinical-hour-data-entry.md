@@ -50,4 +50,4 @@ When you simplify the "how" of data entry, the "why" of medicine becomes clearer
 
 The EHR should be a tool that supports your practice, not a chore that defines it. With Ciyex, we aren't just changing how you enter data—we're changing how you experience your profession.
 
-**Ready to see the difference?** [Schedule a demo to see how Ciyex can return the clinical hour to you.](https://calendly.com/qiaben/ciyex?month=2026-05)
+**Ready to see the difference?** [Schedule a demo to see how Ciyex can return the clinical hour to you.](/contact)

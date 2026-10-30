@@ -32,4 +32,4 @@ At Ciyex, we believe healthcare data should be open, connected, and patient-cent
 
 The result is simple: fewer duplicate tests, better clinical decisions, lower costs, and improved health outcomes for communities everywhere.
 
-Ready to see what connected, open-source healthcare can do for your clinic? **[Schedule a demo](/professional-support)** with the Ciyex team today.
+Ready to see what connected, open-source healthcare can do for your clinic? **[Schedule a demo](/contact)** with the Ciyex team today.

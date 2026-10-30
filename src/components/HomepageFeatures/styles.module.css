@@ -40,7 +40,7 @@
 .featureCard:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
-  border-color: rgba(13, 148, 136, 0.15);
+  border-color: rgba(var(--cx-primary-rgb), 0.15);
 }
 
 .featureCard:hover::before {

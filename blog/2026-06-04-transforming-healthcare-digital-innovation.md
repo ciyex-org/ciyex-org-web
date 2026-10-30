@@ -30,4 +30,4 @@ The future of healthcare depends on technology that is open, secure, and designe
 
 ## Schedule an Appointment with Ciyex
 
-Looking to modernize healthcare delivery and improve patient outcomes? **[Schedule an appointment](/professional-support)** with Ciyex to learn how innovative, interoperable healthcare solutions can support your organization's goals and create lasting impact.
+Looking to modernize healthcare delivery and improve patient outcomes? **[Schedule an appointment](/contact)** with Ciyex to learn how innovative, interoperable healthcare solutions can support your organization's goals and create lasting impact.

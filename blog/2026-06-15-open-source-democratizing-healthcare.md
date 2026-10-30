@@ -42,4 +42,4 @@ Open source technology is helping democratize healthcare by reducing costs, incr
 
 Looking for a modern and flexible healthcare technology solution? Ciyex EHR helps healthcare organizations streamline workflows, improve patient engagement, and leverage innovative technology to support better care delivery.
 
-Discover how the right EHR platform can help your organization thrive. **[Schedule an appointment](/professional-support)** with the Ciyex team today.
+Discover how the right EHR platform can help your organization thrive. **[Schedule an appointment](/contact)** with the Ciyex team today.

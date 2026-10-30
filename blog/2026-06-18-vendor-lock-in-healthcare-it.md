@@ -30,4 +30,4 @@ Choosing an open, scalable, and interoperable EHR solution gives healthcare orga
 
 Vendor lock-in is a growing risk for healthcare organizations that depend on closed, proprietary systems. By prioritizing open standards, interoperability, and data portability, providers can protect their investments and remain agile in a rapidly evolving healthcare landscape.
 
-Schedule an appointment with Ciyex EHR to discover a flexible, future-ready healthcare solution. **[Schedule an appointment](/professional-support)** with the Ciyex team today.
+Schedule an appointment with Ciyex EHR to discover a flexible, future-ready healthcare solution. **[Schedule an appointment](/contact)** with the Ciyex team today.

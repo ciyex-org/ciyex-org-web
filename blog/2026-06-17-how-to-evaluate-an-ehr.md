@@ -46,4 +46,4 @@ Evaluating an EHR does not have to be complicated. By focusing on organizational
 
 Looking for an EHR solution that fits your healthcare organization? Ciyex EHR can help you streamline clinical workflows, improve patient engagement, and simplify healthcare operations with a secure and user-friendly platform.
 
-Discover the right EHR solution for your practice. **[Schedule an appointment](/professional-support)** with the Ciyex team today.
+Discover the right EHR solution for your practice. **[Schedule an appointment](/contact)** with the Ciyex team today.

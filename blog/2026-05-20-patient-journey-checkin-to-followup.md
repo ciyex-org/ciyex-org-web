@@ -56,4 +56,4 @@ A fragmented journey leads to frustrated patients and stressed staff. By mapping
 
 The patient journey is the heartbeat of your practice. Is your current EHR helping it beat steadily, or is it causing a clog?
 
-**[Discover how Ciyex can map a better path for your patients and your team.](https://calendly.com/qiaben/ciyex?month=2026-05)**
+**[Discover how Ciyex can map a better path for your patients and your team.](/contact)**

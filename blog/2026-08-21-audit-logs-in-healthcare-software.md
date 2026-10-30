@@ -137,4 +137,4 @@ Audit logs in healthcare software provide something extremely valuable: **visibi
 
 They help healthcare organizations understand who accessed information, what actions were performed, and when those actions occurred. They can support security investigations, data integrity, compliance processes, and better oversight of sensitive healthcare systems. But effective audit logging is about more than simply recording events. Healthcare organizations need to decide what activity should be captured, protect the logs themselves, and establish processes for reviewing the information. As healthcare technology becomes more connected, auditability will continue to be an important part of building trustworthy software.
 
-Want to review how your EHR handles audit trails and access visibility? **[Schedule an appointment](/professional-support)** with our team to talk through your security and compliance requirements.
+Want to review how your EHR handles audit trails and access visibility? **[Schedule an appointment](/contact)** with our team to talk through your security and compliance requirements.

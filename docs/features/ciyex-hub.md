@@ -21,9 +21,9 @@ Ciyex Hub launches with these first-party apps:
 | **Ciyex Medical Codes** | Clinical Reference | Free | ICD-10, CPT, HCPCS, CDT, SNOMED, LOINC codes |
 | **Ciyex Communications** | Communication | Free | Email, SMS, fax, and in-app notifications |
 | **Ciyex Credentialing** | Operations | $49/mo | Provider credentialing and verification |
-| **Ciyex File Storage** | Infrastructure | Free | HIPAA-compliant document storage |
+| **Ciyex File Storage** | Infrastructure | Free | Secure document storage |
 | **Patient Payments** | Revenue Cycle | 2.9% + $0.30 | Online patient payment collection |
-| **Ciyex Telehealth** | Telehealth | Free | HIPAA-compliant video consultations |
+| **Ciyex Telehealth** | Telehealth | Free | Secure video consultations |
 | **Ciyex RCM** | Revenue Cycle | 4% of collections | Full revenue cycle management |
 | **Ciyex Screen Builder** | Platform | $29/mo | Low-code form and workflow designer |
 | **Ask Ciya** | AI | Per-use | AI-powered clinical assistant |

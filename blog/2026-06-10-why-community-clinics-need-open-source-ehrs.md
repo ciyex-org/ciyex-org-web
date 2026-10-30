@@ -32,4 +32,4 @@ At Ciyex, we believe healthcare technology should empower communities, support c
 
 As healthcare continues to evolve, open-source EHRs are no longer just a technology choice—they are a strategic investment in better care, stronger communities, and improved health outcomes for everyone.
 
-Ready to see what an open-source EHR can do for your clinic? **[Schedule a demo](/professional-support)** with the Ciyex team today.
+Ready to see what an open-source EHR can do for your clinic? **[Schedule a demo](/contact)** with the Ciyex team today.

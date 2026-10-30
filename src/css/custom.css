@@ -36,6 +36,17 @@
   --cx-slate-900: #0f172a;
   --cx-card-bg: #ffffff;
   --cx-card-border: rgba(0, 0, 0, 0.06);
+
+  /* The brand gradient and the accents the page stylesheets used to hard-code.
+     Same values as before — they are variables now so a market can restate the
+     palette in one block instead of the sheets being hunted through. */
+  --cx-brand-from: #06b6d4;
+  --cx-brand-from-rgb: 6, 182, 212;
+  --cx-brand-to: #10b981;
+  --cx-brand-to-rgb: 16, 185, 129;
+  --cx-primary-rgb: 13, 148, 136;
+  --cx-btn-primary-dark: #0f766e;
+  --cx-announcement-link: #06b6d4;
 }
 
 [data-theme='dark'] {
@@ -106,30 +117,54 @@
 
 /* ── Navbar Sign Up Button ── */
 .navbar-signup-btn {
-  background: #ffffff !important;
-  color: #000000 !important;
-  border-radius: 980px;
-  padding: 6px 18px !important;
-  font-size: 0.8125rem !important;
-  font-weight: 600;
-  transition: all 0.2s ease;
-  margin-left: 12px;
+  background: #c43f18 !important;
+  color: #ffffff !important;
+  border-radius: 10px;
+  padding: 11px 20px !important;
+  font-size: 0.9rem !important;
+  font-weight: 700;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  margin-left: 10px;
   display: flex !important;
   align-items: center;
-  height: fit-content;
+  min-height: 46px;
   align-self: center;
-  line-height: 1.2;
+  line-height: 1.1;
   border: none;
+  white-space: nowrap;
+}
+
+.navbar-signup-btn::after {
+  display: none !important;
 }
 
 .navbar-signup-btn:hover {
-  background: rgba(255, 255, 255, 0.85) !important;
+  background: #a93212 !important;
+  color: #ffffff !important;
+  transform: translateY(-1px);
   text-decoration: none !important;
 }
 
 [data-theme='dark'] .navbar-signup-btn {
-  background: #ffffff !important;
-  color: #000000 !important;
+  background: #c43f18 !important;
+  color: #ffffff !important;
+}
+
+.locale-option {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  white-space: nowrap;
+}
+
+.locale-flag {
+  display: inline-block;
+  width: 24px;
+  height: 16px;
+  flex: 0 0 auto;
+  overflow: hidden;
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px rgba(20, 36, 32, 0.15);
 }
 
 /* ── Navbar Donate Button ── */
@@ -221,7 +256,7 @@
 }
 
 .dropdown__link--active {
-  background: rgba(13, 148, 136, 0.15) !important;
+  background: rgba(var(--cx-primary-rgb), 0.15) !important;
   color: var(--ifm-color-primary-light) !important;
 }
 
@@ -310,7 +345,7 @@
 }
 
 .menu__link--active {
-  background: rgba(13, 148, 136, 0.08);
+  background: rgba(var(--cx-primary-rgb), 0.08);
 }
 
 /* ── Code Blocks ── */
@@ -328,7 +363,7 @@ div[class*="announcementBar"] {
 }
 
 div[class*="announcementBar"] a {
-  color: #06b6d4;
+  color: var(--cx-announcement-link);
   text-decoration: underline;
 }
 
@@ -364,10 +399,6 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--cx-slate-50);
 }
 
-[data-theme='dark'] [class*="blogPostPage"] {
-  background: #0f172a;
-}
-
 [class*="blogPostPage"] .container {
   max-width: 860px !important;
 }
@@ -382,12 +413,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 2rem;
 }
 
-[data-theme='dark'] [class*="blogPostPage"] article {
-  background: #1e293b;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 8px 32px rgba(0, 0, 0, 0.2);
-  border-color: rgba(255, 255, 255, 0.06);
-}
-
 /* Blog detail author avatar */
 [class*="blogPostPage"] .avatar__photo,
 [class*="blogPostPage"] .avatar__photo-link img {
@@ -396,7 +421,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50% !important;
   object-fit: cover;
   border: 2px solid var(--cx-accent);
-  box-shadow: 0 0 0 2px rgba(6, 182, 212, 0.12);
+  box-shadow: 0 0 0 2px rgba(var(--cx-brand-from-rgb), 0.12);
 }
 
 [class*="blogPostPage"] .avatar__name,
@@ -441,4 +466,78 @@ h1, h2, h3, h4, h5, h6 {
     padding: 20px 16px;
     border-radius: 10px;
   }
+}
+
+
+
+/* ──────────────────────────────────────────────────────────────────────────
+ * Frosted navbar.
+ *
+ * The bar was already sticky and already translucent; without a blur behind it
+ * the page just showed through as muddle when content scrolled under. The blur
+ * is what makes the translucency read as glass rather than as a mistake.
+ * `-webkit-` first for Safari, which still wants the prefix.
+ * ────────────────────────────────────────────────────────────────────────── */
+.navbar {
+  -webkit-backdrop-filter: saturate(180%) blur(18px);
+  backdrop-filter: saturate(180%) blur(18px);
+  border-bottom: 1px solid var(--cx-line);
+}
+
+.navbar__item.navbar__link,
+.navbar .dropdown > .navbar__link {
+  border-radius: 8px;
+  padding: 0.45rem 0.7rem;
+  font-size: 0.9rem;
+  line-height: 1.2;
+  color: var(--cx-ink) !important;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.navbar__item.navbar__link:hover,
+.navbar .dropdown > .navbar__link:hover {
+  background: var(--cx-surface-2);
+  color: var(--cx-pine) !important;
+}
+
+.navbar__item.navbar__link--active {
+  background: var(--cx-surface-2);
+  color: var(--cx-pine) !important;
+}
+
+/* ──────────────────────────────────────────────────────────────────────────
+ * Scroll reveal.
+ *
+ * The hiding is gated on `.reveal-ready`, which only the client module adds.
+ * So the content ships visible in the HTML: no JavaScript, a failed chunk, or a
+ * crawler that does not run scripts all still get the whole page — unlike the
+ * reveal-on-scroll sites this borrows from, which render an empty shell.
+ * ────────────────────────────────────────────────────────────────────────── */
+html.reveal-ready [data-reveal] {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+html.reveal-ready [data-reveal].is-revealed {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.reveal-ready [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* The country menu opens from the keyboard too. */
+.navbar .dropdown:focus-within > .dropdown__menu {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateY(-1px);
+  visibility: visible;
 }

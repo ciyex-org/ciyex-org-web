@@ -20,7 +20,7 @@ Centralizing with Ciyex EHR solves three major pain points:
 
 1. **Reduces Medical Errors:** A single source of truth ensures every doctor sees your full allergy list and medication history.
 2. **Eliminates Duplicate Testing:** Save money and time by showing your new doctor the results of the blood work you did last month.
-3. **Enhances Emergency Preparedness:** In a crisis, having your data accessible via a secure, HIPAA-compliant platform can be life-saving.
+3. **Enhances Emergency Preparedness:** In a crisis, having your data accessible via a secure platform can be life-saving.
 
 ## Key Features of Ciyex EHR for Personal Use
 
@@ -28,7 +28,7 @@ Centralizing with Ciyex EHR solves three major pain points:
 
 Unlike proprietary software, Ciyex EHR is built on open-source principles. This means you aren't locked into a single vendor's ecosystem. You own your data, and the community-driven transparency ensures the platform remains at the cutting edge of **2026 cybersecurity standards**.
 
-### 2. HIPAA-Compliant Security
+### 2. Built-In Security
 
 Security is non-negotiable. Ciyex utilizes end-to-end encryption and multi-factor authentication (MFA) to ensure that while your records are centralized, they are only accessible to you and the providers you explicitly authorize.
 

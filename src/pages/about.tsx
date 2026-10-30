@@ -3,18 +3,11 @@ import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 import styles from './about.module.css';
 
-const directors = [
-  { name: 'Kanneeswari Sivakumar', role: 'Director' },
-  { name: 'Ciyahini Sivakumar', role: 'Director' },
-  { name: 'Sivakumar Dhanapal', role: 'Director' },
-  { name: 'Santhosh Sivakumar', role: 'Director' },
-];
-
 export default function About(): ReactNode {
   return (
     <Layout
       title="About Us"
-      description="About Ciyex Inc. - A 501(c)(3) nonprofit building open source electronic health records for everyone.">
+      description="Ciyex offers medical billing, dental billing and virtual assistants for practices, and builds the open source Ciyex EHR and Workspace.">
       <main className={styles.aboutPage}>
         <div className="container">
           {/* Hero Section */}
@@ -28,7 +21,7 @@ export default function About(): ReactNode {
                 About Ciyex Inc.
               </Heading>
               <p className={styles.heroSubtitle}>
-                Open source healthcare infrastructure for everyone, everywhere.
+                Practice services and open source healthcare software, from one team.
               </p>
             </div>
           </div>
@@ -41,43 +34,26 @@ export default function About(): ReactNode {
               </Heading>
               <div className={styles.missionCard}>
                 <p className={styles.missionText}>
-                  Ciyex Inc. is a 501(c)(3) nonprofit organization dedicated to building
-                  modern, secure, and interoperable open source electronic health record
-                  (EHR) systems. We believe that access to high-quality healthcare
+                  Ciyex Inc. is a 501(c)(3) nonprofit organization. Ciyex does two things:
+                  we take billing, coding, credentialing and front-office work off the plate
+                  of medical and dental practices, and we build the open source Ciyex EHR and
+                  Ciyex Workspace. We believe that access to high-quality healthcare
                   technology should not be limited by cost or geography.
                 </p>
                 <p className={styles.missionText}>
                   Our mission is to empower public health initiatives globally by
-                  providing a complete, HIPAA-compliant EHR platform that is free to use,
-                  self-hostable, and built on open standards like FHIR R4 and HL7 v2. We
+                  providing a complete EHR platform that is free to use, self-hostable,
+                  built with encryption, audit logs and role-based access, and based on
+                  open standards like FHIR R4 and HL7 v2. We
                   serve patients, clinics, hospitals, and healthcare organizations of all
                   sizes, from rural community health centers to large hospital networks.
                 </p>
                 <p className={styles.missionText}>
-                  By making healthcare technology open source, we aim to reduce barriers
+                  Revenue from our services helps fund that software. By making healthcare
+                  technology open source, we aim to reduce barriers
                   to adoption, promote data interoperability, and enable healthcare
                   providers to focus on what matters most: patient care.
                 </p>
-              </div>
-            </div>
-          </section>
-
-          {/* Board of Directors Section */}
-          <section className={styles.section}>
-            <div className={styles.sectionInner}>
-              <Heading as="h2" className={styles.sectionTitle}>
-                Board of Directors
-              </Heading>
-              <div className={styles.directorsGrid}>
-                {directors.map((director) => (
-                  <div key={director.name} className={styles.directorCard}>
-                    <div className={styles.directorAvatar}>
-                      {director.name.split(' ').map((n) => n[0]).join('')}
-                    </div>
-                    <h3 className={styles.directorName}>{director.name}</h3>
-                    <p className={styles.directorRole}>{director.role}</p>
-                  </div>
-                ))}
               </div>
             </div>
           </section>
@@ -90,9 +66,9 @@ export default function About(): ReactNode {
               </Heading>
               <div className={styles.donateCard}>
                 <p className={styles.missionText}>
-                  As a 501(c)(3) nonprofit, we rely on the generosity of our community
-                  to build open source healthcare technology. Every contribution is
-                  tax-deductible and goes directly to development.
+                  Service revenue and the generosity of our community fund our open source
+                  healthcare technology. As a 501(c)(3) nonprofit, contributions are
+                  tax-deductible and go directly to development.
                 </p>
                 <div className={styles.donateCta}>
                   <a
@@ -127,6 +103,10 @@ export default function About(): ReactNode {
                   <div className={styles.infoIcon}>&#x1f4e7;</div>
                   <h3 className={styles.infoLabel}>Contact</h3>
                   <p className={styles.infoValue}>
+                    <a href="tel:+18448742236" className={styles.infoLink}>
+                      (844) 874-2236
+                    </a>
+                    <br />
                     <a href="mailto:help@ciyex.org" className={styles.infoLink}>
                       help@ciyex.org
                     </a>

@@ -55,7 +55,7 @@
   border: none;
   border-radius: 999px;
   background: var(--ifm-color-primary);
-  color: #ffffff;
+  color: var(--cx-on-primary);
   cursor: pointer;
 }
 

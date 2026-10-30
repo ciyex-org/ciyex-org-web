@@ -116,4 +116,4 @@ Administrative work will always be part of healthcare. The goal isn't to elimina
 
 The best technology should not make healthcare teams learn more complicated processes. It should help them complete necessary work with fewer unnecessary steps.
 
-Ready to simplify the administrative side of your practice? **[Schedule an appointment](/professional-support)** with our team to see how Ciyex can help connect your workflows and reduce repetitive work.
+Ready to simplify the administrative side of your practice? **[Schedule an appointment](/contact)** with our team to see how Ciyex can help connect your workflows and reduce repetitive work.

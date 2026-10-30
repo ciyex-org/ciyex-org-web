@@ -36,4 +36,4 @@ Healthcare technology trends in 2027 will focus on improving patient care, opera
 
 Looking to modernize your healthcare operations? Ciyex EHR provides secure, scalable, and user-friendly healthcare technology solutions designed to support clinical workflows, improve patient engagement, and streamline practice management.
 
-Discover how the right technology can prepare your organization for the future of healthcare. **[Schedule an appointment](/professional-support)** with the Ciyex team today.
+Discover how the right technology can prepare your organization for the future of healthcare. **[Schedule an appointment](/contact)** with the Ciyex team today.

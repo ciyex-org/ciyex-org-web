@@ -1,0 +1,604 @@
+/**
+ * Ciyex EHR - Apple-inspired Dark Theme
+ * Cinematic. Bold. Minimal.
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+/* ── Root Variables ── */
+:root {
+  --ifm-color-primary: #0d9488;
+  --ifm-color-primary-dark: #0b7f74;
+  --ifm-color-primary-darker: #0a786e;
+  --ifm-color-primary-darkest: #08635b;
+  --ifm-color-primary-light: #0faa9c;
+  --ifm-color-primary-lighter: #10b1a2;
+  --ifm-color-primary-lightest: #14d4c3;
+  --ifm-code-font-size: 95%;
+  --ifm-font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --ifm-heading-font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --ifm-font-weight-bold: 600;
+  --ifm-font-size-base: 16px;
+  --ifm-line-height-base: 1.6;
+  --docusaurus-highlighted-code-line-bg: rgba(13, 148, 136, 0.1);
+  --ifm-navbar-background-color: rgba(0, 0, 0, 0.85);
+  --ifm-navbar-link-color: rgba(255, 255, 255, 0.85);
+  --ifm-navbar-shadow: none;
+  --ifm-footer-background-color: #000000;
+  --ifm-heading-color: #0f172a;
+  --ifm-background-color: #ffffff;
+  --cx-accent: #06b6d4;
+  --cx-emerald: #10b981;
+  --cx-slate-50: #f8fafc;
+  --cx-slate-100: #f1f5f9;
+  --cx-slate-500: #64748b;
+  --cx-slate-700: #334155;
+  --cx-slate-900: #0f172a;
+  --cx-card-bg: #ffffff;
+  --cx-card-border: rgba(0, 0, 0, 0.06);
+
+  /* The brand gradient and the accents the page stylesheets used to hard-code.
+     Same values as before — they are variables now so a market can restate the
+     palette in one block instead of the sheets being hunted through. */
+  --cx-brand-from: #06b6d4;
+  --cx-brand-from-rgb: 6, 182, 212;
+  --cx-brand-to: #10b981;
+  --cx-brand-to-rgb: 16, 185, 129;
+  --cx-primary-rgb: 13, 148, 136;
+  --cx-btn-primary-dark: #0f766e;
+  --cx-announcement-link: #06b6d4;
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #2dd4bf;
+  --ifm-color-primary-dark: #1abfab;
+  --ifm-color-primary-darker: #18b4a1;
+  --ifm-color-primary-darkest: #149485;
+  --ifm-color-primary-light: #50dece;
+  --ifm-color-primary-lighter: #5ce1d2;
+  --ifm-color-primary-lightest: #86eadf;
+  --docusaurus-highlighted-code-line-bg: rgba(45, 212, 191, 0.15);
+  --ifm-navbar-background-color: rgba(0, 0, 0, 0.9);
+  --ifm-footer-background-color: #000000;
+  --ifm-background-color: #0f172a;
+  --ifm-background-surface-color: #1e293b;
+  --ifm-heading-color: #f1f5f9;
+  --cx-card-bg: #1e293b;
+  --cx-card-border: rgba(255, 255, 255, 0.06);
+  --cx-slate-50: #1e293b;
+  --cx-slate-100: #1e293b;
+  --cx-slate-500: #94a3b8;
+  --cx-slate-700: #cbd5e1;
+  --cx-slate-900: #f1f5f9;
+}
+
+/* ── Navbar - Dark, floating, Apple-style ── */
+.navbar {
+  background: var(--ifm-navbar-background-color) !important;
+  height: 52px;
+  padding: 0 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: none !important;
+}
+
+/* backdrop-filter on a pseudo-element so it doesn't create a containing block
+   for the position:fixed mobile sidebar (which would clip it to 52px) */
+.navbar::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.navbar__title {
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: #ffffff !important;
+}
+
+.navbar__link {
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-weight: 500;
+  font-size: 0.875rem;
+  transition: color 0.15s ease;
+  white-space: nowrap;
+}
+
+.navbar__link:hover {
+  color: #ffffff !important;
+}
+
+.navbar__logo {
+  height: 28px;
+}
+
+/* ── Navbar Sign Up Button ── */
+.navbar-signup-btn {
+  background: #c43f18 !important;
+  color: #ffffff !important;
+  border-radius: 10px;
+  padding: 11px 20px !important;
+  font-size: 0.9rem !important;
+  font-weight: 700;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  margin-left: 10px;
+  display: flex !important;
+  align-items: center;
+  min-height: 46px;
+  align-self: center;
+  line-height: 1.1;
+  border: none;
+  white-space: nowrap;
+}
+
+.navbar-signup-btn::after {
+  display: none !important;
+}
+
+.navbar-signup-btn:hover {
+  background: #a93212 !important;
+  color: #ffffff !important;
+  transform: translateY(-1px);
+  text-decoration: none !important;
+}
+
+[data-theme='dark'] .navbar-signup-btn {
+  background: #c43f18 !important;
+  color: #ffffff !important;
+}
+
+.locale-option {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  white-space: nowrap;
+}
+
+.locale-flag {
+  display: inline-block;
+  width: 24px;
+  height: 16px;
+  flex: 0 0 auto;
+  overflow: hidden;
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px rgba(20, 36, 32, 0.15);
+}
+
+/* ── Navbar Donate Button ── */
+.navbar-donate-btn {
+  background: linear-gradient(135deg, #ef4444, #f97316) !important;
+  color: #ffffff !important;
+  border-radius: 980px;
+  padding: 7px 20px !important;
+  font-size: 0.8125rem !important;
+  font-weight: 700;
+  transition: all 0.2s ease;
+  display: flex !important;
+  align-items: center;
+  height: fit-content;
+  align-self: center;
+  line-height: 1.2;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 12px rgba(239, 68, 68, 0.4), 0 0 4px rgba(249, 115, 22, 0.3);
+  letter-spacing: 0.02em;
+}
+
+.navbar-donate-btn:hover {
+  opacity: 0.95;
+  text-decoration: none !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 20px rgba(239, 68, 68, 0.5), 0 0 8px rgba(249, 115, 22, 0.4);
+  transform: scale(1.03);
+}
+
+/* ── Navbar Dropdown - caret + menu styling ── */
+.navbar__item.dropdown .navbar__link::after {
+  border-top-color: rgba(255, 255, 255, 0.75) !important;
+  border-top-width: 0.35em;
+  border-right-width: 0.35em;
+  border-left-width: 0.35em;
+  display: inline-block;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+
+.navbar__item.dropdown .navbar__link {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 4px;
+}
+
+.navbar__item.dropdown:hover .navbar__link::after,
+.navbar__item.dropdown:focus-within .navbar__link::after {
+  border-top-color: #ffffff !important;
+}
+
+.dropdown__menu {
+  background: rgba(8, 12, 25, 0.97) !important;
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6), 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+  padding: 6px !important;
+  min-width: 200px;
+  margin-top: 6px !important;
+  z-index: 9999 !important;
+  pointer-events: auto !important;
+}
+
+.dropdown__menu .dropdown__link {
+  pointer-events: auto !important;
+  cursor: pointer !important;
+  display: block !important;
+  position: relative !important;
+  z-index: 10000 !important;
+}
+
+.dropdown__link {
+  color: rgba(255, 255, 255, 0.8) !important;
+  border-radius: 8px !important;
+  font-size: 0.875rem !important;
+  font-weight: 500 !important;
+  padding: 9px 14px !important;
+  transition: background 0.15s ease, color 0.15s ease !important;
+}
+
+.dropdown__link:hover,
+.dropdown__link:focus {
+  background: rgba(255, 255, 255, 0.08) !important;
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+
+.dropdown__link--active {
+  background: rgba(var(--cx-primary-rgb), 0.15) !important;
+  color: var(--ifm-color-primary-light) !important;
+}
+
+/* ── Docusaurus global button overrides (docs pages etc) ── */
+.button {
+  border-radius: 980px;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  padding: 12px 28px;
+  transition: all 0.2s ease;
+}
+
+.button--primary {
+  background: #ffffff !important;
+  border: none;
+  color: #000000 !important;
+}
+
+.button--secondary {
+  background: var(--ifm-color-primary) !important;
+  border: none;
+  color: #ffffff !important;
+}
+
+.button--outline {
+  background: transparent;
+  border: 1.5px solid rgba(255, 255, 255, 0.25);
+  color: #ffffff !important;
+}
+
+.button--outline:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+/* ── Footer - Dark ── */
+.footer {
+  background: #000000 !important;
+  padding: 60px 0 40px;
+  position: relative;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.footer__title {
+  color: #f1f5f9;
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+}
+
+.footer__link-item {
+  color: rgba(148, 163, 184, 0.8);
+  font-size: 0.875rem;
+  transition: color 0.15s ease;
+}
+
+.footer__link-item:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer__copyright {
+  color: rgba(148, 163, 184, 0.7);
+  font-size: 0.8125rem;
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* ── Sidebar ── */
+.menu__link {
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.15s ease;
+}
+
+.menu__link--active {
+  background: rgba(var(--cx-primary-rgb), 0.08);
+}
+
+/* ── Code Blocks ── */
+.prism-code {
+  border-radius: 12px;
+}
+
+/* ── Announcement Bar ── */
+div[class*="announcementBar"] {
+  background: #000000 !important;
+  font-weight: 500;
+  font-size: 0.8125rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+div[class*="announcementBar"] a {
+  color: var(--cx-announcement-link);
+  text-decoration: underline;
+}
+
+/* ── Typography ── */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* ── Cards (for docs/blog pages) ── */
+.card {
+  background: var(--cx-card-bg);
+  border-radius: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04), 0 6px 24px rgba(0, 0, 0, 0.04);
+  transition: all 0.25s ease;
+  border: 1px solid var(--cx-card-border);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06), 0 16px 48px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme='dark'] .card {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), 0 6px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* ═══════════════════════════════════════════
+   BLOG POST DETAIL - Full Page Card
+   ═══════════════════════════════════════════ */
+
+[class*="blogPostPage"] {
+  background: var(--cx-slate-50);
+}
+
+[class*="blogPostPage"] .container {
+  max-width: 860px !important;
+}
+
+[class*="blogPostPage"] article {
+  background: var(--cx-card-bg);
+  border-radius: 20px;
+  padding: 48px 40px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04), 0 8px 32px rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--cx-card-border);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Blog detail author avatar */
+[class*="blogPostPage"] .avatar__photo,
+[class*="blogPostPage"] .avatar__photo-link img {
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 50% !important;
+  object-fit: cover;
+  border: 2px solid var(--cx-accent);
+  box-shadow: 0 0 0 2px rgba(var(--cx-brand-from-rgb), 0.12);
+}
+
+[class*="blogPostPage"] .avatar__name,
+[class*="blogPostPage"] .avatar__name a {
+  font-weight: 700 !important;
+  font-size: 1rem;
+  color: var(--cx-slate-900) !important;
+}
+
+/* ── Blog Tags Page ── */
+[class*="blogTagsListPage"] .container,
+[class*="blogTagsPostsPage"] .container {
+  max-width: 860px !important;
+}
+
+/* ── Responsive ── */
+@media (max-width: 996px) {
+  .navbar {
+    height: auto;
+    min-height: 48px;
+  }
+
+  /* thermometer is too wide for mobile — hide it */
+  .ciyex-navbar-thermo {
+    display: none !important;
+  }
+
+  /* hide signup button on mobile — accessible via hamburger menu */
+  .navbar-signup-btn {
+    display: none !important;
+  }
+
+  [class*="blogPostPage"] article {
+    padding: 28px 20px;
+    border-radius: 12px;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  [class*="blogPostPage"] article {
+    padding: 20px 16px;
+    border-radius: 10px;
+  }
+}
+
+/* ──────────────────────────────────────────────────────────────────────────
+ * India (en-IN): medical blue.
+ *
+ * Indian hospitals shop a HIMS against vendors who all read blue, and blue is
+ * what the market reads as clinical. The US EHR site keeps the teal brand, so
+ * the override hangs off the locale's html lang rather than the brand tokens —
+ * that reaches the navbar, the demo button and the footer, which sit outside
+ * any page component and so cannot be reached from a CSS module.
+ *
+ * Success stays green (--cx-emerald): a connection test that passed should not
+ * be the same colour as a button.
+ * ────────────────────────────────────────────────────────────────────────── */
+html[lang='en-IN'] {
+  --ifm-color-primary: #1d4ed8;
+  --ifm-color-primary-dark: #1e46c0;
+  --ifm-color-primary-darker: #1e40af;
+  --ifm-color-primary-darkest: #1e3a8a;
+  --ifm-color-primary-light: #2563eb;
+  --ifm-color-primary-lighter: #3b82f6;
+  --ifm-color-primary-lightest: #60a5fa;
+  --cx-accent: #0ea5e9;
+  --docusaurus-highlighted-code-line-bg: rgba(29, 78, 216, 0.1);
+
+  /* Consumed by hims.module.css. */
+  --hims-glow: rgba(29, 78, 216, 0.17);
+  --hims-glow-strong: rgba(29, 78, 216, 0.22);
+  --hims-aurora-2: rgba(14, 165, 233, 0.20);
+  --hims-gradient-end: #0f766e;
+
+  --cx-brand-from: #1d4ed8;
+  --cx-brand-from-rgb: 29, 78, 216;
+  --cx-brand-to: #0ea5e9;
+  --cx-brand-to-rgb: 14, 165, 233;
+  --cx-primary-rgb: 29, 78, 216;
+  --cx-btn-primary-dark: #1e40af;
+  /* White, not the accent: sky blue on a #1d4ed8 bar is unreadable. */
+  --cx-announcement-link: #ffffff;
+}
+
+html[lang='en-IN'][data-theme='dark'] {
+  --ifm-color-primary: #60a5fa;
+  --ifm-color-primary-dark: #3b82f6;
+  --ifm-color-primary-darker: #2563eb;
+  --ifm-color-primary-darkest: #1d4ed8;
+  --ifm-color-primary-light: #93c5fd;
+  --ifm-color-primary-lighter: #bfdbfe;
+  --ifm-color-primary-lightest: #dbeafe;
+  --cx-accent: #38bdf8;
+  --docusaurus-highlighted-code-line-bg: rgba(96, 165, 250, 0.15);
+
+  --hims-glow: rgba(59, 130, 246, 0.2);
+  --hims-glow-strong: rgba(37, 99, 235, 0.28);
+  --hims-aurora-2: rgba(56, 189, 248, 0.18);
+  --hims-gradient-end: #2dd4bf;
+
+  --cx-brand-from: #60a5fa;
+  --cx-brand-from-rgb: 96, 165, 250;
+  --cx-brand-to: #38bdf8;
+  --cx-brand-to-rgb: 56, 189, 248;
+  --cx-primary-rgb: 96, 165, 250;
+}
+
+
+/* ──────────────────────────────────────────────────────────────────────────
+ * Frosted navbar.
+ *
+ * The bar was already sticky and already translucent; without a blur behind it
+ * the page just showed through as muddle when content scrolled under. The blur
+ * is what makes the translucency read as glass rather than as a mistake.
+ * `-webkit-` first for Safari, which still wants the prefix.
+ * ────────────────────────────────────────────────────────────────────────── */
+.navbar {
+  -webkit-backdrop-filter: saturate(180%) blur(18px);
+  backdrop-filter: saturate(180%) blur(18px);
+  border-bottom: 1px solid var(--cx-line);
+}
+
+.navbar__item.navbar__link,
+.navbar .dropdown > .navbar__link {
+  border-radius: 8px;
+  padding: 0.45rem 0.7rem;
+  font-size: 0.9rem;
+  line-height: 1.2;
+  color: var(--cx-ink) !important;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.navbar__item.navbar__link:hover,
+.navbar .dropdown > .navbar__link:hover {
+  background: var(--cx-surface-2);
+  color: var(--cx-pine) !important;
+}
+
+.navbar__item.navbar__link--active {
+  background: var(--cx-surface-2);
+  color: var(--cx-pine) !important;
+}
+
+/* ──────────────────────────────────────────────────────────────────────────
+ * Scroll reveal.
+ *
+ * The hiding is gated on `.reveal-ready`, which only the client module adds.
+ * So the content ships visible in the HTML: no JavaScript, a failed chunk, or a
+ * crawler that does not run scripts all still get the whole page — unlike the
+ * reveal-on-scroll sites this borrows from, which render an empty shell.
+ * ────────────────────────────────────────────────────────────────────────── */
+html.reveal-ready [data-reveal] {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+html.reveal-ready [data-reveal].is-revealed {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.reveal-ready [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* The country menu opens from the keyboard too. */
+.navbar .dropdown:focus-within > .dropdown__menu {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateY(-1px);
+  visibility: visible;
+}

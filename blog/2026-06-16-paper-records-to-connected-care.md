@@ -46,4 +46,4 @@ The journey from paper records to connected care is transforming healthcare deli
 
 Ready to modernize your clinic and embrace connected care? Ciyex EHR provides secure, user-friendly healthcare technology solutions that help organizations streamline workflows, improve patient experiences, and enhance operational efficiency.
 
-Discover how digital transformation can help your clinic thrive. **[Schedule an appointment](/professional-support)** with the Ciyex team today.
+Discover how digital transformation can help your clinic thrive. **[Schedule an appointment](/contact)** with the Ciyex team today.

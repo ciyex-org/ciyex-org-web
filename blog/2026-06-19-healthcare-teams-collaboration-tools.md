@@ -36,7 +36,7 @@ Modern EHR platforms combine patient records, scheduling, billing, documentation
 
 ## Key Features
 
-Important capabilities include secure messaging, real-time record updates, shared documentation, role-based access, audit trails, appointment scheduling, mobile access, billing integration, analytics dashboards, interoperability, and HIPAA-compliant security.
+Important capabilities include secure messaging, real-time record updates, shared documentation, role-based access, audit trails, appointment scheduling, mobile access, billing integration, analytics dashboards, interoperability, and secure security.
 
 ## Best Practices
 
@@ -54,4 +54,4 @@ Ciyex EHR provides an integrated platform for patient records, documentation, ap
 
 Healthcare collaboration is no longer optional. Connected teams deliver safer, faster, and more efficient care. Investing in integrated collaboration technology empowers providers to improve operational performance, enhance patient satisfaction, reduce costs, and achieve long-term organizational success.
 
-Schedule a personalized demonstration with Ciyex EHR to discover how an integrated EHR platform can transform your healthcare organization. **[Schedule an appointment](/professional-support)** with the Ciyex team today.
+Schedule a personalized demonstration with Ciyex EHR to discover how an integrated EHR platform can transform your healthcare organization. **[Schedule an appointment](/contact)** with the Ciyex team today.

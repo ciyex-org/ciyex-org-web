@@ -3,7 +3,7 @@
    ═══════════════════════════════════════════ */
 
 .hero {
-  background: #000000;
+  background: var(--cx-paper);
   padding: 80px 0 48px;
   text-align: center;
   position: relative;
@@ -18,7 +18,7 @@
   transform: translate(-50%, -50%);
   width: 800px;
   height: 600px;
-  background: radial-gradient(ellipse, rgba(6, 182, 212, 0.12) 0%, rgba(16, 185, 129, 0.08) 40%, transparent 70%);
+  background: radial-gradient(ellipse, rgba(var(--cx-brand-from-rgb), 0.12) 0%, rgba(var(--cx-brand-to-rgb), 0.08) 40%, transparent 70%);
   pointer-events: none;
 }
 
@@ -36,9 +36,9 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: #2dd4bf;
-  background: rgba(6, 182, 212, 0.1);
-  border: 1px solid rgba(6, 182, 212, 0.2);
+  color: var(--cx-pine);
+  background: rgba(var(--cx-brand-from-rgb), 0.1);
+  border: 1px solid rgba(var(--cx-brand-from-rgb), 0.2);
   border-radius: 980px;
   padding: 6px 16px;
   margin-bottom: 1.5rem;
@@ -46,23 +46,20 @@
 
 .title {
   font-size: clamp(2.2rem, 5vw, 3.2rem);
-  font-weight: 900;
-  color: #f1f5f9;
+  font-weight: 650;
+  color: var(--cx-ink);
   letter-spacing: -0.04em;
   line-height: 1.1;
   margin-bottom: 1rem;
 }
 
 .gradient {
-  background: linear-gradient(135deg, #06b6d4 0%, #10b981 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--cx-pine);
 }
 
 .subtitle {
   font-size: 1.1rem;
-  color: #cbd5e1;
+  color: var(--cx-muted);
   line-height: 1.6;
   max-width: 540px;
   margin: 0 auto;
@@ -71,7 +68,7 @@
 /* ── Form Section ── */
 
 .formSection {
-  background: #000000;
+  background: var(--cx-paper);
   padding: 0 0 80px;
 }
 
@@ -83,16 +80,16 @@
 
 .formEmbed {
   background: #ffffff;
-  border-radius: 16px;
+  border-radius: 12px;
   overflow: hidden;
   transition: height 0.3s ease;
-  box-shadow: 0 0 60px rgba(6, 182, 212, 0.08), 0 0 120px rgba(16, 185, 129, 0.04);
+  box-shadow: 0 0 60px rgba(var(--cx-brand-from-rgb), 0.08), 0 0 120px rgba(var(--cx-brand-to-rgb), 0.04);
 }
 
 /* ── Impact Section ── */
 
 .impact {
-  background: #fafafa;
+  background: var(--cx-surface-2);
   padding: 80px 0;
   text-align: center;
 }
@@ -106,7 +103,7 @@
 .impactTitle {
   font-size: 1.8rem;
   font-weight: 800;
-  color: #0f172a;
+  color: var(--cx-ink);
   letter-spacing: -0.03em;
   margin-bottom: 2.5rem;
 }
@@ -153,8 +150,8 @@
 
 .impactCard {
   background: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.06);
-  border-radius: 16px;
+  border: 1px solid var(--cx-line);
+  border-radius: 12px;
   padding: 32px 24px;
   text-align: left;
 }
@@ -162,13 +159,13 @@
 .impactCard h3 {
   font-size: 1.05rem;
   font-weight: 700;
-  color: #0f172a;
+  color: var(--cx-ink);
   margin: 12px 0 8px;
 }
 
 .impactCard p {
   font-size: 0.95rem;
-  color: #64748b;
+  color: var(--cx-muted);
   line-height: 1.6;
   margin: 0;
 }
@@ -180,16 +177,16 @@
   align-items: center;
   justify-content: center;
   border-radius: 12px;
-  background: linear-gradient(135deg, rgba(6, 182, 212, 0.1), rgba(16, 185, 129, 0.1));
-  color: #0d9488;
+  background: linear-gradient(135deg, rgba(var(--cx-brand-from-rgb), 0.1), rgba(var(--cx-brand-to-rgb), 0.1));
+  color: var(--cx-pine);
 }
 
 /* ── Description Section ── */
 
 .descSection {
-  background: #000000;
+  background: var(--cx-paper);
   padding: 64px 0;
-  border-top: 1px solid rgba(6, 182, 212, 0.1);
+  border-top: 1px solid rgba(var(--cx-brand-from-rgb), 0.1);
 }
 
 .descInner {
@@ -205,7 +202,7 @@
 .descTitle {
   font-size: clamp(1.6rem, 3vw, 2.2rem);
   font-weight: 800;
-  color: #f1f5f9;
+  color: var(--cx-ink);
   letter-spacing: -0.03em;
   margin-bottom: 0.5rem;
 }
@@ -213,10 +210,7 @@
 .descSubtitle {
   font-size: 1.1rem;
   font-weight: 600;
-  background: linear-gradient(135deg, #06b6d4 0%, #10b981 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--cx-pine);
   margin: 0;
 }
 
@@ -226,7 +220,7 @@
 
 .descBody p {
   font-size: 1rem;
-  color: #94a3b8;
+  color: var(--cx-muted);
   line-height: 1.7;
   margin-bottom: 1rem;
 }
@@ -234,22 +228,22 @@
 /* How Ciyex Helps */
 
 .helpBlock {
-  background: rgba(6, 182, 212, 0.04);
-  border: 1px solid rgba(6, 182, 212, 0.12);
-  border-radius: 16px;
+  background: rgba(var(--cx-brand-from-rgb), 0.04);
+  border: 1px solid rgba(var(--cx-brand-from-rgb), 0.12);
+  border-radius: 12px;
   padding: 32px;
 }
 
 .helpTitle {
   font-size: 1.3rem;
   font-weight: 700;
-  color: #f1f5f9;
+  color: var(--cx-ink);
   margin-bottom: 0.4rem;
 }
 
 .helpIntro {
   font-size: 0.95rem;
-  color: #94a3b8;
+  color: var(--cx-muted);
   margin-bottom: 1.2rem;
 }
 
@@ -273,19 +267,19 @@
   align-items: flex-start;
   gap: 10px;
   font-size: 0.95rem;
-  color: #cbd5e1;
+  color: var(--cx-muted);
   line-height: 1.5;
 }
 
 .helpBullet {
   flex-shrink: 0;
   margin-top: 2px;
-  color: #10b981;
+  color: var(--cx-pine);
 }
 
 .helpClose {
   font-size: 0.95rem;
-  color: #94a3b8;
+  color: var(--cx-muted);
   line-height: 1.7;
   margin: 0;
 }
@@ -293,9 +287,9 @@
 /* ── Why Support Matters ── */
 
 .whySection {
-  background: #000000;
+  background: var(--cx-paper);
   padding: 80px 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-top: 1px solid var(--cx-line);
 }
 
 .whyInner {
@@ -308,14 +302,14 @@
 .whyTitle {
   font-size: 1.8rem;
   font-weight: 800;
-  color: #f1f5f9;
+  color: var(--cx-ink);
   letter-spacing: -0.03em;
   margin-bottom: 0.75rem;
 }
 
 .whySubtitle {
   font-size: 1rem;
-  color: #94a3b8;
+  color: var(--cx-muted);
   max-width: 600px;
   margin: 0 auto 2.5rem;
   line-height: 1.6;
@@ -355,9 +349,9 @@
 }
 
 .whyCard {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(6, 182, 212, 0.12);
-  border-radius: 16px;
+  background: var(--cx-surface);
+  border: 1px solid var(--cx-line);
+  border-radius: 12px;
   padding: 32px 24px;
   text-align: left;
 }
@@ -365,13 +359,13 @@
 .whyCard h3 {
   font-size: 1.05rem;
   font-weight: 700;
-  color: #f1f5f9;
+  color: var(--cx-ink);
   margin: 12px 0 8px;
 }
 
 .whyCard p {
   font-size: 0.95rem;
-  color: #94a3b8;
+  color: var(--cx-muted);
   line-height: 1.6;
   margin: 0;
 }
@@ -383,14 +377,14 @@
   align-items: center;
   justify-content: center;
   border-radius: 12px;
-  background: linear-gradient(135deg, rgba(6, 182, 212, 0.15), rgba(16, 185, 129, 0.15));
-  color: #2dd4bf;
+  background: linear-gradient(135deg, rgba(var(--cx-brand-from-rgb), 0.15), rgba(var(--cx-brand-to-rgb), 0.15));
+  color: var(--cx-pine);
 }
 
 /* ── About Ciyex ── */
 
 .aboutSection {
-  background: #fafafa;
+  background: var(--cx-surface-2);
   padding: 80px 0;
   border-top: 1px solid rgba(0, 0, 0, 0.06);
 }
@@ -404,14 +398,14 @@
 .aboutTitle {
   font-size: 1.8rem;
   font-weight: 800;
-  color: #0f172a;
+  color: var(--cx-ink);
   letter-spacing: -0.03em;
   margin-bottom: 1.5rem;
 }
 
 .aboutInner p {
   font-size: 1rem;
-  color: #475569;
+  color: var(--cx-muted);
   line-height: 1.75;
   margin-bottom: 1rem;
 }

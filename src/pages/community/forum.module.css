@@ -4,7 +4,7 @@
  */
 
 .forumPage {
-  background: #000000;
+  background: var(--cx-band);
   min-height: 100vh;
   padding: 0 0 100px;
   color: #f1f5f9;
@@ -218,7 +218,7 @@
 }
 
 .topicLink:hover {
-  color: #06b6d4;
+  color: var(--cx-brand-from);
   text-decoration: none;
 }
 
@@ -246,9 +246,9 @@
   font-weight: 500;
   padding: 2px 9px;
   border-radius: 100px;
-  background: rgba(6, 182, 212, 0.1);
-  color: #67e8f9;
-  border: 1px solid rgba(6, 182, 212, 0.2);
+  background: rgba(var(--cx-brand-from-rgb), 0.1);
+  color: var(--cx-brand-to);
+  border: 1px solid rgba(var(--cx-brand-from-rgb), 0.2);
 }
 
 .cellMeta {
@@ -370,7 +370,7 @@
   width: 64px;
   height: 64px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #06b6d4, #8b5cf6);
+  background: linear-gradient(135deg, var(--cx-brand-from), #8b5cf6);
   color: #ffffff;
   font-weight: 800;
   font-size: 1.35rem;
@@ -388,7 +388,7 @@
 
 .authorTitle {
   font-size: 0.75rem;
-  color: #06b6d4;
+  color: var(--cx-brand-from);
   font-weight: 500;
   margin-top: 0.15rem;
 }
@@ -494,7 +494,7 @@
 
 .replyBody code {
   background: rgba(255, 255, 255, 0.08);
-  color: #67e8f9;
+  color: var(--cx-brand-to);
   padding: 1px 6px;
   border-radius: 4px;
   font-size: 0.8125rem;
@@ -554,7 +554,7 @@
 }
 
 .composerNote a {
-  color: #06b6d4;
+  color: var(--cx-brand-from);
   text-decoration: none;
 }
 
@@ -586,7 +586,7 @@
 .composerName:focus,
 .composerBody:focus {
   outline: none;
-  border-color: rgba(6, 182, 212, 0.5);
+  border-color: rgba(var(--cx-brand-from-rgb), 0.5);
 }
 
 .composerActions {
@@ -633,7 +633,7 @@
 
 .formInput:focus {
   outline: none;
-  border-color: rgba(6, 182, 212, 0.5);
+  border-color: rgba(var(--cx-brand-from-rgb), 0.5);
 }
 
 .formGrid {
@@ -643,8 +643,8 @@
 }
 
 .successCard {
-  background: rgba(16, 185, 129, 0.08);
-  border: 1px solid rgba(16, 185, 129, 0.2);
+  background: rgba(var(--cx-brand-to-rgb), 0.08);
+  border: 1px solid rgba(var(--cx-brand-to-rgb), 0.2);
   border-radius: 16px;
   padding: 2.5rem;
   text-align: center;
@@ -664,7 +664,7 @@
 }
 
 .successCard a {
-  color: #06b6d4;
+  color: var(--cx-brand-from);
 }
 
 /* ── Not found card ── */
@@ -687,7 +687,7 @@
 }
 
 .notFoundCard a {
-  color: #06b6d4;
+  color: var(--cx-brand-from);
 }
 
 /* ── Responsive ── */

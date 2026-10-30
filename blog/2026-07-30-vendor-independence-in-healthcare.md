@@ -94,4 +94,4 @@ Healthcare technology should help organizations grow, innovate, and deliver bett
 
 At Ciyex, we believe healthcare organizations deserve technology that works for them. Our open-source, FHIR-native EHR platform is designed with interoperability, flexibility, and vendor independence at its core — instead of locking providers into a closed ecosystem, Ciyex helps healthcare teams build connected solutions that can grow and evolve as their needs change.
 
-Ready to explore a more flexible approach to healthcare technology? **[Schedule an appointment](/professional-support)** with our team to see how Ciyex can help your organization reduce vendor lock-in, improve interoperability, and create a healthcare system that grows with your needs.
+Ready to explore a more flexible approach to healthcare technology? **[Schedule an appointment](/contact)** with our team to see how Ciyex can help your organization reduce vendor lock-in, improve interoperability, and create a healthcare system that grows with your needs.
