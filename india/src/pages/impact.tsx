@@ -5,10 +5,10 @@ import Heading from '@theme/Heading';
 import styles from '@site/src/css/india/impact.module.css';
 
 const stats = [
-  { value: '23 modules', label: 'Registration to final bill in one system, switched on as you need them' },
-  { value: 'ABDM', label: 'Connectivity built into the product, not sold as a custom project' },
-  { value: '0', label: 'Per-user and per-patient fees — you pay for the platform, not your census' },
-  { value: 'On-premise', label: 'Or our managed cloud — the same software either way, and your data stays yours' },
+	{ value: 'One connected system', label: 'Workflows spanning registration, care, departments and administration' },
+	{ value: 'ABDM', label: 'Gateway configuration and connection checks in Ciyex HIMS' },
+	{ value: 'No per-user fee', label: 'Add staff accounts with access controlled by roles and permissions' },
+	{ value: 'Two deployment options', label: 'Discuss managed cloud or on-premise deployment with our team' },
 ];
 
 const programs = [
@@ -19,8 +19,8 @@ const programs = [
         <path d="M12 6v4M10 8h4" />
       </svg>
     ),
-    title: 'Small and single-unit hospitals',
-    description: 'Nursing homes, polyclinics and district hospitals are the ones legacy vendors price out — per-bed licensing and paid module unlocks. They get the same 23 modules and the same software as a multi-speciality group.',
+		title: 'A system that can start with your needs',
+		description: 'Nursing homes, polyclinics and larger hospitals can configure Ciyex HIMS around the departments they operate, then review additional workflows as their needs change.',
   },
   {
     icon: (
@@ -29,8 +29,8 @@ const programs = [
         <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
       </svg>
     ),
-    title: 'Local languages and formats',
-    description: 'Indian number grouping, dd/MM/yyyy dates, an April financial year and multi-language screens — so a receptionist in a district hospital is not fighting software written for somebody else\u2019s country.',
+		title: 'Settings for Indian operations',
+		description: 'Use rupee formatting, Indian number grouping, dd/MM/yyyy dates and an April financial year. GST and facility settings can be configured for the hospital.',
   },
   {
     icon: (
@@ -38,8 +38,8 @@ const programs = [
         <polyline points="16 18 22 12 16 6" /><polyline points="8 6 2 12 8 18" />
       </svg>
     ),
-    title: 'ABDM and national digital health',
-    description: 'Engineers working on Ayushman Bharat Digital Mission connectivity — gateway configuration and verified credentials today, with ABHA enrolment and Scan & Share being released module by module.',
+		title: 'ABDM connectivity',
+		description: 'Configure gateway credentials, choose sandbox or production, and check connectivity in Ciyex HIMS. ABHA enrolment, verification and Scan & Share are in development.',
   },
   {
     icon: (
@@ -47,8 +47,8 @@ const programs = [
         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /><path d="m9 12 2 2 4-4" />
       </svg>
     ),
-    title: 'Security and compliance',
-    description: 'Encryption at rest and in transit, credential handling that never shows a secret back, audited access to records, and data practices aligned to the Digital Personal Data Protection Act, 2023.',
+		title: 'Security and data practices',
+		description: 'Ciyex HIMS uses encryption for stored and transmitted data, protects configured credentials and records access to patient information. Discuss your responsibilities and deployment needs with our team.',
   },
   {
     icon: (
@@ -58,8 +58,8 @@ const programs = [
         <path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
       </svg>
     ),
-    title: 'Patient access',
-    description: 'In build: patient self-service for appointments, reports and bills, so a family is not queueing at a counter for a report that is already signed. Not shipping yet — this is where the investment is going.',
+		title: 'Patient self-service · in development',
+		description: 'Patient access for appointments, reports and bills is in development and is not available yet.',
   },
   {
     icon: (
@@ -67,8 +67,8 @@ const programs = [
         <rect x="2" y="3" width="20" height="14" rx="2" ry="2" /><line x1="8" y1="21" x2="16" y2="21" /><line x1="12" y1="17" x2="12" y2="21" />
       </svg>
     ),
-    title: 'Telemedicine',
-    description: 'In build: video consultation and remote follow-up, so a patient in a taluk does not travel half a day for a review. Not shipping yet — named here because it is funded, not because it is finished.',
+		title: 'Telemedicine · in development',
+		description: 'Video consultations and remote follow-up are planned for a future release and are not available yet.',
   },
 ];
 
@@ -76,21 +76,21 @@ export default function Impact(): ReactNode {
   return (
     <Layout
       title="Our Impact"
-      description="How Ciyex builds hospital software for Indian hospitals that legacy vendors price out — what we invest in, and what we are still building.">
+      description="See how Qiaben is developing Ciyex HIMS for hospitals in India, including the workflows available today and areas still in development.">
       <main className={`${styles.impactPage} ${styles.impactWide}`}>
         <div className="container">
           {/* Hero */}
           <div className={styles.hero}>
             <div className={styles.heroContent}>
-              <div className={styles.badge}>Our Commitment</div>
+				<div className={styles.badge}>Our focus</div>
               <Heading as="h1" className={styles.heroTitle}>
-                One hospital system,<br />
-                <span className={styles.gradient}>whatever your size.</span>
+					Hospital workflows,<br />
+					<span className={styles.gradient}>connected in one system.</span>
               </Heading>
               <p className={styles.heroSubtitle}>
-                A thirty-bed nursing home should run the same software as a
-                three-hundred-bed hospital. Ciyex HIMS is built so the difference is
-                which modules you switch on, not what you can afford.
+					Ciyex HIMS brings registration, patient care, diagnostics, pharmacy, billing
+					and administration into one configurable system. Hospitals can choose a
+					deployment and feature setup to suit their operations.
               </p>
             </div>
           </div>
@@ -110,20 +110,17 @@ export default function Impact(): ReactNode {
           {/* The Problem */}
           <section className={styles.section}>
             <div className={styles.sectionInnerWide}>
-              <Heading as="h2" className={styles.sectionTitle}>The Problem</Heading>
+								<Heading as="h2" className={styles.sectionTitle}>The operational challenge</Heading>
               <div className={styles.contentCard}>
                 <p className={styles.contentText}>
-                  Most Indian hospitals do not run one system. They run a billing package at the
-                  counter, a separate ledger in the pharmacy, a lab register the technician keeps
-                  by hand, and a case sheet that lives in a file the MRD clerk has to physically
-                  find. Each was bought separately, none of them talk, and the numbers only meet
-                  at day end if somebody types them in twice.
+					When hospital departments rely on separate tools and paper records, staff may
+					need to enter the same information more than once or search across systems to
+					answer a simple operational question.
                 </p>
                 <p className={styles.contentText}>
-                  The systems that do cover the whole hospital are priced per bed or per user, and
-                  charge again to unlock a module. So the smaller the hospital, the more of it
-                  stays on paper — and the patient is the one who repeats the test, carries the
-                  file, and waits at the counter.
+					A hospital information system should support the workflows a facility needs
+					today and make it practical to review what comes next—without adding unnecessary
+					steps for staff or patients.
                 </p>
               </div>
             </div>
@@ -132,20 +129,18 @@ export default function Impact(): ReactNode {
           {/* Our Approach */}
           <section className={styles.section}>
             <div className={styles.sectionInnerWide}>
-              <Heading as="h2" className={styles.sectionTitle}>Our Approach</Heading>
+								<Heading as="h2" className={styles.sectionTitle}>How we approach it</Heading>
               <div className={styles.contentCard}>
                 <p className={styles.contentText}>
-                  Ciyex takes a different approach. Every module is a switch, not a line item. A
-                  polyclinic runs registration, OPD, pharmacy and billing; a multi-speciality
-                  hospital adds wards, theatre, blood bank and payroll. Same software, same price
-                  basis, no licence renegotiation to turn something on.
+					Ciyex HIMS brings hospital functions into one platform, with features for the
+					front desk, patient care, departments, records and administration. During
+					implementation, our team works with each hospital to configure the relevant
+					workflows and responsibilities.
                 </p>
                 <p className={styles.contentText}>
-                  Underneath, the record is FHIR R4 and the interfaces are HL7 and DICOM, so
-                  analysers and modalities on your network talk to it and anything you build later
-                  talks to a documented standard. Run it on our managed cloud or on a server inside
-                  the hospital — the same software either way, with no per-user licence, no
-                  per-patient fee, and your data still yours.
+					Ciyex HIMS uses FHIR R4 and supports HL7 v2 and DICOM workflows. Hospitals can
+					discuss managed cloud or on-premise deployment, integration requirements and
+					data handling with the Qiaben team.
                 </p>
               </div>
             </div>
@@ -154,10 +149,10 @@ export default function Impact(): ReactNode {
           {/* Programs */}
           <section className={styles.section}>
             <div className={styles.sectionInnerWide}>
-              <Heading as="h2" className={styles.sectionTitle}>Where We Invest</Heading>
+								<Heading as="h2" className={styles.sectionTitle}>What we’re building toward</Heading>
               <p className={styles.sectionSubtitle}>
-                What we build with the revenue our customers trust us with — and the areas
-                we keep investing in as the platform grows.
+					See what is available now and which capabilities remain in development as
+					Ciyex HIMS evolves.
               </p>
               <div className={styles.programsGrid}>
                 {programs.map((program, i) => (
@@ -175,11 +170,11 @@ export default function Impact(): ReactNode {
           <section className={styles.ctaSection}>
             <div className={styles.ctaInner}>
               <Heading as="h2" className={styles.ctaTitle}>
-                See it on your<br />own hospital.
+								See how it fits<br />your hospital.
               </Heading>
               <p className={styles.ctaDesc}>
-                Nursing home, polyclinic or multi-speciality — tell us how your hospital runs
-                today and we will map it module by module.
+					Tell us about your departments, current systems and priorities. We’ll show
+					you the relevant Ciyex HIMS workflows in a product demo.
               </p>
               <div className={styles.ctaButtons}>
                 <Link className={styles.btnSecondary} to="/signup">

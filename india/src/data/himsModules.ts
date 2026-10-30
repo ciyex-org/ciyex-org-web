@@ -41,13 +41,13 @@ export const HIMS_MODULE_GROUPS: readonly HimsModuleGroup[] = [
 		id: 'front-desk',
 		icon: 'front-desk',
 		label: 'Front Desk',
-		blurb: 'Where patients are welcomed, guided and billed.',
+		blurb: 'Help front-desk teams register patients, manage queues and handle payments.',
 		modules: [
 			{
 				code: 'REGISTRATION',
 				icon: 'uhid-card',
 				name: 'Patient Registration / UHID',
-				summary: 'Every patient gets one file and one number, so records are not duplicated or lost.',
+				summary: 'Create a consistent patient record and UHID that staff can find across visits.',
 				points: [
 					'UHID numbers follow your own series',
 					'A warning before a second file is created for the same patient',
@@ -59,7 +59,7 @@ export const HIMS_MODULE_GROUPS: readonly HimsModuleGroup[] = [
 				code: 'APPOINTMENT',
 				icon: 'calendar',
 				name: 'Appointments & Queue',
-				summary: 'Patients are booked and called in order, so the waiting area stays calm.',
+				summary: 'Coordinate appointments, tokens and waiting-room updates from one queue.',
 				points: [
 					'Book by doctor, department or time slot',
 					'Issue tokens and call the next patient',
@@ -71,7 +71,7 @@ export const HIMS_MODULE_GROUPS: readonly HimsModuleGroup[] = [
 				code: 'BILLING',
 				icon: 'receipt',
 				name: 'Billing & Cashier',
-				summary: 'Every charge reaches the bill, and the cash counter closes correctly each day.',
+				summary: 'Bring hospital charges, receipts, advances and refunds into the billing workflow.',
 				points: [
 					'Your own rates for each patient category and payer',
 					'Charges come in from OPD, ward, lab, radiology and pharmacy',
@@ -85,13 +85,13 @@ export const HIMS_MODULE_GROUPS: readonly HimsModuleGroup[] = [
 		id: 'patient-care',
 		icon: 'opd',
 		label: 'Patient Care',
-		blurb: 'The care a patient receives in OPD, casualty, the ward and the theatre.',
+		blurb: 'Support patient care from outpatient visits and emergency intake through admission and theatre.',
 		modules: [
 			{
 				code: 'OPD',
 				icon: 'stethoscope',
 				name: 'OPD Management',
-				summary: 'Outpatient visits move quickly, with the right fee and follow-up applied each time.',
+				summary: 'Organise OPD visits, consultation fees, follow-ups and diagnostic results.',
 				points: [
 					'Start a new visit in one click, with the fee applied',
 					'Free follow-up periods applied by your own rule',
@@ -103,7 +103,7 @@ export const HIMS_MODULE_GROUPS: readonly HimsModuleGroup[] = [
 				code: 'EMERGENCY',
 				icon: 'casualty',
 				name: 'Emergency / Casualty',
-				summary: 'Casualty staff can register and prioritise patients quickly and keep MLC records in order.',
+				summary: 'Record emergency arrivals, manage casualty workflows and maintain MLC details.',
 				points: [
 					'Register a patient who arrives without papers',
 					'The most serious cases are seen first',
@@ -115,7 +115,7 @@ export const HIMS_MODULE_GROUPS: readonly HimsModuleGroup[] = [
 				code: 'IPD',
 				icon: 'ward-bed',
 				name: 'IPD / Admission (ADT)',
-				summary: 'Admissions, transfers and running bills stay clear from the day a patient is admitted.',
+				summary: 'Manage admissions, transfers, deposits and the running account throughout a stay.',
 				points: [
 					'Admit a patient with IP number, bed and consultant',
 					'Deposits and advances adjusted against the running bill',
@@ -127,7 +127,7 @@ export const HIMS_MODULE_GROUPS: readonly HimsModuleGroup[] = [
 				code: 'BED_MANAGEMENT',
 				icon: 'bed-board',
 				name: 'Bed & Ward Management',
-				summary: 'Staff can see which beds are free, occupied or unavailable at a glance.',
+				summary: 'Give teams a current view of bed availability, occupancy and room rates.',
 				points: [
 					'All wards, floors, room types and beds in one place',
 					'An occupancy board that is easy to read',
@@ -139,7 +139,7 @@ export const HIMS_MODULE_GROUPS: readonly HimsModuleGroup[] = [
 				code: 'NURSING',
 				icon: 'nursing',
 				name: 'Nursing Management',
-				summary: 'Nurses have one place for vitals, medicines and notes, so handovers are clear.',
+				summary: 'Keep vitals, medication rounds and nursing notes together for clearer handovers.',
 				points: [
 					'Record vitals bed by bed',
 					'See which medicines are due on each round',
@@ -151,7 +151,7 @@ export const HIMS_MODULE_GROUPS: readonly HimsModuleGroup[] = [
 				code: 'OT',
 				icon: 'theatre',
 				name: 'Operation Theatre',
-				summary: 'Theatre lists, safety checks and consumables stay organised, and theatre charges reach the bill.',
+				summary: 'Coordinate theatre schedules, checklists, consumables and operation notes.',
 				points: [
 					'Theatre lists by surgeon and room',
 					'Surgical safety checklist',
@@ -165,13 +165,13 @@ export const HIMS_MODULE_GROUPS: readonly HimsModuleGroup[] = [
 		id: 'departments',
 		icon: 'diagnostics',
 		label: 'Departments',
-		blurb: 'Tests, medicines and supplies that keep the hospital running.',
+		blurb: 'Connect diagnostic, pharmacy and inventory workflows with patient care and billing.',
 		modules: [
 			{
 				code: 'LABORATORY',
 				icon: 'blood-tube',
 				name: 'Laboratory / LIS',
-				summary: 'Samples and results are tracked from collection to signed report.',
+				summary: 'Track laboratory samples, review results and prepare signed reports.',
 				points: [
 					'Your list of tests and profiles, with normal ranges',
 					'Sample collection, barcodes and rejected samples',
@@ -183,7 +183,7 @@ export const HIMS_MODULE_GROUPS: readonly HimsModuleGroup[] = [
 				code: 'RADIOLOGY',
 				icon: 'x-ray',
 				name: 'Radiology / RIS & PACS',
-				summary: 'Imaging requests, pictures and reports stay linked to the right patient.',
+				summary: 'Keep imaging requests, studies and radiology reports linked to the patient record.',
 				points: [
 					'Patient details are sent to the imaging machine',
 					'Images are saved against the doctor’s request',
@@ -195,7 +195,7 @@ export const HIMS_MODULE_GROUPS: readonly HimsModuleGroup[] = [
 				code: 'PHARMACY',
 				icon: 'capsule',
 				name: 'Pharmacy',
-				summary: 'Medicines are dispensed, billed and tracked by batch, with fewer expiry and stock problems.',
+				summary: 'Manage dispensing, billing, batch details, returns and stock alerts in one workflow.',
 				points: [
 					'Batch and expiry tracked on every sale or issue',
 					'Counter sales, ward supply and inpatient requests',
@@ -207,7 +207,7 @@ export const HIMS_MODULE_GROUPS: readonly HimsModuleGroup[] = [
 				code: 'INVENTORY',
 				icon: 'stores',
 				name: 'Inventory / Stores',
-				summary: 'Purchases and stock are tracked from request to use, so items are easier to account for.',
+				summary: 'Follow supplies from purchase request and receipt through stores and department use.',
 				points: [
 					'Follow each item from request to purchase order to goods received',
 					'Separate sub-stores, with issues and usage recorded',
@@ -219,7 +219,7 @@ export const HIMS_MODULE_GROUPS: readonly HimsModuleGroup[] = [
 				code: 'BLOOD_BANK',
 				icon: 'blood-drop',
 				name: 'Blood Bank',
-				summary: 'Donors, blood stock and every issue are recorded in one place.',
+				summary: 'Maintain donor, component-stock, compatibility and issue records together.',
 				points: [
 					'Donor list with deferral history',
 					'Stock by blood group and component',
@@ -233,13 +233,13 @@ export const HIMS_MODULE_GROUPS: readonly HimsModuleGroup[] = [
 		id: 'records',
 		icon: 'records',
 		label: 'Records',
-		blurb: 'The documents the hospital must be able to produce later.',
+		blurb: 'Keep discharge information and medical records organised for future reference.',
 		modules: [
 			{
 				code: 'DISCHARGE',
 				icon: 'discharge',
 				name: 'Discharge & Final Bill',
-				summary: 'Patients leave with a clear summary and a final bill that has been checked.',
+				summary: 'Coordinate discharge steps, deposit adjustments, final bills and summaries.',
 				points: [
 					'A checklist to finish before the bed is released',
 					'Discharge summary printed and filed',
@@ -251,7 +251,7 @@ export const HIMS_MODULE_GROUPS: readonly HimsModuleGroup[] = [
 				code: 'MRD',
 				icon: 'records',
 				name: 'Medical Records (MRD)',
-				summary: 'Case files are easy to track, and record requests are properly documented.',
+				summary: 'Track case files, record requests, releases and retention settings.',
 				points: [
 					'An index of case files, showing where each one is',
 					'ICD codes added to completed records',
@@ -265,13 +265,13 @@ export const HIMS_MODULE_GROUPS: readonly HimsModuleGroup[] = [
 		id: 'administration',
 		icon: 'admin',
 		label: 'Administration',
-		blurb: 'The staff, vehicles, money and machines behind patient care.',
+		blurb: 'Coordinate staff, ambulance, accounts and connected equipment from the administrative side.',
 		modules: [
 			{
 				code: 'HR_PAYROLL',
 				icon: 'staff',
 				name: 'HR & Payroll',
-				summary: 'Staff records, duty rosters, attendance and salaries stay in one system.',
+				summary: 'Manage staff information, rosters, attendance, leave and payroll workflows.',
 				points: [
 					'Staff details, credentials and documents',
 					'Duty rosters by department and shift',
@@ -283,7 +283,7 @@ export const HIMS_MODULE_GROUPS: readonly HimsModuleGroup[] = [
 				code: 'AMBULANCE',
 				icon: 'ambulance',
 				name: 'Ambulance Management',
-				summary: 'Ambulance trips, crews and charges are recorded, and vehicle papers are easier to keep current.',
+				summary: 'Record ambulance assignments, trips, crew details, charges and vehicle documents.',
 				points: [
 					'Vehicle list with fitness and insurance expiry dates',
 					'Send out vehicles and keep a log of each trip',
@@ -295,7 +295,7 @@ export const HIMS_MODULE_GROUPS: readonly HimsModuleGroup[] = [
 				code: 'ACCOUNTS',
 				icon: 'ledger',
 				name: 'Accounts & Finance',
-				summary: 'The hospital’s daily money is recorded and matched, without separate re-entry from billing and pharmacy.',
+				summary: 'Bring billing, pharmacy, cash, bank and expense entries into the hospital accounts workflow.',
 				points: [
 					'A day book that matches the cash counter',
 					'Cash and bank reconciliation',
@@ -307,7 +307,7 @@ export const HIMS_MODULE_GROUPS: readonly HimsModuleGroup[] = [
 				code: 'INTEGRATION',
 				icon: 'microscope',
 				name: 'Machines & Interfaces',
-				summary: 'Connects machines, payments and other systems, so staff are not retyping the same information.',
+				summary: 'Connect diagnostic equipment and external systems, and review messages when an interface needs attention.',
 				points: [
 					'Lab and imaging machines connected to Ciyex HIMS',
 					'Open connections for software you build yourself',
@@ -321,13 +321,13 @@ export const HIMS_MODULE_GROUPS: readonly HimsModuleGroup[] = [
 		id: 'platform',
 		icon: 'parameter',
 		label: 'Platform',
-		blurb: 'The settings that make the software fit your hospital.',
+		blurb: 'Configure Ciyex HIMS to reflect your facilities, numbering, modules and operating rules.',
 		modules: [
 			{
 				code: 'CONFIGURATION',
 				icon: 'parameter',
 				name: 'Configuration & Settings',
-				summary: 'Set up the software to match how your hospital works, without custom development.',
+				summary: 'Set module access, numbering, formats, taxes and other hospital-specific options.',
 				points: [
 					'Switch modules on or off for your hospital, with no restart',
 					'Your own numbering for UHID, IP, bills and receipts',
@@ -339,7 +339,7 @@ export const HIMS_MODULE_GROUPS: readonly HimsModuleGroup[] = [
 				code: 'FACILITY',
 				icon: 'branch',
 				name: 'Facility & Branch',
-				summary: 'Run more than one unit together, with each unit’s details and numbers kept right.',
+				summary: 'Manage multiple facilities under one login with separate facility details and settings.',
 				points: [
 					'More than one unit under one login',
 					'GSTIN, drug licence and registration for each unit',
@@ -350,8 +350,8 @@ export const HIMS_MODULE_GROUPS: readonly HimsModuleGroup[] = [
 			{
 				code: 'ABDM',
 				icon: 'insurance',
-				name: 'ABDM / ABHA Integration',
-				summary: 'Connects your hospital to the Ayushman Bharat Digital Mission, set up for your hospital.',
+				name: 'ABDM Gateway Connection',
+				summary: 'Configure hospital credentials and check connectivity with the ABDM gateway.',
 				points: [
 					'Test and live connections, chosen for each hospital',
 					'Your hospital’s ABDM details are set up inside the software',

@@ -50,7 +50,7 @@ const INDIA_HEAD_TAGS = [
 
 const config: Config = {
   title: 'Ciyex HIMS',
-  tagline: 'Ciyex Workspace and the Ciyex HIMS — one platform for your whole hospital.',
+  tagline: 'Connect hospital departments with Ciyex HIMS, built for Indian operations.',
   favicon: 'img/Ciyex-favicon-new.png',
   url: 'https://ciyex.org',
   baseUrl: '/en-in/',
@@ -96,7 +96,7 @@ const config: Config = {
     },
     announcementBar: {
       id: 'hims_announcement',
-      content: 'Ciyex HIMS is available for hospitals across India. <a href="/en-in/signup">Talk to our team</a>',
+      content: 'Explore Ciyex HIMS for your hospital. <a href="/en-in/signup">Book a product demo</a>',
       backgroundColor: '#1d4ed8',
       textColor: '#ffffff',
       isCloseable: true,
@@ -109,7 +109,7 @@ const config: Config = {
         srcDark: 'img/Ciyex-logo-no-text.png',
       },
       items: [
-        { to: '/modules', label: 'Modules', position: 'left' },
+        { to: '/modules', label: 'Features', position: 'left' },
         { to: '/workspace', label: 'Workspace', position: 'left' },
         { to: '/professional-support', label: 'Support', position: 'left' },
         { to: '/about', label: 'About', position: 'left' },
@@ -129,7 +129,7 @@ const config: Config = {
         {
           title: 'Product',
           items: [
-            { label: 'HIMS Modules', to: '/modules' },
+            { label: 'HIMS Features', to: '/modules' },
             { label: 'Ciyex Workspace', to: '/workspace' },
           ],
         },
