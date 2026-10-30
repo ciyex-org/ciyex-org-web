@@ -1,349 +1,408 @@
 import type { ReactNode } from 'react';
-import clsx from 'clsx';
+import Head from '@docusaurus/Head';
 import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 
+import Threads from '@site/src/components/Threads';
+import { CONTACT } from '@site/src/data/contact';
 import styles from './index.module.css';
 
-/* ── Inline SVG Icons ── */
-const IconShield = () => (
-  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-    <path d="m9 12 2 2 4-4" />
-  </svg>
-);
+/**
+ * The US home page leads with services, with software as part of the wider offer.
+ *
+ * <p>Claims here are held to what is true today. Keep out scale numbers,
+ * guaranteed rates and "HIPAA compliant" badges. Planned services must remain
+ * clearly labeled until they are available.
+ */
 
-const IconHeart = () => (
-  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M19.5 12.572l-7.5 7.428-7.5-7.428A5 5 0 1 1 12 6.006a5 5 0 1 1 7.5 6.572" />
-    <path d="M12 6v4M10 8h4" />
-  </svg>
-);
-
-const IconGlobe = () => (
-  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-    <circle cx="12" cy="12" r="10" />
-    <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-  </svg>
-);
-
-const IconCode = () => (
-  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-    <polyline points="16 18 22 12 16 6" />
-    <polyline points="8 6 2 12 8 18" />
-    <line x1="14" y1="4" x2="10" y2="20" />
-  </svg>
-);
-
-const IconUsers = () => (
-  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-    <circle cx="9" cy="7" r="4" />
-    <path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
-  </svg>
-);
-
-const IconZap = () => (
-  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
-  </svg>
-);
-
-/* ── Workspace Screenshot ── */
-function WorkspaceMockup() {
-  return (
-    <div className={styles.mockupWrapper}>
-      <div className={styles.mockupWindow}>
-        <div className={styles.mockupBar}>
-          <span className={styles.dot} style={{ background: '#ff5f57' }} />
-          <span className={styles.dot} style={{ background: '#febc2e' }} />
-          <span className={styles.dot} style={{ background: '#28c840' }} />
-          <span className={styles.mockupTitle}>Ciyex Workspace — Schedule</span>
-        </div>
-        <div className={styles.screenshotBody}>
-          <img
-            src="/img/workspace-schedule.png"
-            alt="Ciyex Workspace desktop client showing the EHR schedule view"
-            className={styles.screenshotImg}
-          />
-        </div>
-      </div>
-    </div>
-  );
+function Hero() {
+	return (
+		<section className={styles.hero}>
+			<Threads className={styles.heroThreads} />
+			<div className={styles.heroInner}>
+				<div className={styles.heroCopy}>
+					<p className={styles.eyebrow}>Medical · Dental · Practice operations</p>
+					<Heading as="h1" className={styles.heroTitle}>
+						Medical and dental billing that keeps work moving.
+					</Heading>
+					<p className={styles.heroLede}>
+						Claims, coding, credentialing and virtual assistants—handled by a service team
+						that understands clinic workflows.
+					</p>
+					<div className={styles.heroActions}>
+						<Link className={styles.btnPrimary} to="/services/medical-billing">Medical billing services</Link>
+						<Link className={styles.btnSecondary} to="/contact">Book a consultation</Link>
+					</div>
+					<p className={styles.quietLink}>Prefer to talk? Call <a href={CONTACT.phoneHref}>{CONTACT.phone}</a></p>
+				</div>
+				<HeroServices />
+			</div>
+		</section>
+	);
 }
 
-/* ── Hero ── */
-function HomepageHero() {
-  const { siteConfig } = useDocusaurusContext();
-  return (
-    <section className={styles.hero}>
-      <div className={styles.heroInner}>
-        <div className={styles.heroBadge}>
-          Open Source &middot; 501(c)(3) Nonprofit
-        </div>
-        <Heading as="h1" className={styles.heroTitle}>
-          Ciyex Workspace.<br />
-          <span className={styles.heroGradient}>One app for your whole clinic.</span>
-        </Heading>
-        <p className={styles.heroSubtitle}>
-          A modern desktop workspace, the open source Ciyex EHR, and free cloud storage —
-          all in one download. Built for community clinics who deserve the same tools as the biggest hospitals.
-        </p>
-        <div className={styles.heroCta}>
-          <Link className={styles.btnPrimary} to="/downloads">
-            Download Workspace
-          </Link>
-          <Link className={styles.btnSecondary} to="/workspace">
-            Learn more &rarr;
-          </Link>
-        </div>
-      </div>
-      <WorkspaceMockup />
-    </section>
-  );
+const HERO_SERVICES = [
+	{
+		name: 'Medical billing',
+		detail: 'Claims, payment posting and follow-up',
+		image: '/img/services/medical-billing.jpg',
+		alt: 'Medical billing coordinator reviewing insurance claims',
+		to: '/services/medical-billing',
+	},
+	{
+		name: 'Dental billing',
+		detail: 'Claims and insurance A/R follow-up',
+		image: '/img/services/dental-billing.jpg',
+		alt: 'Dental office administrator and dentist reviewing insurance billing',
+		to: '/services/dental-billing',
+	},
+	{
+		name: 'Virtual assistant',
+		detail: 'Phones, inboxes and EHR workflows',
+		image: '/img/services/virtual-assistant.jpg',
+		alt: 'Remote virtual assistant managing a practice calendar and office calls',
+		to: '/services/virtual-assistant',
+	},
+] as const;
+
+function HeroServices() {
+	return (
+		<div className={styles.heroServices} aria-label="Featured services">
+			<p className={styles.railLabel}>Services for your practice</p>
+			<div className={styles.serviceRail}>
+				{HERO_SERVICES.map((service, index) => (
+					<Link
+						key={service.name}
+						className={styles.railCard}
+						to={service.to}
+						style={{ animationDelay: `${index * 120}ms` }}>
+						<img src={service.image} alt={service.alt} loading={index === 0 ? 'eager' : 'lazy'} />
+						<span className={styles.railCopy}>
+							<span className={styles.railName}>{service.name}</span>
+							<span className={styles.railDetail}>{service.detail}</span>
+						</span>
+					</Link>
+				))}
+			</div>
+		</div>
+	);
 }
 
-/* ── Features ── */
-const features = [
-  { icon: <IconHeart />, title: 'Patient-First Design', desc: 'Patients own their health data. Secure portal access to records, appointments, messaging, and prescriptions. Software that puts people in control.' },
-  { icon: <IconUsers />, title: 'Community Health Centers', desc: 'Purpose-built EHR software for community health centers, free clinics, and rural providers who serve the most underserved populations.' },
-  { icon: <IconGlobe />, title: 'Health Equity', desc: 'Multi-language, culturally responsive, and designed to remove technology barriers for immigrant, uninsured, and underserved communities.' },
-  { icon: <IconShield />, title: 'Privacy & Trust', desc: 'HIPAA-compliant with enterprise-grade encryption. Every patient deserves the same level of data protection, regardless of which software their clinic uses.' },
-  { icon: <IconCode />, title: 'Open Source', desc: 'AGPL-3.0 licensed. No vendor lock-in, no per-patient fees. Communities can self-host and own their healthcare infrastructure.' },
-  { icon: <IconZap />, title: 'Interoperable', desc: 'FHIR R4 native. Connects with labs, pharmacies, and other systems so patients never have to repeat their story at every visit.' },
+const PROOF: readonly { label: string; value: string }[] = [
+	{ label: 'License', value: 'AGPL-3.0' },
+	{ label: 'Source code', value: 'Public on GitHub' },
+	{ label: 'Data standard', value: 'FHIR R4' },
+	{ label: 'Deployment', value: 'Cloud or self-hosted' },
 ];
 
-function FeaturesSection() {
-  return (
-    <section className={styles.features}>
-      <div className={styles.featuresInner}>
-        <div className={styles.sectionLabel}>Why Ciyex</div>
-        <Heading as="h2" className={styles.sectionTitle}>
-          Technology that serves patients, not profits.
-        </Heading>
-        <p className={styles.sectionSubtitle}>
-          Every feature is designed with one question: does this give clinics and patients better tools than what they have today?
-        </p>
-        <div className={styles.featureGrid}>
-          {features.map((f, i) => (
-            <div key={i} className={styles.featureCard}>
-              <div className={styles.featureIcon}>{f.icon}</div>
-              <h3 className={styles.featureTitle}>{f.title}</h3>
-              <p className={styles.featureDesc}>{f.desc}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
+function ProofStrip() {
+	return (
+		<section className={styles.proof} aria-label="What you can verify">
+			<dl className={styles.proofGrid}>
+				{PROOF.map((item) => (
+					<div key={item.label} className={styles.proofItem}>
+						<dt>{item.label}</dt>
+						<dd>{item.value}</dd>
+					</div>
+				))}
+			</dl>
+		</section>
+	);
 }
 
-/* ── Product Showcase (Apple-style alternating sections) ── */
-function ShowcaseSection() {
-  return (
-    <>
-      {/* Section 1: Patient Care */}
-      <section className={styles.showcase}>
-        <div className={styles.showcaseInner}>
-          <div className={styles.showcaseText}>
-            <div className={styles.sectionLabel}>Better Tools</div>
-            <Heading as="h2" className={styles.showcaseTitle}>
-              Every clinic<br />deserves this.
-            </Heading>
-            <p className={styles.showcaseDesc}>
-              Complete health records software, smart clinical documentation tools,
-              and care coordination workflows. The same quality of technology
-              whether you run a rural clinic or a major hospital.
-            </p>
-            <Link className={styles.showcaseLink} to="/docs/features/clinical-docs">
-              Learn more &rarr;
-            </Link>
-          </div>
-          <div className={styles.showcaseVisual}>
-            <div className={styles.visualCard}>
-              <div className={styles.visualCardHeader}>
-                <div className={styles.visualCardDot} />
-                <span>Patient Chart</span>
-              </div>
-              <div className={styles.visualCardRow}><span className={styles.vcLabel}>Name</span><span className={styles.vcValue}>Sarah Johnson</span></div>
-              <div className={styles.visualCardRow}><span className={styles.vcLabel}>DOB</span><span className={styles.vcValue}>04/15/1985</span></div>
-              <div className={styles.visualCardRow}><span className={styles.vcLabel}>MRN</span><span className={styles.vcValue}>CX-2024-0847</span></div>
-              <div className={styles.visualCardDivider} />
-              <div className={styles.visualVitals}>
-                <div className={styles.vitalPill}><strong>120/80</strong><span>BP</span></div>
-                <div className={styles.vitalPill}><strong>72</strong><span>HR</span></div>
-                <div className={styles.vitalPill}><strong>98.6</strong><span>Temp</span></div>
-                <div className={styles.vitalPill}><strong>99%</strong><span>SpO2</span></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Section 2: Interoperability */}
-      <section className={clsx(styles.showcase, styles.showcaseReverse, styles.showcaseDark)}>
-        <div className={styles.showcaseInner}>
-          <div className={styles.showcaseText}>
-            <div className={styles.sectionLabel}>Connected Care</div>
-            <Heading as="h2" className={styles.showcaseTitle}>
-              Your health data<br />should follow you.
-            </Heading>
-            <p className={styles.showcaseDesc}>
-              Built on FHIR R4 open standards so patient records move seamlessly
-              between providers, labs, pharmacies, and specialists. No more
-              lost records or repeated tests.
-            </p>
-            <Link className={styles.showcaseLink} to="/docs/architecture/fhir-integration">
-              Explore FHIR integration &rarr;
-            </Link>
-          </div>
-          <div className={styles.showcaseVisual}>
-            <div className={styles.interopVisual}>
-              <div className={styles.interopCenter}>
-                <img src="/img/Ciyex-logo-no-text.png" alt="Ciyex" width="40" height="40" />
-              </div>
-              {['Labs', 'Pharmacy', 'Insurance', 'HIE', 'Imaging', 'Billing'].map((label, i) => (
-                <div key={i} className={styles.interopNode}>
-                  <span>{label}</span>
-                </div>
-              ))}
-              {[0,1,2,3,4,5].map(i => (
-                <div key={i} className={styles.interopLine} />
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-    </>
-  );
-}
-
-/* ── Donate Section ── */
-function DonateSection() {
-  return (
-    <section className={styles.donate}>
-      <div className={styles.donateInner}>
-        <div className={styles.sectionLabel}>501(c)(3) Nonprofit</div>
-        <Heading as="h2" className={styles.donateTitle}>
-          Help us build healthcare<br />
-          <span className={styles.heroGradient}>technology for everyone.</span>
-        </Heading>
-        <p className={styles.donateDesc}>
-          Ciyex is a nonprofit. Every dollar goes directly to building open source
-          EHR software for clinics that cannot afford it. Your donation is tax-deductible.
-        </p>
-        <div className={styles.donateButtons}>
-          <Link className={styles.btnDonate} to="/donate">
-            Donate Now
-          </Link>
-          <Link className={styles.btnGhost} to="/about">
-            Learn about our mission &rarr;
-          </Link>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-/* ── Recent Blogs Section ── */
-const recentBlogs = [
-  {
-    title: 'What Is Digital Healthcare? A Complete Guide for Patients',
-    excerpt: "Digital healthcare combines advanced technologies, data, and connected systems to improve patient care, streamline clinical workflows, and make healthcare services more accessible.",
-    slug: '/blog/what-is-digital-healthcare-complete-guide-jul-2026',
-    date: 'July 24, 2026',
-    image: '/img/blog/digital-healthcare-guide.jpg',
-  },
-  {
-    title: 'Why Healthcare Teams Need Better Collaboration Tools',
-    excerpt: 'Disconnected communication creates delays, duplication, and avoidable risks. See how collaboration tools integrated with your EHR help care teams communicate securely and work from a single source of truth.',
-    slug: '/blog/healthcare-teams-collaboration-tools',
-    date: 'June 19, 2026',
-    image: '/img/blog/healthcare-teams-collaboration-tools.jpg',
-  },
-  {
-    title: 'Why Vendor Lock-In Is a Growing Concern in Healthcare IT',
-    excerpt: 'Vendor lock-in ties providers to a single software vendor, making it costly to switch systems. Here is why open, interoperable EHR platforms protect your technology investments.',
-    slug: '/blog/vendor-lock-in-healthcare-it',
-    date: 'June 18, 2026',
-    image: '/img/blog/vendor-lock-in-healthcare-it.jpg',
-  },
+const LEAKS: readonly { title: string; text: string; link: string; to: string }[] = [
+	{
+		title: 'Denied claims',
+		text: 'Denied claims need investigation, correction, and follow-up. Without clear ownership, that work can stall.',
+		link: 'Denial management', to: '/services/denial-management',
+	},
+	{
+		title: 'Front-end errors',
+		text: 'A missed eligibility check at the desk becomes a rejected claim weeks later.',
+		link: 'Insurance verification', to: '/services/insurance-verification',
+	},
+	{
+		title: 'Coding and documentation',
+		text: 'What the note says decides what can be billed, so the two have to agree.',
+		link: 'Medical coding', to: '/services/medical-coding',
+	},
 ];
 
-function RecentBlogsSection() {
-  return (
-    <section className={styles.recentBlogs}>
-      <div className={styles.recentBlogsInner}>
-        <div className={styles.sectionLabel}>From Our Blog</div>
-        <Heading as="h2" className={styles.sectionTitle}>
-          Latest insights &amp; updates.
-        </Heading>
-        <p className={styles.sectionSubtitle}>
-          Read about open source healthcare, EHR technology, and our mission to bring health equity to every community.
-        </p>
-        <div className={styles.blogGrid}>
-          {recentBlogs.map((blog, i) => (
-            <Link key={i} to={blog.slug} className={styles.blogCard}>
-              <div className={styles.blogCardImage}>
-                <img src={blog.image} alt={blog.title} loading="lazy" />
-              </div>
-              <div className={styles.blogCardBody}>
-                <span className={styles.blogCardDate}>{blog.date}</span>
-                <h3 className={styles.blogCardTitle}>{blog.title}</h3>
-                <p className={styles.blogCardExcerpt}>{blog.excerpt}</p>
-              </div>
-            </Link>
-          ))}
-        </div>
-        <div className={styles.blogViewAll}>
-          <Link className={styles.btnSecondary} to="/blog">
-            View all posts &rarr;
-          </Link>
-        </div>
-      </div>
-    </section>
-  );
+function Leaks() {
+	return (
+		<section className={styles.section}>
+			<div className={styles.container}>
+				<div className={styles.head}>
+					<p className={styles.eyebrow}>Revenue cycle</p>
+					<Heading as="h2" className={styles.title}>
+						A claim moves through several hands before it is paid.
+					</Heading>
+					<p className={styles.lede}>
+						From eligibility and documentation to coding, submission and follow-up, each
+						handoff shapes what happens next. We take on the steps you hand us and follow each one through.
+					</p>
+				</div>
+				<div className={styles.leakGrid}>
+					{LEAKS.map((leak, i) => (
+						<article key={leak.title} className={styles.leak}>
+							<span className={styles.leakIndex}>0{i + 1}</span>
+							<Heading as="h3" className={styles.cardTitle}>{leak.title}</Heading>
+							<p>{leak.text}</p>
+							<Link to={leak.to}>{leak.link} &rarr;</Link>
+						</article>
+					))}
+				</div>
+			</div>
+		</section>
+	);
 }
 
-/* ── CTA Section ── */
-function CtaSection() {
-  return (
-    <section className={styles.cta}>
-      <div className={styles.ctaInner}>
-        <Heading as="h2" className={styles.ctaTitle}>
-          Get the whole stack.<br />Free, forever.
-        </Heading>
-        <p className={styles.ctaDesc}>
-          Download Ciyex Workspace for Windows, macOS, or Linux. Sign up for a free cloud
-          account and your clinic is up and running in minutes — no servers to manage.
-        </p>
-        <div className={styles.ctaButtons}>
-          <Link className={styles.btnPrimary} to="/downloads">
-            Download Workspace
-          </Link>
-          <Link className={styles.btnGhost} to="/signup">
-            Claim free cloud account &rarr;
-          </Link>
-        </div>
-      </div>
-    </section>
-  );
+function Services() {
+	const featured = [
+		{
+			title: 'Medical billing',
+			text: 'We move claims from charge review through submission, payment posting, A/R follow-up and denial resolution.',
+			items: ['Eligibility and claim preparation', 'Submission and payer follow-up', 'Denials, appeals and payment posting'],
+			to: '/services/medical-billing',
+		},
+		{
+			title: 'Dental billing',
+			text: 'We handle the insurance work behind a healthy schedule, from benefit checks to claim attachments and outstanding balances.',
+			items: ['Eligibility and benefit checks', 'Dental claims and attachments', 'A/R follow-up and PPO review'],
+			to: '/services/dental-billing',
+		},
+		{
+			title: 'Virtual assistant',
+			text: 'Give routine front-office tasks a clear owner while your in-office team stays focused on patients.',
+			items: ['Phone and inbox support', 'Scheduling and reminders', 'EHR and referral workflows'],
+			to: '/services/virtual-assistant',
+		},
+	];
+	const additional = [
+		{ label: 'Coding, scribes and documentation', to: '/services#documentation-coding' },
+		{ label: 'Credentialing and practice readiness', to: '/services#practice-readiness' },
+		{ label: 'Patient care support', to: '/services#patient-care-support' },
+	];
+
+	return (
+		<section className={`${styles.section} ${styles.tinted}`} id="practice-services">
+			<div className={styles.container}>
+				<div className={styles.head}>
+					<p className={styles.eyebrow}>Services for medical and dental practices</p>
+					<Heading as="h2" className={styles.title}>
+						A team that follows the work through.
+					</Heading>
+					<p className={styles.lede}>
+						Start with one service or hand us the whole cycle. We work in Ciyex or your existing practice system, with responsibilities agreed before work begins.
+					</p>
+				</div>
+				<div className={styles.featuredServices}>
+					{featured.map((service, index) => (
+						<Link key={service.title} className={styles.featuredService} to={service.to}>
+							<span className={styles.featuredIndex}>0{index + 1}</span>
+							<Heading as="h3" className={styles.cardTitle}>{service.title}</Heading>
+							<p>{service.text}</p>
+							<ul>
+								{service.items.map((item) => (
+									<li key={item}>{item}</li>
+								))}
+							</ul>
+							<span className={styles.cardArrow}>Explore service details <span aria-hidden="true">→</span></span>
+						</Link>
+					))}
+				</div>
+				<div className={styles.additionalServices}>
+					<strong>More services</strong>
+					{additional.map((item) => <Link key={item.label} to={item.to}>{item.label} <span aria-hidden="true">→</span></Link>)}
+				</div>
+				<div className={styles.center}>
+					<Link className={styles.btnSecondary} to="/services#specialties">See specialty coverage and all services</Link>
+				</div>
+			</div>
+		</section>
+	);
 }
 
-/* ── Page ── */
+const MODULES: readonly { name: string; text: string }[] = [
+	{ name: 'Schedule', text: 'A shared calendar for every provider and location.' },
+	{ name: 'Chart', text: 'Encounters, notes, medications, labs and history.' },
+	{ name: 'Telehealth', text: 'Video visits that start from the appointment.' },
+	{ name: 'Messaging', text: 'One place for staff and patient conversations.' },
+];
+
+function Software() {
+	return (
+		<section className={styles.section}>
+			<div className={`${styles.container} ${styles.split}`}>
+				<div>
+					<p className={styles.eyebrow}>Software</p>
+					<Heading as="h2" className={styles.title}>
+						An open source EHR your clinic can actually run.
+					</Heading>
+					<p className={styles.lede}>
+						Ciyex Workspace is the desktop client for the Ciyex EHR. Download it free, host
+						it yourself, or have our team set it up. Revenue from our services helps fund its development.
+					</p>
+					<div className={styles.inlineActions}>
+						<Link className={styles.btnSecondary} to="/workspace">Explore Workspace</Link>
+						<Link className={styles.textLink} to="/docs/intro">Read the docs &rarr;</Link>
+					</div>
+				</div>
+				<ul className={styles.moduleList}>
+					{MODULES.map((module) => (
+						<li key={module.name}>
+							<strong>{module.name}</strong>
+							<span>{module.text}</span>
+						</li>
+					))}
+				</ul>
+			</div>
+		</section>
+	);
+}
+
+const STEPS: readonly { who: string; title: string; text: string }[] = [
+	{ who: 'Software', title: 'The visit is recorded', text: 'The schedule and chart hold what happened.' },
+	{ who: 'Services', title: 'The claim goes out', text: 'Coders and billers turn the note into a claim.' },
+	{ who: 'Services', title: 'Denials are followed up', text: 'Rejected claims are corrected and appealed.' },
+	{ who: 'Services', title: 'Payments are posted', text: 'Patients get clear statements for what remains.' },
+];
+
+function Together() {
+	return (
+		<section className={styles.band}>
+			<Threads className={styles.bandThreads} />
+			<div className={styles.container}>
+				<div className={styles.head}>
+					<p className={styles.eyebrowBand}>How they work together</p>
+					<Heading as="h2" className={styles.titleBand}>
+						One thread from the front desk to the final payment.
+					</Heading>
+				</div>
+				<ol className={styles.steps}>
+					{STEPS.map((step) => (
+						<li key={step.title} className={styles.step}>
+							<span className={styles.stepWho}>{step.who}</span>
+							<Heading as="h3" className={styles.stepTitle}>{step.title}</Heading>
+							<p>{step.text}</p>
+						</li>
+					))}
+				</ol>
+				<p className={styles.bandNote}>
+					Already on another EHR? Our scribes and billers work in your existing system.
+				</p>
+			</div>
+		</section>
+	);
+}
+
+const AUDIENCES: readonly { title: string; text: string; to: string }[] = [
+	{
+		title: 'Medical practices',
+		text: 'Medical billing, coding and insurance follow-up for independent and multi-provider practices.',
+		to: '/services/medical-billing',
+	},
+	{
+		title: 'Dental practices',
+		text: 'Dental billing and insurance follow-up from a dedicated team.',
+		to: '/services/dental-billing',
+	},
+	{
+		title: 'Community clinics',
+		text: 'Billing and documentation services shaped around your care team and the patients you serve.',
+			to: '/services',
+	},
+];
+
+function WhoWeServe() {
+	return (
+		<section id="who-we-serve" className={`${styles.section} ${styles.tinted}`}>
+			<div className={styles.container}>
+				<div className={styles.head}>
+					<p className={styles.eyebrow}>Who we serve</p>
+					<Heading as="h2" className={styles.title}>Start from where you are.</Heading>
+				</div>
+				<div className={styles.audienceGrid}>
+					{AUDIENCES.map((audience) => (
+						<Link key={audience.title} className={styles.audience} to={audience.to}>
+							<Heading as="h3" className={styles.cardTitle}>{audience.title}</Heading>
+							<p>{audience.text}</p>
+						</Link>
+					))}
+				</div>
+			</div>
+		</section>
+	);
+}
+
+function OpenAndSecure() {
+	return (
+		<section className={styles.section}>
+			<div className={`${styles.container} ${styles.twoUp}`}>
+				<div className={styles.note}>
+					<p className={styles.eyebrow}>Open by design</p>
+					<Heading as="h2" className={styles.noteTitle}>Read the code before you trust it.</Heading>
+					<p>
+						The EHR is licensed under AGPL-3.0 and developed in public, so you can inspect
+						it, host it yourself, and keep your data if you ever leave.
+					</p>
+					<a href="https://github.com/ciyex-org/ciyex">View the source on GitHub &rarr;</a>
+				</div>
+				<div className={styles.note}>
+					<p className={styles.eyebrow}>Security and accountability</p>
+					<Heading as="h2" className={styles.noteTitle}>Ask us who touches your data.</Heading>
+					<p>
+						No patient information changes hands before a business associate agreement is
+						signed. We will tell you which teams work on your account, and where.
+					</p>
+					<Link to="/contact">Talk to our team &rarr;</Link>
+				</div>
+			</div>
+		</section>
+	);
+}
+
+function Closing() {
+	return (
+		<section className={styles.closing}>
+			<Threads className={styles.bandThreads} />
+			<div className={styles.closingInner}>
+				<Heading as="h2" className={styles.titleBand}>
+					Put a dedicated team behind your practice.
+				</Heading>
+				<p>Tell us about your billing or front-office workflow. We’ll show you where our team fits.</p>
+				<div className={styles.heroActions}>
+					<Link className={styles.btnPrimary} to="/contact">Request a consultation</Link>
+					<Link className={styles.btnOnBand} to="/services">Explore all services</Link>
+				</div>
+				<p className={styles.closingPhone}>Or call <a href={CONTACT.phoneHref}>{CONTACT.phone}</a></p>
+				<p className={styles.closingNote}>Please do not send patient information through this site.</p>
+			</div>
+		</section>
+	);
+}
+
 export default function Home(): ReactNode {
-  return (
-    <Layout
-      title="Ciyex Workspace — Open Source EHR for Every Community"
-      description="Ciyex Workspace bundles a modern desktop client, the open source Ciyex EHR, and free cloud storage. A 501(c)(3) nonprofit building healthcare technology that serves every clinic.">
-      <HomepageHero />
-      <FeaturesSection />
-      <ShowcaseSection />
-      <DonateSection />
-      <RecentBlogsSection />
-      <CtaSection />
-    </Layout>
-  );
+	return (
+		<Layout
+			title="Healthcare Software and Services"
+			description="Ciyex combines an open source EHR and desktop workspace with medical billing, coding, credentialing and scribe services.">
+			<Head>
+				<link rel="alternate" hrefLang="en-us" href="https://ciyex.org/" />
+				<link rel="alternate" hrefLang="en-in" href="https://ciyex.org/en-in/" />
+			</Head>
+			<main className={styles.page}>
+				<Hero />
+				<Services />
+				<Leaks />
+				<Together />
+				<WhoWeServe />
+				<OpenAndSecure />
+				<Software />
+				<ProofStrip />
+				<Closing />
+			</main>
+		</Layout>
+	);
 }

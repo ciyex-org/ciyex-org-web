@@ -16,7 +16,7 @@ For many, compliance is a source of anxiety—a fear of "what am I missing?" **C
 
 ## 1. HIPAA & GDPR: Security That's Always On
 
-Protecting patient privacy isn't just about a signed form; it's about the underlying technology. Most legacy systems require manual security patches and complex configurations to remain HIPAA-compliant.
+Protecting patient privacy isn't just about a signed form; it's about the underlying technology. Most legacy systems require manual security patches and complex configurations to stay secure.
 
 - **The Ciyex Edge:** Ciyex uses enterprise-grade encryption for data at rest and in transit. With **Role-Based Access Control (RBAC)** and automated audit trails, you can track exactly who accessed what record and when. Because Ciyex is cloud-native, security updates are deployed instantly across the entire platform—no manual downloads required.
 
@@ -48,4 +48,4 @@ Regulations like the **SAFER Guides** (Safety Assurance Factors for EHR Resilien
 
 Compliance shouldn't be a hurdle that slows down your care; it should be the invisible safety net that supports your practice. By choosing Ciyex, you aren't just getting an EHR—you're getting a regulatory partner that ensures your practice stays on the right side of the law, every single day.
 
-**[See How Ciyex Automates Your Compliance Workflows—Book a Demo](https://calendly.com/qiaben/ciyex?month=2026-05)**
+**[See How Ciyex Automates Your Compliance Workflows—Book a Demo](/contact)**

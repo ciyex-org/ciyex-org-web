@@ -156,4 +156,4 @@ For nonprofits, the right technology should be flexible, secure, accessible, and
 
 By helping organizations create connected healthcare workflows, Ciyex can support community clinics and healthcare providers as they work toward more accessible and coordinated care. Technology is only part of the solution, but when it is built around people and their needs, it can help turn better healthcare access into a reality.
 
-Is your organization looking for a flexible approach to healthcare technology? **[Schedule an appointment](/professional-support)** with our team to explore how an interoperable EHR platform can support your goals.
+Is your organization looking for a flexible approach to healthcare technology? **[Schedule an appointment](/contact)** with our team to explore how an interoperable EHR platform can support your goals.

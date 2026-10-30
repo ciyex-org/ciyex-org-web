@@ -1,0 +1,294 @@
+/**
+ * Paper and pine: the Ciyex theme.
+ *
+ * Loaded after custom.css so it restates what that file set. Every colour a page
+ * needs is a --cx-* token here, so a palette change is made in this file alone.
+ */
+
+:root {
+  --cx-paper: #ffffff;
+  --cx-surface: #ffffff;
+  --cx-surface-2: #f4f7f6;
+  --cx-ink: #172522;
+  --cx-muted: #596963;
+  --cx-line: #dce4e0;
+  --cx-pine: #0b5d52;
+  --cx-pine-dark: #084a41;
+  --cx-ember: #c2410c;
+  --cx-ember-dark: #9a3412;
+  --cx-on-ember: #ffffff;
+  --cx-on-primary: #ffffff;
+
+  /* Dark bands read the same in both colour modes. */
+  --cx-band: #0f2a25;
+  --cx-band-2: #16362f;
+  --cx-band-rgb: 15, 42, 37;
+  --cx-on-band: #f1efe6;
+  --cx-on-band-muted: #b6c4bd;
+
+  --cx-brand-from: #5fd0b5;
+  --cx-brand-from-rgb: 95, 208, 181;
+  --cx-brand-to: #8fe3cc;
+  --cx-brand-to-rgb: 143, 227, 204;
+  --cx-primary-rgb: 11, 93, 82;
+  --cx-btn-primary-dark: #084a41;
+  --cx-announcement-link: #8fe3cc;
+  --cx-accent: #c2410c;
+
+  --cx-font-display: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --cx-font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  --ifm-color-primary: #0b5d52;
+  --ifm-color-primary-dark: #0a5449;
+  --ifm-color-primary-darker: #094f46;
+  --ifm-color-primary-darkest: #084139;
+  --ifm-color-primary-light: #0c665b;
+  --ifm-color-primary-lighter: #0d6b5f;
+  --ifm-color-primary-lightest: #0f796b;
+  --ifm-background-color: var(--cx-paper);
+  --ifm-background-surface-color: var(--cx-surface);
+  --ifm-font-color-base: var(--cx-ink);
+  --ifm-heading-color: var(--cx-ink);
+  --ifm-heading-font-family: var(--cx-font-display);
+  --ifm-heading-font-weight: 500;
+  --ifm-font-weight-bold: 600;
+  --ifm-toc-border-color: var(--cx-line);
+  --ifm-hr-border-color: var(--cx-line);
+  --ifm-navbar-background-color: rgba(255, 255, 255, 0.94);
+  --ifm-navbar-link-color: var(--cx-ink);
+  --ifm-footer-background-color: var(--cx-band);
+  --ifm-global-radius: 4px;
+  --ifm-button-border-radius: 4px;
+  --ifm-card-border-radius: 6px;
+  --docusaurus-highlighted-code-line-bg: rgba(11, 93, 82, 0.1);
+  --cx-card-bg: var(--cx-surface);
+  --cx-card-border: var(--cx-line);
+  --cx-slate-50: var(--cx-surface-2);
+  --cx-slate-100: var(--cx-surface-2);
+  --cx-slate-500: var(--cx-muted);
+  --cx-slate-700: var(--cx-ink);
+  --cx-slate-900: var(--cx-ink);
+}
+
+html[data-theme='dark'] {
+  --cx-paper: #ffffff;
+  --cx-surface: #ffffff;
+  --cx-surface-2: #f4f7f6;
+  --cx-ink: #172522;
+  --cx-muted: #596963;
+  --cx-line: #dce4e0;
+  --cx-pine: #0b5d52;
+  --cx-pine-dark: #084a41;
+  --cx-ember: #c2410c;
+  --cx-ember-dark: #9a3412;
+  --cx-on-ember: #ffffff;
+  --cx-on-primary: #ffffff;
+  --cx-band: #12332d;
+  --cx-band-2: #1a4038;
+  --cx-band-rgb: 18, 51, 45;
+  --cx-primary-rgb: 11, 93, 82;
+  --cx-accent: #c2410c;
+
+  --ifm-color-primary: #0b5d52;
+  --ifm-color-primary-dark: #0a5449;
+  --ifm-color-primary-darker: #094f46;
+  --ifm-color-primary-darkest: #084139;
+  --ifm-color-primary-light: #0c665b;
+  --ifm-color-primary-lighter: #0d6b5f;
+  --ifm-color-primary-lightest: #0f796b;
+  --ifm-background-color: var(--cx-paper);
+  --ifm-background-surface-color: var(--cx-surface);
+  --ifm-font-color-base: var(--cx-ink);
+  --ifm-heading-color: var(--cx-ink);
+  --ifm-navbar-background-color: rgba(255, 255, 255, 0.94);
+  --ifm-navbar-link-color: var(--cx-ink);
+  --ifm-footer-background-color: var(--cx-band);
+  --docusaurus-highlighted-code-line-bg: rgba(95, 208, 181, 0.15);
+}
+
+
+body {
+  background: var(--cx-paper);
+  color: var(--cx-ink);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--cx-font-display);
+  font-weight: 600;
+  letter-spacing: -0.015em;
+}
+
+/* Navbar */
+.navbar {
+  border-bottom: 1px solid var(--cx-line);
+  height: 60px;
+}
+
+.navbar__title,
+.navbar__link,
+.navbar__item {
+  color: var(--cx-ink) !important;
+}
+
+.navbar__link:hover,
+.navbar__link--active {
+  color: var(--ifm-color-primary) !important;
+}
+
+.navbar__toggle,
+.clean-btn {
+  color: var(--cx-ink);
+}
+
+.navbar-signup-btn,
+[data-theme='dark'] .navbar-signup-btn {
+  background: var(--cx-ember) !important;
+  color: var(--cx-on-ember) !important;
+  border-radius: 4px;
+  padding: 9px 16px !important;
+  min-height: 44px;
+}
+
+.navbar-signup-btn:hover {
+  background: var(--cx-ember-dark) !important;
+}
+
+/* Keep the consultation CTA readable over the global navbar link colours. */
+.navbar a.navbar-signup-btn.button,
+html[data-theme='dark'] .navbar a.navbar-signup-btn.button {
+  color: #ffffff !important;
+}
+
+/* Footer and announcement stay dark in both modes. */
+.footer {
+  background: var(--cx-band) !important;
+}
+
+.footer__title {
+  color: var(--cx-on-band);
+  font-family: var(--cx-font-mono);
+  font-weight: 500;
+}
+
+.footer__link-item {
+  color: var(--cx-on-band-muted);
+}
+
+.footer__link-item:hover {
+  color: var(--cx-on-band);
+}
+
+.footer__copyright {
+  color: var(--cx-on-band-muted);
+}
+
+div[class*='announcementBar'] {
+  color: var(--cx-on-band);
+  border-bottom: none;
+}
+
+/* Keyboard focus is visible on every background. */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--cx-ember);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Page stylesheets ask for 800 and 900, which clots a serif. */
+html h1,
+html h2,
+html h3 {
+  font-weight: 600 !important;
+}
+
+/* Announcement bar */
+div[class*='announcementBar'] {
+  background: var(--cx-band) !important;
+}
+
+div[class*='announcementBar'] button {
+  color: var(--cx-on-band);
+}
+
+/* Navbar details the base stylesheet set for a dark bar */
+.navbar-signup-btn.button,
+[data-theme='dark'] .navbar-signup-btn.button {
+  border-radius: 4px !important;
+}
+
+.navbar__item.dropdown > .navbar__link::after,
+.navbar__link.dropdown__link::after {
+  border-top-color: currentColor !important;
+  opacity: 0.7;
+}
+
+.dropdown__menu {
+  background: var(--cx-surface) !important;
+  border: 1px solid var(--cx-line) !important;
+  border-radius: 4px;
+}
+
+.dropdown__link {
+  color: var(--cx-ink) !important;
+}
+
+.dropdown__link:hover,
+.dropdown__link--active {
+  background: var(--cx-surface-2) !important;
+  color: var(--ifm-color-primary) !important;
+}
+
+[class*='skipToContent'] {
+  background: var(--cx-surface);
+  color: var(--cx-ink);
+}
+
+/* Phone number in the navbar: dropped first when the bar runs out of room. */
+.nav-phone {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+@media (min-width: 997px) and (max-width: 1400px) {
+  .navbar__brand {
+    flex-shrink: 0;
+  }
+
+  .navbar__item.navbar__link,
+  .navbar .dropdown > .navbar__link {
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+
+  .navbar__items--right .navbar__link {
+    font-size: 0.86rem;
+  }
+}
+
+@media (min-width: 997px) and (max-width: 1240px) {
+  .navbar__items--right .nav-phone {
+    display: none;
+  }
+}
+
+.footer__address {
+  color: var(--cx-on-band-muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}

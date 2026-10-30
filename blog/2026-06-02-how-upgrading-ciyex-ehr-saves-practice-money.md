@@ -73,4 +73,4 @@ Happy patients stay loyal, leave positive online reviews, and refer their friend
 
 Upgrading your EHR can feel like a daunting task, but looking at it simply as an expense is a mistake. When you factor in saved staff time, reduced billing errors, lower IT overhead, and a fuller schedule, **Ciyex EHR transforms from a cost center into a revenue generator.**
 
-**[Ready to see how much your practice can save? Contact us today for a personalized demo of Ciyex EHR.](/professional-support)**
+**[Ready to see how much your practice can save? Contact us today for a personalized demo of Ciyex EHR.](/contact)**

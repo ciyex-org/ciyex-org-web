@@ -20,7 +20,7 @@
   transform: translateX(-50%);
   width: 900px;
   height: 600px;
-  background: radial-gradient(ellipse, rgba(13, 148, 136, 0.10) 0%, transparent 70%);
+  background: radial-gradient(ellipse, rgba(var(--cx-primary-rgb), 0.10) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -33,9 +33,9 @@
 
 .heroBadge {
   display: inline-block;
-  background: rgba(13, 148, 136, 0.1);
+  background: rgba(var(--cx-primary-rgb), 0.1);
   color: var(--ifm-color-primary);
-  border: 1px solid rgba(13, 148, 136, 0.25);
+  border: 1px solid rgba(var(--cx-primary-rgb), 0.25);
   border-radius: 100px;
   padding: 5px 14px;
   font-size: 0.75rem;
@@ -79,8 +79,8 @@
 .btnPrimary {
   display: inline-flex;
   align-items: center;
-  background: #0d9488;
-  color: #fff !important;
+  background: var(--cx-pine);
+  color: var(--cx-on-primary) !important;
   font-weight: 600;
   font-size: 0.95rem;
   padding: 11px 22px;
@@ -90,16 +90,16 @@
 }
 
 .btnPrimary:hover {
-  background: #0b7f74;
+  background: var(--cx-pine-dark);
   transform: translateY(-1px);
 }
 
 [data-theme='dark'] .btnPrimary {
-  background: #0f766e;
+  background: var(--cx-pine-dark);
 }
 
 [data-theme='dark'] .btnPrimary:hover {
-  background: #115e59;
+  background: var(--cx-pine-dark);
 }
 
 .btnSecondary {
@@ -174,7 +174,7 @@
 
 .mockupBody {
   display: block;
-  background: #0f172a;
+  background: var(--cx-band-2);
 }
 
 .mockupImg {
@@ -255,7 +255,7 @@
   overflow: hidden;
   border: 1px solid var(--cx-card-border);
   box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
-  background: #0f172a;
+  background: var(--cx-surface-2);
 }
 
 [data-theme='dark'] .moduleImage {

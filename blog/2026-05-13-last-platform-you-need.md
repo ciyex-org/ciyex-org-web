@@ -57,4 +57,4 @@ The cycle of switching EHRs every few years is expensive, draining, and disrupti
 
 **Ciyex EHR** is built to be your last platform, so you can focus on what matters most: the human being sitting across from you.
 
-Are you ready to see how Ciyex can simplify your specific clinical workflow? [Schedule a demo today](https://calendly.com/qiaben/ciyex?month=2026-05) and discover why thousands of practices never look back.
+Are you ready to see how Ciyex can simplify your specific clinical workflow? [Schedule a demo today](/contact) and discover why thousands of practices never look back.

@@ -94,4 +94,4 @@ Both HL7 and FHIR play an important role in healthcare data exchange. HL7 has su
 
 At Ciyex, we believe healthcare technology should be open, connected, and built for the future. That's why our open-source, FHIR-native EHR platform is designed to support seamless interoperability, modern APIs, and scalable healthcare solutions — whether you're modernizing an existing system or building a new digital health platform.
 
-Looking to modernize your healthcare technology with FHIR? **[Schedule an appointment](/professional-support)** with our experts to learn how Ciyex can help you build a connected, interoperable, and future-ready healthcare platform that grows with your organization.
+Looking to modernize your healthcare technology with FHIR? **[Schedule an appointment](/contact)** with our experts to learn how Ciyex can help you build a connected, interoperable, and future-ready healthcare platform that grows with your organization.

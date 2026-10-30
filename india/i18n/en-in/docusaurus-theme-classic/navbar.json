@@ -1,0 +1,34 @@
+{
+  "title": {
+    "message": "Ciyex HIMS",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Ciyex Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Workspace": {
+    "message": "Workspace",
+    "description": "Navbar item with label Workspace"
+  },
+  "item.label.Support": {
+    "message": "Support",
+    "description": "Navbar item with label Support"
+  },
+  "item.label.Book a demo": {
+    "message": "Book a demo",
+    "description": "Navbar item with label Book a demo"
+  },
+  "item.label.About": {
+    "message": "About",
+    "description": "Navbar item with label About"
+  },
+  "item.label.Impact": {
+    "message": "Impact",
+    "description": "Navbar item with label Impact"
+  },
+  "item.label.Modules": {
+    "message": "Modules",
+    "description": "Navbar item with label Modules"
+  }
+}

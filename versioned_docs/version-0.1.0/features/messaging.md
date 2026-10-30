@@ -1,6 +1,6 @@
 # Secure Messaging
 
-HIPAA-compliant internal messaging system.
+Secure internal messaging system.
 
 ## Overview
 

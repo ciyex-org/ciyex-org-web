@@ -114,4 +114,4 @@ Adopting an EHR is not just about replacing paper records — it's about buildin
 
 Small clinics play a vital role in delivering accessible and personalized healthcare, but relying on manual processes can create unnecessary challenges for both providers and patients. An Electronic Health Record (EHR) system helps streamline everyday operations, improve clinical decision-making, enhance patient safety, and reduce administrative burdens.
 
-Ready to bring your small clinic online? **[Schedule an appointment](/professional-support)** with our team to learn more about how Ciyex can support your digital health journey.
+Ready to bring your small clinic online? **[Schedule an appointment](/contact)** with our team to learn more about how Ciyex can support your digital health journey.

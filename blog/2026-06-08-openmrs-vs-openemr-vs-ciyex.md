@@ -18,4 +18,4 @@ CIYEX takes a different approach by combining modern usability, scalability, and
 
 The best choice depends on your clinic's goals, budget, and growth plans. While OpenMRS and OpenEMR offer flexibility, CIYEX focuses on delivering a modern, ready-to-use healthcare ecosystem designed for today's digital-first clinics.
 
-Ready to find the right EHR solution for your organisation? **[Schedule an appointment](/professional-support)** with the CIYEX team today and explore how digital healthcare can work better for your clinic.
+Ready to find the right EHR solution for your organisation? **[Schedule an appointment](/contact)** with the CIYEX team today and explore how digital healthcare can work better for your clinic.

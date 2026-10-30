@@ -107,4 +107,4 @@ As digital transformation continues to reshape healthcare, organizations that in
 
 Ready to modernize your healthcare organization with advanced digital solutions? [Ciyex EHR](https://ciyex.org) helps healthcare providers streamline clinical workflows through secure Electronic Health Records (EHR), integrated medical imaging, PACS systems, AI-powered healthcare solutions, and remote patient monitoring.
 
-[Schedule an appointment](https://calendly.com/qiaben/ciyex?month=2026-06) with Ciyex EHR today to discover how our innovative digital healthcare solutions can improve patient care, optimize operational efficiency, and support your organization's digital transformation.
+[Schedule an appointment](/contact) with Ciyex EHR today to discover how our innovative digital healthcare solutions can improve patient care, optimize operational efficiency, and support your organization's digital transformation.

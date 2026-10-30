@@ -13,9 +13,9 @@
 
 .heroBadge {
   display: inline-block;
-  background: rgba(13, 148, 136, 0.1);
+  background: rgba(var(--cx-primary-rgb), 0.1);
   color: var(--ifm-color-primary);
-  border: 1px solid rgba(13, 148, 136, 0.25);
+  border: 1px solid rgba(var(--cx-primary-rgb), 0.25);
   border-radius: 100px;
   padding: 4px 14px;
   font-size: 0.75rem;
@@ -141,8 +141,8 @@
 }
 
 .platformCardRecommended {
-  border-color: rgba(13, 148, 136, 0.5);
-  box-shadow: 0 8px 28px rgba(13, 148, 136, 0.14);
+  border-color: rgba(var(--cx-primary-rgb), 0.5);
+  box-shadow: 0 8px 28px rgba(var(--cx-primary-rgb), 0.14);
 }
 
 .platformRecommendedBadge {
@@ -150,8 +150,8 @@
   top: -12px;
   left: 50%;
   transform: translateX(-50%);
-  background: #0d9488;
-  color: #fff;
+  background: var(--cx-pine);
+  color: var(--cx-on-primary);
   font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.06em;
@@ -162,7 +162,7 @@
 }
 
 [data-theme='dark'] .platformRecommendedBadge {
-  background: #0f766e;
+  background: var(--cx-pine-dark);
 }
 
 .platformIconWrap {
@@ -187,8 +187,8 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: #0d9488;
-  color: #fff !important;
+  background: var(--cx-pine);
+  color: var(--cx-on-primary) !important;
   font-weight: 600;
   font-size: 0.9375rem;
   padding: 11px 22px;
@@ -201,15 +201,15 @@
 }
 
 .primaryDownloadBtn:hover {
-  background: #0b7f74;
+  background: var(--cx-pine-dark);
 }
 
 [data-theme='dark'] .primaryDownloadBtn {
-  background: #0f766e;
+  background: var(--cx-pine-dark);
 }
 
 [data-theme='dark'] .primaryDownloadBtn:hover {
-  background: #115e59;
+  background: var(--cx-pine-dark);
 }
 
 /* ── Sub-links ── */
@@ -258,7 +258,7 @@
 
 .subLinkPill:hover {
   background: var(--ifm-color-primary);
-  color: #fff !important;
+  color: var(--cx-on-primary) !important;
 }
 
 /* ── Backend choice section (Step 2: Cloud vs Self-host) ── */
@@ -292,16 +292,16 @@
 }
 
 .backendCardRecommended {
-  border-color: rgba(13, 148, 136, 0.45);
-  box-shadow: 0 8px 28px rgba(13, 148, 136, 0.12);
+  border-color: rgba(var(--cx-primary-rgb), 0.45);
+  box-shadow: 0 8px 28px rgba(var(--cx-primary-rgb), 0.12);
 }
 
 .backendBadge {
   position: absolute;
   top: -12px;
   left: 24px;
-  background: #0d9488;
-  color: #fff;
+  background: var(--cx-pine);
+  color: var(--cx-on-primary);
   font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.06em;
@@ -311,7 +311,7 @@
 }
 
 [data-theme='dark'] .backendBadge {
-  background: #0f766e;
+  background: var(--cx-pine-dark);
 }
 
 .backendIcon {
@@ -366,8 +366,8 @@
 
 .cloudBtn {
   display: inline-block;
-  background: #0d9488;
-  color: #fff !important;
+  background: var(--cx-pine);
+  color: var(--cx-on-primary) !important;
   font-weight: 600;
   font-size: 0.875rem;
   padding: 9px 20px;
@@ -377,15 +377,15 @@
 }
 
 .cloudBtn:hover {
-  background: #0b7f74;
+  background: var(--cx-pine-dark);
 }
 
 [data-theme='dark'] .cloudBtn {
-  background: #0f766e;
+  background: var(--cx-pine-dark);
 }
 
 [data-theme='dark'] .cloudBtn:hover {
-  background: #115e59;
+  background: var(--cx-pine-dark);
 }
 
 .cloudBtnGhost {
@@ -447,7 +447,7 @@
 }
 
 .codeBlock {
-  background: #0f172a;
+  background: var(--cx-band-2);
   border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 8px;
   padding: 12px 18px;

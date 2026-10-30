@@ -3,7 +3,7 @@
  */
 
 .supportPage {
-  background: #000000;
+  background: var(--cx-band);
   padding: 0 0 100px;
   color: #f1f5f9;
 }
@@ -24,7 +24,7 @@
   transform: translateX(-50%);
   width: 800px;
   height: 500px;
-  background: radial-gradient(ellipse, rgba(6, 182, 212, 0.08) 0%, transparent 70%);
+  background: radial-gradient(ellipse, rgba(var(--cx-brand-from-rgb), 0.08) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -117,7 +117,7 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #06b6d4, #10b981);
+  background: linear-gradient(135deg, var(--cx-brand-from), var(--cx-brand-to));
   color: #ffffff;
   display: flex;
   align-items: center;
@@ -149,7 +149,7 @@
 }
 
 .vendorCard {
-  background: #111827;
+  background: var(--cx-band-2);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 20px;
   padding: 48px;
@@ -178,11 +178,11 @@
 .tierBadge {
   font-size: 0.75rem;
   font-weight: 600;
-  color: #06b6d4;
+  color: var(--cx-brand-from);
   padding: 4px 12px;
   border-radius: 100px;
-  border: 1px solid rgba(6, 182, 212, 0.3);
-  background: rgba(6, 182, 212, 0.08);
+  border: 1px solid rgba(var(--cx-brand-from-rgb), 0.3);
+  background: rgba(var(--cx-brand-from-rgb), 0.08);
   white-space: nowrap;
 }
 
@@ -241,7 +241,7 @@
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #10b981;
+  background: var(--cx-brand-to);
 }
 
 .coverageTags {
@@ -270,13 +270,13 @@
 }
 
 .contactLink {
-  color: #06b6d4;
+  color: var(--cx-brand-from);
   text-decoration: none;
   font-weight: 500;
 }
 
 .contactLink:hover {
-  color: #22d3ee;
+  color: var(--cx-brand-to);
 }
 
 /* Vendor Actions */
@@ -291,7 +291,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #06b6d4, #10b981);
+  background: linear-gradient(135deg, var(--cx-brand-from), var(--cx-brand-to));
   color: #ffffff;
   border-radius: 980px;
   padding: 12px 28px;
@@ -333,7 +333,7 @@
 
 /* CTA Card */
 .ctaCard {
-  background: #111827;
+  background: var(--cx-band-2);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 20px;
   padding: 48px;
@@ -360,8 +360,8 @@
   align-items: center;
   justify-content: center;
   background: transparent;
-  color: #06b6d4;
-  border: 1px solid rgba(6, 182, 212, 0.3);
+  color: var(--cx-brand-from);
+  border: 1px solid rgba(var(--cx-brand-from-rgb), 0.3);
   border-radius: 980px;
   padding: 12px 28px;
   font-size: 0.9375rem;
@@ -372,8 +372,8 @@
 }
 
 .ctaBtn:hover {
-  background: rgba(6, 182, 212, 0.08);
-  color: #06b6d4;
+  background: rgba(var(--cx-brand-from-rgb), 0.08);
+  color: var(--cx-brand-from);
   text-decoration: none;
 }
 
@@ -411,4 +411,124 @@
   .ctaCard {
     padding: 32px 24px;
   }
+}
+
+/* ──────────────────────────────────────────────────────────────────────────
+ * Service grid (India support page).
+ *
+ * Replaces the flat bulleted service list the vendor card used to carry. Only
+ * the India page renders these; the US page still uses .serviceList above.
+ * ────────────────────────────────────────────────────────────────────────── */
+.serviceGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.15rem;
+}
+
+.serviceCard {
+  background: var(--cx-card-bg);
+  border: 1px solid var(--cx-card-border);
+  border-radius: 16px;
+  padding: 1.5rem;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.serviceCard:hover {
+  transform: translateY(-3px);
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 16px 34px rgba(var(--cx-primary-rgb), 0.16);
+}
+
+.serviceIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 11px;
+  margin-bottom: 0.9rem;
+  color: var(--ifm-color-primary);
+  background: rgba(var(--cx-primary-rgb), 0.09);
+  border: 1px solid rgba(var(--cx-primary-rgb), 0.16);
+}
+
+.serviceTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0 0 0.45rem;
+  color: var(--ifm-heading-color);
+}
+
+.serviceText {
+  font-size: 0.87rem;
+  line-height: 1.6;
+  color: var(--cx-slate-500);
+  margin: 0;
+}
+
+/* Same hover language as the module cards, so support reads as one site. */
+.serviceCard {
+  position: relative;
+  overflow: hidden;
+}
+
+.serviceCard::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--ifm-color-primary), var(--cx-accent));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.28s ease;
+}
+
+.serviceCard:hover::before,
+.serviceCard:focus-within::before {
+  transform: scaleX(1);
+}
+
+.serviceCard:focus-within {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 16px 34px rgba(var(--cx-primary-rgb), 0.16);
+}
+
+.serviceTitle,
+.serviceIcon {
+  transition: color 0.22s ease, background 0.22s ease, transform 0.22s ease;
+}
+
+.serviceCard:hover .serviceTitle {
+  color: var(--ifm-color-primary);
+}
+
+.serviceCard:hover .serviceIcon {
+  background: rgba(var(--cx-primary-rgb), 0.16);
+  transform: scale(1.06);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .serviceCard,
+  .serviceCard::before,
+  .serviceTitle,
+  .serviceIcon {
+    transition: none;
+  }
+
+  .serviceCard:hover,
+  .serviceCard:hover .serviceIcon {
+    transform: none;
+  }
+}
+
+/* Wide layout (India). At 900px the eight support cards sat two-up with a wide
+   gutter each side; at 1200 they run three-up and the row is filled. */
+.supportWide :global(.container) {
+  max-width: 1240px;
+}
+
+.sectionInnerWide {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
 }

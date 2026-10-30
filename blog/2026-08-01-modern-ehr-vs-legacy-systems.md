@@ -78,4 +78,4 @@ Modern healthcare requires more than a system that simply stores patient records
 
 At Ciyex, we believe healthcare technology should empower providers, not slow them down. Our open-source, FHIR-native EHR platform is designed to help clinics, hospitals, and community healthcare organizations simplify their workflows while delivering better patient experiences. With modern features like interoperability, automation, analytics, and cloud-ready architecture, Ciyex gives healthcare teams the tools they need to build a more connected and efficient future.
 
-Ready to leave your legacy system behind? **[Schedule an appointment](/professional-support)** with our team to see how Ciyex can help you modernize your EHR.
+Ready to leave your legacy system behind? **[Schedule an appointment](/contact)** with our team to see how Ciyex can help you modernize your EHR.

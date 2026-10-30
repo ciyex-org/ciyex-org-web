@@ -3,3 +3,4 @@ Allow: /
 Disallow: /docs/next/
 
 Sitemap: https://ciyex.org/sitemap.xml
+Sitemap: https://ciyex.org/en-in/sitemap.xml

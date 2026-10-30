@@ -54,4 +54,4 @@ It's the difference between a system that fights against the future and one that
 
 Stop struggling with fragmented data and expensive integrations. See how the Ciyex FHIR-native architecture can turn your practice into a connected, high-performance healthcare hub.
 
-**[Schedule a Technical Deep-Dive Demo with Ciyex EHR Today](https://calendly.com/qiaben/ciyex?month=2026-05)**
+**[Schedule a Technical Deep-Dive Demo with Ciyex EHR Today](/contact)**

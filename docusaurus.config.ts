@@ -4,9 +4,12 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
+// The India site is a separate Docusaurus site in india/. This one is the US
+// site: the 501(c)(3), its open source EHR and its services.
+
 const config: Config = {
   title: 'Ciyex',
-  tagline: 'Ciyex Workspace, the open source EHR, and free cloud storage — for every community clinic.',
+  tagline: 'Healthcare software and services: an open source EHR, backed by our services team.',
   favicon: 'img/Ciyex-favicon-new.png',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -51,6 +54,7 @@ const config: Config = {
         contactPoint: {
           '@type': 'ContactPoint',
           email: 'help@ciyex.org',
+          telephone: '+1-844-874-2236',
           contactType: 'customer support',
         },
         sameAs: [
@@ -115,12 +119,14 @@ const config: Config = {
     },
   ],
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
+  // Each country is a locale with its own URL space and its own pages. The
+  // default locale (en-us) is served unprefixed at /, India at /en-in/.
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'en-us',
+    locales: ['en-us'],
+    localeConfigs: {
+      'en-us': { label: 'United States', htmlLang: 'en-US' },
+    },
   },
 
   presets: [
@@ -164,7 +170,7 @@ const config: Config = {
           onUntruncatedBlogPosts: 'warn',
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: ['./src/css/custom.css', './src/css/theme.css'],
         },
         gtag: {
           trackingID: 'G-26FYS5F4Y7',
@@ -177,6 +183,7 @@ const config: Config = {
   clientModules: [
     './src/clientModules/donateButton.ts',
     './src/clientModules/ga4Events.ts',
+    './src/clientModules/scrollReveal.ts',
   ],
 
   scripts: [
@@ -190,34 +197,47 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/ciyex-social-card.jpg',
     colorMode: {
-      respectPrefersColorScheme: true,
+      defaultMode: 'light',
+      disableSwitch: true,
+      respectPrefersColorScheme: false,
     },
     announcementBar: {
-      id: 'nonprofit_announcement',
-      content: 'Ciyex is now a 501(c)(3) nonprofit organization! Open source healthcare for everyone. <a target="_blank" rel="noopener noreferrer" href="https://github.com/ciyex-org/ciyex">Star us on GitHub</a>',
+      id: 'services_announcement',
+      content: 'Medical billing, dental billing and virtual assistants for US practices. <a href="/services">Explore our services</a>',
       backgroundColor: '#6b5ce7',
       textColor: '#ffffff',
       isCloseable: true,
     },
     navbar: {
-      title: 'Ciyex EHR',
+      title: 'Ciyex',
       logo: {
         alt: 'Ciyex Logo',
         src: 'img/Ciyex-logo-no-text.png',
         srcDark: 'img/Ciyex-logo-no-text.png',
       },
       items: [
-        { to: '/workspace', label: 'Workspace', position: 'left' },
-        { to: '/downloads', label: 'Download', position: 'left' },
+        { type: 'custom-servicesMenu', position: 'left' },
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          type: 'dropdown',
+          label: 'Software',
           position: 'left',
-          label: 'Docs',
+          items: [
+            { label: 'Ciyex Workspace', to: '/workspace' },
+            { label: 'Download', to: '/downloads' },
+            { label: 'Documentation', to: '/docs/intro' },
+          ],
         },
-        { to: '/professional-support', label: 'Support', position: 'left' },
-        { to: '/blog', label: 'Blog', position: 'left' },
-        { href: 'https://forum.ciyex.org', label: 'Forum', position: 'left' },
+        { to: '/#who-we-serve', label: 'Who We Serve', position: 'left', activeBaseRegex: '^$' },
+        {
+          type: 'dropdown',
+          label: 'Resources',
+          position: 'left',
+          items: [
+            { label: 'Blog', to: '/blog' },
+            { label: 'Forum', href: 'https://forum.ciyex.org' },
+            { label: 'Support', to: '/contact' },
+          ],
+        },
         {
           type: 'dropdown',
           label: 'Company',
@@ -225,23 +245,19 @@ const config: Config = {
           items: [
             { label: 'About', to: '/about' },
             { label: 'Impact', to: '/impact' },
+            { label: 'Donate', to: '/donate' },
+            { label: 'Contact', to: '/contact' },
           ],
         },
         {
-          href: 'https://github.com/ciyex-org/ciyex',
-          label: 'GitHub',
+          type: 'html',
           position: 'right',
+          value: '<a class="navbar__link nav-phone" href="tel:+18448742236">(844) 874-2236</a>',
         },
+        { type: 'custom-countrySwitch', position: 'right' },
         {
-          to: '/donate',
-          label: 'Donate',
-          position: 'right',
-          className: 'navbar-donate-btn',
-          'aria-label': 'Donate to Ciyex',
-        },
-        {
-          to: '/signup',
-          label: "Sign up, it's Free",
+          to: '/contact',
+          label: 'Book a consultation',
           position: 'right',
           className: 'button button--primary navbar-signup-btn',
         },
@@ -251,32 +267,41 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Product',
+          title: 'Services',
+          items: [
+            { label: 'Medical billing', to: '/services/medical-billing' },
+            { label: 'Dental billing', to: '/services/dental-billing' },
+            { label: 'Virtual assistants', to: '/services/virtual-assistant' },
+            { label: 'Medical coding', to: '/services/medical-coding' },
+            { label: 'Credentialing', to: '/services/physician-credentialing' },
+            { label: 'All services', to: '/services' },
+          ],
+        },
+        {
+          title: 'Software',
           items: [
             { label: 'Ciyex Workspace', to: '/workspace' },
             { label: 'Download', to: '/downloads' },
-            { label: 'Getting Started', to: '/docs/intro' },
-            { label: 'Self-host (Docker)', to: '/docs/installation/docker-setup' },
-            { label: 'API Reference', to: '/docs/api/rest-api' },
+            { label: 'Documentation', to: '/docs/intro' },
+            { label: 'GitHub', href: 'https://github.com/ciyex-org/ciyex' },
           ],
         },
         {
-          title: 'Community',
-          items: [
-            { label: 'Support', to: '/professional-support' },
-            { label: 'GitHub Discussions', href: 'https://github.com/ciyex-org/ciyex/discussions' },
-            { label: 'Forum', href: 'https://forum.ciyex.org' },
-          ],
-        },
-        {
-          title: 'More',
+          title: 'Company',
           items: [
             { label: 'About Us', to: '/about' },
             { label: 'Our Impact', to: '/impact' },
             { label: 'Blog', to: '/blog' },
-            { label: 'GitHub', href: 'https://github.com/ciyex-org/ciyex' },
             { label: 'Donate', to: '/donate' },
-            { label: 'Contributing', to: '/docs/development/contributing' },
+            { label: 'Contact', to: '/contact' },
+          ],
+        },
+        {
+          title: 'Contact',
+          items: [
+            { html: '<a class="footer__link-item" href="tel:+18448742236">(844) 874-2236</a>' },
+            { html: '<a class="footer__link-item" href="mailto:help@ciyex.org">help@ciyex.org</a>' },
+            { html: '<span class="footer__address">30 N Gould St, Ste N<br />Sheridan, WY 82801</span>' },
           ],
         },
         {
@@ -285,7 +310,6 @@ const config: Config = {
             { label: 'Privacy Policy', to: '/privacy' },
             { label: 'Terms of Service', to: '/terms' },
             { label: 'SMS Consent', to: '/sms-consent' },
-            { label: 'License (AGPL-3.0)', href: 'https://github.com/ciyex-org/ciyex/blob/main/LICENSE' },
           ],
         },
       ],

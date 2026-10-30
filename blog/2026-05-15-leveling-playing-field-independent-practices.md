@@ -57,4 +57,4 @@ You provide the personalized care that big systems can't replicate; we provide t
 
 The era of compromising on your technology is over. Give your practice the enterprise foundation it deserves and get back to what you do best: practicing medicine.
 
-**[Schedule Your Free Ciyex Demo Today](https://calendly.com/qiaben/ciyex?month=2026-05)**
+**[Schedule Your Free Ciyex Demo Today](/contact)**

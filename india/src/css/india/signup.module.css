@@ -1,0 +1,124 @@
+/**
+ * Signup Page - Apple-inspired Dark Theme
+ */
+
+.signupPage {
+  background: var(--cx-band);
+  padding: 0 0 100px;
+}
+
+.signupCard {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 120px 40px 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+.signupCard::before {
+  content: '';
+  position: absolute;
+  top: -200px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 400px;
+  background: radial-gradient(ellipse, rgba(var(--cx-brand-from-rgb), 0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.signupHeader {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 3rem;
+}
+
+.badges {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.badge,
+.badgeOpen {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #94a3b8;
+  padding: 5px 14px;
+  border-radius: 100px;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  letter-spacing: 0.04em;
+}
+
+.title {
+  font-size: clamp(2.5rem, 6vw, 3.5rem);
+  font-weight: 900;
+  line-height: 1.05;
+  margin-bottom: 1rem;
+  color: #f1f5f9;
+  letter-spacing: -0.04em;
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  color: #cbd5e1;
+  max-width: 560px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.calendlyContainer {
+  position: relative;
+  z-index: 1;
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 900px;
+  height: 1050px;
+  box-shadow: 0 0 60px rgba(var(--cx-brand-from-rgb), 0.08), 0 0 0 1px rgba(255, 255, 255, 0.05);
+}
+
+.calendlyEmbed {
+  display: block;
+  border: none;
+  height: 100%;
+}
+
+.trustSection {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-top: 3rem;
+  position: relative;
+  z-index: 1;
+  flex-wrap: wrap;
+}
+
+.trustItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #94a3b8;
+  font-size: 0.8125rem;
+  font-weight: 500;
+}
+
+.trustIcon {
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .signupCard {
+    padding: 80px 20px 40px;
+  }
+
+
+  .trustSection {
+    gap: 1.5rem;
+  }
+}

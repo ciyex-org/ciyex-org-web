@@ -40,4 +40,4 @@ Community clinics do not need massive budgets to embrace modern healthcare techn
 
 Ciyex EHR helps healthcare organizations simplify digital transformation through scalable, cost-effective tools designed for modern clinical workflows. From electronic health records and patient scheduling to communication and workflow automation, Ciyex EHR provides the technology clinics need to grow efficiently.
 
-Ready to digitize your clinic without breaking your budget? **[Schedule a personalized demo](/professional-support)** with the Ciyex EHR team and discover how modern healthcare technology can support your organization's goals.
+Ready to digitize your clinic without breaking your budget? **[Schedule a personalized demo](/contact)** with the Ciyex EHR team and discover how modern healthcare technology can support your organization's goals.

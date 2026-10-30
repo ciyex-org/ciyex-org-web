@@ -59,9 +59,9 @@ export default function Privacy(): ReactNode {
 
           <Heading as="h2">4. HIPAA Compliance and Patient Data Protection</Heading>
           <p>
-            Protecting patient health information is central to our mission. Ciyex EHR is designed to be
-            HIPAA-compliant, ensuring that every patient's Protected Health Information (PHI) receives
-            enterprise-grade protection, whether they receive care at a community health center, rural
+            Protecting patient health information is central to our mission. Ciyex EHR is designed to help
+            healthcare organizations meet their HIPAA obligations and protect every patient's Protected
+            Health Information (PHI), whether they receive care at a community health center, rural
             clinic, or urban hospital. PHI processed through the Ciyex EHR platform is handled in
             accordance with the Health Insurance Portability and Accountability Act (HIPAA). Healthcare
             organizations using Ciyex EHR are responsible for entering into a Business Associate Agreement

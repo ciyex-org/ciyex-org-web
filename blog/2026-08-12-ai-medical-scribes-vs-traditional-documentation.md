@@ -133,4 +133,4 @@ AI medical scribes can make clinical documentation faster and less demanding, bu
 
 As healthcare moves toward more connected and intelligent workflows, having a flexible EHR platform becomes equally important. Ciyex Workspace is an open-source EHR platform designed to support modern healthcare needs, including interoperability and FHIR R4. By providing a flexible foundation for connecting healthcare applications and workflows, Ciyex can help organizations adopt new technologies while keeping patient information organized and connected.
 
-Ready to modernize your EHR and improve clinical workflows? **[Schedule an appointment](/professional-support)** with our team to learn how a flexible, interoperable EHR platform can support your goals.
+Ready to modernize your EHR and improve clinical workflows? **[Schedule an appointment](/contact)** with our team to learn how a flexible, interoperable EHR platform can support your goals.

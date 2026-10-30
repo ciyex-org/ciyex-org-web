@@ -113,4 +113,4 @@ Imagine an EHR that helps organize patient information, assists with documentati
 
 Physician burnout is a complex issue, but reducing unnecessary administrative work is one area where technology can make a real difference. AI can assist with documentation, organize information, reduce repetitive tasks, and help physicians spend more time focusing on their patients.
 
-Ready to explore how smarter **[healthcare technology](/blog/healthcare-technology-trends-2027)** can support your clinical team? **[Book an appointment](/professional-support)** with our team to learn how Ciyex can help create a more efficient, connected, and physician-friendly EHR experience.
+Ready to explore how smarter **[healthcare technology](/blog/healthcare-technology-trends-2027)** can support your clinical team? **[Book an appointment](/contact)** with our team to learn how Ciyex can help create a more efficient, connected, and physician-friendly EHR experience.

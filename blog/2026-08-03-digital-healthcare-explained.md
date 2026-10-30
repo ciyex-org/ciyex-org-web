@@ -91,4 +91,4 @@ Digital healthcare bridges the gap between patients and providers by making medi
 
 As digital tools continue to evolve, patients can expect greater convenience, improved transparency, and better health outcomes. Embracing digital healthcare today means building a healthier, more connected tomorrow.
 
-Want to learn more about how Ciyex is helping healthcare organizations go digital? **[Schedule an appointment](/professional-support)** with our team to learn more about how we can support your digital health journey.
+Want to learn more about how Ciyex is helping healthcare organizations go digital? **[Schedule an appointment](/contact)** with our team to learn more about how we can support your digital health journey.

@@ -51,7 +51,7 @@ Document SOAP notes in real-time during the session, so by the time the call end
   },
   {
     title: 'Secure Messaging',
-    description: `HIPAA-compliant messaging between providers, staff, and patients — all in one place. Real-time delivery via WebSocket with read receipts, file attachments, and urgent priority flagging.
+    description: `Secure messaging between providers, staff, and patients — all in one place. Real-time delivery via WebSocket with read receipts, file attachments, and urgent priority flagging.
 
 Whether it's a provider-to-provider consultation, a care coordination note between staff, or a follow-up message to a patient, every conversation is end-to-end encrypted.
 
@@ -138,7 +138,7 @@ export default function Workspace(): ReactNode {
                   we host for you or on your own infrastructure.
                 </li>
                 <li>
-                  <strong>Ciyex Cloud</strong> — free HIPAA-grade storage and sync, funded by donations.
+                  <strong>Ciyex Cloud</strong> — free encrypted storage and sync, funded by service revenue and donations.
                 </li>
               </ul>
               <div className={styles.stackCta}>
@@ -155,7 +155,7 @@ export default function Workspace(): ReactNode {
               </div>
               <div className={styles.stackLayer} data-layer="cloud">
                 <span className={styles.layerLabel}>Ciyex Cloud (free)</span>
-                <span className={styles.layerSub}>HIPAA-grade storage &middot; sync &middot; backups</span>
+                <span className={styles.layerSub}>Encrypted storage &middot; sync &middot; backups</span>
               </div>
               <div className={styles.stackLayer} data-layer="ehr">
                 <span className={styles.layerLabel}>Ciyex EHR Server</span>
@@ -188,7 +188,8 @@ export default function Workspace(): ReactNode {
                     src={m.image}
                     alt={m.imageAlt}
                     className={styles.moduleScreenshot}
-                    loading="lazy"
+                    loading="eager"
+                    decoding="async"
                   />
                 </div>
                 <div className={styles.moduleText}>
@@ -208,11 +209,11 @@ export default function Workspace(): ReactNode {
         <section className={styles.cta}>
           <div className={styles.ctaInner}>
             <Heading as="h2" className={styles.ctaTitle}>
-              Free, forever.<br />Because clinics deserve it.
+              Free to use.<br />Because clinics deserve it.
             </Heading>
             <p className={styles.ctaDesc}>
               Ciyex is a 501(c)(3) nonprofit. Workspace, the EHR, and cloud storage are free
-              because tax-deductible donations from supporters keep them that way.
+              because service revenue and tax-deductible donations keep them that way.
             </p>
             <div className={styles.ctaButtons}>
               <Link className={styles.btnPrimary} to="/downloads">Download Workspace</Link>

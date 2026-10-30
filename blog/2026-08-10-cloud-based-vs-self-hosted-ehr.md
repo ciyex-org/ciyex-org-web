@@ -149,4 +149,4 @@ A cloud-based EHR can be a practical choice for organizations that want easier i
 
 Flexible solutions, including open-source EHR platforms, can give healthcare organizations more choices in how they manage and deploy their technology. Ciyex Workspace takes this approach by combining an open-source model with interoperability and FHIR R4 support, giving healthcare providers greater flexibility as their needs change.
 
-Ready to improve your documentation workflows with a more connected approach to healthcare technology? **[Schedule an appointment](/professional-support)** with our team to explore how an interoperable, flexible EHR platform can support your future needs.
+Ready to improve your documentation workflows with a more connected approach to healthcare technology? **[Schedule an appointment](/contact)** with our team to explore how an interoperable, flexible EHR platform can support your future needs.

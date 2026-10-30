@@ -102,4 +102,4 @@ As healthcare continues to evolve, the need for **integrated, patient-centric sy
 
 By removing barriers to access and simplifying medical data management, Ciyex is not just a tool — it's a step toward **smarter, more inclusive healthcare worldwide**.
 
-Ready to bring all your health data together in one secure place? **[Schedule a demo](/professional-support)** with the Ciyex team today.
+Ready to bring all your health data together in one secure place? **[Schedule a demo](/contact)** with the Ciyex team today.

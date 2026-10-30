@@ -144,4 +144,4 @@ As healthcare continues to become more digital, interoperability will be essenti
 
 Ciyex Workspace helps healthcare organizations move toward this connected future with an open-source EHR platform built around interoperability and FHIR R4. By supporting secure data exchange and flexible integrations, Ciyex helps providers create a more connected healthcare experience.
 
-Ready to improve healthcare interoperability and build a future-ready technology environment? **[Schedule an appointment](/professional-support)** with our team to explore how a flexible, FHIR-enabled EHR solution can support your goals.
+Ready to improve healthcare interoperability and build a future-ready technology environment? **[Schedule an appointment](/contact)** with our team to explore how a flexible, FHIR-enabled EHR solution can support your goals.

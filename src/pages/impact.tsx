@@ -2,11 +2,12 @@ import type { ReactNode } from 'react';
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
+import { LIVE_SERVICE_COUNT } from '@site/src/data/services';
 import styles from './impact.module.css';
 
 const stats = [
-  { value: '30M+', label: 'Americans lack access to basic health records technology' },
-  { value: '100%', label: 'Free and open source, forever' },
+  { value: `${LIVE_SERVICE_COUNT}`, label: 'Practice services that help fund the software' },
+  { value: '100%', label: 'Open source EHR code, public on GitHub' },
   { value: '0', label: 'Per-patient fees charged to community health centers' },
   { value: 'AGPL-3.0', label: 'Licensed so communities own their infrastructure' },
 ];
@@ -48,7 +49,7 @@ const programs = [
       </svg>
     ),
     title: 'Security and Compliance',
-    description: 'Enterprise-grade HIPAA compliance, security audits, and encryption so every patient receives the same level of data protection regardless of where they receive care.',
+    description: 'Encryption, audit logs, and role-based access so every patient receives the same level of data protection regardless of where they receive care.',
   },
   {
     icon: (
@@ -88,8 +89,8 @@ export default function Impact(): ReactNode {
                 <span className={styles.gradient}>for every community.</span>
               </Heading>
               <p className={styles.heroSubtitle}>
-                30 million Americans lack access to basic health records technology.
-                Ciyex is building the open source EHR to change that, one community at a time.
+                Practices get billing and front-office teams they can rely on. The revenue
+                helps build an open source EHR that every community can use.
               </p>
             </div>
           </div>
@@ -148,12 +149,31 @@ export default function Impact(): ReactNode {
             </div>
           </section>
 
+          {/* Services fund the software */}
+          <section className={styles.section}>
+            <div className={styles.sectionInner}>
+              <Heading as="h2" className={styles.sectionTitle}>How Our Services Help</Heading>
+              <div className={styles.contentCard}>
+                <p className={styles.contentText}>
+                  Medical practices and dental offices pay for the billing, coding, credentialing
+                  and virtual assistant work we do for them. That revenue helps fund the continued
+                  development of Ciyex, so the software can stay free and open source for the
+                  clinics that could never buy it.
+                </p>
+                <p className={styles.contentText}>
+                  You do not have to use Ciyex to work with us, and you do not have to work with
+                  us to use Ciyex. <Link to="/services">See our services</Link>.
+                </p>
+              </div>
+            </div>
+          </section>
+
           {/* Programs */}
           <section className={styles.section}>
             <div className={styles.sectionInner}>
               <Heading as="h2" className={styles.sectionTitle}>Where Your Support Goes</Heading>
               <p className={styles.sectionSubtitle}>
-                Every dollar donated to Ciyex goes directly to building and maintaining
+                Service revenue and donations fund the work of building and maintaining
                 open source healthcare technology for communities that need it most.
               </p>
               <div className={styles.programsGrid}>
@@ -172,18 +192,18 @@ export default function Impact(): ReactNode {
           <section className={styles.ctaSection}>
             <div className={styles.ctaInner}>
               <Heading as="h2" className={styles.ctaTitle}>
-                Join the movement for<br />open healthcare.
+                Better billing helps build<br />more open healthcare.
               </Heading>
               <p className={styles.ctaDesc}>
-                Whether you run a community health center, volunteer at a free clinic,
-                or believe healthcare is a right, there is a place for you.
+                Hand us the work your team is behind on, run the software, or back the
+                mission. Each one moves open healthcare forward.
               </p>
               <div className={styles.ctaButtons}>
-                <Link className={styles.btnPrimary} to="/donate">
-                  Support Our Mission
+                <Link className={styles.btnPrimary} to="/services">
+                  Explore Our Services
                 </Link>
-                <Link className={styles.btnSecondary} to="/signup">
-                  Get Started Free
+                <Link className={styles.btnSecondary} to="/donate">
+                  Support Our Mission
                 </Link>
                 <Link className={styles.btnGhost} to="https://github.com/ciyex-org/ciyex">
                   Contribute on GitHub
