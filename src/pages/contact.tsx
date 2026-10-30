@@ -2,6 +2,7 @@ import type { ReactNode } from 'react';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 
+import BookingCalendar from '@site/src/components/BookingCalendar';
 import { CONTACT } from '@site/src/data/contact';
 import styles from './contact.module.css';
 
@@ -38,11 +39,7 @@ export default function Contact(): ReactNode {
 							<p className={styles.notice}>Please do not send patient information by email or through this site.</p>
 						</aside>
 						<section className={styles.booking} aria-label="Book a consultation">
-							<iframe
-								src={`${CONTACT.bookingUrl}?hide_gdpr_banner=1`}
-								title="Book a consultation"
-								loading="lazy"
-							/>
+							<BookingCalendar />
 						</section>
 					</div>
 				</div>

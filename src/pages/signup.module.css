@@ -79,14 +79,7 @@
   overflow: hidden;
   margin: 0 auto;
   max-width: 900px;
-  height: 1050px;
   box-shadow: 0 0 60px rgba(var(--cx-brand-from-rgb), 0.08), 0 0 0 1px rgba(255, 255, 255, 0.05);
-}
-
-.calendlyEmbed {
-  display: block;
-  border: none;
-  height: 100%;
 }
 
 .trustSection {
