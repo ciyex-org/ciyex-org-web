@@ -1,23 +1,8 @@
 import type { ReactNode } from 'react';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
-import { CONTACT } from '@site/src/data/contact';
+import BookingCalendar from '@site/src/components/BookingCalendar';
 import styles from './signup.module.css';
-
-function CalendlyEmbed() {
-  return (
-    <div className={styles.calendlyContainer}>
-      <iframe
-        src={`${CONTACT.bookingUrl}?hide_gdpr_banner=1`}
-        width="100%"
-        height="100%"
-        frameBorder="0"
-        title="Schedule a meeting with Ciyex"
-        className={styles.calendlyEmbed}
-      />
-    </div>
-  );
-}
 
 export default function Signup(): ReactNode {
   return (
@@ -39,7 +24,9 @@ export default function Signup(): ReactNode {
                 Ciyex EHR. We'll learn about your goals and walk through the next steps.
               </p>
             </div>
-            <CalendlyEmbed />
+            <div className={styles.calendlyContainer}>
+              <BookingCalendar />
+            </div>
             <div className={styles.trustSection}>
               <div className={styles.trustItem}>
                 <span className={styles.trustIcon}>&#x1f512;</span>
