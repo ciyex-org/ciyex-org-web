@@ -3,3 +3,10 @@
   width: 100%;
   border: 0;
 }
+
+/* Calendly shrinks its card to fit the frame. This keeps the full 800 by 700 card. */
+@media (min-width: 1000px) {
+  .frame {
+    min-height: 800px;
+  }
+}

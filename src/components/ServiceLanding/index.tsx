@@ -4,7 +4,7 @@ import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 
 import { CONTACT } from '@site/src/data/contact';
-import { groupOfService, serviceHref } from '@site/src/data/services';
+import { groupOfService, serviceHref, SERVICE_GROUP_ART } from '@site/src/data/services';
 import { SERVICE_LANDING } from '@site/src/data/serviceLanding';
 import styles from './styles.module.css';
 
@@ -13,6 +13,7 @@ const DEFAULT_PILLS = ['Works with your current system', 'Scope and handoffs agr
 export default function ServiceLanding({ service }: { service: string }): ReactNode {
 	const page = SERVICE_LANDING[service];
 	const group = groupOfService(service);
+	const art = group ? SERVICE_GROUP_ART[group.id] : undefined;
 	const related = group?.live.filter((other) => other.slug !== service).slice(0, 3) ?? [];
 
 	return (
@@ -37,9 +38,9 @@ export default function ServiceLanding({ service }: { service: string }): ReactN
 								{(page.pills ?? DEFAULT_PILLS).map((pill) => <span key={pill}>{pill}</span>)}
 								</div>
 						</div>
-						{page.image ? (
+						{page.image || art ? (
 							<div className={styles.heroMedia}>
-								<img src={page.image} alt={page.imageAlt} />
+								<img src={page.image ?? art?.src} alt={page.imageAlt ?? art?.alt ?? ''} />
 							</div>
 						) : (
 							<aside className={styles.heroPanel} aria-label="What this service covers">

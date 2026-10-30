@@ -4,7 +4,7 @@ import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 
 import Threads from '@site/src/components/Threads';
-import { SERVICE_GROUPS, serviceHref } from '@site/src/data/services';
+import { SERVICE_GROUPS, SERVICE_GROUP_ART, serviceHref } from '@site/src/data/services';
 import styles from './services.module.css';
 
 const SPECIALTY_GROUPS = [
@@ -214,8 +214,11 @@ export default function Services(): ReactNode {
 									{group.live.map((service) => (
 										<li key={service.name}>
 											<Link className={styles.serviceLink} to={serviceHref(service.slug)}>
-												<Heading as="h4" className={styles.name}>{service.name}</Heading>
-												<p>{service.summary}</p>
+												<img src={SERVICE_GROUP_ART[group.id].src} alt="" loading="lazy" />
+												<span>
+													<Heading as="h4" className={styles.name}>{service.name}</Heading>
+													<p>{service.summary}</p>
+												</span>
 											</Link>
 										</li>
 									))}

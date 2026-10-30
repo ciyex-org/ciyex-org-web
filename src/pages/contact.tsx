@@ -20,29 +20,25 @@ export default function Contact(): ReactNode {
 							Call, email or book a time. Tell us about your practice, your current system and the work you want off your team’s plate.
 						</p>
 					</header>
-					<div className={styles.grid}>
-						<aside className={styles.details}>
-							<section>
-								<Heading as="h2" className={styles.label}>Call</Heading>
-								<a className={styles.phone} href={CONTACT.phoneHref}>{CONTACT.phone}</a>
-							</section>
-							<section>
-								<Heading as="h2" className={styles.label}>Email</Heading>
-								<a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>
-							</section>
-							<section>
-								<Heading as="h2" className={styles.label}>Registered address</Heading>
-								<address>
-									{CONTACT.address.map((line) => <span key={line}>{line}</span>)}
-								</address>
-							</section>
-							<p className={styles.notice}>Please do not send patient information by email or through this site.</p>
-						</aside>
-						<section className={styles.booking} aria-label="Book a consultation">
-							<BookingCalendar />
+					<div className={styles.details}>
+						<section>
+							<Heading as="h2" className={styles.label}>Call</Heading>
+							<a className={styles.phone} href={CONTACT.phoneHref}>{CONTACT.phone}</a>
+						</section>
+						<section>
+							<Heading as="h2" className={styles.label}>Email</Heading>
+							<a className={styles.phone} href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>
+						</section>
+						<section>
+							<Heading as="h2" className={styles.label}>Registered address</Heading>
+							<address>{CONTACT.address.join(', ')}</address>
 						</section>
 					</div>
-				</div>
+					<section className={styles.booking} aria-label="Book a consultation">
+						<BookingCalendar />
+					</section>
+					<p className={styles.notice}>Please do not send patient information by email or through this site.</p>
+								</div>
 			</main>
 		</Layout>
 	);

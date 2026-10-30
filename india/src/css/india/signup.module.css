@@ -1,5 +1,5 @@
 /**
- * Signup Page - light theme, matching the India home page
+ * Signup Page - light theme
  */
 
 .signupPage {
@@ -8,9 +8,9 @@
 }
 
 .signupCard {
-  max-width: 1000px;
+  max-width: 1240px;
   margin: 0 auto;
-  padding: 120px 40px 60px;
+  padding: 96px 24px 48px;
   position: relative;
   overflow: hidden;
 }
@@ -74,13 +74,7 @@
 .calendlyContainer {
   position: relative;
   z-index: 1;
-  background: #ffffff;
-  border-radius: 16px;
-  overflow: hidden;
   margin: 0 auto;
-  max-width: 900px;
-  border: 1px solid var(--cx-line);
-  box-shadow: 0 28px 70px -48px rgba(18, 41, 90, 0.4);
 }
 
 .trustSection {

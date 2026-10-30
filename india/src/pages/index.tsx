@@ -24,26 +24,40 @@ function Hero() {
 	return (
 		<section className={styles.hero}>
 			<div className={styles.heroInner}>
-				<div className={styles.heroBadge}>
-					Hospital Information Management System &middot; India
-				</div>
-				<Heading as="h1" className={styles.heroTitle}>
-					Run the whole hospital<br />
-					<span className={styles.heroGradient}>on one system.</span>
-				</Heading>
-				<p className={styles.heroSubtitle}>
-					Ciyex HIMS covers the hospital end to end — registration and the queue at the
-					front desk, OPD, casualty, wards and theatre, lab, radiology, pharmacy and
-					blood bank, through to the final bill, the day book and the discharge summary.
-					One system, one patient file, one set of numbers at day end.
-				</p>
-				<div className={styles.heroCta}>
-					<Link className={styles.btnPrimary} to="/signup">
-						Schedule a free demo
-					</Link>
-					<Link className={styles.btnGhost} to="/modules">
-						See all modules
-					</Link>
+				<div className={styles.heroGrid}>
+					<div className={styles.heroCopy}>
+						<div className={styles.heroBadge}>
+							Hospital Information Management System &middot; India
+						</div>
+						<Heading as="h1" className={styles.heroTitle}>
+							Run the whole hospital<br />
+							<span className={styles.heroGradient}>on one system.</span>
+						</Heading>
+						<p className={styles.heroSubtitle}>
+							Ciyex HIMS covers the hospital end to end — registration and the queue at the
+							front desk, OPD, casualty, wards and theatre, lab, radiology, pharmacy and
+							blood bank, through to the final bill, the day book and the discharge summary.
+							One system, one patient file, one set of numbers at day end.
+						</p>
+						<div className={styles.heroCta}>
+							<Link className={styles.btnPrimary} to="/signup">
+								Schedule a free demo
+							</Link>
+							<Link className={styles.btnGhost} to="/modules">
+								See all modules
+							</Link>
+						</div>
+					</div>
+					<figure className={styles.heroVisual}>
+						<img
+							src="/en-in/img/hims/dashboard.webp"
+							alt="Ciyex HIMS hospital dashboard showing patient flow, OPD visits and daily operations"
+							width={2000}
+							height={1234}
+							fetchPriority="high"
+						/>
+						<figcaption><span /> A live look inside Ciyex HIMS</figcaption>
+					</figure>
 				</div>
 				<div className={styles.statStrip}>
 					<div className={styles.stat}>

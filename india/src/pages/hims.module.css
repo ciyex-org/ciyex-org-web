@@ -86,7 +86,62 @@
   max-width: 1180px;
   margin: 0 auto;
   padding: 0 1.5rem;
-  text-align: center;
+}
+
+.heroGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(420px, 1.05fr);
+  align-items: center;
+  gap: clamp(2rem, 5vw, 4rem);
+  margin-bottom: 3rem;
+  text-align: left;
+}
+
+.heroCopy {
+  min-width: 0;
+  animation: contentRise 650ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+.heroVisual {
+  min-width: 0;
+  margin: 0;
+  padding: 0.7rem;
+  border: 1px solid var(--cx-card-border);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 28px 70px rgba(30, 64, 175, 0.16);
+  transform: rotate(1deg);
+  animation: contentRise 750ms 100ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+.heroVisual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2000 / 1234;
+  object-fit: cover;
+  object-position: top left;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 13px;
+}
+
+.heroVisual figcaption {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.75rem 0.4rem 0.15rem;
+  color: var(--cx-slate-500);
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.heroVisual figcaption span {
+  width: 0.5rem;
+  height: 0.5rem;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: #16a36a;
+  box-shadow: 0 0 0 4px rgba(22, 163, 106, 0.12);
 }
 
 .heroBadge {
@@ -100,7 +155,7 @@
   font-size: 0.8rem;
   font-weight: 600;
   color: var(--cx-slate-700);
-  margin-bottom: 1.6rem;
+  margin-bottom: 1.25rem;
 }
 
 .heroTitle {
@@ -123,15 +178,15 @@
   line-height: 1.65;
   color: var(--cx-slate-500);
   max-width: 44rem;
-  margin: 0 auto 2rem;
+  margin: 0 0 2rem;
 }
 
 .heroCta {
   display: flex;
   flex-wrap: wrap;
   gap: 0.85rem;
-  justify-content: center;
-  margin-bottom: 3rem;
+  justify-content: flex-start;
+  margin-bottom: 0;
 }
 
 .btnPrimary,
@@ -767,6 +822,20 @@
   margin-bottom: 2rem;
 }
 
+.groupPreview {
+  display: block;
+  width: 100%;
+  max-height: 300px;
+  aspect-ratio: 16 / 6;
+  margin: 0 0 1.25rem;
+  object-fit: cover;
+  object-position: top left;
+  border: 1px solid var(--cx-card-border);
+  border-radius: 14px;
+  background: var(--cx-card-bg);
+  box-shadow: 0 16px 36px rgba(15, 23, 42, 0.1);
+}
+
 .groupTitle {
   font-size: 1.6rem;
   font-weight: 700;
@@ -884,9 +953,30 @@
   }
 
   .abdmInner,
-  .workspaceInner {
+  .workspaceInner,
+  .heroGrid {
     grid-template-columns: 1fr;
     gap: 2.5rem;
+  }
+
+  .heroCopy {
+    max-width: 48rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .heroSubtitle {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .heroCta {
+    justify-content: center;
+  }
+
+  .heroVisual {
+    width: min(100%, 740px);
+    margin: 0 auto;
   }
 
   .statStrip {
@@ -913,6 +1003,17 @@
   .heroCta {
     flex-direction: column;
     align-items: stretch;
+  }
+
+  .heroGrid {
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .heroVisual {
+    padding: 0.45rem;
+    border-radius: 14px;
+    transform: none;
   }
 }
 
@@ -1120,4 +1221,19 @@
 
 .abdm .sectionLabel {
 	color: var(--cx-brand-from);
+}
+
+.groupHead > div {
+  flex: 1;
+  min-width: 0;
+}
+
+.groupHead {
+  flex-wrap: wrap;
+}
+
+.groupHead > .groupPreview {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin: 0.5rem 0 0;
 }
