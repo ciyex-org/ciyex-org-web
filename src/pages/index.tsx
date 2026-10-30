@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react';
+import type { CSSProperties, ReactNode } from 'react';
 import Head from '@docusaurus/Head';
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
@@ -49,6 +49,8 @@ const HERO_SERVICES = [
 		image: '/img/services/medical-billing.jpg',
 		alt: 'Medical billing coordinator reviewing insurance claims',
 		to: '/services/medical-billing',
+		accent: '#0b5d52',
+		accentRgb: '11, 93, 82',
 	},
 	{
 		name: 'Dental billing',
@@ -56,6 +58,8 @@ const HERO_SERVICES = [
 		image: '/img/services/dental-billing.jpg',
 		alt: 'Dental office administrator and dentist reviewing insurance billing',
 		to: '/services/dental-billing',
+		accent: '#c2410c',
+		accentRgb: '194, 65, 12',
 	},
 	{
 		name: 'Virtual assistant',
@@ -63,6 +67,8 @@ const HERO_SERVICES = [
 		image: '/img/services/virtual-assistant.jpg',
 		alt: 'Remote virtual assistant managing a practice calendar and office calls',
 		to: '/services/virtual-assistant',
+		accent: '#1d4ed8',
+		accentRgb: '29, 78, 216',
 	},
 ] as const;
 
@@ -76,12 +82,13 @@ function HeroServices() {
 						key={service.name}
 						className={styles.railCard}
 						to={service.to}
-						style={{ animationDelay: `${index * 120}ms` }}>
+						style={{ animationDelay: `${index * 120}ms`, '--rail-accent': service.accent, '--rail-accent-rgb': service.accentRgb } as CSSProperties}>
 						<img src={service.image} alt={service.alt} loading={index === 0 ? 'eager' : 'lazy'} />
 						<span className={styles.railCopy}>
 							<span className={styles.railName}>{service.name}</span>
 							<span className={styles.railDetail}>{service.detail}</span>
 						</span>
+						<span className={styles.railArrow} aria-hidden="true">→</span>
 					</Link>
 				))}
 			</div>

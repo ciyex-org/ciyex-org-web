@@ -7,6 +7,15 @@ import { HIMS_MODULE_GROUPS, HIMS_MODULES } from '@site/src/data/himsModules';
 import { HimsIcon } from '@site/src/data/himsIcons';
 import styles from '@site/src/pages/hims.module.css';
 
+const MODULE_GROUP_IMAGES: Readonly<Record<string, { src: string; alt: string }>> = {
+	'front-desk': { src: '/en-in/img/hims/dashboard.webp', alt: 'Ciyex HIMS hospital dashboard' },
+	'patient-care': { src: '/en-in/img/hims/patients.webp', alt: 'Ciyex HIMS patient management screen' },
+	departments: { src: '/en-in/img/hims/laboratory.webp', alt: 'Ciyex HIMS laboratory workflow screen' },
+	records: { src: '/en-in/img/hims/reports.webp', alt: 'Ciyex HIMS reports screen' },
+	administration: { src: '/en-in/img/hims/expenses.webp', alt: 'Ciyex HIMS hospital expenses screen' },
+	platform: { src: '/en-in/img/hims/dashboard.webp', alt: 'Ciyex HIMS dashboard' },
+};
+
 /**
  * The full Ciyex HIMS module catalogue, for India.
  *
@@ -55,6 +64,12 @@ export default function Modules(): ReactNode {
 									</Heading>
 									<p className={styles.groupBlurb}>{group.blurb}</p>
 								</div>
+								<img
+									className={styles.groupPreview}
+									src={MODULE_GROUP_IMAGES[group.id].src}
+									alt={MODULE_GROUP_IMAGES[group.id].alt}
+									loading="lazy"
+								/>
 							</div>
 							<div className={styles.detailGrid} data-reveal>
 								{group.modules.map((module) => (

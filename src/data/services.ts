@@ -112,6 +112,34 @@ export const SERVICE_GROUPS: readonly ServiceGroup[] = [
 	},
 ];
 
+/** Shared category photography for the catalogue and every service detail page. */
+export const SERVICE_GROUP_ART: Readonly<Record<string, { src: string; alt: string }>> = {
+	'revenue-cycle': {
+		src: '/img/services/medical-billing-team.jpg',
+		alt: 'Billing specialist and clinician reviewing a claim workflow together',
+	},
+	'specialty-billing': {
+		src: '/img/services/specialty-coding.jpg',
+		alt: 'Clinician and coding specialist reviewing clinical documentation',
+	},
+	'documentation-coding': {
+		src: '/img/services/specialty-coding.jpg',
+		alt: 'Clinician and coding specialist reviewing clinical documentation',
+	},
+	'practice-readiness': {
+		src: '/img/services/virtual-assistant.jpg',
+		alt: 'Virtual assistant coordinating a practice calendar and office workflow',
+	},
+	'patient-care-support': {
+		src: '/img/services/patient-care-coordination.jpg',
+		alt: 'Nurse care coordinator reviewing a care plan with a patient',
+	},
+	'software-technology': {
+		src: '/img/services/healthcare-technology-support.jpg',
+		alt: 'Healthcare technology specialist and clinic lead planning a software workflow',
+	},
+};
+
 /** The headline services, shown first in the navbar menu and the footer. */
 export const PRIMARY_SERVICE_SLUGS: readonly string[] = ['medical-billing', 'dental-billing', 'virtual-assistant'];
 
