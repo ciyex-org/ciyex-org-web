@@ -391,15 +391,15 @@ export default function Workspace(): ReactNode {
 				{/* Hero */}
 				<section className={styles.hero}>
 					<div className={styles.heroInner}>
-						<span className={styles.heroBadge}>Desktop &middot; Cloud &middot; On-premise</span>
+						<span className={styles.heroBadge}>Desktop app &middot; Cloud or hospital-hosted</span>
 						<Heading as="h1" className={styles.heroTitle}>
 							Ciyex Workspace.<br />
-							<span className={styles.heroGradient}>Your hospital&rsquo;s command centre.</span>
+							<span className={styles.heroGradient}>One workspace for every team.</span>
 						</Heading>
 						<p className={styles.heroSubtitle}>
-							One desktop application for the whole hospital — the counter, the consulting
-							room, the ward, the lab and the cash desk. The sidebar shows only the modules
-							your hospital has switched on, so a clinic with no theatre never sees one.
+							Bring front-desk, clinical, ward, diagnostic and billing work into one desktop
+							application. Your hospital’s configured features are organised in a shared
+							workspace for the teams using them every day.
 						</p>
 						<div className={styles.heroCta}>
 							<Link className={styles.btnPrimary} to="/signup">Book a demo &rarr;</Link>
@@ -420,9 +420,9 @@ export default function Workspace(): ReactNode {
 								One download.<br />Three things working together.
 							</Heading>
 							<p className={styles.stackDesc}>
-								Most HIMS vendors sell you a website. We give you a desktop application,
-								the server that powers it, and somewhere to keep the data — together, and
-								without a licence per user.
+							Workspace is the desktop app your staff use. Ciyex HIMS provides the hospital
+							workflows behind it, with a choice of managed cloud or deployment on your
+							own hospital infrastructure.
 							</p>
 							<ul className={styles.stackList}>
 								<li>
@@ -438,7 +438,7 @@ export default function Workspace(): ReactNode {
 								</li>
 							</ul>
 							<div className={styles.stackCta}>
-								<Link className={styles.btnPrimary} to="/modules">See all 23 modules &rarr;</Link>
+								<Link className={styles.btnPrimary} to="/modules">Explore hospital workflows &rarr;</Link>
 							</div>
 						</div>
 						<div className={styles.stackVisual}>
@@ -497,8 +497,8 @@ export default function Workspace(): ReactNode {
 							Built for the people at the counter.
 						</Heading>
 						<p className={styles.sectionSubtitle}>
-							A few of the modules up close. All 23 are on the{' '}
-							<Link to="/modules">modules page</Link>, and a hospital switches on the ones
+							A closer look at key workflows. Explore the full feature catalogue on the{' '}
+							<Link to="/modules">features page</Link>, and a hospital configures the ones
 							it runs.
 						</p>
 					</div>
@@ -539,11 +539,11 @@ export default function Workspace(): ReactNode {
 				<section className={styles.cta}>
 					<div className={styles.ctaInner}>
 						<Heading as="h2" className={styles.ctaTitle}>
-							One platform.<br />Built for how hospitals work.
+							Bring your hospital workflows together.
 						</Heading>
 						<p className={styles.ctaDesc}>
-							Workspace, the HIMS and hosting come together as one product — with
-							straightforward commercial licensing, unlimited users, and support from our team.
+							Explore how Workspace and Ciyex HIMS could fit your hospital’s departments,
+							deployment requirements and day-to-day work.
 						</p>
 						<div className={styles.ctaButtons}>
 							<Link className={styles.btnPrimary} to="/signup">Book a demo &rarr;</Link>

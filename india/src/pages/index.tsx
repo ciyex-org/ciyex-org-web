@@ -27,24 +27,23 @@ function Hero() {
 				<div className={styles.heroGrid}>
 					<div className={styles.heroCopy}>
 						<div className={styles.heroBadge}>
-							Hospital Information Management System &middot; India
+							Hospital management for Indian hospitals
 						</div>
 						<Heading as="h1" className={styles.heroTitle}>
-							Run the whole hospital<br />
-							<span className={styles.heroGradient}>on one system.</span>
+							Every department.<br />
+							<span className={styles.heroGradient}>One connected hospital.</span>
 						</Heading>
 						<p className={styles.heroSubtitle}>
-							Ciyex HIMS covers the hospital end to end — registration and the queue at the
-							front desk, OPD, casualty, wards and theatre, lab, radiology, pharmacy and
-							blood bank, through to the final bill, the day book and the discharge summary.
-							One system, one patient file, one set of numbers at day end.
+							Bring registration, OPD, wards, diagnostics, pharmacy, billing and records into
+							one hospital system. Ciyex HIMS helps teams follow each patient’s journey—from
+							first registration to discharge—with shared information across departments.
 						</p>
 						<div className={styles.heroCta}>
 							<Link className={styles.btnPrimary} to="/signup">
 								Schedule a free demo
 							</Link>
 							<Link className={styles.btnGhost} to="/modules">
-								See all modules
+								Explore features
 							</Link>
 						</div>
 					</div>
@@ -56,21 +55,21 @@ function Hero() {
 							height={1234}
 							fetchPriority="high"
 						/>
-						<figcaption><span /> A live look inside Ciyex HIMS</figcaption>
+						<figcaption><span /> Ciyex HIMS dashboard · sample hospital data</figcaption>
 					</figure>
 				</div>
 				<div className={styles.statStrip}>
 					<div className={styles.stat}>
-						<span className={styles.statValue}>{HIMS_MODULES.length} modules</span>
-						<span className={styles.statLabel}>Switch on only what you run</span>
+						<span className={styles.statValue}>One connected system</span>
+						<span className={styles.statLabel}>From registration to discharge</span>
 					</div>
 					<div className={styles.stat}>
-						<span className={styles.statValue}>ABDM-ready</span>
-						<span className={styles.statLabel}>Connects to the ABDM gateway</span>
+						<span className={styles.statValue}>ABDM gateway</span>
+						<span className={styles.statLabel}>Configure connection and check connectivity</span>
 					</div>
 					<div className={styles.stat}>
 						<span className={styles.statValue}>&#8377; &amp; GST</span>
-						<span className={styles.statLabel}>Indian billing, formats and April FY</span>
+						<span className={styles.statLabel}>Indian currency, date and tax settings</span>
 					</div>
 					<div className={styles.stat}>
 						<span className={styles.statValue}>Unlimited users</span>
@@ -114,12 +113,11 @@ function JourneySection() {
 				<div className={styles.journeyHead} data-reveal>
 					<div className={styles.sectionLabel}>How Ciyex HIMS works</div>
 					<Heading as="h2" className={styles.sectionTitle}>
-						Built in the order a patient moves.
+						Connected around the patient journey.
 					</Heading>
 					<p className={styles.sectionSubtitle}>
-						A receptionist and a lab technician do not think in modules. So the software
-						is laid out by where the work happens — and the sidebar your staff open every
-						morning is the same list you see here.
+						From first registration to the final bill, each team works in the part of HIMS
+						that fits its role, while information stays connected across the hospital.
 					</p>
 				</div>
 				<div className={styles.journeyRow} data-reveal>
@@ -155,32 +153,32 @@ function JourneySection() {
 const TOUR: readonly { title: string; caption: string; src: string; alt: string }[] = [
 	{
 		title: 'Dashboard', src: '/en-in/img/hims/dashboard.webp',
-		caption: 'What needs somebody today, the patient flow, and the day\'s money, refreshed live.',
+					caption: 'See patient flow, department activity and key items for the day in one view.',
 		alt: 'Ciyex HIMS dashboard showing items needing attention, OPD visits, revenue and patient flow',
 	},
 	{
 		title: 'Patients', src: '/en-in/img/hims/patients.webp',
-		caption: 'Who came, who is new, and which follow-ups are overdue.',
+					caption: 'Review arrivals, new registrations and follow-ups from the patient list.',
 		alt: 'Ciyex HIMS patients overview with visit counts, overdue follow-ups and an arrivals chart',
 	},
 	{
 		title: 'Pharmacy', src: '/en-in/img/hims/pharmacy.webp',
-		caption: 'The dispensing queue, counter sale, returns, stock and purchase from one desk.',
+					caption: 'Manage dispensing, counter sales, returns and stock from the pharmacy desk.',
 		alt: 'Ciyex HIMS pharmacy desk with the dispensing queue and the day\'s till. Patient details are obscured',
 	},
 	{
 		title: 'Laboratory', src: '/en-in/img/hims/laboratory.webp',
-		caption: 'Every test tracked from collection to the released report.',
+					caption: 'Follow each test from sample collection through review and report release.',
 		alt: 'Ciyex HIMS laboratory bench showing tests to collect, on the bench, to release and released',
 	},
 	{
 		title: 'Reports', src: '/en-in/img/hims/reports.webp',
-		caption: 'Patients, finance, pharmacy and diagnostics, department by department.',
+					caption: 'Review patient, finance, pharmacy and diagnostic activity across departments.',
 		alt: 'Ciyex HIMS reports overview with cards for patients, finance, pharmacy and lab',
 	},
 	{
 		title: 'Expenses', src: '/en-in/img/hims/expenses.webp',
-		caption: 'Electricity, rent and equipment bills, with GST recorded on each one.',
+					caption: 'Record hospital expenses and applicable GST in the finance workflow.',
 		alt: 'Ciyex HIMS expenses screen with bill categories, the month\'s spend and payment modes',
 	},
 ];
@@ -192,13 +190,13 @@ function ProductTour() {
 		<section className={styles.tour}>
 			<div className={styles.container}>
 				<div className={styles.journeyHead} data-reveal>
-					<div className={styles.sectionLabel}>Inside Ciyex HIMS</div>
+					<div className={styles.sectionLabel}>A look inside Ciyex HIMS</div>
 					<Heading as="h2" className={styles.sectionTitle}>
-						See the desks your staff will use.
+						Explore the screens behind each department.
 					</Heading>
 					<p className={styles.sectionSubtitle}>
-						Each department works from its own desk, and every desk reads from the same
-						patient file. Figures shown are from a test hospital.
+						Browse sample screens from the dashboard, patient records, pharmacy, laboratory
+						and reports. The figures shown are from a test hospital.
 					</p>
 				</div>
 				<div className={styles.tourTabs} role="tablist" aria-label="Screens in Ciyex HIMS" data-reveal>
@@ -254,13 +252,13 @@ function ModulesPreview() {
 		<section className={styles.modulesPreview}>
 			<div className={styles.container}>
 				<div className={styles.journeyHead} data-reveal>
-					<div className={styles.sectionLabel}>Modules</div>
+					<div className={styles.sectionLabel}>Hospital features</div>
 					<Heading as="h2" className={styles.sectionTitle}>
-						Everything a hospital runs on.
+						Core workflows, connected in one HIMS.
 					</Heading>
 					<p className={styles.sectionSubtitle}>
-						Every module below ships today. A hospital switches on the ones it runs and
-						never sees the rest — a clinic with no theatre never gets an OT menu.
+						Ciyex HIMS includes features for the front desk, care teams, diagnostics and
+						administration. Choose the areas your hospital uses and expand as needs change.
 					</p>
 				</div>
 				<div className={styles.moduleGrid} data-reveal>
@@ -276,7 +274,7 @@ function ModulesPreview() {
 				</div>
 				<div className={styles.centerCta}>
 					<Link className={styles.btnGhost} to="/modules">
-						See all {HIMS_MODULES.length} modules
+						Explore all hospital workflows
 					</Link>
 				</div>
 			</div>
@@ -293,14 +291,12 @@ function AbdmSection() {
 				<div>
 					<div className={styles.sectionLabel}>Ayushman Bharat Digital Mission</div>
 					<Heading as="h2" className={styles.sectionTitle}>
-						ABDM, configured<br />by your own team.
+						Configure your ABDM<br />connection in HIMS.
 					</Heading>
 					<p className={styles.abdmDesc}>
-						ABDM connectivity is part of the product, not a custom project. Your
-						administrator enters the hospital&rsquo;s credentials in Ciyex, picks sandbox or
-						production, and presses Test Connection — the app authenticates against the
-						live ABDM gateway and tells you straight away whether the hospital is
-						talking to it.
+						Set up the hospital’s ABDM gateway details inside Ciyex HIMS. An administrator
+						can select the sandbox or production environment and check connectivity from
+						the application, with credentials managed in the hospital configuration.
 					</p>
 					<ul className={styles.abdmList}>
 						<li>Sandbox and production environments, switched per hospital</li>
@@ -310,10 +306,9 @@ function AbdmSection() {
 						<li>Health Facility Registry bridge registration tracked per facility</li>
 					</ul>
 					<p className={styles.abdmNote}>
-						Available today: gateway configuration, credential management and verified
-						connectivity. ABHA enrolment, verification and Scan &amp; Share build on this
-						foundation and are rolling out module by module — we will show you exactly
-						where each one stands on the demo.
+						Gateway configuration and connection checks are available today. ABHA
+						enrolment, verification and Scan &amp; Share are in development; ask us during a
+						demo for the latest status of each workflow.
 					</p>
 					<Link className={styles.btnPrimary} to="/signup">
 						Talk to us about ABDM
@@ -358,8 +353,8 @@ function AbdmSection() {
 
 const CAPABILITIES: readonly { title: string; desc: string }[] = [
 	{
-		title: 'Modules you switch on and off',
-		desc: 'Turn a module on in Hospital Setup and it appears in the sidebar without a restart. Turn it off and the hospital stops seeing it.',
+		title: 'Features configured around your hospital',
+		desc: 'Configure the workflows your teams use. Staff see the areas relevant to their roles in the workspace.',
 	},
 	{
 		title: 'More than one unit',
@@ -412,13 +407,13 @@ function CapabilitiesSection() {
 		<section className={styles.capabilities}>
 			<div className={styles.container}>
 				<div className={styles.capHead} data-reveal>
-					<div className={styles.sectionLabel}>Why Ciyex</div>
+					<div className={styles.sectionLabel}>Designed for hospital operations</div>
 					<Heading as="h2" className={styles.sectionTitle}>
-						The things that decide it.
+						A practical fit for your hospital.
 					</Heading>
 					<p className={styles.sectionSubtitle}>
-						Not a feature list for its own sake — these are the questions a hospital
-						actually asks before it changes systems.
+						Explore the Indian workflows, flexible deployment and connected departments
+						that matter when choosing a hospital information system.
 					</p>
 				</div>
 				<div className={styles.capGrid} data-reveal>
@@ -443,13 +438,12 @@ function WorkspaceSection() {
 				<div>
 					<div className={styles.sectionLabel}>Ciyex Workspace</div>
 					<Heading as="h2" className={styles.sectionTitle}>
-						One window for<br />the whole shift.
+						One workspace<br />for the hospital day.
 					</Heading>
 					<p className={styles.workspaceDesc}>
-						Your staff do not work in a browser tab that reloads between patients. Ciyex
-						Workspace is a desktop application — the queue, the chart, the ward and the
-						bill open side by side, and the sidebar shows only the modules your hospital
-						has switched on.
+						Ciyex Workspace brings the queue, patient chart, ward and billing workflows
+						into one desktop application. Teams can work across the features configured
+						for their hospital from a single workspace.
 					</p>
 					<Link className={styles.btnGhost} to="/workspace">
 						Explore Ciyex Workspace
@@ -481,8 +475,8 @@ const FAQ: readonly { q: string; a: string }[] = [
 		a: 'Yes. Branches and units sit under one login, each with its own GSTIN, drug licence, registration details, tariffs and number series. Masters can be shared or kept per facility, and reports run for one unit or across all of them.',
 	},
 	{
-		q: 'Do we have to take every module?',
-		a: 'No. Every module is a switch. A polyclinic can run registration, appointments, OPD, pharmacy and billing and nothing else; a 300-bed hospital switches on wards, theatre, blood bank and payroll as it needs them. Staff only ever see the modules that are on.',
+		q: 'Can we choose which features to use?',
+		a: 'Yes. Ciyex HIMS can be configured around your hospital’s departments and workflows. A polyclinic may prioritise registration, appointments, OPD, pharmacy and billing; a larger hospital may also need wards, theatre, blood bank and payroll.',
 	},
 	{
 		q: 'Is it billed per user?',
@@ -490,7 +484,7 @@ const FAQ: readonly { q: string; a: string }[] = [
 	},
 	{
 		q: 'Is Ciyex HIMS ABDM compliant?',
-		a: 'Ciyex ships ABDM connectivity as a configurable module: your administrator sets the hospital’s credentials, chooses sandbox or production, and verifies the connection against the live ABDM gateway from inside the app. ABHA enrolment, verification and Scan & Share are being released module by module on top of that foundation — ask us on the demo and we will show you exactly what is live.',
+		a: 'Ciyex includes configurable ABDM gateway connectivity: your administrator sets the hospital’s credentials, chooses sandbox or production, and checks the connection from inside the app. ABHA enrolment, verification and Scan & Share are in development; ask us on the demo to confirm what is currently available.',
 	},
 	{
 		q: 'Can we host it ourselves?',
@@ -506,7 +500,7 @@ const FAQ: readonly { q: string; a: string }[] = [
 	},
 	{
 		q: 'How long does implementation take?',
-		a: 'It depends on how many modules you switch on and how much history is migrated. A single-unit clinic on the core modules goes live far faster than a multi-speciality hospital with theatre, blood bank and payroll. We give you a dated plan after the demo rather than a number on a web page.',
+		a: 'It depends on the features and workflows in scope and how much history is migrated. We review your requirements and provide an implementation timeline after the demo.',
 	},
 ];
 
@@ -551,7 +545,7 @@ function CtaSection() {
 						Schedule a free demo
 					</Link>
 					<Link className={styles.btnGhost} to="/modules">
-						Browse the modules
+						Explore features
 					</Link>
 				</div>
 			</div>

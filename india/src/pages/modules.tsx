@@ -17,7 +17,7 @@ const MODULE_GROUP_IMAGES: Readonly<Record<string, { src: string; alt: string }>
 };
 
 /**
- * The full Ciyex HIMS module catalogue, for India.
+ * The Ciyex HIMS feature catalogue, for India.
  *
  * <p>Grouped the way the hospital sidebar groups it, so a hospital reading this
  * page and a hospital using the product are looking at the same structure.
@@ -26,22 +26,22 @@ const MODULE_GROUP_IMAGES: Readonly<Record<string, { src: string; alt: string }>
 export default function Modules(): ReactNode {
 	return (
 		<Layout
-			title="HIMS Modules"
-			description="Every Ciyex HIMS module — registration and UHID, appointments and queue, OPD, emergency, IPD and wards, nursing, operation theatre, laboratory, radiology and PACS, pharmacy, stores, blood bank, GST billing, discharge, medical records, accounts, HR and payroll, ambulance and ABDM integration.">
+			title="Ciyex HIMS Features"
+			description="Explore Ciyex HIMS features for registration, appointments, OPD, emergency, wards, nursing, operation theatre, laboratory, radiology, pharmacy, billing, discharge, records and administration.">
 			<main className={styles.page}>
 				<section className={styles.modulesHero}>
 					<div className={styles.modulesHeroInner}>
-						<div className={styles.sectionLabel}>All modules</div>
+						<div className={styles.sectionLabel}>Ciyex HIMS features</div>
 						<Heading as="h1" className={styles.heroTitle}>
-							{HIMS_MODULES.length} modules.<br />
-							<span className={styles.heroGradient}>Switch on what you run.</span>
+							One HIMS for the<br />
+							<span className={styles.heroGradient}>whole hospital journey.</span>
 						</Heading>
 						<p className={styles.heroSubtitle}>
-							Every module below is available today. Your hospital uses only the ones
-							it needs, and staff never see the rest. When you need another one, it
-							can be switched on straight away.
+							From registration and OPD to diagnostics, wards and billing, explore the
+							features that bring hospital operations into one system. Configure the setup
+							around the departments your hospital runs.
 						</p>
-						<nav className={styles.jumpNav} aria-label="Jump to module group">
+						<nav className={styles.jumpNav} aria-label="Jump to feature group">
 							{HIMS_MODULE_GROUPS.map((group) => (
 								<a key={group.id} className={styles.jumpLink} href={`#${group.id}`}>
 									{group.label}
@@ -96,19 +96,18 @@ export default function Modules(): ReactNode {
 				<section className={styles.cta}>
 					<div className={styles.container}>
 						<Heading as="h2" className={styles.ctaTitle}>
-							Not sure which ones you need?
+							Let’s map the right setup for your hospital.
 						</Heading>
 						<p className={styles.ctaDesc}>
-							Most hospitals start with registration, appointments, OPD, pharmacy and
-							billing, then add wards, diagnostics and payroll as they go. Tell us how
-							your hospital runs and we will map it module by module.
+							Tell us about your departments, facilities and current systems. We’ll walk
+							you through the relevant features and discuss a practical implementation plan.
 						</p>
 						<div className={styles.heroCta}>
 							<Link className={styles.btnPrimary} to="/signup">
 								Schedule a free demo
 							</Link>
 							<Link className={styles.btnGhost} to="/">
-								Back to Ciyex HIMS
+								Explore Ciyex HIMS
 							</Link>
 						</div>
 					</div>

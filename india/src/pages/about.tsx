@@ -19,12 +19,12 @@ import styles from '@site/src/css/india/about.module.css';
 const FACTS: readonly { icon: HimsIconName; label: string; text: string }[] = [
 	{
 		icon: 'hospital',
-		label: '23 modules',
-		text: 'Front desk to final bill. A hospital switches on the ones it runs.',
+		label: 'Connected workflows',
+		text: 'Link the front desk, patient care, diagnostics, billing and records.',
 	},
 	{
 		icon: 'insurance',
-		label: 'ABDM-ready',
+		label: 'ABDM gateway',
 		text: 'Gateway credentials and connectivity configured per hospital.',
 	},
 	{
@@ -66,15 +66,15 @@ export default function About(): ReactNode {
 					<div className={styles.heroCard}>
 						<div className={styles.heroContent}>
 							<div className={styles.badges}>
-								<span className={styles.badge}>Hospital Software</span>
+								<span className={styles.badge}>Hospital technology · Coimbatore</span>
 								<span className={styles.badgeState}>Coimbatore, Tamil Nadu</span>
 							</div>
 							<Heading as="h1" className={styles.heroTitle}>
-								About Qiaben Healthcare Solutions Pvt Ltd
+								Hospital software shaped around real workflows.
 							</Heading>
 							<p className={styles.heroSubtitle}>
-								We build Ciyex HIMS — one system for the whole hospital, from the front
-								desk to the final bill.
+								Qiaben Healthcare Solutions builds Ciyex HIMS to connect the work of hospital
+								teams—from registration and patient care to diagnostics, billing and records.
 							</p>
 						</div>
 					</div>
@@ -88,27 +88,22 @@ export default function About(): ReactNode {
 							<div className={styles.missionLayout}>
 								<div className={styles.missionCard}>
 								<p className={styles.missionText}>
-									Qiaben Healthcare Solutions Pvt Ltd builds Ciyex — a modern, secure
-									hospital information management system. We believe a thirty-bed nursing
-									home should run the same software as a three-hundred-bed hospital, and
-									that the difference should be which modules you switch on rather than
-									what you can afford.
+									Qiaben Healthcare Solutions builds Ciyex HIMS for hospitals that want their
+					front desk, care teams, departments and administration working from connected
+					records. Hospitals can configure the features and workflows that fit their needs.
 								</p>
 								<p className={styles.missionText}>
-									The platform is built on open standards — FHIR R4 and HL7 v2 underneath,
-									DICOM for imaging — with data practices aligned to the Digital Personal
-									Data Protection Act, 2023. It runs as a managed cloud service or on a
-									server inside the hospital, and serves everything from a single clinic
-									to a multi-unit group under one login.
+									Ciyex HIMS uses FHIR R4 and supports HL7 v2 and DICOM workflows for connected
+									clinical and diagnostic systems. Hospitals can discuss managed cloud or
+									on-premise deployment, multi-unit configuration and data handling with our team.
 								</p>
 								<p className={styles.missionText}>
-									Our focus is straightforward: take the friction out of adoption, make the
-									record genuinely portable, and let the people at the counter, the ward and
-									the cash desk get on with the work in front of them.
+									Our focus is practical: make implementation understandable, keep hospital
+									workflows connected and help each team find the information it needs to do its work.
 									</p>
 									<div className={styles.missionLinks}>
 										<Link to="/modules" className={styles.missionLinkPrimary}>
-											See all 23 modules
+											Explore hospital workflows
 										</Link>
 										<Link to="/signup" className={styles.missionLinkGhost}>
 											Book a demo
@@ -146,12 +141,10 @@ export default function About(): ReactNode {
 									</div>
 									<h3 className={styles.infoLabel}>Ciyex HIMS</h3>
 									<p className={styles.infoValue}>
-										Twenty-three modules covering registration and UHID, the queue, OPD,
-										emergency, wards and theatre, laboratory, radiology, pharmacy, blood
-										bank, GST billing, discharge and payroll — with ABDM connectivity built
-										in.<br />
+											A hospital information system spanning registration, OPD, emergency,
+											wards, theatre, diagnostics, pharmacy, billing, discharge and administration.<br />
 										<Link to="/modules" className={styles.infoLink}>
-											See all modules
+										Explore features
 										</Link>
 									</p>
 								</div>
@@ -161,9 +154,8 @@ export default function About(): ReactNode {
 									</div>
 									<h3 className={styles.infoLabel}>Ciyex Workspace</h3>
 									<p className={styles.infoValue}>
-										The desktop application your staff work in all day, for Windows, macOS
-										and Linux. The sidebar shows only the modules your hospital has
-										switched on.<br />
+											A desktop application for Windows, macOS and Linux, bringing configured
+											hospital workflows into one workspace.<br />
 										<Link to="/workspace" className={styles.infoLink}>
 											Explore Workspace
 										</Link>
@@ -175,9 +167,8 @@ export default function About(): ReactNode {
 									</div>
 									<h3 className={styles.infoLabel}>Deployment &amp; support</h3>
 									<p className={styles.infoValue}>
-										Managed cloud on Azure or AWS, or a server inside the hospital.
-										Setup, data migration, training desk by desk and ongoing support come
-										from the team that writes the software.<br />
+											Discuss managed cloud or on-premise deployment, data migration, staff
+											training and ongoing support with the team that builds Ciyex.<br />
 										<Link to="/professional-support" className={styles.infoLink}>
 											How support works
 										</Link>

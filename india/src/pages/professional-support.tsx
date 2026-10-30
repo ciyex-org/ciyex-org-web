@@ -72,7 +72,7 @@ const SERVICES: readonly { icon: HimsIconName; title: string; text: string }[] =
 	{
 		icon: 'refresh',
 		title: 'Ongoing maintenance',
-		text: 'Upgrades, new modules switched on as you grow, and configuration changes as the hospital changes. Unlimited users throughout.',
+		text: 'Upgrades, additional features as you grow, and configuration changes as the hospital changes. Unlimited users throughout.',
 	},
 	{
 		icon: 'records',
@@ -84,18 +84,18 @@ const SERVICES: readonly { icon: HimsIconName; title: string; text: string }[] =
 const STEPS: readonly { n: string; title: string; text: string }[] = [
 	{
 		n: '1',
-		title: 'Tell us how your hospital runs',
-		text: 'A call about your departments, your wards, your tariffs and what you use today. No obligation and no cost.',
+		title: 'Start with your hospital',
+		text: 'Walk us through your departments, facilities, tariffs and current systems so we understand your priorities.',
 	},
 	{
 		n: '2',
-		title: 'We map it module by module',
-		text: 'Which of the 23 modules you switch on, what migrates from your current system, and a dated implementation plan.',
+		title: 'Plan the configuration',
+		text: 'Review relevant features, migration needs, responsibilities and a proposed implementation timeline.',
 	},
 	{
 		n: '3',
-		title: 'Go live, then stay supported',
-		text: 'Configuration, migration, training desk by desk, and a support line that stays open afterwards.',
+		title: 'Prepare teams and go live',
+		text: 'Configure the agreed workflows, train staff for their roles and stay connected with our support team after launch.',
 	},
 ];
 
@@ -114,12 +114,12 @@ export default function ProfessionalSupport(): ReactNode {
 								<span className={styles.badge}>First-party support</span>
 							</div>
 							<Heading as="h1" className={styles.heroTitle}>
-								Support from the team<br />that builds Ciyex.
+				Implementation and support<br />from the team behind Ciyex.
 							</Heading>
 							<p className={styles.heroSubtitle}>
-								Implementation, migration, training and day-to-day support come from
-								Qiaben — the people who write the software — rather than from a reseller
-								who has to raise a ticket with us anyway.
+				Qiaben builds Ciyex HIMS and works with your hospital on implementation,
+				data migration, staff training and ongoing support—from the first setup
+				conversation through day-to-day use.
 							</p>
 						</div>
 					</div>
@@ -128,7 +128,7 @@ export default function ProfessionalSupport(): ReactNode {
 					<section className={styles.section}>
 						<div className={styles.sectionInnerWide}>
 							<Heading as="h2" className={styles.sectionTitle}>
-								How It Works
+								From planning to ongoing support
 							</Heading>
 							<div className={styles.stepsGrid}>
 								{STEPS.map((step) => (
@@ -146,7 +146,7 @@ export default function ProfessionalSupport(): ReactNode {
 					<section className={styles.section}>
 						<div className={styles.sectionInnerWide}>
 							<Heading as="h2" className={styles.sectionTitle}>
-								What Support Covers
+								Support for each stage of HIMS
 							</Heading>
 							<div className={styles.serviceGrid}>
 								{SERVICES.map((service) => (
@@ -177,9 +177,9 @@ export default function ProfessionalSupport(): ReactNode {
 								</div>
 
 								<p className={styles.vendorDescription}>
-									Ciyex HIMS is built and supported by Qiaben. One team writes the
-									software, implements it in your hospital and answers the phone when
-									something is wrong with it.
+										Qiaben Healthcare Solutions builds and supports Ciyex HIMS from
+										Coimbatore. Our team can help plan implementation, configure hospital
+										workflows and support your staff after go-live.
 								</p>
 
 								<div className={styles.vendorDetails}>
@@ -235,10 +235,10 @@ export default function ProfessionalSupport(): ReactNode {
 									<Link
 										to={OFFICE.booking}
 										className={styles.bookingBtn}>
-										Book a Free Consultation
+									Book a free demo
 									</Link>
 									<Link to="/modules" className={styles.websiteBtn}>
-										See all 23 modules
+										Explore hospital workflows
 									</Link>
 								</div>
 							</div>
@@ -250,12 +250,11 @@ export default function ProfessionalSupport(): ReactNode {
 						<div className={styles.sectionInnerWide}>
 							<div className={styles.ctaCard}>
 								<Heading as="h2" className={styles.ctaTitle}>
-									Become an Implementation Partner
+									Work with us on hospital implementation
 								</Heading>
 								<p className={styles.ctaText}>
-									Are you an IT services company working with hospitals in India? We are
-									building a partner programme for implementation, training and local
-									support, and would like to hear from you.
+									Do you provide hospital IT, implementation or training services in India?
+									Contact us to discuss opportunities to support Ciyex HIMS deployments.
 								</p>
 								<a href={`mailto:${OFFICE.email}`} className={styles.ctaBtn}>
 									Contact Us
