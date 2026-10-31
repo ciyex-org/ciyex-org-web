@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 /** The side-by-side layout's height, used until Calendly reports the real one. */
 const INITIAL_HEIGHT = 760;
 
-const BOOKING_URL = 'https://calendly.com/help-ciyex/ciyex-hims-demo-session';
+const BOOKING_URL = 'https://calendly.com/ciyex/ciyex-hims-demo';
 
 /**
  * Embedded booking calendar with no inner scrollbar. Give it at least 1060px or
