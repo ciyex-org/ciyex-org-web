@@ -3,6 +3,6 @@ export const CONTACT = {
 	phone: '(844) 874-2236',
 	phoneHref: 'tel:+18448742236',
 	email: 'help@ciyex.org',
-	bookingUrl: 'https://calendly.com/help-ciyex/ciyex-practice-professional-services-consultation',
+	bookingUrl: 'https://calendly.com/qiaben/ciyex',
 	address: ['Ciyex Inc.', '30 N Gould St, Ste N', 'Sheridan, WY 82801', 'United States'],
 } as const;
