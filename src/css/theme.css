@@ -287,6 +287,20 @@ div[class*='announcementBar'] button {
   }
 }
 
+/* Mobile menu: a solid panel, so the page does not read through the links. */
+.navbar-sidebar {
+  background: var(--cx-surface);
+}
+
+.navbar-sidebar a.navbar-signup-btn.button {
+  margin: 12px 0 0;
+}
+
+.navbar-sidebar .nav-phone {
+  display: block;
+  padding: 6px 12px;
+}
+
 .footer__address {
   color: var(--cx-on-band-muted);
   font-size: 0.9rem;

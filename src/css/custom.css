@@ -450,7 +450,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   /* hide signup button on mobile — accessible via hamburger menu */
-  .navbar-signup-btn {
+  .navbar__items .navbar-signup-btn {
     display: none !important;
   }
 
@@ -476,11 +476,10 @@ h1, h2, h3, h4, h5, h6 {
  * The bar was already sticky and already translucent; without a blur behind it
  * the page just showed through as muddle when content scrolled under. The blur
  * is what makes the translucency read as glass rather than as a mistake.
- * `-webkit-` first for Safari, which still wants the prefix.
+ * The blur itself sits on `.navbar::before`: on `.navbar` it would trap the
+ * fixed mobile menu inside the bar.
  * ────────────────────────────────────────────────────────────────────────── */
 .navbar {
-  -webkit-backdrop-filter: saturate(180%) blur(18px);
-  backdrop-filter: saturate(180%) blur(18px);
   border-bottom: 1px solid var(--cx-line);
 }
 
