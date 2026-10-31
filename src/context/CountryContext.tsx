@@ -56,6 +56,7 @@ export const CURRENT_COUNTRY: CountryCode = 'US';
 const SHARED_PATHS = new Set([
   '',
   'about',
+  'blog',
   'impact',
   'privacy',
   'signup',
