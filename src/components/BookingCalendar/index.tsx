@@ -1,4 +1,5 @@
 import { useEffect, useState, type ReactNode } from 'react';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 import { CONTACT } from '@site/src/data/contact';
 import styles from './styles.module.css';
@@ -12,14 +13,15 @@ const INITIAL_HEIGHT = 760;
  * draws its own. Calendly posts its content
  * height to the host page once it knows the embedding domain, and that height
  * changes as the visitor moves from the date to the time to the form.
+ *
+ * The address is in the built HTML, so the calendar never waits on the site's JavaScript.
  */
 export default function BookingCalendar(): ReactNode {
-	const [src, setSrc] = useState<string>();
+	const { siteConfig: { url } } = useDocusaurusContext();
 	const [height, setHeight] = useState(INITIAL_HEIGHT);
+	const src = `${CONTACT.bookingUrl}?hide_gdpr_banner=1&background_color=ffffff&embed_type=Inline&embed_domain=${new URL(url).hostname}`;
 
 	useEffect(() => {
-		setSrc(`${CONTACT.bookingUrl}?hide_gdpr_banner=1&background_color=ffffff&embed_type=Inline&embed_domain=${window.location.hostname}`);
-
 		const onMessage = (event: MessageEvent) => {
 			if (event.origin !== 'https://calendly.com' || event.data?.event !== 'calendly.page_height') return;
 			const next = parseInt(event.data.payload?.height, 10);
@@ -30,12 +32,20 @@ export default function BookingCalendar(): ReactNode {
 	}, []);
 
 	return (
-		<iframe
-			className={styles.frame}
-			src={src}
-			style={{ height }}
-			scrolling="no"
-			title="Book a consultation"
-		/>
+		<>
+			<div className={styles.calendar}>
+				<p className={styles.loading}>Loading the calendar…</p>
+				<iframe
+					className={styles.frame}
+					src={src}
+					style={{ height }}
+					scrolling="no"
+					title="Book a consultation"
+				/>
+			</div>
+			<p className={styles.fallback}>
+				Calendar not showing? <a href={CONTACT.bookingUrl} target="_blank" rel="noreferrer">Open it on Calendly</a>
+			</p>
+		</>
 	);
 }

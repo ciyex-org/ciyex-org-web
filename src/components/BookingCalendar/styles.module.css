@@ -1,7 +1,29 @@
+.calendar {
+  position: relative;
+}
+
+/* Sits behind the frame, low enough for the Calendly card to cover it. */
+.loading {
+  position: absolute;
+  top: 200px;
+  right: 0;
+  left: 0;
+  margin: 0;
+  text-align: center;
+  color: var(--cx-muted);
+}
+
 .frame {
+  position: relative;
   display: block;
   width: 100%;
   border: 0;
+}
+
+.fallback {
+  margin: 8px 0 0;
+  text-align: center;
+  font-size: 0.9rem;
 }
 
 /* Calendly shrinks its card to fit the frame. This keeps the full 800 by 700 card. */
