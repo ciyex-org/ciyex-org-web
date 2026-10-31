@@ -70,7 +70,21 @@ const config: Config = {
       'classic',
       {
         docs: false,
-        blog: false,
+        blog: {
+          showReadingTime: true,
+          sortPosts: 'descending',
+          postsPerPage: 9,
+          blogTitle: 'Ciyex HIMS Blog',
+          blogDescription: 'Practical guides for Indian hospitals on operations, digital health and compliance.',
+          blogSidebarCount: 'ALL',
+          feedOptions: {
+            type: ['rss', 'atom'],
+            xslt: true,
+          },
+          onInlineTags: 'ignore',
+          onInlineAuthors: 'warn',
+          onUntruncatedBlogPosts: 'warn',
+        },
         theme: {
           customCss: ['./src/css/custom.css', './src/css/theme.css'],
         },
@@ -112,6 +126,7 @@ const config: Config = {
         { to: '/modules', label: 'Features', position: 'left' },
         { to: '/workspace', label: 'Workspace', position: 'left' },
         { to: '/professional-support', label: 'Support', position: 'left' },
+        { to: '/blog', label: 'Blog', position: 'left' },
         { to: '/about', label: 'About', position: 'left' },
         { to: '/impact', label: 'Impact', position: 'left' },
         { type: 'custom-countrySwitch', position: 'right' },
@@ -139,6 +154,7 @@ const config: Config = {
             { label: 'About Us', to: '/about' },
             { label: 'Our Impact', to: '/impact' },
             { label: 'Support', to: '/professional-support' },
+            { label: 'Blog', to: '/blog' },
           ],
         },
         {
