@@ -101,6 +101,15 @@ const config: Config = {
     './src/clientModules/scrollReveal.ts',
   ],
 
+  scripts: [
+    // Zendesk reads its key from the script with this exact id.
+    {
+      id: 'ze-snippet',
+      src: 'https://static.zdassets.com/ekr/snippet.js?key=174431c6-22c2-421a-98e4-c1a8d69aed72',
+      async: true,
+    },
+  ],
+
   themeConfig: {
     image: 'img/ciyex-social-card-in.jpg',
     colorMode: {
