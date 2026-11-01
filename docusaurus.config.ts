@@ -177,6 +177,12 @@ const config: Config = {
   ],
 
   scripts: [
+    // Zendesk reads its key from the script with this exact id.
+    {
+      id: 'ze-snippet',
+      src: 'https://static.zdassets.com/ekr/snippet.js?key=174431c6-22c2-421a-98e4-c1a8d69aed72',
+      async: true,
+    },
     {
       src: 'https://zeffy-scripts.s3.ca-central-1.amazonaws.com/embed-form-script.min.js',
       async: true,
